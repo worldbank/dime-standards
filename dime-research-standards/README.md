@@ -1,7 +1,7 @@
 # DIME Research Standards
 
 ## Pillar 1 - Research Ethics
-For implementation resources, see the [Research Ethics Guidelines](https://github.com/worldank/dime-standards/blob/master/dime-research-standards/pillar-1-research-ethics)
+For implementation resources, see the [Research Ethics Guidelines](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-1-research-ethics)
 
 - Researchers must secure ethics approval from an institutional review board (IRB) and the appropriate authority in the study location, for studies directly involving human subjects or using personally-identifying information.
 - All research team members that handle personally-identifiable information must have up-to-date Human Subjects Research Certification.
@@ -9,12 +9,12 @@ For implementation resources, see the [Research Ethics Guidelines](https://githu
 study participants must have the opportunity to provide informed consent, and revoke that consent at any time.
 
 ## Pillar 2 - Research Transparency
-For implementation resources, see the [Research Transparency Guidelines](https://github.com/worldank/dime-standards/blob/master/dime-research-standards/pillar-2-research-transparency)
+For implementation resources, see the [Research Transparency Guidelines](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-2-research-transparency)
 
 - Researchers must register the study prior to receiving implementation funding.
 
 ##  Pillar 3 - Research Reproducibility
-For implementation resources, see the [Research Reproducibility Guidelines](https://github.com/worldank/dime-standards/blob/master/dime-research-standards/pillar-3-research-reproducibility)
+For implementation resources, see the [Research Reproducibility Guidelines](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-3-research-reproducibility)
 
 - All projects will use GitHub to document data work.
 - Research assistants will regularly participate in code review with their peers.
@@ -24,7 +24,7 @@ scripts that are needed for the project, in order.
 and academic publications.
 
 ##  Pillar 4 - Data Security
-For implementation resources, see the [Data Security Guidelines](https://github.com/worldank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security)
+For implementation resources, see the [Data Security Guidelines](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security)
 
 - All personally-identifiable data must be stored and transferred securely, including in communication with field staff. 
   - All servers for data collection must be [encrypted](https://dimewiki.worldbank.org/wiki/Encryption) both
@@ -39,7 +39,7 @@ removing most sensitive information (e.g. names) even if some identifying inform
 (e.g. geocoordinates) is required for analysis 
 
 ##  Pillar 5 - Data Publication
-For implementation resources, see the [Data Publication Guidelines](https://github.com/worldank/dime-standards/blob/master/dime-research-standards/pillar-5-data-publication)
+For implementation resources, see the [Data Publication Guidelines](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-5-data-publication)
 
 - Prior to publication, the research team must remove all potential identifiers.
 DIME Analytics can assist with assessing the risk of statistical disclosure.

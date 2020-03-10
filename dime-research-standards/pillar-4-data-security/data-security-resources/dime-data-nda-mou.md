@@ -38,7 +38,7 @@ Meaning that I, under no circumstances, will publish any data or any result base
 
 ## PART 3
 
-By signing this document, I confirm that I have read the [DIME Analytics Data Security Guidelines](https://github.com/worldank/dime-standards/blob/master/dime-research-standards/Research-Data-Security/DIME-Data-Security-Guidelines.md) and passed the assessment. I agree that I will follow those Guidelines in all my research tasks at DIME. I also understand that it is my responsibility to stay updated on DIME Analytics Data Security Guideline and that I am personally responsible for any data breaches resulting from failure to following those guidelines; and that I must report any violation of those guidelines immediately to the primary investigator.
+By signing this document, I confirm that I have read the [DIME Analytics Data Security Guidelines](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/Research-Data-Security/DIME-Data-Security-Guidelines.md) and passed the assessment. I agree that I will follow those Guidelines in all my research tasks at DIME. I also understand that it is my responsibility to stay updated on DIME Analytics Data Security Guideline and that I am personally responsible for any data breaches resulting from failure to following those guidelines; and that I must report any violation of those guidelines immediately to the primary investigator.
 
 I also confirm that it is my responsibility to follow up with DIME Analytics (dimeanalytics@worldbank.org) if there is any part of this agreement that I do not fully understand.
 
