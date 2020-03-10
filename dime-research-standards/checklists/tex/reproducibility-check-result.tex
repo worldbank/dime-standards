@@ -1,0 +1,111 @@
+\input{checklist-header.tex}
+
+\usepackage{adjustbox}
+
+% ------------------------------ End of preamble ---------------------------------------------
+\begin{document}
+	\begin{fullwidth}
+
+	\titleBox{
+			\TextField[width=13cm,
+				height = .8cm,
+				bordercolor=fontcolor,
+				backgroundcolor=fontcolor,
+				charsize = 14pt,
+				color = white,
+				default = Project Title,
+				align = 1]{\textcolor{fontcolor}{i}} \\
+			\TextField[width=13cm,
+			height = .8cm,
+			bordercolor=fontcolor,
+			backgroundcolor=fontcolor,
+			charsize = 14pt,
+			color = white,
+			default = Project Title (cont.),
+			align = 1]{\textcolor{fontcolor}{e}} \\
+			\textcolor{white}{\Large{DIME Analytics Reproducibility Check} \\
+			v1.0 - Checked on \today}
+	}
+		\section*{Part 1: Computational Reproducibility}
+
+		\subsection{Required}
+
+		\noindent
+		\begin{Form}
+			\dimeCheckBox{ All code runs completely on a new computer.}
+		\end{Form}
+	
+		\noindent
+		\begin{Form}
+			\dimeCheckBox{ The master script re-creates all results as they appear in the paper.}
+		\end{Form}
+
+
+		\subsection{Recommended}
+		\begin{Form}
+			\dimeCheckBox{ All in-text numerical citations that are not drawn directly from tables and figures are reproduced by code provided in the replication package.}
+		\end{Form}
+
+		\noindent
+		\begin{Form}
+			\dimeCheckBox{ Scripts for data cleaning, variable creation, and analysis are separate.}
+		\end{Form}
+
+		\noindent
+		\begin{Form}
+			\dimeCheckBox{ Analysis scripts do not include any data cleaning or variable creation, unless necessary for the creation of a table or graphic.}
+		\end{Form}
+
+		\noindent
+		\begin{Form}
+			\dimeCheckBox{ All code is well-commented and formatted, such that one can easily identify functional chunks of code and evaluate whether they correctly implement the econometric or statistical process described.}
+		\end{Form}
+
+		\noindent
+		\begin{Form}
+			\dimeCheckBox{ All intermediate data sets can be reproduced from the raw data.}
+		\end{Form}
+
+		\noindent
+		\begin{Form}
+			\dimeCheckBox{ All final data sets can be reproduced from the data submitted.}
+		\end{Form}
+	
+		\vspace{4em}
+		\begin{center}
+			\includegraphics[width=0.20\linewidth]{../../img/osf-badges/data_large_gray}
+			\hspace{1.5cm}
+			\includegraphics[width=0.20\linewidth]{../../img/osf-badges/materials_large_gray}
+			\hspace{1.5cm}
+			\includegraphics[width=0.20\linewidth]{../../img/osf-badges/preegisteredplus_large_gray}
+		\end{center}
+		
+
+	\newpage
+	\section*{Part 2: Data and Documentation Access}
+	
+	\begin{itemize}
+		\setlength\itemsep{0.2em}
+		\item[] \textbf{Data citation}
+		\item[] \dimeTextField{data}{10cm}{URL:} \hspace{.3cm} \dimeCheckBox{Data is public}
+		\item[] \dimeTextField{doi}{10cm}{DOI:}
+		\vspace{0.2em}
+		\item[] \textbf{Code repository}
+		\item[] \dimeTextField{code}{10cm}{URL:} \hspace{.3cm} \dimeCheckBox{Code repository is public}
+		\vspace{0.2em}
+		\item[] \textbf{Study registration}
+		\item[] \dimeTextField{prereg}{10cm}{URL:} \hspace{.3cm} \dimeCheckBox{Study registration is public}
+		\item[] \textbf{Pre-analysis plan}
+		\item[] \dimeTextField{pap}{10cm}{URL:} \hspace{.3cm} \dimeCheckBox{Pre-analysis plan is public}
+		\vspace{0.2em}
+		\item[] \dimeTextField{other1}{7.7cm}{\textbf{Other document:}}
+		\item[] \dimeTextField{other1url}{10cm}{URL:} \hspace{.3cm} \dimeCheckBox{Document is public}
+		\vspace{0.2em}
+		\item[] \dimeTextField{other2}{7.7cm}{\textbf{Other document:}}
+		\item[] \dimeTextField{other2url}{10cm}{URL:} \hspace{.3cm} \dimeCheckBox{Document is public }
+	\end{itemize}
+	
+	\end{fullwidth}
+\end{document}
+
+\maketitle
