@@ -4,14 +4,14 @@ Data security is important for two reasons:
 **respecting the privacy of respondents or the terms of data licensing agreements** and
 **making sure no one publishes papers using your data before you**.
 The detailed version of the DIME Data Security Standards can be found
-[here](https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/dime-data-security-guidelines.md).
+[here](https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/dime-data-security-guidelines.md).
 To be fully compliant with the DIME Data Security Standards,
 a project most follow all applicable items listed in the detailed version.
 
 ### DIME Data Non-Disclosure MOU
 
 All Research Assistants and Field Coordinators at DIME must sign the
-[DIME Data Non-Disclosure MOU](https://github.com/kbjarkefur/DIME-Standards/blob/master/Standards/Data-Security/DIME-Data-Non-Disclosure-MOU.md)
+[DIME Data Non-Disclosure MOU](https://github.com/worldank/DIME-Standards/blob/master/Standards/Data-Security/DIME-Data-Non-Disclosure-MOU.md)
 as a condition of employment.
 
 ## DIME Data Security Resources
@@ -53,7 +53,7 @@ but a typical research user only needs to know about
 [asymmetric encryption](https://dimewiki.worldbank.org/Encryption#Asymmetric_Encryption).
 The only difference between these two that is relevant for researchers is
 that symmetric encryption has one key, and that asymmetric encryption has two keys.
-All keys should be stored in a [password manager](https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/password-manager-guidelines.md).
+All keys should be stored in a [password manager](https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/password-manager-guidelines.md).
 Encryption at rest must be implemented in a way where no one
 not listed on the IRB has access to decryption key(s).
 
@@ -64,7 +64,7 @@ Use symmetric encryption to encrypt a file before you securely store,
 send or share it with someone
 if you want anyone with both the key and the encrypted file to be able to view and modify it.
 We recommend a free, open-source software called VeraCrypt for manual symmetric encryption of files.
-See the [DIME Analytics Guide to VeraCrypt](https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/veracrypt-guidelines.md)
+See the [DIME Analytics Guide to VeraCrypt](https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/veracrypt-guidelines.md)
 to encrypt files using symmetric encryption.
 Symmetric encryption keys can never be shared as they both encrypt and decrypt the data.
 
@@ -74,7 +74,7 @@ During data collection we want data to be encrypted on the tablet and sent to th
 but we do not want each tablet to be able to download data from the server and decrypt it.
 In this case, the data collection software is likely to have implemented everything for you,
 so the only thing you need to do is keep track of the two keys, together called a public/private key pair,
-using a [password manager](https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/password-manager-guidelines.md).
+using a [password manager](https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/password-manager-guidelines.md).
 The public key (which encrypts the data) can be shared publicly but the private key (which decrypts the data) cannot.
 
 #### De-identification
@@ -94,9 +94,9 @@ The only safe way to share keys and passwords is to use password managers.
 and password managers are great at making it easy to follow password best practices.
 You only need to come up with and memorize one very strong password – your _master password_, used to log in to the password manager account.
 To make sure that you have a very secure master password, see the
-[DIME Analytics Guide to Secure, Memorizable, and Long Passwords](https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/memorizable-strong-password-guidelines.md).
+[DIME Analytics Guide to Secure, Memorizable, and Long Passwords](https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/memorizable-strong-password-guidelines.md).
 Once you have a memorizable and sufficiently long password,
-you should follow the [DIME Analytics Guide to Password Managers](https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/password-manager-guidelines.md).
+you should follow the [DIME Analytics Guide to Password Managers](https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/password-manager-guidelines.md).
 
 #### Secure, memorizable, and long passwords
 
@@ -107,4 +107,4 @@ Another example is your computer logon password,
 as you cannot access your password manager until you have started your device.
 To create a secure password you can memorize,
 see the
-[DIME Analytics Guide to Secure, Memorizable, and Long Passwords](https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/memorizable-strong-password-guidelines.md).
+[DIME Analytics Guide to Secure, Memorizable, and Long Passwords](https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/memorizable-strong-password-guidelines.md).

@@ -57,7 +57,7 @@ which is why you also need to memorize your computer log-on password.
 
 Since these passwords authorize access to so much else, they also need to be very secure.
 They will never be as secure as `mPFaAse&9x^R9vxg2*8ZA2BFik#KyXuj`, but
-[DIME Analytics guide to memorizable secure passwords](https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/memorizable-strong-password-guidelines.md)
+[DIME Analytics guide to memorizable secure passwords](https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/memorizable-strong-password-guidelines.md)
 helps you create as secure as possible "memorize-able" passwords.
 
 # LastPass - Guidelines
@@ -75,7 +75,7 @@ See a complete list of the differences between free, premium, family, and busine
 ## Create LastPass account
 
 Before you set up your LastPass account, use the
-[DIME Analytics guide to memorizable secure passwords](https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/memorizable-strong-password-guidelines.md)
+[DIME Analytics guide to memorizable secure passwords](https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/memorizable-strong-password-guidelines.md)
 to create a very secure memorizable master password regardless of which instruction on how to sign up you are using below.
 
 _World Bank:_ If you have a worldbank.org email address and want access to the 1-year free trial of LastPass premium you should follow
@@ -124,7 +124,7 @@ The fact that LastPass even offer that option should make you cringe.
 Similarly, you should **never ever** let your browser save your LastPass master password.
 You really need to meorize it and type it each time you need access to your vault. This is the only secure way.
 
-<img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-ext-login.png" width="25%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-ext-login.png" width="25%"><!--- Image is read from master branch or use full URL-->
 
 ### Extension logout
 
@@ -139,7 +139,7 @@ and "_Log out after this many minutes of inactivity_", and add a number of minut
 We recommend 5 but anything up to 15 minutes is ok.
 (If you installed the client instead of the browser extension, you will have to take similar action there.)
 
-<img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-ext-logout.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-ext-logout.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 ### Master Password Recovery
 
@@ -161,7 +161,7 @@ in each browser you installed the extension - go to _account options_ in the bro
 and click extension preferences. Under the `Advanced` tab you should untick the option
 "_Save a disabled one-time password locally for account recovery_" highlighted with a yellow circle in the image below. (If you installed the client instead of the browser extension you will have to take similar action there.)
 
-<img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-optrecovery.png" width="50%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-optrecovery.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 If you want keep account recovery for any reason, we strongly recommend that you enable SMS Account recovery.
 The default behavior is that LastPass sends you an email when you request account recovery.
@@ -177,7 +177,7 @@ There is always some insecurity associated with enabling master password recover
 To enable SMS recovery, go to your password vault and click account settings.
 In the general tab you find the button in the image below. Click `Update Phone` and follow the instructions.
 
-<img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-smsrecovery.png" width="50%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-smsrecovery.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 ## Use LastPass to create and store a super-strong password
 
@@ -194,14 +194,14 @@ You can either do this in your browser extension or by going to lastpass.com and
 When you are in your vault, select `Notes` in the left menu
 and then click the plus sign in the large red circle in the bottom right corner.
 
-<img src="https://github.com/kbjarkefur/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-create-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-create-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 Then you need to create a long random string that can be used as password or key.
 You can click the browser extension icon, and then select `Generate Secure Password`.
 If you do not have the browser extension installed, you can instead go to https://www.lastpass.com/password-generator.
 There you will have the same options but it will look slightly different.
 
-<img src="https://github.com/kbjarkefur/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-create-2.png" width="30%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-create-2.png" width="30%"><!--- Image is read from master branch or use full URL-->
 
 When you create your password, you should create a very long password.
 32 is a common maximum length. Some services will not allow such long passwords,
@@ -226,7 +226,7 @@ or for each encryption key that you set up.
 One of the most important password safety aspects of a password manager
 is that it allows you to have _different_ super strong password on each site.
 
-<img src="https://github.com/kbjarkefur/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-create-3.png" width="30%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-create-3.png" width="30%"><!--- Image is read from master branch or use full URL-->
 
 It is **very important** that you do not use the password you just created
 before you have successfully stored it in your LastPass vault.
@@ -239,7 +239,7 @@ so you are safe to write exactly what this key is used for
 and any other instructions you only want to share with people that has access to this key.
 When you are done, click `Save`.
 
-<img src="https://github.com/kbjarkefur/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-create-4.png" width="80%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-create-4.png" width="80%"><!--- Image is read from master branch or use full URL-->
 
 If you are new to LastPass you should make sure this secure note is successfully saved
 by logging out of your account, and then log in again.
@@ -248,7 +248,7 @@ then you know that this password is secured in LastPass and
 can only disappear if you delete it or lose access to your LastPass account.
 
 You can now use your super strong password, for example as a key in
-[VeraCrypt](https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/veracrypt-guidelines.md).
+[VeraCrypt](https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/veracrypt-guidelines.md).
 See next session for how to share it.
 
 ### Use LastPass to securely share a password
@@ -261,7 +261,7 @@ To share an item that you have already saved to your vault,
 hold your mouse over the item you want to share and click the people symbol
 (see red circle in the image below).
 
-<img src="https://github.com/kbjarkefur/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-share-1.png" width="50%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-share-1.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 Then you simply add the email address associated with the account you want to share the secure item with.
 If you share the item with an email the other person did not use when signing up for LastPass,
@@ -270,7 +270,7 @@ However, when they click the link they will be asked to sign in,
 and when they sign in to another account they will not have access to the item you shared.
 You will then see the invitation as pending until that person has successfully accepted it.
 
-<img src="https://github.com/kbjarkefur/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-share-2.png" width="40%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-share-2.png" width="40%"><!--- Image is read from master branch or use full URL-->
 
 ### Some remarks on shared items
 
@@ -350,7 +350,7 @@ It is still a good idea to include a header like this in your secure note,
 so that you or anyone you shared this item with remember which key is which,
 where it starts and ends, etc.
 
-<img src="https://github.com/kbjarkefur/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-store-keypair.png" width="80%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-store-keypair.png" width="80%"><!--- Image is read from master branch or use full URL-->
 
 ## Your passwords are version controlled
 
@@ -367,10 +367,10 @@ For example, let's say you are using the private key to download data and
 you cut-and-paste the key instead of copy-and-paste and save it.
 Your secure note would then look like the image below.
 
-<img src="https://github.com/kbjarkefur/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-versioncontrol-1.png" width="80%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-versioncontrol-1.png" width="80%"><!--- Image is read from master branch or use full URL-->
 
 In the image above, you see the version control button highlighted with a red circle.
 If you click that button you will get to a menu where you can see all version of this secure item,
 and can copy any value and then close the version window and paste it back into the secure note.
 
-<img src="https://github.com/kbjarkefur/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-versioncontrol-2.png" width="80%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/DIME-Research-Standards/pillar-4-data-security/data-security-resources/img/pw-lp-versioncontrol-2.png" width="80%"><!--- Image is read from master branch or use full URL-->

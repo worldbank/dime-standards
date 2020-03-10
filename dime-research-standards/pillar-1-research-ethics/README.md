@@ -15,13 +15,13 @@
 
 ## Confidentiality
 Researchers must ensure confidentiality, privacy, and anonymity of study participants. Research team members are personally liable for any disclosure of confidential data that may occur due to their actions.
-- All research assistants, field coordinators, and other consultants or interns affiliated with the research team must sign [DIME's Non-Disclosure Agreement](https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/dime-data-nda-mou.md).
-- All research teams must follow [DIME's Data Security Standards](https://github.com/kbjarkefur/dime-standards/tree/master/DIME-Research-Standards/pillar-4-data-security) when dealing with personally-identifiable and other confidential data.
+- All research assistants, field coordinators, and other consultants or interns affiliated with the research team must sign [DIME's Non-Disclosure Agreement](https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/pillar-4-data-security/data-security-resources/dime-data-nda-mou.md).
+- All research teams must follow [DIME's Data Security Standards](https://github.com/worldank/dime-standards/tree/master/DIME-Research-Standards/pillar-4-data-security) when dealing with personally-identifiable and other confidential data.
 - Direct identifiers must be removed from working data sets as early in the research process as possible.
 - Only team members listed in the IRB may access confidential information.
 
 ## Informed consent
 Study participants must have the opportunity to provide informed consent.
 - All data collection instruments must start with an informed consent statement. The statement must be approved by the IRB. 
-- The DIME templates for Informed Consent is available in the [Research Ethics Resources folder](https://github.com/kbjarkefur/dime-standards/tree/ethics-pillar/DIME-Research-Standards/pillar-1-research-ethics/research-ethics-resources).
+- The DIME templates for Informed Consent is available in the [Research Ethics Resources folder](https://github.com/worldank/dime-standards/tree/ethics-pillar/DIME-Research-Standards/pillar-1-research-ethics/research-ethics-resources).
 -

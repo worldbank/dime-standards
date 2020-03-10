@@ -31,39 +31,39 @@ Before you can encrypt any files on your computer you must use VeraCrypt to crea
 
 1. On the opening page click `Create Volume` (marked in red in the image below). Remember that _Volume_ in VeraCrypt means _secure folder_.
 
-    <img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_1.png" width="50%"><!--- Image is read from master branch or use full URL-->
+    <img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_1.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 1. In the _VeraCrypt Volume Creation Wizard_, you have three options. VeraCrypt has many advanced options, but for the type of work we do we will only use the default option, which also is the least complex. Make sure that _encrypted file container_ is selected and click `Next`.
 
-    <img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_2.png" width="50%"><!--- Image is read from master branch or use full URL-->
+    <img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_2.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 1. In the next step, we will again choose the default option. So make sure _Standard VeraCrypt Volume_ is selected and then click `Next`.
 
-    <img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_3.png" width="50%"><!--- Image is read from master branch or use full URL-->
+    <img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_3.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 1. Next you have to specify where you want to create the secure folder volume. The volume behaves as a folder where you can store files, but technically it is a file. You do not need to understand exactly how it works. Choose a location and give the volume file a name. Click `select file`. Note that a VeraCrypt volume is like any normal file. It can, for example, be moved, deleted, synced, or transferred exactly like any other file.
 
-    <img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_4.png" width="50%"><!--- Image is read from master branch or use full URL-->
+    <img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_4.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 1. Select the desired path in the file selector. If you intend to share this folder, for example through Dropbox, then this should be inside your Dropbox folder (it can be moved there later in any case). If you are using the DIME Analytics folder setup then you should create this inside the [encrypted folder](https://dimewiki.worldbank.org/wiki/DataWork_Folder#Survey_Encrypted_Data). Then type the name of the secure folder in the _file name_ box (remember, the secure folder volume is actually a file). Then click `Save`.
 
-    <img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_5.png" width="50%"><!--- Image is read from master branch or use full URL-->
+    <img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_5.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 1. Back in the _Volume Creation Wizard_ window, click `Next`.
 
-    <img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_6.png" width="50%"><!--- Image is read from master branch or use full URL-->
+    <img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_6.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 1. One of the restrictions of VeraCrypt is that you need to decide what the maximum total size of the contents of the secure folder can be, before you put anything in it. Do not over-estimate too much, as the secure folder will always take up this much disk space, even when it is empty. If you realize in the future that the volume size was too small, then you will create a new, larger volume and move all the files there. You can also create another volume for different files. In this example, choose 250 megabytes and then click `Next`.
 
-    <img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_7.png" width="50%"><!--- Image is read from master branch or use full URL-->
+    <img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_7.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 1. In the next step, you need to create a secure password that you do not use for any other purpose. Secure passwords must only be shared using password managers, and password managers can also create strong unique passwords for you. Read VeraCrypt's instructions for what is a good password. After you have chosen your password and saved it to your password manager, copy it from your password manager to the first input field and then copy it to the second input field, and then click `Next`.
 
-    <img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_8.png" width="50%"><!--- Image is read from master branch or use full URL-->
+    <img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_8.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 1. To make the encryption completely unpredictable, VeraCrypt uses your mouse movement to get a random input used when the folder is encrypted. This is nothing you need to remember, it just makes the encryption even harder to crack. Move your mouse inside the VeraCrypt window until the randomness indicator becomes green. The longer you move the mouse, the better. Then click `Format`.
 
-    <img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_9.png" width="50%"><!--- Image is read from master branch or use full URL-->
+    <img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_install_9.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 You have now created the secure folder. Go to the location where you created the folder to confirm it exists. It does not look like a folder, as it is technically a file. Double click on the folder to try and open it directly. Confirm that it doesn't open and you cannot do anything with it. Also see that the file is about 250MB big (or whatever value you chose) despite still being empty. The next part shows you how to use the secure folder.
 
@@ -79,27 +79,27 @@ You need to re-mount the secure folder after each time it was un-mounted, for ex
 
 1. First, you need to select a drive that will be used when you mount your secure folder. Even though the volume file you created in the last part might be stored on the `C:` drive, you need to select a different drive when mounting it. You can select any drive, but the examples in the rest of this exercise assume that you select `M:` as your drive.
 
-    <img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_mount_1.png" width="50%"><!--- Image is read from master branch or use full URL-->
+    <img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_mount_1.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 1. Then click `Select File`.
 
-    <img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_mount_2.png" width="50%"><!--- Image is read from master branch or use full URL-->
+    <img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_mount_2.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 1. In the file selector, browse to the volume file that we created in the last part and select it. Then click `Open`.
 
-    <img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_mount_3.png" width="50%"><!--- Image is read from master branch or use full URL-->
+    <img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_mount_3.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 1. Back in the opening VeraCrypt window, click `Mount`.
 
-    <img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_mount_4.png" width="50%"><!--- Image is read from master branch or use full URL-->
+    <img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_mount_4.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 1. Type the password you created when you created the secure folder then click `OK`.
 
-    <img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_mount_5.png" width="50%"><!--- Image is read from master branch or use full URL-->
+    <img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_mount_5.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 1. If the password is correct, we will have successfully mounted on the container as a virtual disk `M:`. Double-click on the disk `M:` to open the container.
 
-    <img src="https://github.com/kbjarkefur/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_mount_6.png" width="50%"><!--- Image is read from master branch or use full URL-->
+    <img src="https://github.com/worldank/dime-standards/blob/master/DIME-Research-Standards/Research-Data-Security/data-security-resources/img/vc_mount_6.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 1. This will now open an empty folder in your file explorer. This empty folder has the file path `M:`. This drive behaves very similarly to when you plug in a USB/flash drive to your computer and access files stored on that USB/flash drive.
 
