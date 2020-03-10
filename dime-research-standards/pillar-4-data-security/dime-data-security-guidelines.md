@@ -52,12 +52,12 @@ or two-way transfer (data sharing):
   The public key is stored on the server and on the tablets,
   but only people listed on the IRB may have access to the private key that can decrypt the data.
   The private key needs to be stored and shared using a
-  [password manager](https://dimewiki.worldbank.org/Encryption#Storage_of_passwords_and_private_keys).
+  [password manager](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/password-manager-guidelines.md).
   * _Two-way transfer_: On most other services, for example Dropbox, non-WB OneDrive, email, WhatsApp, and SMS text messages,
   among many other insecure modes of communication, we have to implement
   [symmetric encryption](https://dimewiki.worldbank.org/Encryption#Symmetric_Encryption) ourselves.
   This means that only already-encrypted data may be shared using that service, and the key is shared separately inside a
-  [password manager](https://dimewiki.worldbank.org/Encryption#Storage_of_passwords_and_private_keys).
+  [password manager](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/password-manager-guidelines.md).
   Under symmetric encryption, the data is encrypted and decrypted manually using the same key.
   The key may only be shared with people listed on the IRB who need access to the raw data.
 * Confidential data that is properly encrypted at rest can sometimes be securely viewed by users through the browser.
@@ -97,4 +97,4 @@ If any confidential data is stored on your local computer,
 then that should be stored in that folder to make it easy to keep track of what needs to be encrypted or not.
 Note that `iefolder` does not encrypt the folder. You still have to do so manually using a
 [symmetric encryption](https://dimewiki.worldbank.org/Encryption#Symmetric_Encryption) tool, and share the key using a
-[password manager](https://dimewiki.worldbank.org/Encryption#Storage_of_passwords_and_private_keys).
+[password manager](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/password-manager-guidelines.md).

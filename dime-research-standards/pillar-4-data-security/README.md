@@ -11,7 +11,7 @@ a project most follow all applicable items listed in the detailed version.
 ### DIME Data Non-Disclosure MOU
 
 All Research Assistants and Field Coordinators at DIME must sign the
-[DIME Data Non-Disclosure MOU](https://github.com/worldbank/dime-standards/blob/master/Standards/Data-Security/DIME-Data-Non-Disclosure-MOU.md)
+[DIME Data Non-Disclosure MOU](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/dime-data-nda-mou.md)
 as a condition of employment.
 
 ## DIME Data Security Resources
