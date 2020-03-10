@@ -100,7 +100,7 @@ If you do not install your browser extension,
 you will have to go to lastpass.com each time you need any password from your password vault.
 
 Regardless of using a World Bank device or not,
-go to https://lastpass.com/misc_download2.php, click the `Quick install` button at top of the page,
+navigate [here](https://lastpass.com/misc_download2.php), click the `Quick install` button at top of the page,
 and follow all the instructions.
 
 ## Edit LastPass' insecure default settings
