@@ -194,14 +194,14 @@ You can either do this in your browser extension or by going to lastpass.com and
 When you are in your vault, select `Notes` in the left menu
 and then click the plus sign in the large red circle in the bottom right corner.
 
-<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-create-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-create-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 Then you need to create a long random string that can be used as password or key.
 You can click the browser extension icon, and then select `Generate Secure Password`.
 If you do not have the browser extension installed, you can instead go to https://www.lastpass.com/password-generator.
 There you will have the same options but it will look slightly different.
 
-<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-create-2.png" width="30%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-create-2.png" width="30%"><!--- Image is read from master branch or use full URL-->
 
 When you create your password, you should create a very long password.
 32 is a common maximum length. Some services will not allow such long passwords,
@@ -226,7 +226,7 @@ or for each encryption key that you set up.
 One of the most important password safety aspects of a password manager
 is that it allows you to have _different_ super strong password on each site.
 
-<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-create-3.png" width="30%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-create-3.png" width="30%"><!--- Image is read from master branch or use full URL-->
 
 It is **very important** that you do not use the password you just created
 before you have successfully stored it in your LastPass vault.
@@ -239,7 +239,7 @@ so you are safe to write exactly what this key is used for
 and any other instructions you only want to share with people that has access to this key.
 When you are done, click `Save`.
 
-<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-create-4.png" width="80%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-create-4.png" width="80%"><!--- Image is read from master branch or use full URL-->
 
 If you are new to LastPass you should make sure this secure note is successfully saved
 by logging out of your account, and then log in again.
@@ -261,7 +261,7 @@ To share an item that you have already saved to your vault,
 hold your mouse over the item you want to share and click the people symbol
 (see red circle in the image below).
 
-<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-share-1.png" width="50%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-share-1.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 Then you simply add the email address associated with the account you want to share the secure item with.
 If you share the item with an email the other person did not use when signing up for LastPass,
@@ -270,7 +270,7 @@ However, when they click the link they will be asked to sign in,
 and when they sign in to another account they will not have access to the item you shared.
 You will then see the invitation as pending until that person has successfully accepted it.
 
-<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-share-2.png" width="40%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-share-2.png" width="40%"><!--- Image is read from master branch or use full URL-->
 
 ### Some remarks on shared items
 
@@ -350,7 +350,7 @@ It is still a good idea to include a header like this in your secure note,
 so that you or anyone you shared this item with remember which key is which,
 where it starts and ends, etc.
 
-<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-store-keypair.png" width="80%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-store-keypair.png" width="80%"><!--- Image is read from master branch or use full URL-->
 
 ## Your passwords are version controlled
 
@@ -367,10 +367,10 @@ For example, let's say you are using the private key to download data and
 you cut-and-paste the key instead of copy-and-paste and save it.
 Your secure note would then look like the image below.
 
-<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-versioncontrol-1.png" width="80%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-versioncontrol-1.png" width="80%"><!--- Image is read from master branch or use full URL-->
 
 In the image above, you see the version control button highlighted with a red circle.
 If you click that button you will get to a menu where you can see all version of this secure item,
 and can copy any value and then close the version window and paste it back into the secure note.
 
-<img src="https://github.com/worldank/dime-standards/blob/bootcamp-material/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-versioncontrol-2.png" width="80%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-versioncontrol-2.png" width="80%"><!--- Image is read from master branch or use full URL-->

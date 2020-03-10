@@ -22,6 +22,6 @@ Researchers must ensure confidentiality, privacy, and anonymity of study partici
 
 ## Informed consent
 Study participants must have the opportunity to provide informed consent.
-- All data collection instruments must start with an informed consent statement. The statement must be approved by the IRB. 
-- The DIME templates for Informed Consent is available in the [Research Ethics Resources folder](https://github.com/worldank/dime-standards/tree/ethics-pillar/dime-research-standards/pillar-1-research-ethics/research-ethics-resources).
+- All data collection instruments must start with an informed consent statement. The statement must be approved by the IRB.
+- The DIME templates for Informed Consent is available in the [Research Ethics Resources folder](https://github.com/worldank/dime-standards/tree/master/dime-research-standards/pillar-1-research-ethics/research-ethics-resources).
 -
