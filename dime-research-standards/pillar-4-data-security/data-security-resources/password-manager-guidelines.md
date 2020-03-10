@@ -7,7 +7,7 @@
 Password that protects confidential data should be at least 15 characters long
 (preferably more than 30 if allowed) and consist of completely random numbers, letters and symbols.
 For example, `mPFaAse&9x^R9vxg2*8ZA2BFik#KyXuj`. No one can memorize such passwords by heart,
-but password managers makes it easy to create, securely store and work with such passwords.
+but password managers make it easy to create, securely store and work with such passwords.
 
 ## Password managers make it easy to use super-strong passwords
 
