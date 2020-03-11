@@ -4,7 +4,7 @@ All confidential data used by DIME must be handled in such a way that
 there is no risk that anyone who is not on the IRB for the specific project has any ability to access the data.
 
 Data can be confidential for multiple reasons, but the most common reason is that it contains
-[personally identifiable information (PII)](https://dimewiki.worldbank.org/De-identification#Personally_Identifiable_Information).
+[personally identifiable information (PII)](https://dimewiki.worldbank.org/wiki/Personally_Identifiable_Information_(PII)).
 Other reasons include that the data has been shared with you under a data usage license
 that requires that the data is kept confidential.
 
