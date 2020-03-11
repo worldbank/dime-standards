@@ -13,5 +13,4 @@ DIME Research standards are organized in 5 pillars:
 4. Data Security
 5. Data Publication
 
-Requirements for each pillar are detailed in the [Research Standards ReadMe](https://github.com/worldbank/dime-standards/tree/master/dime-research-standards)
-
+Requirements for each pillar are detailed in the [Research Standards README](https://github.com/worldbank/dime-standards/tree/master/dime-research-standards)
