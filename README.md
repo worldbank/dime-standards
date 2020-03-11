@@ -1,6 +1,7 @@
 # DIME Standards
 
-This repository includes DIME's standards for high-quality research. In line with our standard for transparency, we are developing and version-controlling the standards on GitHub.
+This repository includes DIME's standards for high-quality research. In line with our standard for transparency, we are developing and version-controlling the standards on GitHub. This repository is maintained by the (DIME Analytics team) [https://www.worldbank.org/en/research/dime/data-and-analytics]. 
+
 
 ## Research Standards ##
 
@@ -14,4 +15,3 @@ DIME Research standards are organized in 5 pillars:
 
 Requirements for each pillar are detailed in the [Research Standards ReadMe] (https://github.com/worldbank/dime-standards/tree/master/dime-research-standards)
 
-This repository is maintained by the DIME Analytics team, dimeanalytics@worldbank.org. 
