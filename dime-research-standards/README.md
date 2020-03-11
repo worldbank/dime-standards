@@ -1,5 +1,7 @@
 # DIME Research Standards
 
+All DIME research projects are expected to comply with the following requirements: 
+
 ## Pillar 1 - Research Ethics
 For implementation resources, see the [Research Ethics Guidelines](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-1-research-ethics)
 
