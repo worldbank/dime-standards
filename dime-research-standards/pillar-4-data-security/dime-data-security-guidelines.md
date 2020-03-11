@@ -84,7 +84,7 @@ regardless of how frequently you need to access it.
 then the confidential part of data can be removed from the data set as soon as possible
 and you can keep an unencrypted copy of the remaining data on your computer.
 Once this is done you can even share it unencrypted on insecure services like Dropbox.
-  * For  [PII](https://dimewiki.worldbank.org/De-identification#Personally_Identifiable_Information)
+  * For  [PII](https://dimewiki.worldbank.org/wiki/Personally_Identifiable_Information_(PII))
   data this process is called [de-identification](https://dimewiki.worldbank.org/De-identification).
   Identifying and removing direct identifiers (names, national IDs, phone numbers, etc.)
   is usually straightforward and easy. However, it is more challenging to identify _indirect_ identifiers, or
