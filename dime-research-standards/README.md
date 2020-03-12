@@ -1,6 +1,6 @@
 # DIME Research Standards
 
-All DIME research projects are expected to comply with the following requirements: 
+All DIME research projects are expected to comply with the following requirements:
 
 ## Pillar 1 - Research Ethics
 For implementation resources, see the [Research Ethics Guidelines](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-1-research-ethics)
@@ -34,7 +34,7 @@ For implementation resources, see the [Data Security Guidelines](https://github.
     - Encryption at rest must be implemented so that no person not listed on the IRB ever has access to the decryption key or the unencrypted data. This includes server hosts or administrators, sharing or syncing service providers, internet providers, and staff not listed on the IRB at any institution.
   - All identified data must be stored only in securely encrypted locations,
   and must always be encrypted when shared, even if shared only within the project team (link to DIME Encryption Protocol)
-  - World Bank PIs should back up raw data in a WB OneDrive folder that is not shared with anyone, and is not synced to any computer.
+  - World Bank PIs should back up raw data in a [WB OneDrive folder](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/onedrive-backup-guidelines.md) that is not shared with anyone, and is not synced to any computer.
 - The project team should create a [de-identified](https://dimewiki.worldbank.org/wiki/De-identification) copy of the
 primary data before starting data cleaning and analysis,
 removing most sensitive information (e.g. names) even if some identifying information
