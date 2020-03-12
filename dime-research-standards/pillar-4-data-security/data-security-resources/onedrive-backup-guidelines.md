@@ -1,20 +1,20 @@
 # DIME Analytics - Data Security Guides - WB OneDrive Back-up
 
 This guide is for the World Bank's Enterprise version of OneDrive (WB OneDrive),
-and not all parts of this guide should be followed using regular OneDrive, DropBox or any other synching service.
-Those services are not secure enough for us to recommend that you upload identified data
-without manually encrypt it first.
+and not all parts of this guide should be followed using regular OneDrive, DropBox or any other syncing service.
+The non WB OneDrive sync services are not secure enough for us to recommend for uploading identified data
+without manually encrypting it first.
 
 A folder created in WB OneDrive cannot be synced to a non-World Bank device
-even if that person has been invited to the folder.
+even if owner of that device has been invited to the folder.
 This is because it is installed with extra layers of encryption that is connected to our WB computer log-ons.
 While that makes it an unsuitable tool for day-to-day collaboration with team members that do not have a World Bank computer,
 it makes it an excellent tool for back-ups of raw data,
-where there is no risk that data is lost because encryption keys are lost.
+where there is no risk of losing data as a result of loss of encryption keys.
 
 ## WB OneDrive back-up folders
 
-There is nothing special you have to do to set up a back-up folder in WB OneDrive, but since data back-up is such an important step, we still write a guide for it. The only way the back-up folder should differ from more most WB OneDrive folders is that this folder should not be synched to any device, and it should not be shared with anyone.
+While an easy process, setting up a back-up folder in WB OneDrive is an extremely important process.  The only way the back-up folder should differ from more most WB OneDrive folders is that this folder should not be synced to any device, and it should not be shared with anyone.
 
 You are allowed to sync identified data in WB OneDrive folders to your device,
 but since that there is a risk that you by accident delete a folder on your computer,
@@ -66,8 +66,8 @@ Once you have created the folder for your data source,
 simply drag all the files you want to back up here.
 You can drag a whole folder and all its content at the same time.
 You should back up the most raw version of your data, even if that is a bunch of csv files.
-Since storage space will not be an issue since you will not sync this folder,
-you can back up both the rawest files and a data set where all of them are merged.
+Since storage space will not be an issue as you will not sync this folder,
+you can back up both, the rawest files and a data set created from the raw files.
 Even if these files are identifying you do not need to manually encrypt them before uploading them.
 
 <img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/onedrive-backup-4.png" width="75%"><!--- Image is read from master branch or use full URL-->
