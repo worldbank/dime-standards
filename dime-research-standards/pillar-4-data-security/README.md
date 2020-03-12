@@ -3,10 +3,9 @@
 Data security is important for two reasons:
 **respecting the privacy of respondents or the terms of data licensing agreements** and
 **making sure no one publishes papers using your data before you**.
-The detailed version of the DIME Data Security Standards can be found
-[here](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/dime-data-security-guidelines.md).
 To be fully compliant with the DIME Data Security Standards,
-a project most follow all applicable items listed in the detailed version.
+a project most follow all applicable items listed in the
+[DIME Data Security Standards (detailed version)](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/dime-data-security-guidelines.md).
 
 ### DIME Data Non-Disclosure MOU
 
@@ -15,6 +14,12 @@ All Research Assistants and Field Coordinators at DIME must sign the
 as a condition of employment.
 
 ## DIME Data Security Resources
+
+#### Secure back-ups of raw data in WB OneDrive
+
+See
+[DIME Data Back-up Guide ](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/onedrive-backup-guidelines.md)
+for instructions on how all DIME projects should back up their data.
 
 #### Encryption in transit
 
