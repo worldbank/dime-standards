@@ -8,24 +8,34 @@ without manually encrypting it first.
 A folder created in WB OneDrive cannot be synced to a non-World Bank device
 even if owner of that device has been invited to the folder.
 This is because it is installed with extra layers of encryption that is connected to our WB computer log-ons.
-While that makes it an unsuitable tool for day-to-day collaboration with team members that do not have a World Bank computer,
+While that makes it an unsuitable tool for day-to-day collaboration with team members that do not have a World Bank computer
+(as they cannot sync the folder),
 it makes it an excellent tool for back-ups of raw data,
 where there is no risk of losing data as a result of loss of encryption keys.
 
+While a person without access to a World Bank computer cannot sync a WB OneDrive folder, 
+they can still follow all the steps in this guideline to set up a WB OneDrive back-up folder using the browser. 
+Just make sure that you log in to WB OneDrive and not regular OneDrive. 
+Here are two ways to make sure it is WB OneDrive:
+* After you log in yto your WB OneDrive account, make sure that the URL has re-directed to `worldbankgroup-my.sharepoint.com` or something like that
+* Check the account you are logged in with in the top right corner. Make sure this uses your worldbank.org email
+
 ## WB OneDrive back-up folders
 
-While an easy process, setting up a back-up folder in WB OneDrive is an extremely important process.  The only way the back-up folder should differ from more most WB OneDrive folders is that this folder should not be synced to any device, and it should not be shared with anyone.
+While an easy process, setting up a back-up folder in WB OneDrive is an extremely important process. 
+The only way the back-up folder should differ from most WB OneDrive folders is that this folder should not be synced to any device,
+and it should not be shared with anyone.
 
 You are allowed to sync identified data in WB OneDrive folders to your device,
 but since that there is a risk that you by accident delete a folder on your computer,
 you should not sync the back-up folder.
 If you want the data synced to your computer,
-create another folder that is not your back-up folder where you do so.
+create another folder that is not your back-up folder and sync that folder instead.
 
 You are allowed to share identified data with other World Bank members using WB OneDrive,
 but since there is a risk that they by accident, or because they did not know it was a back-up folder,
 delete your back-up folder, you should not share your back-up folder.
-Again, if you want to use WB OneDrive to share the data, create another folder to do so.
+Again, if you want to use WB OneDrive to share the data, create another folder and share that folder.
 If you are more than one PI in a project, then each PI can create their own WB OneDrive back-up folder.
 
 ## Steps to set up a WB OneDrive back-up folder
