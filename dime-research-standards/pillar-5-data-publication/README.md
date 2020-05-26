@@ -6,7 +6,7 @@ Data must be [de-identified](https://dimewiki.worldbank.org/wiki/De-identificati
 
 An initial round of de-identification, dropping any PII not being used in the analysis, must be completed as soon as the data is available. 
 
-Teams can identify potential outliers using J-PAL's PII Scan for [R](https://github.com/J-PAL/PII-Scan) and [Stata](https://github.com/J-PAL/stata_PII_scan). 
+Teams can identify potential identifying variables using J-PAL's PII Scan for [R](https://github.com/J-PAL/PII-Scan) and [Stata](https://github.com/J-PAL/stata_PII_scan). 
 
 Thorough de-identification must be completed before data publication, and the risk of statistical disclosure must be assessed using [sdcMicro](http://surveys.worldbank.org/sdcmicro).
 
