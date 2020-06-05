@@ -121,7 +121,7 @@ In this part we will learn how to access the files in the secure folder. This is
 
 ## Practice exercise
 
-This practice exercise can be done alone, but is better done with a second person. This exercise covers creating a secure folder with content, sharing it with someone, and securely providing them access to the content of the secure folder. the intention is that you both follow all steps so two folders are created and you share them with each other.
+This practice exercise can be done alone, but is better done with a second person. This exercise covers creating a secure folder with content, sharing it with someone, and securely providing them access to the content of the secure folder. The intention is that you both follow all steps so two folders are created and you share them with each other. If you do not have anyone you can do this exercise with, then you can simulate collaboration by sharing the encryted folder to another computer where you open it. Or you can just wait until another day and try to access the folder after you've restarted your computer.
 
 1. Create a Dropbox/Box/OneDrive folder that you share with the other person
 
