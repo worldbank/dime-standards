@@ -4,7 +4,8 @@
 
 **Date:**  
 
-## List of files to be checked [Add names or links]
+## List of files to be checked
+_Add names or links_:
 - Master script
 - Constructed dataset(s)
 - Construction scripts (list by order of priority)
