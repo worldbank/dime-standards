@@ -41,4 +41,4 @@
 - [ ] Are variable names informative?
 - [ ] Are variable labels informative?
 - [ ] Is there clear documentation (variable dictionary, variable labels, notes, comments) about variable definition?
-- [ ] Are data set names informative?
+- [ ] Are data set file names informative?
