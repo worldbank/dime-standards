@@ -35,5 +35,5 @@ _Add names or links_:
 - [ ] Research decisions are well documented in the code (e.g. sample used, treatment of missing variables)
 - [ ] The code implements the models described in the documentation
 - [ ] The functions used are apropriate for the analysis being performed
-- [ ] Categorical variables are used correctly (i.e., labeled integers are not used as continuous variables)
+- [ ] Categorical variables are used correctly (i.e. labeled integers are not used as continuous variables)
 - [ ] Outputs are exported in a reproducible manner, and manual formatting is very limited
