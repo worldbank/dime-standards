@@ -26,7 +26,7 @@
 
 ## Clean data set checks (pre-publication)
 - [ ] The data does not include direct identifiers
-- [ ] The data set has a clearly labeled, uniquely and fully identifying ID variable
+- [ ] The data set has a clearly labeled, uniquely and fully identifying ID variable(s)
 - [ ] The level of observation of the data set is clear from the dataset name, ID variables, and documentation
 - [ ] Variables have informative labels or an accompanying dictionary
 - [ ] Categorical variables have clear and informative value labels
