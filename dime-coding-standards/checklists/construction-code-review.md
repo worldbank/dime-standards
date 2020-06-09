@@ -38,7 +38,7 @@ _Add names or links_:
 - [ ] Is there always clear documentation of why observations are dropped, if any?
 
 ## Constructed dataset(s)
-- [ ] Is the resulting data set tidy (each row is an observation, each column is a variable)?
+- [ ] Is the resulting dataset tidy (each row is an observation, each column is a variable)?
 - [ ] Are variable names informative?
 - [ ] Are variable labels informative?
 - [ ] Are value labels informative?
