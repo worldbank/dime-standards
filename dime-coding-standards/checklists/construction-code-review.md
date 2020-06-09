@@ -32,7 +32,7 @@ _Add names or links_:
 - [ ] Do you understand how and why each variable is constructed? If not, indicate to the author where more comments are needed.
 - [ ] Check merges. Are any observations dropped or does the number of observations increase? If so, is there a clear justification for that? If any observations didn't match, is that explained in the comments?
 - [ ] Check collapses. How are missing values treated?
-- [ ] Check winsorization. Is the reason for winsorizing explained? Is there documentation explaning how the percentile was chosen and why one/both tails were winsorized?
+- [ ] Check winsorization or other techniques for handling outliers. Is the reason for the chosen transformation explained? Is there documentation explaining how parameters such as cutoff percentiles were chosen and why one or both tails were altered?
 - [ ] Check treatment of missing values. Are research decisions well documented? Are there cases where you think missing values are being created or replaced unintentionally?
 - [ ] Check creation of new variables. Does the code match the variable definition in the documentation? Is the correct function being used?
 - [ ] Is there always clear documentation of why observations are dropped, if any?
