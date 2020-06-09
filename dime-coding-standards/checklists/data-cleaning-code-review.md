@@ -33,6 +33,7 @@
 - [ ] No modification is made from the raw to the clean data other than correcting problems 
 - [ ] No raw variables are processed (winsorized, for example)  
 - [ ] Variables can be easily traced back to the original questionnaire
+- [ ] Variables are sensibly ordered and dataset is compressed and saved in appropriate format
 
 ## Data cleaning tasks
 - [ ] Are new variables being created in the cleaning do-files? 
