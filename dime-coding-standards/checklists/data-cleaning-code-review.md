@@ -30,7 +30,7 @@
 - [ ] The level of observation of the data set is clear from the dataset name, ID variables and documentation
 - [ ] Variables have informative labels or an accompanying dictionary
 - [ ] Categorical variables have clear and informative value labels
-- [ ] No modification is made from the raw to the clean data other then correcting problems 
+- [ ] No modification is made from the raw to the clean data other than correcting problems 
 - [ ] No raw variables are processed (winsorized, for example)  
 - [ ] Variables can be easily traced back to the original questionnaire
 
