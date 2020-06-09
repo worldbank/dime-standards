@@ -16,7 +16,7 @@
 - [ ] The data sets created by the reviewer are exactly the same as those shared by the coder
 
 ## Code organization and readability
-- [ ] Code names are informative 
+- [ ] Code file names are informative 
 - [ ] It is clear in the code why tasks are being executed
 - [ ] The code structure facilitates understanding of the tasks
 - [ ] Code uses white space to improve readability
