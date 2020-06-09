@@ -19,7 +19,7 @@
 - [ ] The master script tracks which scripts create and use which files
 
 ## Code organization and readability
-- [ ] Code names are informative 
+- [ ] Code file names are informative 
 - [ ] It is clear in the code why tasks are being executed
 - [ ] The code structure facilitates understanding of the tasks
 - [ ] Code uses white space to improve readability
