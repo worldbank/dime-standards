@@ -40,5 +40,5 @@
 - [ ] Is the resulting data set tidy (each row is an observation, each column is a variable)?
 - [ ] Are variable names informative?
 - [ ] Are variable labels informative?
-- [ ] Is there clear documentation (variable dictionary, variable labels, notes, comments) about variable definition?
+- [ ] Is there clear documentation (variable dictionary, variable labels, value labels, notes, comments) about variable definition?
 - [ ] Are data set file names informative?
