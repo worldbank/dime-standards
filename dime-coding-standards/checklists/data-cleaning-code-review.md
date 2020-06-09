@@ -24,7 +24,7 @@
 - [ ] The code is efficient (tasks are executed in the simplest way possible, loops are used when needed rather than repeating lines, pre-defined functions are used)
 - [ ] Common tasks are abstracted and automated (e.g. using functions or macros)
 
-## Clean data set checks (pre-publication)
+## Clean dataset checks (pre-publication)
 - [ ] The data does not include direct identifiers
 - [ ] The data set has a clearly labeled, uniquely and fully identifying ID variable(s)
 - [ ] The level of observation of the data set is clear from the dataset name, ID variables, and documentation
