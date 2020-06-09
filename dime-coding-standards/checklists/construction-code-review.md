@@ -44,4 +44,4 @@ _Add names or links_:
 - [ ] Are value labels informative?
 - [ ] Are all labels grammatically correct and free of special characters?
 - [ ] Is there clear documentation (variable dictionary, variable labels, value labels, notes, comments) about variable definition?
-- [ ] Are data set file names informative?
+- [ ] Are dataset file names informative?
