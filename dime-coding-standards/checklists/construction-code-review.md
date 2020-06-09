@@ -31,7 +31,7 @@ _Add names or links_:
 ## Construction scripts
 - [ ] Do you understand how and why each variable is constructed? If not, indicate to the author where more comments are needed.
 - [ ] Check merges. Are any observations dropped or does the number of observations increase? If so, is there a clear justification for that? If any observations didn't match, is that explained in the comments?
-- [ ] Check collapses. How are missing values treated?
+- [ ] Check collapses, reshapes, and groupwise calculations (`bys` and `egen` for example). How are missing values treated? Does the sort order of the data matter or is the result uniquely determined? Is the number of observations correct and are the mathematics correct?
 - [ ] Check winsorization or other techniques for handling outliers. Is the reason for the chosen transformation explained? Is there documentation explaining how parameters such as cutoff percentiles were chosen and why one or both tails were altered?
 - [ ] Check treatment of missing values. Are research decisions well documented? Are there cases where you think missing values are being created or replaced unintentionally?
 - [ ] Check creation of new variables. Does the code match the variable definition in the documentation? Is the correct function being used?
