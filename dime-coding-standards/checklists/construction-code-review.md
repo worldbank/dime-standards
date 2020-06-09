@@ -11,7 +11,7 @@
 
 ## List of auxiliary documents
 - Documentation
-- Main variables to be checked
+- Main constructed variables to be checked
 
 ## Reproducibility
 - [ ] All scripts run from the master after adding the correct folder path to line(s) X (and XX)
