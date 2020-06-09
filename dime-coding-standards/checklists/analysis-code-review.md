@@ -31,7 +31,7 @@ _Add names or links_:
 
 ## Analysis scripts
 - [ ] No variables are created in analysis scripts unless very specific to a particular output
-- [ ] Code is modular
+- [ ] Code is modular, such that individual outputs can be run in any order
 - [ ] Research decisions are well documented in the code (e.g. sample used, treatment of missing variables)
 - [ ] The code implements the models described in the documentation
 - [ ] The functions used are apropriate for the analysis being performed
