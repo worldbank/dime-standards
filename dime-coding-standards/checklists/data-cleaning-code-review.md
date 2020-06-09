@@ -13,7 +13,7 @@
 - [ ] All scripts run from the master after adding the correct folder path to line(s) X (and XX)
 - [ ] The master script is organized in a way that allows you to understand the general tasks being performed in the code
 - [ ] The master script tracks which scripts create and use which files
-- [ ] The data sets created by the reviewer are exactly the same as those shared by the coder
+- [ ] The datasets created by the reviewer are exactly the same as those shared by the coder
 
 ## Code organization and readability
 - [ ] Code file names are informative 
