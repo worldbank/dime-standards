@@ -21,7 +21,7 @@ _Add names or links_:
 - [ ] All the outputs are recreated and are exactly the same as the ones shared by the coder
 
 ## Code organization and readability
-- [ ] Code names are informative 
+- [ ] Code file names are informative and/or link directly to outputs
 - [ ] It is clear in the code why tasks are being executed
 - [ ] The code structure facilitates understanding of the tasks
 - [ ] Code uses white space to improve readability
