@@ -1,0 +1,60 @@
+\input{checklist-header.tex}
+% ------------------------------ End of preamble ---------------------------------------------
+\begin{document}
+
+	\begin{fullwidth}
+\titleBox{
+	\textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Peer Code Review Package Checklist}} \\
+	\Large\textbf{{v1.0}}}
+}
+
+	\section{1. Code}
+
+	\begin{itemize}
+		\setlength\itemsep{-0.1em}
+		
+		\item[] \dimeCheckBox{ Includes a master script}
+		\item[] \dimeCheckBox{ Master script clearly indicates which line needs to be changed to run in a different computer}
+		\item[] \dimeCheckBox{ The master script runs from start to end if the reviewer changes only directory path(s) in one location of the master script}
+		\item[] \dimeCheckBox{ The master script installs any commands required (e.g. from SSC in Stata, CRAN in R, etc.)}
+		\item[] \dimeCheckBox{ In Stata, the master do file sets critical configurations such as version, matsize, and varabbrev (either sets directly or through a wrapper command such as ieboilstart from ietoolkit}
+		\item[] \dimeCheckBox{ In R, all necessary packages to run the code are loaded in the master script}
+	\end{itemize}
+
+	\section{2. Data}
+
+	\begin{itemize}
+		\setlength\itemsep{-0.1em}
+	
+		\item[] \dimeCheckBox{ Is fully de-identified}
+		\item[] \dimeCheckBox{ All data necessary to run the code to be reviewed is included}
+	\end{itemize}
+
+	\section{3. Outputs (e.g. tables and figures)}
+
+	\begin{itemize}
+		\setlength\itemsep{-0.1em}
+	
+		\item[] \dimeCheckBox{ All outputs created by the code to be review are included}
+		\item[] \dimeCheckBox{ It is easy to identify which code creates which output}
+	\end{itemize}
+
+\newpage
+\titleBox{
+	\textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Peer Code Review Package Preparation Checklist}} \\
+		\Large\textbf{{v1.0}}}
+}
+	\section{4. Recommended Practices}
+
+	\begin{itemize}
+		\setlength\itemsep{-0.1em}		
+	
+		\item[] \dimeCheckBox{ Scripts for data cleaning, variable creation, and analysis are separate; and analysis scripts do not include any data processing, unless necessary for the creation of a table or graphic}
+		\item[] \dimeCheckBox{ Variable construction scripts include detailed comments about each variable created}
+		\item[] \dimeCheckBox{ Analysis scripts do not depend on having the results of other scripts in memory, except for the Master script}
+		\item[] \dimeCheckBox{ All scripts are well-commented and formatted, such that one can easily identify functional chunks of code and evaluate whether they correctly implement the econometric or statistical process described}
+		\item[] \dimeCheckBox{ Tables are output as .csv or .tex files or other raw text files when possible}
+	\end{itemize}
+
+\end{fullwidth}
+\end{document}
