@@ -4,7 +4,7 @@ Data security is important for two reasons:
 **respecting the privacy of respondents or the terms of data licensing agreements** and
 **making sure no one publishes papers using your data before you**.
 To be fully compliant with the DIME Data Security Standards,
-a project most follow all applicable items listed in the
+a project must follow all applicable items listed in the
 [DIME Data Security Standards (detailed version)](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/dime-data-security-guidelines.md).
 
 ### DIME Data Non-Disclosure MOU
