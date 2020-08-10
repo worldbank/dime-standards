@@ -26,7 +26,7 @@ These guidelines assumes that you:
 1. Have SurveyCTO Desktop installed on your computer
 1. Have a password manager that can handle secure notes (most do, here are our guidelines for setting up Last Pass) (add link to guidelines in this repo)
 
-## Creating and properly store a public/private key pair
+## Topic 1 - Creating and properly store a public/private key pair
 
 SurveyCTO uses asymmetric encryption (link) where there are two keys called the public and the private key.
 In SurveyCTO the public key is used to encrypt your data and the private key is used to decrypt your data.
@@ -46,7 +46,7 @@ We think that a good balance is to use one key pair for each project.
 So multiple forms in the same project can use the same key,
 but the same key should not be used across projects.
 
-### Step 1 - Creating a public/private key pair.
+### Step 1.1 - Creating a public/private key pair.
 
 You can create the public/private key pair on your SurveyCTO server.
 Log in to your server, and navigate to the _Design_ tab. Then click _Tools_.
@@ -82,7 +82,7 @@ and if they keys were already sent to the cloud,
 then there is no way to fully delete them.
 
 
-### Step 2 - Securely share and long term store the key pair
+### Step 1.2 - Securely share and long term store the key pair
 
 Saving the key pair in a regular folder your computer is not a secure enough way of storing the key files.
 Instead our recommendation is that the key is stored in a password manager. Make sure that you have a password manager set up and that you are comfortable using it before proceeding with these instructions. We will provide instructions for the password manager LastPass, but this can be done in other password managers too. A secure alternative to saving to storing the keys in a password manager is to store the keys in an encrypted folder (link veracrypt) on your computer, but then you still need to store the key to the encrypted folder in a password manager.
@@ -106,10 +106,17 @@ then it is good to organize all your secure items in folders.
 
 image store 2
 
-### Step 3 - Delete the key files from your computers hard drive
+### Step 1.3 - Delete the key files from your computers hard drive
 
 A system of encryption is only as strong as its weakest link.
 There is therefore no point in storing the keys safely in a passwords manager,
 if we also stored it on our computers.
 So the next step is to make sure that you have deleted the two key files from your computer.
 Make sure to permanently delete them from your system by also emptying the _Recycle Bin_ (Windows) or the _Trash_ (Mac).
+
+## Topic 2 - Using your public key to encrypt your data in SurveyCTO
+### Encryption method A - Online form builder
+### Encryption method B - Excel sheet form definition
+## Topic 3 - Publishable fields
+## Topic 4 - Using your private key to decrypt your data in SurveyCTO
+## Topic 5 - Testing your setup before
