@@ -122,8 +122,61 @@ So the next step is to make sure that you have deleted the two key files from yo
 Make sure to permanently delete them from your system by also emptying the _Recycle Bin_ (Windows) or the _Trash_ (Mac).
 
 ## Topic 2 - Using your public key to encrypt your data in SurveyCTO
+
+So far we have only prepared and properly stored
+the cryptographic information we need to encrypt our data at rest,
+but nothing is yet encrypted.
+You can only encrypt a questionnaire when you create a new form on SurveyCTO's server.
+If you already have a form on your server that you want to encrypt,
+then you will have to copy the existing form to a new form,
+and encrypt the new form at the time of creating it.
+There are two methods to encrypt a SurveyCTO form.
+If you are developing your form in Excel, then you should use method B.
+
 ### Encryption method A - Online form builder
+
+Go to the _Design_ tab in your SurveyCTO server. Click _Start new form_.
+
+image encrypt 1
+
+Then give your new form a name and make sure that the checkbox "_Do you want this form's data to be encrypted?_" is checked. Then click _Next_.
+
+image encrypt A1
+
+Then select "_Paste public key text:_",
+and then go to your secure note in your password manager and copy the public key.
+Make sure that you only copy the public key,
+and make sure that key header `-----BEGIN PUBLIC KEY-----`
+and the key footer `-----END PUBLIC KEY-----` are included.
+Then click _Next_ and then complete your form.
+SurveyCTO will test that there are no errors in the public key,
+but you should never start collecting data using an encrypted form before
+you have followed our test instructions below.
+
+image encrypt A2
+
 ### Encryption method B - Excel sheet form definition
+
+In your Excel file where you are developing your SurveyCTO form,
+go to the settings tab.
+In the settings tab there is a column called `public_key`.
+Paste the value of the public key in the cell in the first row of that column.
+In this method it is important that you do **not** include
+the  key header `-----BEGIN PUBLIC KEY-----`
+and the key footer `-----END PUBLIC KEY-----`. See example below.
+
+image encrypt B1
+
+Go to the _Design_ tab in your SurveyCTO server. Click _Upload form definition_.
+
+image encrypt 1
+
+Upload the form you just added the public key to the settings tab in,
+and then follow the instructions as normal.
+SurveyCTO will test that there are no errors in the public key,
+but you should never start collecting data using an encrypted form before
+you have followed our test instructions below.
+
 ## Topic 3 - Publishable fields
 ## Topic 4 - Using your private key to decrypt your data in SurveyCTO
 ## Topic 5 - Testing your setup before
