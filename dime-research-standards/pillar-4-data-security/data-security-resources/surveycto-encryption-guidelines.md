@@ -178,5 +178,40 @@ but you should never start collecting data using an encrypted form before
 you have followed our test instructions below.
 
 ## Topic 3 - Publishable fields
+
+One often overseen feature when encrypting forms are publishable fields.
+Publishable fields are fields for which
+the collected data remain unencrypted even when the form is encrypted.
+This data can be downloaded without providing the public key.
+
+Here is one example where publishable fields can be useful.
+Let's say you have hired a survey firm to collect data.
+This survey firm wants to be able to download data from the SurveyCTO server to track progress,
+but the IRB of your project does not allow you to share the respondents data with the survey firm.
+It is unlikely that the survey firm needs all data to track progress,
+and often you do not need any respondent data other than respondent ID
+and survey meta data such as consent, completion, revisit info etc.
+In this case you decide together with the survey firm
+which is the minimum list of fields that they need to track progress.
+If all of these variables are _not_ sensitive (which often is the case)
+then you can make all of them publishable.
+Then you can give the survey firm permission to download data from the server
+or view it in the Data Explorer,
+but as long as they do not have access to the private key,
+they have no access to fields that not publishable.
+
+To make a field publishable, you simply write "_yes_" in the _publishable_ column in the _survey_ tab in the questionnaire form.
+
+To download the publishable data, go to the _Export_ tab in your SurveyCTO server.
+Find your form and click "_Download for data_".
+Then in the two sections as normal,
+but in the "_Fields to include_" make sure that the checkbox
+"_Publishable fields only (if you don't have the private key)_" is checked.
+Then click _Download .csv now_.
+
+image publish 1
+
+You can also download the publishable data using _SurveyCTO Desktop_.
+See the instructions in topic 4 for this.
 ## Topic 4 - Using your private key to decrypt your data in SurveyCTO
 ## Topic 5 - Testing your setup before
