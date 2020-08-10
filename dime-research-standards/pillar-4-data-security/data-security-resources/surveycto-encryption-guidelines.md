@@ -11,6 +11,11 @@ That is why encryption at rest is not automatic and not enabled by default.
 Handling the key is the user's responsibility and loosing the key means that there is no way of recovering the data.
 This guide is DIME Analytics' best practice on how to encrypt data in SurveyCTO and how to securely handle the decryption key.
 
+Some of the steps in this guide can be done in multiple ways.
+To keep the guide simple we will only mention one way per step.
+Each time there are multiple ways we have chosen the one that,
+based on our experience and testing,
+is the easiest way that is not prone to errors.
 
 ## Prerequisites
 
@@ -60,3 +65,26 @@ and then delete these files,
 but give the key files a name so that you recognize them.
 
 image create 3
+### Step 2 - Securely share and long term store the key pair
+
+Saving the key pair in a regular folder your computer is not a secure enough way of storing the key files.
+Instead our recommendation is that the key is stored in a password manager. Make sure that you have a password manager set up and that you are comfortable using it before proceeding with these instructions. We will provide instructions for the password manager LastPass, but this can be done in other password managers too. A secure alternative to saving to storing the keys in a password manager is to store the keys in an encrypted folder (link veracrypt) on your computer, but then you still need to store the key to the encrypted folder in a password manager.
+
+Go to lastpass.com, log in to your vault and
+click the plus sign in the red circle to create a new item.
+Select _Secure Note_
+
+image store 1
+
+Then copy all the content of both keys you created and downloaded from your SurveyCTO server.
+Make sure that you copy all content including the headers `-----BEGING PUBLIC KEY-----`. See example in the image below.
+
+You should also make sure that you give a good name to your secure note with your key.
+This key is likely to be stored for years and
+the name you give the key should make sense to you and to all other team members -
+both current and future - in this project.
+
+If you are using LastPass for many keys and passwords,
+then it is good to organize all your secure items in folders.
+
+image store 2
