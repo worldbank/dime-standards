@@ -85,7 +85,14 @@ then there is no way to fully delete them.
 ### Step 1.2 - Securely share and long term store the key pair
 
 Saving the key pair in a regular folder your computer is not a secure enough way of storing the key files.
-Instead our recommendation is that the key is stored in a password manager. Make sure that you have a password manager set up and that you are comfortable using it before proceeding with these instructions. We will provide instructions for the password manager LastPass, but this can be done in other password managers too. A secure alternative to saving to storing the keys in a password manager is to store the keys in an encrypted folder (link veracrypt) on your computer, but then you still need to store the key to the encrypted folder in a password manager.
+Instead our recommendation is that the key is stored in a password manager.
+Make sure that you have a password manager set up and
+that you are comfortable using it before proceeding with these instructions.
+We will provide instructions for the password manager LastPass,
+but this can be done in other password managers too.
+A secure alternative to saving to storing the keys in a password manager
+is to store the keys in an encrypted folder (link veracrypt) on your computer,
+but then you still need to store the key to the encrypted folder in a password manager.
 
 Go to lastpass.com, log in to your vault and
 click the plus sign in the red circle to create a new item.
