@@ -17,6 +17,7 @@ This guide is DIME Analytics' best practice on how to encrypt data in SurveyCTO 
 These guidelines assumes that you:
 
 1. Have a basic knowledge of SurveyCTO or ODK
+1. Have access to a SurveyCTO server. You can set up a trial here (link)
 1. Have SurveyCTO Desktop installed on your computer
 1. Have a password manager that can handle secure notes (most do, here are our guidelines for setting up Last Pass) (add link to guidelines in this repo)
 
@@ -39,3 +40,23 @@ but you do not need to create a new key pair for each form.
 We think that a good balance is to use one key pair for each project.
 So multiple forms in the same project can use the same key,
 but the same key should not be used across projects.
+
+### Step 1 - Creating a public/private key pair.
+
+You can create the public/private key pair on your SurveyCTO server.
+Log in to your server, and navigate to the _Design_ tab. Then click _Tools_.
+
+image create 1
+
+Then click _create a new key_ and then _Start key generator_
+
+image create 2
+
+Your keys will be downloaded in two files (one file for each key).
+The name you enter in the next screen has no cryptographic function.
+It will only be used to name the files that will be downloaded to your computer.
+We will store the keys in a password manager,
+and then delete these files,
+but give the key files a name so that you recognize them.
+
+image create 3
