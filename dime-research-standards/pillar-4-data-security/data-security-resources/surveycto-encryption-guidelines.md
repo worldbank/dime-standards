@@ -60,11 +60,28 @@ image create 2
 Your keys will be downloaded in two files (one file for each key).
 The name you enter in the next screen has no cryptographic function.
 It will only be used to name the files that will be downloaded to your computer.
+If you were to enter _name_of_my_project_ then your keys will be generated with these names:
+
+* `name_of_my_project_Public.pem`
+* `name_of_my_project_PRIVATEDONOTSHARE.pem`
+
+
 We will store the keys in a password manager,
 and then delete these files,
 but give the key files a name so that you recognize them.
 
 image create 3
+
+When you download the keys,
+make sure that they are not downloaded to a folder that is synced to,
+for example, DropBox or OneDrive.
+We do not want these keys to be sent to the cloud.
+After we stored these keys in a password manager,
+we want to delete these files from everywhere else,
+and if they keys were already sent to the cloud,
+then there is no way to fully delete them.
+
+
 ### Step 2 - Securely share and long term store the key pair
 
 Saving the key pair in a regular folder your computer is not a secure enough way of storing the key files.
@@ -88,3 +105,11 @@ If you are using LastPass for many keys and passwords,
 then it is good to organize all your secure items in folders.
 
 image store 2
+
+### Step 3 - Delete the key files from your computers hard drive
+
+A system of encryption is only as strong as its weakest link.
+There is therefore no point in storing the keys safely in a passwords manager,
+if we also stored it on our computers.
+So the next step is to make sure that you have deleted the two key files from your computer.
+Make sure to permanently delete them from your system by also emptying the _Recycle Bin_ (Windows) or the _Trash_ (Mac).
