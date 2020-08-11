@@ -181,7 +181,7 @@ you have followed our test instructions below.
 
 ## Topic 3 - Publishable fields
 
-One often overseen feature when encrypting forms are publishable fields.
+One often overlooked feature when encrypting forms are publishable fields.
 Publishable fields are fields for which
 the collected data remain unencrypted even when the form is encrypted.
 This data can be downloaded without providing the public key.
