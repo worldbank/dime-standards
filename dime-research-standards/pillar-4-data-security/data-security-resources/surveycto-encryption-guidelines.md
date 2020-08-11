@@ -263,9 +263,9 @@ are **not** listed as publishable will be encrypted during data collection.
 However, there is a second thing you really want to test,
 and that is to make sure you are able to decrypt the encrypted data.
 To test your that you can decrypt data,
-simply submit one mock data submission,
+simply submit one test data submission,
 then copy the private key from your password manager,
-and use SurveyCTO Desktop to download your mock submission.
+and use SurveyCTO Desktop to download your test submission.
 If you are able to see the data that was collected in encrypted fields,
 then you know that you will also be able to decrypt real data
 once you starting to collect it.
