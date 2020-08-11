@@ -243,3 +243,27 @@ and you will not be able to read the data.
 image sync 1.
 
 ## Topic 5 - Testing your setup before
+
+Testing your encryption and decryption workflow is easy
+but we cannot stress enough how important it is that
+you do indeed test the workflow before you start to collect real data.
+
+The first thing you want to make sure that your form is indeed encrypted.
+The easiest way to do that is to log in to your server and go to the _Design_ tab.
+Find your survey and see if the icon for encryption is an open or closed pad lock.
+See the examples below where the form named _encrypted_form_ has a closed padlock
+and the form named _unencrypted_form_ has an open padlock.
+IF the padlock is closed then you know that all fields that
+are **not** listed as publishable will be encrypted during data collection.
+
+image test 1
+
+However, there is a second things you really want to test,
+and that is to make sure you are able to decrypt the encrypted data.
+To test your that you can decrypt data,
+simply submit one mock data submission,
+then copy the private key from your password manager,
+and use SurveyCTO Desktop to download your mock submission.
+If you are able to see the data that was collected in encrypted fields,
+then you know that you will also be able to decrypt real data
+once you starting to collect it.
