@@ -211,7 +211,35 @@ Then click _Download .csv now_.
 
 image publish 1
 
-You can also download the publishable data using _SurveyCTO Desktop_.
-See the instructions in topic 4 for this.
 ## Topic 4 - Using your private key to decrypt your data in SurveyCTO
+
+Technically you can download encrypted data from your SurveyCTO server using a browser,
+but then you first need to save your private key in a file on your computer.
+And in the workflow we recommend,
+you really want to avoid to ever store the private key in a file on your computer
+after you have saved it in a password manager.
+Instead, we recommend you to only download data using SurveyCTO Desktop (link to desktop)
+as you can copy your key from your password manager and paste it
+without having to save it in a file first.
+
+In SurveyCTO Desktop you log in to your server,
+and click _Sync_ in the menu to the left.
+Fill in the information as normal,
+but in step 2 you need to paste the key. See image below.
+Go to your password manager and copy your private key.
+Remember to include the header `-----BEGIN RSA PRIVATE KEY-----`
+and the footer `-----END RSA PRIVATE KEY-----`.
+Once you have copied it to your clipboard
+(ctrl-C on Windows and command-C on Mac)
+then simply click the _PASTE KEY_ button in SurveyCTO Desktop.
+If the key you pasted is on the excepted format,
+then you will see a green checkmark
+and the text "_Private key successfully pasted_".
+However, SurveyCTO has not tested if you pasted the correct key,
+it will only test that when you are actually downloading data.
+If you have pasted the incorrect key, then you will get an error
+and you will not be able to read the data.
+
+image sync 1.
+
 ## Topic 5 - Testing your setup before
