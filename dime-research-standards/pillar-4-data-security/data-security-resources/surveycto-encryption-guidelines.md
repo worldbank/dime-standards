@@ -1,21 +1,21 @@
 # DIME Analytics - Data Security Guides - SurveyCTO Encryption
 
-[SurveyCTO](https://www.surveycto.com/) is a data collection software and service built on the open source tool [ODK](https://opendatakit.org/).
-Any time you collect data that includes confidential data you must encrypt your data.
+[SurveyCTO](https://www.surveycto.com/) is a data collection software and service built on the open source tool, [Open Data Kit (ODK)](https://opendatakit.org/).
+Any time you collect data that includes confidential information you must encrypt your data.
 The most common reason that data is confidential is that it include personal identifiers such as names.
 SurveyCTO automatically encrypts your data [in transit](https://dimewiki.worldbank.org/wiki/Encryption#Encryption_in_Transit)
 but to properly protect your data you also need to encrypt your data [at rest](https://dimewiki.worldbank.org/wiki/Encryption#Encryption_at_Rest).
-**Encryption-in-transit** can be done properly without any input from the user and that is why this is automatic.
-Proper **encryption-at-rest** is never automatic as the user may be the only one that has access to the decryption key.
-That is why encryption at rest is not automatic and not enabled by default.
+**Encryption-in-transit** doesn't require the user to have access to the decryption keys, which is why this is automatic.
+Whereas, proper **encryption-at-rest** is never automatic is because the user has to interact with and handle the the decryption key.
 Handling the key is the user's responsibility and loosing the key means that there is no way of recovering the data.
-This guide is DIME Analytics' best practice on how to encrypt data in SurveyCTO and how to securely handle the decryption key.
 
-Some of the steps in this guide can be done in multiple ways.
-To keep the guide simple we will only mention one way per step.
+This guide is DIME Analytics' best practice step=by=step guide to encrypt data in SurveyCTO and how to securely handle the decryption key.
+
+Some of the steps in this guide can be implemented in multiple ways.
+To keep the guide simple we will only mention one way for some steps.
 Each time there are multiple ways we have chosen the one that,
 based on our experience and testing,
-is the easiest way that is not prone to errors.
+is the least error prone and easier way to implement.
 
 ## Prerequisites
 
@@ -28,24 +28,27 @@ These guidelines assumes that you:
 
 ## Topic 1 - Creating and properly store a public/private key pair
 
-SurveyCTO uses [asymmetric encryption](https://dimewiki.worldbank.org/wiki/Encryption#Asymmetric_Encryption)
+For **encryption-at-rest** SurveyCTO uses [asymmetric encryption](https://dimewiki.worldbank.org/wiki/Encryption#Asymmetric_Encryption)
 where there are two keys called the public and the private key.
-In SurveyCTO the public key is used to encrypt your data and the private key is used to decrypt your data.
+
+In SurveyCTO, the public key is used to encrypt your data and the private key is used to decrypt your data. 
+Each public/private key pair is unique and no other private key can decrypt the data you encrypted with your public key.
+You should not use the same key pair for all your projects,
+but you do not need to create a new key pair for each form.
+We think that a good balance is to use one key pair for each project.
+So multiple forms in the same project can use the same key,
+but the same key should not be used across projects.
+
+
 As the names suggests it is very important that you keep your private key secret.
 If you accidentally publish your private key, then your data is no longer securely protected.
-And if you lose access to your private key, then there is in no way possible to decrypt your data.
+Additionally, if you lose access to your private key, then there is no way to decrypt your data.
 
 There is no security risk of accidentally publishing your public key.
 If you were to lose your public key, then you will not be able to encrypt any more data
 (until you create a new public/private key pair)
 but as long as you have the private key you will still be able to decrypt data encrypted with the lost public key.
 
-Each public/private key pair is unique and no other private key can decrypt the data you encrypted with your public key.
-You should not use the same key pair for all your project,
-but you do not need to create a new key pair for each form.
-We think that a good balance is to use one key pair for each project.
-So multiple forms in the same project can use the same key,
-but the same key should not be used across projects.
 
 ### Step 1.1 - Creating a public/private key pair.
 
@@ -58,7 +61,7 @@ Then click _create a new key_ and then _Start key generator_
 
 <img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-create-2.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
-Your keys will be downloaded in two files (one file for each key).
+You then download the keys in two files (one file for each key).
 The name you enter in the next screen has no cryptographic function.
 It will only be used to name the files that will be downloaded to your computer.
 If you were to enter _name_of_my_project_ then your keys will be generated with these names:
@@ -67,26 +70,26 @@ If you were to enter _name_of_my_project_ then your keys will be generated with 
 * `name_of_my_project_PRIVATEDONOTSHARE.pem`
 
 
-We will store the keys in a password manager,
-and then delete these files,
-but give the key files a name so that you recognize them.
+You will then store the keys in a password manager,
+and then delete these files on your computer. 
+Be sure to give the key files a name that you can recogize easily.
 
 <img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-create-3.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 When you download the keys,
-make sure that they are not downloaded to a folder that is synced to,
+make sure that they are not downloaded to a folder that is synced to the cloud,
 for example, DropBox or OneDrive.
 We do not want these keys to be sent to the cloud.
-After we stored these keys in a password manager,
-we want to delete these files from everywhere else,
-and if they keys were already sent to the cloud,
+After storing these keys in a password manager,
+delete these files from every location it is saved in.
+If they keys were already sent to the cloud,
 then there is no way to fully delete them.
 
 
 ### Step 1.2 - Securely share and long term store the key pair
 
-Saving the key pair in a regular folder your computer is not a secure enough way of storing the key files.
-Instead our recommendation is that the key is stored in a password manager.
+Saving the key pair in a regular folder on your computer is not a secure enough way of storing the key files.
+Instead, our recommendation is that the key is stored in a password manager.
 Make sure that you have a password manager set up and
 that you are comfortable using it before proceeding with these instructions.
 We will provide instructions for the password manager LastPass,
@@ -105,7 +108,7 @@ Select _Secure Note_
 Then copy all the content of both keys you created and downloaded from your SurveyCTO server.
 Make sure that you copy all content including the headers `-----BEGING PUBLIC KEY-----`. See example in the image below.
 
-You should also make sure that you give a good name to your secure note with your key.
+You should also make sure that you give a good name to your secure note with the keys.
 This key is likely to be stored for years and
 the name you give the key should make sense to you and to all other team members -
 both current and future - in this project.
@@ -141,7 +144,7 @@ Go to the _Design_ tab in your SurveyCTO server. Click _Start new form_.
 
 <img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
-Then give your new form a name and make sure that the checkbox "_Do you want this form's data to be encrypted?_" is checked. Then click _Next_.
+Then give your new form a name and after turning on _Advanced Settings_. Then make sure that the checkbox "_Do you want this form's data to be encrypted?_" is checked. Click _Next_.
 
 <img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-a1.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
@@ -160,8 +163,8 @@ you have followed our test instructions below.
 ### Encryption method B - Excel sheet form definition
 
 In your Excel file where you are developing your SurveyCTO form,
-go to the settings tab.
-In the settings tab there is a column called `public_key`.
+go to the _settings_ tab.
+In the _settings_ tab there is a column called `public_key`.
 Paste the value of the public key in the cell in the first row of that column.
 In this method it is important that you do **not** include
 the  key header `-----BEGIN PUBLIC KEY-----`
@@ -173,7 +176,7 @@ Go to the _Design_ tab in your SurveyCTO server. Click _Upload form definition_.
 
 <img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
-Upload the form you just added the public key to the settings tab in,
+Upload the form you with the public key included in the settings tab,
 and then follow the instructions as normal.
 SurveyCTO will test that there are no errors in the public key,
 but you should never start collecting data using an encrypted form before
@@ -217,7 +220,7 @@ Then click _Download .csv now_.
 
 Technically you can download encrypted data from your SurveyCTO server using a browser,
 but then you first need to save your private key in a file on your computer.
-And in the workflow we recommend,
+In the workflow we recommend,
 you really want to avoid to ever store the private key in a file on your computer
 after you have saved it in a password manager.
 Instead, we recommend you to only download data using [SurveyCTO Desktop](https://docs.surveycto.com/desktop/)
@@ -227,7 +230,7 @@ without having to save it in a file first.
 In SurveyCTO Desktop you log in to your server,
 and click _Sync_ in the menu to the left.
 Fill in the information as normal,
-but in step 2 you need to paste the key. See image below.
+and in step 2 you need to paste the private key. See image below.
 Go to your password manager and copy your private key.
 Remember to include the header `-----BEGIN RSA PRIVATE KEY-----`
 and the footer `-----END RSA PRIVATE KEY-----`.
