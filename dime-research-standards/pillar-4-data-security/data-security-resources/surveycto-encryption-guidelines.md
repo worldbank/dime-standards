@@ -31,9 +31,9 @@ These guidelines assumes that you:
 For **encryption-at-rest** SurveyCTO uses [asymmetric encryption](https://dimewiki.worldbank.org/wiki/Encryption#Asymmetric_Encryption)
 where there are two keys: one called the public key and the other called the private key.
 
-In SurveyCTO, the public key is used at the point of data collection to encrypt your data as it is entered, 
-and the private key is used at the point of downloading the data to decrypt your data. 
-The server and the data entry teams will have the public key provided to them through the survey software automatically. 
+In SurveyCTO, the public key is used at the point of data collection to encrypt your data as it is entered,
+and the private key is used at the point of downloading the data to decrypt your data.
+The server and the data entry teams will have the public key provided to them through the survey software automatically.
 The public key cannot decrypt the data.
 Each public/private key pair is unique and no other private key can decrypt the data you encrypted with your public key.
 You should never use the same key pair for two different projects,
@@ -54,7 +54,7 @@ Log in to your server, and navigate to the _Design_ tab. Then click _Tools_.
 
 <img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-create-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
-Then click _create a new key_ and then _Start key generator_
+Then click _Create new key_ and then _Start key generator_
 
 <img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-create-2.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
@@ -68,7 +68,7 @@ If you were to enter _name_of_my_project_ then your keys will be generated with 
 
 
 You will store the keys in a password manager,
-and then delete these files on your computer. 
+and then delete these files on your computer.
 Be sure to give the key files a name that you can recogize easily.
 
 <img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-create-3.png" width="75%"><!--- Image is read from master branch or use full URL-->
@@ -96,9 +96,9 @@ is to store the keys in an [encrypted folder](https://github.com/worldbank/dime-
 on your computer,
 but then you still need to store the key to the encrypted folder in a password manager.
 
-Go to lastpass.com, log in to your vault and
+Go to [LastPass](https://www.lastpass.com), log in to your vault and
 click the plus sign in the red circle to create a new item.
-Select _Secure Note_
+When asked what item to create, select _Secure Note_.
 
 <img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-store-1.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
@@ -244,7 +244,7 @@ and you will not be able to read the data.
 
 <img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-sync-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
-## Topic 5 - Testing your setup before
+## Topic 5 - Testing your setup before collecting real data
 
 Testing your encryption and decryption workflow is easy
 but we cannot stress enough how important it is that
