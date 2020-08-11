@@ -31,7 +31,10 @@ These guidelines assumes that you:
 For **encryption-at-rest** SurveyCTO uses [asymmetric encryption](https://dimewiki.worldbank.org/wiki/Encryption#Asymmetric_Encryption)
 where there are two keys: one called the public key and the other called the private key.
 
-In SurveyCTO, the public key is used to encrypt your data and the private key is used to decrypt your data. 
+In SurveyCTO, the public key is used at the point of data collection to encrypt your data as it is entered, 
+and the private key is used at the point of downloading the data to decrypt your data. 
+The server and the data entry teams will have the public key provided to them through the survey software automatically. 
+The public key cannot decrypt the data.
 Each public/private key pair is unique and no other private key can decrypt the data you encrypted with your public key.
 You should never use the same key pair for two different projects,
 but you do not need to create a new key pair for every form within a project.
