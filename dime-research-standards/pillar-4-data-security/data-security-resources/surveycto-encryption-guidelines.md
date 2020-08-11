@@ -1,10 +1,10 @@
 # DIME Analytics - Data Security Guides - SurveyCTO Encryption
 
-[SurveyCTO](https://www.surveycto.com/) is a data collection software and service built on the open source tool ODK (add link).
+[SurveyCTO](https://www.surveycto.com/) is a data collection software and service built on the open source tool [ODK](https://opendatakit.org/).
 Any time you collect data that includes confidential data you must encrypt your data.
 The most common reason that data is confidential is that it include personal identifiers such as names.
-SurveyCTO automatically encrypts your data _in transit_  (link wiki)
-but to properly protect your data you also need to encrypt your data _at rest_ (link wiki).
+SurveyCTO automatically encrypts your data [in transit](https://dimewiki.worldbank.org/wiki/Encryption#Encryption_in_Transit)
+but to properly protect your data you also need to encrypt your data [at rest](https://dimewiki.worldbank.org/wiki/Encryption#Encryption_at_Rest).
 **Encryption-in-transit** can be done properly without any input from the user and that is why this is automatic.
 Proper **encryption-at-rest** is never automatic as the user may be the only one that has access to the decryption key.
 That is why encryption at rest is not automatic and not enabled by default.
@@ -22,13 +22,14 @@ is the easiest way that is not prone to errors.
 These guidelines assumes that you:
 
 1. Have a basic knowledge of SurveyCTO or ODK
-1. Have access to a SurveyCTO server. You can set up a trial here (link)
+1. Have access to a SurveyCTO server. You can set up a trial [here](https://login.surveycto.com/signup/step1.html).
 1. Have SurveyCTO Desktop installed on your computer
-1. Have a password manager that can handle secure notes (most do, here are our guidelines for setting up Last Pass) (add link to guidelines in this repo)
+1. Have a password manager that can handle secure notes ([our guidelines for setting up Last Pass](https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/password-manager-guidelines.md))
 
 ## Topic 1 - Creating and properly store a public/private key pair
 
-SurveyCTO uses asymmetric encryption (link) where there are two keys called the public and the private key.
+SurveyCTO uses [asymmetric encryption](https://dimewiki.worldbank.org/wiki/Encryption#Asymmetric_Encryption)
+where there are two keys called the public and the private key.
 In SurveyCTO the public key is used to encrypt your data and the private key is used to decrypt your data.
 As the names suggests it is very important that you keep your private key secret.
 If you accidentally publish your private key, then your data is no longer securely protected.
@@ -91,7 +92,8 @@ that you are comfortable using it before proceeding with these instructions.
 We will provide instructions for the password manager LastPass,
 but this can be done in other password managers too.
 A secure alternative to saving to storing the keys in a password manager
-is to store the keys in an encrypted folder (link veracrypt) on your computer,
+is to store the keys in an [encrypted folder](https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/veracrypt-guidelines.mdt)
+on your computer,
 but then you still need to store the key to the encrypted folder in a password manager.
 
 Go to lastpass.com, log in to your vault and
@@ -218,7 +220,7 @@ but then you first need to save your private key in a file on your computer.
 And in the workflow we recommend,
 you really want to avoid to ever store the private key in a file on your computer
 after you have saved it in a password manager.
-Instead, we recommend you to only download data using SurveyCTO Desktop (link to desktop)
+Instead, we recommend you to only download data using [SurveyCTO Desktop](https://docs.surveycto.com/desktop/)
 as you can copy your key from your password manager and paste it
 without having to save it in a file first.
 
