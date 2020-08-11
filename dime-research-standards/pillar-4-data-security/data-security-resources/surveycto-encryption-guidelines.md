@@ -66,10 +66,16 @@ If you were to enter _name_of_my_project_ then your keys will be generated with 
 * `name_of_my_project_Public.pem`
 * `name_of_my_project_PRIVATEDONOTSHARE.pem`
 
-
+There is nothing special with a `.pem` file,
+it is just a file with a long random string of text that is your key.
+A `.pem` files can be open with any raw text editor.
+For example, Notepad (Windows), TextEdit (Mac),
+any code editor like Atom, Notepad++, Stata's do-file editor etc.
+You might have to open the raw text editor first,
+and open the `.pem` file from within the editor.
 You will store the keys in a password manager,
 and then delete these files on your computer.
-Be sure to give the key files a name that you can recogize easily.
+Be sure to give the key files a name that you can recognize easily.
 
 <img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-create-3.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
@@ -102,8 +108,12 @@ When asked what item to create, select _Secure Note_.
 
 <img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-store-1.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
-Then copy all the content of both keys you created and downloaded from your SurveyCTO server.
-Make sure that you copy all content including the headers `-----BEGING PUBLIC KEY-----`. See example in the image below.
+Then open up the two `.pem` key files you created and downloaded from your SurveyCTO server.
+Remember that you can open them in a raw text editor (Notepad or TextEdit),
+or in a code editor (Atom, Notepad++, the do-file editor, RStudio etc.).
+Copy all the content of both key files into the secure note.
+Make sure that you copy all content including the headers `-----BEGING PUBLIC KEY-----`.
+See example in the image below.
 
 You should also make sure that you give a good name to your secure note with the keys.
 This key is likely to be stored for years and
