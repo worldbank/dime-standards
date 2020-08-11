@@ -24,7 +24,7 @@ These guidelines assumes that you:
 1. Have a basic knowledge of SurveyCTO or ODK
 1. Have access to a SurveyCTO server. You can set up a trial [here](https://login.surveycto.com/signup/step1.html).
 1. Have SurveyCTO Desktop installed on your computer
-1. Have a password manager that can handle secure notes ([our guidelines for setting up LastPass](https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/password-manager-guidelines.md))
+1. Have a password manager that can handle secure notes ([our guidelines for setting up LastPass](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/password-manager-guidelines.md))
 
 ## Topic 1 - Creating and properly storing a public/private key pair
 
@@ -52,11 +52,11 @@ There is no security risk of accidentally publishing your public key.
 You can create the public/private key pair on your SurveyCTO server.
 Log in to your server, and navigate to the _Design_ tab. Then click _Tools_.
 
-<img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-create-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-create-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 Then click _Create new key_ and then _Start key generator_
 
-<img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-create-2.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-create-2.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 You then download the keys in two files (one file for each key).
 The name you enter in the next screen has no cryptographic function.
@@ -77,7 +77,7 @@ You will store the keys in a password manager,
 and then delete these files on your computer.
 Be sure to give the key files a name that you can recognize easily.
 
-<img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-create-3.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-create-3.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 When you download the keys,
 make sure that they are not downloaded to a folder that is synced to the cloud,
@@ -98,7 +98,7 @@ that you are comfortable using it before proceeding with these instructions.
 We will provide instructions for the password manager LastPass,
 but this can be done in other password managers too.
 A secure alternative to saving to storing the keys in a password manager
-is to store the keys in an [encrypted folder](https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/veracrypt-guidelines.mdt)
+is to store the keys in an [encrypted folder](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/veracrypt-guidelines.mdt)
 on your computer,
 but then you still need to store the key to the encrypted folder in a password manager.
 
@@ -106,7 +106,7 @@ Go to [LastPass](https://www.lastpass.com), log in to your vault and
 click the plus sign in the red circle to create a new item.
 When asked what item to create, select _Secure Note_.
 
-<img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-store-1.png" width="50%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-store-1.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 Then open up the two `.pem` key files you created and downloaded from your SurveyCTO server.
 Remember that you can open them in a raw text editor (Notepad or TextEdit),
@@ -123,7 +123,7 @@ both current and future - in this project.
 If you are using LastPass for many keys and passwords,
 then it is good to organize all your secure items in folders.
 
-<img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-store-2.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-store-2.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 ### Step 1.3 - Delete the key files from your computers hard drive
 
@@ -149,11 +149,11 @@ If you are developing your form in Excel, then you should use method B.
 
 Go to the _Design_ tab in your SurveyCTO server. Click _Start new form_.
 
-<img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 Then give your new form a name and after turning on _Advanced Settings_. Then make sure that the checkbox "_Do you want this form's data to be encrypted?_" is checked. Click _Next_.
 
-<img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-a1.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-a1.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 Then select "_Paste public key text:_",
 and then go to your secure note in your password manager and copy the public key.
@@ -165,7 +165,7 @@ SurveyCTO will test that there are no errors in the public key,
 but you should never start collecting data using an encrypted form before
 you have followed our test instructions below.
 
-<img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-a2.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-a2.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 ### Encryption method B - Excel sheet form definition
 
@@ -177,11 +177,11 @@ In this method it is important that you do **not** include
 the  key header `-----BEGIN PUBLIC KEY-----`
 and the key footer `-----END PUBLIC KEY-----`. See example below.
 
-<img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-b1.png" width="25%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-b1.png" width="25%"><!--- Image is read from master branch or use full URL-->
 
 Go to the _Design_ tab in your SurveyCTO server. Click _Upload form definition_.
 
-<img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-encrypt-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 Upload the form you with the public key included in the settings tab,
 and then follow the instructions as normal.
@@ -221,7 +221,7 @@ but in the "_Fields to include_" make sure that the checkbox
 "_Publishable fields only (if you don't have the private key)_" is checked.
 Then click _Download .csv now_.
 
-<img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-publish-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-publish-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 ## Topic 4 - Using your private key to decrypt your data in SurveyCTO
 
@@ -252,7 +252,7 @@ it will only test that when you are actually downloading data.
 If you have pasted the incorrect key, then you will get an error
 and you will not be able to read the data.
 
-<img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-sync-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-sync-1.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 ## Topic 5 - Testing your setup before collecting real data
 
@@ -268,7 +268,7 @@ and the form named _unencrypted_form_ has an open padlock.
 IF the padlock is closed then you know that all fields that
 are **not** listed as publishable will be encrypted during data collection.
 
-<img src="https://github.com/worldbank/dime-standards/blob/scto-guidelines/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-test-1.png" width="100%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/scto-test-1.png" width="100%"><!--- Image is read from master branch or use full URL-->
 
 However, there is a second thing you really want to test,
 and that is to make sure you are able to decrypt the encrypted data.
