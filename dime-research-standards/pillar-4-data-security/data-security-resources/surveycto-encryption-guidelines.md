@@ -44,11 +44,7 @@ We think that a good balance is to use one key pair for each project, and this p
 As the name suggests, it is essential to keep your private key secret. They key provides access to your encrypted data.
 If you accidentally publish your private key or store it in an insecure location, then your data is no longer securely protected.
 If you lose access to your private key, then there is no way to decrypt your data -- neither the software nor the service provider can restore it.
-
 There is no security risk of accidentally publishing your public key.
-If you were to lose your public key, then you will not be able to encrypt any more data
-(until you create a new public/private key pair)
-but as long as you have the private key you will still be able to decrypt data encrypted with the lost public key.
 
 
 ### Step 1.1 - Creating a public/private key pair
