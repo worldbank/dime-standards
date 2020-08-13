@@ -10,7 +10,7 @@ We would like to invite you to participate in this study.
 
 ### Procedures
 If you agree to participate in this study, we will ask you questions related to **[LIST OF CONTENTS/MODULES]**.
-It should last about **[SURVEY DURATION]**.
+The interview should last about **[SURVEY DURATION]**.
 Your participation is completely voluntary.
 We ask you to be as honest and open as possible.
 
