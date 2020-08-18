@@ -1,4 +1,4 @@
-# DIME RA/FC Non-Disclosure MOU
+# DIME RA/FC Non-Disclosure Agreement
 <br>
 
 I, ________________________________ [print name of Research Assistant/ Field Coordinator], have agreed to maintain full confidentiality when contributing to research projects at DIME, (DECIE, The World Bank Group). 
