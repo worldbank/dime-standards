@@ -4,11 +4,29 @@ These are boiler plate templates for written consent that can be used while inte
 Many surveys require additional/different components in the consent based on the type of respondent (for example, minors as respondent)
 or if the survey includes certain components (such as audio-taping).
 
-This folder includes two consent templates:
+This folder includes the following consent templates:
 
 1. Written consent – This is a printable version of the contains all details including contact person in case of any issues that
 can be shared with the respondent for future use.
-2. Oral consent – This is the bare minimum from the written consent that should be read out to a respondent before starting a survey.
+2. Written consent w COVID-19 risks - This is the same as the written consent including risks for COVID-19 transmission.
+3. Oral consent – This is the bare minimum from the written consent that should be read out to a respondent before starting a survey.
+4. Oral consent w COVID-19 risks - This is the same as the oral consent including risks for COVID-19 transmission.
+5. SMS consent - This is a succinct consent to be obtained via SMS before starting a survey.
+
+The table below indicates the different types of consents and in which survey method they can be used. For each consent format, 
+the preferred for survey mode is in bold. The team can pick appropriate consent format based on the requirements in the field.
+
+|    Consent type    |      Survey Mode       |
+| ------------------ | ---------------------- |
+| Written consent    | **CAPI**                   |
+| Electronic consent | CAPI, CATI, **CAWI**, SMS  |
+| Oral consent       | CAPI, **CATI**             |
+| SMS consent        | CAPI, CATI, CAWI, **SMS**  |
+
+Electronic consent is the same as written consent but collected via an electronic format instead of on paper. 
+
+Note that, in case of electronic consent and SMS consent, it should be sent out to respondents before survey starts (ideally the day before)
+
 
 Most IRBs require that the entire written consent is shared with the participants and their signature is taken on another copy
 retained by the research team. 

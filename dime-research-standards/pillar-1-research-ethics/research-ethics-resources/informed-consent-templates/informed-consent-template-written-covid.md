@@ -26,6 +26,17 @@ If the subject will not benefit from participation, clearly state this fact.]**
 
 **[Describe any reasonable foreseeable risks, discomforts, inconveniences, and how these will be managed]**
 
+As you are probably aware, the world has experienced an outbreak of a novel disease in 2020, called the COVID-19. It is highly contagious, transmitted mostly through close contact with an infected person in an indoor space. Symptoms vary from one person to the other, but often include headache, fever, dry cough. It can be particularly dangerous for vulnerable populations such as older people (60+), pregnant women or anyone with serious chronic conditions.
+
+While I and my team members have no symptoms and are not aware of any close contact with a COVID+ person, there is a risk of contamination or spread of COVID-19. We are minimizing the risk of this spread by following the most effective known mitigation strategies, as recommended by the **[Country]** health ministry and the World Health Organization:
+•	maintaining a distance of 2m/6ft
+•	wearing masks and gloves throughout
+•	providing you with a mask
+•	remaining outside  
+•	<any other protocols>
+We are also willing to follow any extra measure that would make you feel more comfortable when taking the survey.
+If in the next couple of weeks, we realize that we might have put you at risk (discovering for instance that a member of our team contracted the COVID-19 or has been in contact with a sick person), we will immediately contact you and refer you to the closest health facility to get tested.
+
 
 ### Alternatives to Participation (remove this section if no alternatives exist)
 
