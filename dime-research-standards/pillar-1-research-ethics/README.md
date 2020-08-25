@@ -11,7 +11,6 @@
 ## Human Subjects Research Certification
 **All research team members that handle personally identifiable information must have up to date Human Subjects Research Certification.**
 - DIME-affiliated research team members may obtain the certification through DIME's [PHRP](https://phrptraining.com/) subscription. To do so, please email DIME Analytics.
-- Certificates for all team members must be shared through [this link](https://survey.wb.surveycto.com/collect/hst?caseid=) for record-keeping.
 
 ## Confidentiality
 Researchers must ensure confidentiality, privacy, and anonymity of study participants. Research team members are personally liable for any disclosure of confidential data that may occur due to their actions.
