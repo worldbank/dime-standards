@@ -85,6 +85,7 @@ In this case, the data collection software is likely to have implemented everyth
 so the only thing you need to do is keep track of the two keys, together called a public/private key pair,
 using a [password manager](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/password-manager-guidelines.md).
 The public key (which encrypts the data) can be shared publicly but the private key (which decrypts the data) cannot.
+See [DIME Analytics Guide to Encryption in SurveyCTO](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/surveycto-encryption-guidelines.md).
 
 #### De-identification
 

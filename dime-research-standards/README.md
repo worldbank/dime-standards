@@ -33,7 +33,9 @@ For implementation resources, see the [Data Security Guidelines](https://github.
   in transit (sent over the internet) and at rest (stored on a web server).
     - Encryption at rest must be implemented so that no person not listed on the IRB ever has access to the decryption key or the unencrypted data. This includes server hosts or administrators, sharing or syncing service providers, internet providers, and staff not listed on the IRB at any institution.
   - All identified data must be stored only in securely encrypted locations,
-  and must always be encrypted when shared, even if shared only within the project team (link to DIME Encryption Protocol)
+  and must always be encrypted when shared, even if shared only within the project team -
+  [Folder Encryption](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/veracrypt-guidelines.md) -
+  [SurveyCTO Encryption](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/surveycto-encryption-guidelines.md)
   - World Bank PIs should back up raw data in a [WB OneDrive folder](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/onedrive-backup-guidelines.md) that is not shared with anyone, and is not synced to any computer.
 - The project team should create a [de-identified](https://dimewiki.worldbank.org/wiki/De-identification) copy of the
 primary data before starting data cleaning and analysis,
