@@ -46,7 +46,7 @@ This is typically done differently depending on whether it is a one-way transfer
 or two-way transfer (data sharing):
   * _One-way transfer_: Most data collection services, including SurveyCTO and Survey Solutions,
   have implemented [asymmetric encryption](https://dimewiki.worldbank.org/Encryption#Asymmetric_Encryption)
-  using [private/public key pairs](https://dimewiki.worldbank.org/Encryption#Public.2FPrivate_Key_Pair).
+  using private/public key pairs.
   This means data encryption is handled automatically once enabled,
   but decryption still requires you to manually decrypt the data using the decryption key.
   The public key is stored on the server and on the tablets,
