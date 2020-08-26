@@ -6,8 +6,7 @@ or if the survey includes certain components (such as audio-taping).
 
 This folder includes the following consent templates:
 
-1. Written consent – This is a printable version of the contains all details including contact person in case of any issues that
-can be shared with the respondent for future use.
+1. Written consent – This is a printable version of the consent form that contains all details including contact person in case of future issues.
 2. Written consent w COVID-19 risks - This is the same as the written consent including risks for COVID-19 transmission.
 3. Oral consent – This is the bare minimum from the written consent that should be read out to a respondent before starting a survey.
 4. Oral consent w COVID-19 risks - This is the same as the oral consent including risks for COVID-19 transmission.
