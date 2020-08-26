@@ -77,7 +77,7 @@ and therefore there is no risk of data loss due to lost decryption keys.
 
 Any folder or file on your computer containing confidential data must be encrypted,
 regardless of whether it is shared or not. See the DIME Wiki entry for
-[encrypted folders](https://dimewiki.worldbank.org/Data_Security#Locally_storing_identified_PII_data) for more details.
+[data security](https://dimewiki.worldbank.org/Data_Security#Locally_storing_identified_PII_data) for more details.
 * You must always keep confidential data encrypted and decrypt it each time you use it,
 regardless of how frequently you need to access it.
 * If your analysis does not rely on the confidential part of the data,
