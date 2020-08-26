@@ -68,10 +68,12 @@ and needs to be encrypted as it is saved to the local computer.
 
 ## Storing confidential data
 
-PIs should save a copy of the unaltered raw data in a [WB OneDrive folder as backup](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/onedrive-backup-guidelines.md).
-* This folder should not be synced to any computer, and it should not be shared with anyone, so it remains completely under individual control.
+The head reasearhcers, or PIs, should save a copy of the unaltered raw data in a [WB OneDrive folder as backup](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/onedrive-backup-guidelines.md).
+
+* The backup folder should not be synced to any computer, and it should not be shared with anyone, so it remains completely under individual control.
+* The backup folder should not be used for day-to-day access. It should only be accessed if you for some reason needs to restore the copy you use day-to-day.
 * If there are multiple PIs on a project,
-each of them can save a backup of the data _separately_ for added layers of security.
+each of them can save a their own backup of the data _separately_ for added layers of security.
 * The enterprise-grade WB OneDrive is automatically encrypted, so no extra layer of manual encryption is required,
 and therefore there is no risk of data loss due to lost decryption keys.
 
