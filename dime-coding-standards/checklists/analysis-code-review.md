@@ -1,4 +1,4 @@
-# Data cleaning code review checklist
+# Data analysis code review checklist
 
 **Data source/survey round:**
 
