@@ -10,4 +10,5 @@ DIME code should adopt the following guides:
 
 ## Code review
 
-Department-wide peer code review rounds are held every quarter and all DIME and DIME-affiliated projects can sign up [here](https://survey.wb.surveycto.com/collect/code_review_sign_up?caseid=).
+- Department-wide peer code review rounds are held every quarter and all DIME and DIME-affiliated projects can sign up [here](https://survey.wb.surveycto.com/collect/code_review_sign_up?caseid=).
+- Checklists to prepare and review code for different tasks are available [here](https://github.com/worldbank/dime-standards/tree/master/dime-coding-standards/checklists).
