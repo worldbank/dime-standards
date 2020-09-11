@@ -36,7 +36,7 @@ For implementation resources, see the [Data Security Guidelines](https://github.
 ##  Pillar 5 - Data Publication
 - Data must be de-identified prior to publication, DIME Analytics can assist with assessing the risk of statistical disclosure.
 - All DIME publications must include a replication package, including a citation or reference to the data in the [World Bank Microdata Catalog](https://dimewiki.worldbank.org/wiki/Microdata_Catalog) and a GitHub repository containing the code required for replication of the paper.
-- Data must be deposited into the World Bank's Development Data Hub no later than six months after it is acquired, with the
+- Data must be deposited into the World Bank's [Development Data Hub](https://datacatalog.worldbank.org/) no later than six months after it is acquired, with the
 provision to also later deposit any revisions or updates, as per the World Bank Procedure on Development Dataset Acquisition,
 Archiving and Dissemination
 
