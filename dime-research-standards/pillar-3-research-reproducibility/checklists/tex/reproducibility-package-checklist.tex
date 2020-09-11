@@ -6,15 +6,23 @@
 
 \titleBox{
 	\textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Reproducibility Package Checklist}} \\
-	\Large\textbf{{v1.1}}}
+	\Large\textbf{{v1.2}}}
 }
 
 	\section*{Required Content and Practices}
 
-		The reproducibility package must be shared as a .zip file, GitHub link or shared folder containing the items listed below.
-    All file paths in the code \textbf{must} use only forward slashes, i.e. \texttt{C:/users/...}
+	The reproducibility package must be shared as a .zip file, GitHub link or shared folder containing the items listed below.
+	
+	\subsection{1. \, Files}
+	
+	\begin{itemize}
+		\setlength\itemsep{-0.1em}
+		\item[] \dimeCheckBox{A filled version of this checklist.}
+		\item[] \dimeCheckBox{A README file describing the folders and datasets included in the package, and any general or ad-hoc instructions about the directory structure or for the code to run.}
+		\item[] \dimeCheckBox{A PDF version of the research output being reviewed (paper, brief, report).}
+	\end{itemize}
 
-	\subsection{1. \, Code}
+	\subsection{2. \, Code}
 
 	\begin{itemize}
 		\setlength\itemsep{-0.1em}
@@ -42,6 +50,7 @@
 		\item[] \dimeCheckBox{In Stata, the master do file sets \textbf{critical configurations} such as \texttt{version}, \texttt{matsize}, and \texttt{varabbrev} (either sets directly or through a wrapper command such as \texttt{ieboilstart} from \texttt{ietoolkit}).}
 
 		\item[] \dimeCheckBox{In R, all necessary packages to run the code are loaded in the master script.}
+		\item[] \dimeCheckBox{All file paths in the code use only forward slashes, i.e. \texttt{C:/users/...}.}
 
 		\vspace{0.3em}
 		\item[] Select only one of the following two options.
@@ -54,7 +63,7 @@
 		\end{itemize}
 	\end{itemize}
 
-	\subsection{2. \, Data}
+	\subsection{3. \, Data}
 
 	The reproducibility package includes:
 	\begin{itemize}
@@ -73,7 +82,7 @@
 	\end{itemize}
 
 
-	\subsection{3. \, Outputs}
+	\subsection{4. \, Outputs}
 
 	The reproducibility package includes:
 
