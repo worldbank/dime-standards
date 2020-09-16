@@ -11,7 +11,7 @@ This repository is maintained by the
 There are two components to this repository:
 
 * **[DIME Research Standards](https://github.com/worldbank/dime-standards/tree/restruct-README#dime-research-standards)**
-* **[DIME Coding Standards](https://github.com/worldbank/dime-standards/tree/restruct-README#dime-coding-standards)**.
+* **[DIME Coding Standards](https://github.com/worldbank/dime-standards/tree/restruct-README#dime-coding-standards)**
 
 ## DIME Research Standards
 
