@@ -1,6 +1,17 @@
 # DIME Standards
 
-This repository includes [DIME](https://www.worldbank.org/en/research/dime)'s commitments to high-quality research. In the spirit of transparency, we are developing and version-controlling DIME's standards on GitHub. This repository is maintained by the [DIME Analytics team](https://www.worldbank.org/en/research/dime/data-and-analytics). There are two components to the repository: research standards, and coding standards.
+This repository includes [DIME](https://www.worldbank.org/en/research/dime)'s
+commitments to high-quality research.
+In the spirit of transparency,
+we are developing and version-controlling
+DIME's standards on GitHub.
+This repository is maintained by the
+[DIME Analytics team](https://www.worldbank.org/en/research/dime/data-and-analytics).
+
+There are two components to this repository:
+
+* **[DIME Research Standards](https://github.com/worldbank/dime-standards/tree/restruct-README#dime-research-standards)**
+* **[DIME Coding Standards](https://github.com/worldbank/dime-standards/tree/restruct-README#dime-coding-standards)**.
 
 ## DIME Research Standards
 
