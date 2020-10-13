@@ -53,7 +53,11 @@ Before you can encrypt any files on your computer you must use VeraCrypt to crea
 
     <img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/vc_install_6.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
-1. One of the restrictions of VeraCrypt is that you need to decide what the maximum total size of the contents of the secure folder can be, before you put anything in it. Do not over-estimate too much, as the secure folder will always take up this much disk space, even when it is empty. If you realize in the future that the volume size was too small, then you will create a new, larger volume and move all the files there. You can also create another volume for different files. In this example, choose 250 megabytes and then click `Next`.
+1. Then you should select which encryption algorithm you want to use. Unless you know what you are doing and have a very specific requirement, always select AES (Advanced Encryption Standard).
+
+    <img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/vc_install_6-a.png" width="50%"><!--- Image is read from master branch or use full URL-->
+
+1. One of the restrictions of VeraCrypt is that you need to decide what the maximum total size of the contents of the secure folder can be, before you put anything in it. Do not over-estimate too much, as the secure folder will always take up this much disk space, even when it is empty. If you realize in the future that the volume size was too small, then you will create a new, larger volume and move all the files there. You can also create another volume for different files. In this example, choose 250 MB and then click `Next`.
 
     <img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/vc_install_7.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
