@@ -125,18 +125,18 @@ In this part we will learn how to access the files in the secure folder. This is
 
 ## Practice exercise
 
-This practice exercise can be done alone, but is better done with a second person. This exercise covers creating a secure folder with content, sharing it with someone, and securely providing them access to the content of the secure folder. The intention is that you both follow all steps so two folders are created and you share them with each other. If you do not have anyone you can do this exercise with, then you can simulate collaboration by sharing the encryted folder to another computer where you open it. Or you can just wait until another day and try to access the folder after you've restarted your computer.
+This practice exercise can be done alone, but is better done with a second person. This exercise covers creating a secure folder with content, sharing it with someone, and securely providing them access to the content of the secure folder. The intention is that you both follow all steps so two folders are created and you share them with each other. If you do not have anyone you can do this exercise with, then you can simulate collaboration by sharing the encrypted folder to another computer where you open it. Or you can just wait until another day and try to access the folder after you've restarted your computer.
 
 1. Create a Dropbox/Box/OneDrive folder that you share with the other person
 
-1. Create one secure folder _each_ in this shared folder. Use a simple password this time you do not mind sharing with the person you paired up with, but do not share the password yet.
+1. Create one secure folder _each_ in this shared folder. Do not share the password with the person you paired up with yet. If both you and the person you paired up with have the same password manager, you should create long and strong password using that password manager and save the passwords there. If you do not have the same password manager, it is ok in this exercise to use a simple password. You should always use a password manager when you later securely share real data with your project team.
 
-1. Look at your own and each other's file on the shared drive. *Important:* two separate people should not make changes to the contents of the same volume at the same time if it is stored on a sync service like Dropbox.
+1. Look at your own and each other's file on the shared drive. *Important:* two separate people should not make changes to the contents of the same volume at the same time if it is stored on a sync service like Dropbox. So do not try to mount the other persons file until later in this exercise.
 
-1. Mount the secure folder in your computer and place some files in your secure folder in the shared Dropbox/Box/OneDrive folder.
+1. Mount your own secure folder in your computer and place some files in your secure folder in the shared Dropbox/Box/OneDrive folder.
 
 1. While you both have your own secure folder mounted, does the file look different when you look at it in the shared folder? Can you tell if files were added or not? Can you tell if someone else has the file mounted?
 
-1. Now share the password with your partner. How do you securely share a password?
+1. Dismount your own drive and wait for the file to sync. Remember that it is bad practice to have two or more people have the secure folder mounted at the same time. Now share the password with the person you paired up with. How do you securely share a password?
 
-1. Access your partner's encrypted file by mounting it on VeraCrypt using the password your partner shared with you.
+1. Access your partner's encrypted file by mounting it on VeraCrypt using the password your partner shared with you. Can you see the files? Can you make edits to them?
