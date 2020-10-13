@@ -8,10 +8,10 @@ VeraCrypt is an open source software that is free of charge. While untested open
 
 These guidelines cover the following steps:
 
-1. Download and install VeraCrypt
-1. Set up a secure folder using VeraCrypt
-1. Encrypt files using the secure folder
-1. Access the encrypted files in the secure folder
+1. [Download and install VeraCrypt](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/veracrypt-guidelines.md#part-1-download-and-install-veracrypt)
+1. [Set up a secure folder using VeraCrypt](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/veracrypt-guidelines.md#part-2-set-up-a-secure-folder-in-veracrypt)
+1. [Encrypt files using the secure folder](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/veracrypt-guidelines.md#part-3-add-files-to-your-secure-folder)
+1. [Access the encrypted files in the secure folder](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/veracrypt-guidelines.md#part-4-access-encrypted-files)
 
 ### Part 1: Download and install VeraCrypt
 
