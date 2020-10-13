@@ -1,8 +1,8 @@
 # DIME Analytics - Data Security Guides - VeraCrypt
 
-[VeraCrypt](https://www.veracrypt.fr/) is a software used to implement [symmetric encryption](https://dimewiki.worldbank.org/wiki/Encryption#Symmetric_Encryption) in a way where you are in full control of who the decryption key is shared with.
+[VeraCrypt](https://www.veracrypt.fr/) is a software used to implement [symmetric encryption](https://dimewiki.worldbank.org/wiki/Encryption#Symmetric_Encryption) in a way where you are in full control of who has access to the decryption key.
 
-VeraCrypt is an open source software that is free of charge. While untested open source software may be risky to use, VeraCrypt is well-established open source software that has been reviewed by a large numbers of cybersecurity experts who use it themselves. It is by far your safest option.
+VeraCrypt is an open source software that is free of charge. While untested open source software may be risky to use, VeraCrypt is well-established open source software that has been reviewed by a large numbers of cybersecurity experts who use it themselves. It is widely accepted as your safest option.
 
 ## Guidelines for each part of a VeraCrypt workflow
 
