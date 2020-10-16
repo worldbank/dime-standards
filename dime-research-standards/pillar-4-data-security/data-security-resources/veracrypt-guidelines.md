@@ -131,7 +131,7 @@ you make an edit to the content of your encrypted folder.
 And this leads DropBox to not sync the new version of the folder,
 as DropBox does not understand that there is a new version to sync.
 
-This is what happens.
+**This is what happens.**
 To make DropBox more efficient,
 it does not look on each and every byte
 of your files all the time to see if a file has changed.
@@ -139,11 +139,11 @@ That would take too much time and computational power
 and DropBox would slow down your computer.
 Instead it first looks at the time each file was last edited,
 and checks if there are more recent files than the last synced file.
-If DropBox notis that the last edit time is updated,
+If DropBox notices that the last edit time has changed,
 then it checks which bytes have been updated and sync those bytes.
 However, DropBox cannot see the content of your encrypted folder,
-it only sees the one file created in VeraCrypt.
-VeraCrypt is all about privacy
+it only sees the one file created by VeraCrypt.
+VeraCrypt, on the other hand, is all about privacy
 and the default setting is therefore
 to not reveal the last time any of
 the content of your folder was edited unless you decrypt the content.
@@ -152,7 +152,7 @@ won't even know which is the most recent file you worked with.
 However, this default setting makes collaboration
 on encrypted folders over DropBox impossible.
 
-This is how you solve this.
+**This is how you solve this.**
 To change this default setting, open VeraCrypt,
 in the top menu go to `Settings` -> `Preferences` and
 then untick the option
