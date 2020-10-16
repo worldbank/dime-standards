@@ -152,7 +152,13 @@ won't even know which is the most recent file you worked with.
 However, this default setting makes collaboration
 on encrypted folders over DropBox impossible.
 
-This is how you solve this. To change this default setting, open VeraCrypt, in the top menu go to `Settings` -> `Preferences` and then untick the option "_Preserve modification timestamp on file containers_". See image below:
+This is how you solve this.
+To change this default setting, open VeraCrypt,
+in the top menu go to `Settings` -> `Preferences` and
+then untick the option
+"_Preserve modification timestamp on file containers_".
+You need to restart VeraCrypt for the change to take effect.
+See image below:
 
   <img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/vc_dropbox_setting.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
