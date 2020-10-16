@@ -123,39 +123,6 @@ In this part we will learn how to access the files in the secure folder. This is
 
 1. Once you are done working with the file containing confidential data that you keep in your secure folder, it is best practice to unmount it immediately in VeraCrypt. If you forget, the file will be unencrypted and accessible from anyone with access to your computer until you restart your computer.
 
-## Note for sharing VeraCrypt folder on DropBox
-
-VeraCrypt keeps the content in your encrypted folder very secure.
-So secure that DropBox might have difficulties recognizing when
-you make an edit to the content of your encrypted folder.
-And this leads DropBox to not sync the new version of the folder,
-as DropBox does not understand that there is a new version to sync.
-
-This is what happens.
-To make DropBox more efficient,
-it does not look on each and every byte
-of your files all the time to see if a file has changed.
-That would take too much time and computational power
-and DropBox would slow down your computer.
-Instead it first looks at the time each file was last edited,
-and check if there are more recent files than the last synced file.
-If DropBox notis that the last edit time is updated,
-then it checks which bytes have been updated and sync those bytes.
-However, DropBox cannot see the content of your encrypted folder,
-it only sees the one file created in VeraCrypt.
-VeraCrypt is all about privacy
-and the default setting is therefore
-to not reveal the last time any of
-the content of your folder was edited unless you decrypt the content.
-This way a hacker breaking in to your system
-won't even know which is the most recent file you worked with.
-However, this default setting makes collaboration
-on encrypted folders over DropBox impossible.
-
-This is how you solve this. To change this default setting, open VeraCrypt, in the top menu go to `Settings` -> `Preferences` and then untick the option "_Preserve modification timestamp on file containers_". See image below:
-
-  <img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/vc_dropbox_setting.png" width="50%"><!--- Image is read from master branch or use full URL-->
-
 ## Practice exercise
 
 This practice exercise can be done alone, but is better done with a second person. This exercise covers creating a secure folder with content, sharing it with someone, and securely providing them access to the content of the secure folder. The intention is that you both follow all steps so two folders are created and you share them with each other. If you do not have anyone you can do this exercise with, then you can simulate collaboration by sharing the encrypted folder to another computer where you open it. Or you can just wait until another day and try to access the folder after you've restarted your computer.
