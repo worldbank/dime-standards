@@ -138,7 +138,7 @@ of your files all the time to see if a file has changed.
 That would take too much time and computational power
 and DropBox would slow down your computer.
 Instead it first looks at the time each file was last edited,
-and check if there are more recent files than the last synced file.
+and checks if there are more recent files than the last synced file.
 If DropBox notis that the last edit time is updated,
 then it checks which bytes have been updated and sync those bytes.
 However, DropBox cannot see the content of your encrypted folder,
