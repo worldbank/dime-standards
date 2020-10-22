@@ -21,12 +21,12 @@ There are two components to this repository:
 - DIME staff must ensure confidentiality, privacy, and anonymity of study participants;
 study participants must have the opportunity to provide [informed consent](https://github.com/worldbank/dime-standards/tree/master/dime-research-standards/pillar-1-research-ethics/research-ethics-resources/informed-consent-templates), and revoke that consent at any time.
 
-For details and implementation resources, see the [Research Ethics Guidelines](https://github.com/worl/dime-standards/blob/master/DIME-Research-Standards/pillar-1-research-ethics)
+For details and implementation resources, see the [Research Ethics Guidelines](https://github.com/worldbank/dime-standards/tree/master/dime-research-standards/pillar-1-research-ethics)
 
 ### Pillar 2 - Research Transparency
 - All DIME projects must be registered prior to receiving implementation funding.
 
-For implementation resources, see the [Research Transparency Guidelines](https://github.com/worldbank/dime-standards/blob/master/DIME-Research-Standards/pillar-2-research-transparency)
+For implementation resources, see the [Research Transparency Guidelines](https://github.com/worldbank/dime-standards/tree/master/dime-research-standards/pillar-2-research-transparency)
 
 ###  Pillar 3 - Research Reproducibility
 - All DIME projects will use GitHub to document data work.
@@ -36,7 +36,7 @@ scripts that are needed for the project, in order.
 - *Computational Reproducibility* must be verified by DIME Analytics prior to publication for all DIME Working Papers
 and academic publications.
 
-For implementation resources, see the [Research Reproducibility Guidelines](https://github.com/worldbank/dime-standards/blob/master/DIME-Research-Standards/pillar-3-research-reproducibility)
+For implementation resources, see the [Research Reproducibility Guidelines](https://github.com/worldbank/dime-standards/tree/master/dime-research-standards/pillar-3-research-reproducibility)
 
 ###  Pillar 4 - Data Security
 - All personally-identifiable data must be stored and transferred securely, including in communication with field staff. 
@@ -55,7 +55,7 @@ For implementation resources, see the [Data Security Guidelines](https://github.
 provision to also later deposit any revisions or updates, as per the World Bank Procedure on Development Dataset Acquisition,
 Archiving and Dissemination
 
-For implementation resources, see the [Data Publication Guidelines](https://github.com/worldbank/dime-standards/blob/master/DIME-Research-Standards/pillar-5-data-publication)
+For implementation resources, see the [Data Publication Guidelines](https://github.com/worldbank/dime-standards/tree/master/dime-research-standards/pillar-5-data-publication)
 
 
 ## DIME Coding Standards
