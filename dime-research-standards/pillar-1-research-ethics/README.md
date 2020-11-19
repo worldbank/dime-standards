@@ -9,13 +9,14 @@
 - Impact evaluations that do not involve human subjects or personally-identifying information, such as evaluations relying purely on de-identified secondary data, may be exempted from this requirement.
 - The table below summarizes the international IRB and local ethics approvals required for each case
 
-|     Type of project   |        International IRB     | Local IRB |
+|     Type of project   |        International IRB     | Local IRB* |
 | ------------- |:-------------:| :-----:|
-| World Bank financed projects with external researchers involved    | Institutional IRB |  Required based on country guidelines|
+| World Bank financed projects with external researchers involved    | IRB affiliated to external researchers |  Required based on country guidelines|
 |  World Bank financed projects without external researchers involved     |    Private IRB   |  Required based on country guidelines  |
-| Client financed projects with external researchers involved  |     Institutional IRB |  Required based on country and client guidelines   |
-| Client financed projects without external researchers involved  |     Private IRB |   Required based on country and client guidelines  |
+| Client financed projects with external researchers involved  |     IRB affiliated to external researchers |   Defined by country and client guidelines   |
+| Client financed projects without external researchers involved  |     Private IRB |   Defined by country and client guidelines  |
 
+_ * Local/In-country IRB information varies by a lot between countries and it is essential to try and find this information through local sources in most cases.Please reach out to DIME Analytics who can try to support obtaining information/contacts in the country. _
 
 ## Human Subjects Research Certification
 **All research team members that handle personally identifiable information must have up to date Human Subjects Research Certification.**
