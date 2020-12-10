@@ -29,8 +29,8 @@ At a minimum, this means that code must be submitted to
 a **computational reproducibility check** organized by DIME Analytics
 before publication as a working paper or submission to a journal.
 This reproducibility check is initiated by contacting
-DIME Analytics by email and submitting the [Reproducibility Package Checklist](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/checklists/reproducibility-package-checklist.pdf).
-The team will review the submitted materials and provide [Reproducibility Check Results](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/checklists/reproducibility-check-result.pdf) in a timely fashion.
+DIME Analytics by email and submitting the [Reproducibility Package Checklist](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-3-research-reproducibility/checklists/Reproducbility%20package%20submisison%20checklist.pdf).
+The team will review the submitted materials and provide [Reproducibility Check Results](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-3-research-reproducibility/checklists/Reproducibility%20check%20result%20template.pdf) in a timely fashion.
 
 In addition to these formal requirements for reproducibility review,
 DIME projects should adhere to several additional best practices
