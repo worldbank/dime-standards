@@ -9,7 +9,7 @@ Analytical work must also be confirmed to be reproducible before being published
 The purpose is to ensure that
 researchers do not have to answer basic questions
 about how indicators are constructed or whether their calculations are correct.
-It ensures that consumers of reserach can check these things for themselves,
+It ensures that consumers of research can check these things for themselves,
 as well as test simple variations on the processes
 or [re-use code](https://blogs.worldbank.org/opendata/making-analytics-reusable)
 for similar work of their own.
