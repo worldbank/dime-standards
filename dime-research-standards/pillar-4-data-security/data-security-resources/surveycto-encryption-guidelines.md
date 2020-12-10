@@ -98,7 +98,7 @@ that you are comfortable using it before proceeding with these instructions.
 We will provide instructions for the password manager LastPass,
 but this can be done in other password managers too.
 A secure alternative to saving to storing the keys in a password manager
-is to store the keys in an [encrypted folder](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/veracrypt-guidelines.mdt)
+is to store the keys in an [encrypted folder](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/veracrypt-guidelines.md)
 on your computer,
 but then you still need to store the key to the encrypted folder in a password manager.
 

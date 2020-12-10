@@ -11,7 +11,7 @@ Your participation is voluntary and
 you can withdraw from the survey or skip a question at any time.
 You can find more details about the survey including benefits
 and risks here -**[add link to document with
-details on all items included in a [written consent](https://github.com/worldbank/dime-standards/blob/consent-updates/dime-research-standards/pillar-1-research-ethics/research-ethics-resources/informed-consent-templates/informed-consent-template-written.md).]**
+details on all items included in a [written consent](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-1-research-ethics/research-ethics-resources/informed-consent-templates/informed-consent-template-written.md).]**
 If you have any questions about the survey,
  may contact our team at **[add contact info]**.
 Do you agree to take part in the survey?
