@@ -66,6 +66,9 @@
 # png files in img folders
 !/**/img/**/*.png
 
+# cvs files in templates folders
+!/**/templates/**/*.csv
+
 #######################
 # Include all the files with passwords or tokens here. All files named
 # password or passwords are with this template ignored no matter which
