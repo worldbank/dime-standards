@@ -54,5 +54,5 @@ The University California, Berkeley provides an informed consent
 
 This template is drawn using the templates for
 [MIT IRB](https://couhes.mit.edu/sites/default/files/documents/Consent-Form-Non-Biomedical-2019-03-11.doc),
-[Northwestern University IRB](https://irb.northwestern.edu/sites/irb/files/documents/HRP-582%20-%20TEMPLATE%20-%20Social%20Behavorial%20Consent_09062019.docx),
+[Northwestern University IRB](https://www.irb.northwestern.edu/templates-forms-sops/),
 and [University of California, Berkeley IRB](https://cphs.berkeley.edu/CF-Template_SocBehav.docx)
