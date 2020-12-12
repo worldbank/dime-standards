@@ -60,6 +60,14 @@ For implementation resources, see the [Data Publication Guidelines](https://gith
 
 ## DIME Coding Standards
 
+### DIME Data Map
+
+The DIME data map provides a high quality professional framework for planning data work.
+
+- For a general discussion on the usages and benefits, see the [Data Map article](https://dimewiki.worldbank.org/Data_Map) on the DIME Wiki.
+- To download our Data Linkage Table template [click here](https://github.com/worldbank/dime-standards/blob/data-map/dime-coding-standards/data-map/templates/data-linkage-table-template.xlsx)
+- For an example of a Data Map with a Data Linkage Table, Master datasets and Data Flow Charts, see [here]()
+
 ### Style guides
 
 DIME code should adopt the following guides:
