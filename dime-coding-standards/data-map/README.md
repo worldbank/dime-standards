@@ -40,22 +40,36 @@ Regardless how you download the file,
 if you use git, then we strongly recommend using the .csv format
 to version control you data linkage table as well.
 
-| data_source | data_set_name | frequency | unit_of_obs | master_project_id | alternative_id | one_to_many_id | many_to_one_id | file_location | raw_backup_location_1 | raw_backup_location_2 | notes |
-|-|-|-|-|-|-|-|-|-|-|-|-|
-| admin data from government partner | farmer listing | once | farmer | hhid | gov_hh_id |  | comid |  |  | Hard drive in safe |  |
-| listing | community listing | once | community | comid |  | | hhid |  |  |  |  |
-| listing | household listing | once | farmer | hhid |  | comid |  |  |  |  |  |
-| baseline survey | baseline prices | once | community | comid |  | | hhid |  |  |  |  |
-| baseline survey | farmer baseline | once | farmer | hhid |  | comid |  |  |  |  |  |
-| monitoring | monitoring data | monthly | farmer | hhid |  | comid |  |  |  |  |  |
-| midline survey | midline prices | once | community | comid |  | | hhid |  |  |  |  |
-| midline survey | farmer midline | once | farmer | hhid |  | comid |  |  |  |  |  |
-| endline survey | endline prices | once | community | comid |  | | hhid |  |  |  |  |
-| endline survey | farmer endline | once | farmer | hhid |  | comid |  |  |  |  |  |
+#### ProjectIE data linkage table
+
+| data_source                        | data_set_name     | frequency | unit_of_obs | master_project_id | alternative_id | one_to_many_id | many_to_one_id | file_location                                | raw_backup_location_1                             | raw_backup_location_2                     | notes |
+|------------------------------------|-------------------|-----------|-------------|-------------------|----------------|----------------|----------------|----------------------------------------------|---------------------------------------------------|-------------------------------------------|-------|
+| admin data from government partner | farmer listing    | once      | farmer      | hhid              | gov_hh_id      |                | comid          | data/encrypted/admindata/farmers.xlsx        | OneDrive : projectIE/data/farmers.xlsx            | Backed up with partner                    |       |
+| listing                            | community listing | once      | community   | comid             |                |                | hhid           | data/listing/communities.csv                 | OneDrive : projectIE/data/communities.csv         | Hard drive labeled ProjectIE in PI's safe |       |
+| baseline survey                    | baseline prices   | once      | community   | comid             |                |                | hhid           | data/baseline/raw/bl-price-survey.csv        | OneDrive : projectIE/data/bl-price-survey.csv     | Same as _community listing_ data          |       |
+| baseline survey                    | farmer baseline   | once      | farmer      | hhid              |                | comid          |                | data/encrypted/baseline/raw/bl-hh-survey.csv | OneDrive : projectIE/data/bl-hh-survey.csv        | Same as _community listing_ data          |       |
+| monitoring                         | monitoring data   | monthly   | farmer      | hhid              |                | comid          |                | data/monitoring/training-attendence.csv      | OneDrive : projectIE/data/training-attendence.csv | Same as _community listing_ data          |       |
+| midline survey                     | midline prices    | once      | community   | comid             |                |                | hhid           | data/midline/raw/ml-prices-survey.csv        | OneDrive : projectIE/data/ml-prices-survey.csv    | Same as _community listing_ data          |       |
+| midline survey                     | farmer midline    | once      | farmer      | hhid              |                | comid          |                | data/encrypted/midline/raw/ml-hh-survey.csv  | OneDrive : projectIE/data/ml-hh-survey.csv        | Same as _community listing_ data          |       |
+| endline survey                     | endline prices    | once      | community   | comid             |                |                | hhid           | data/endline/raw/el-prices-survey.csv        | OneDrive : projectIE/data/el-prices-survey.csv    | Same as _community listing_ data          |       |
+| endline survey                     | farmer endline    | once      | farmer      | hhid              |                | comid          |                | data/encrypted/endline/raw/el-hh-survey.csv  | OneDrive : projectIE/data/el-hh-survey.csv        | Same as _community listing_ data          |       |
 
 Remarks about the data linkage table above:
 
-* Note that the farmer listing data has two IDs. Research projects should have project IDs and a government ID. We need to list both here, but a research project should not
+* Note that the farmer listing data has two IDs.
+Research projects should have project IDs and a government ID. We need to list both here,
+but a research project should not use an external ID if the data contains confidential data.
+* Only the raw datasets needs to be listed here.
+The code documents how derivative datasets relates to these datasets.
+* If your raw datasets includes confidential inform (such as PII), then it need to be encrypted.
+A benefit of the data linkage table is that
+it is also documented to people that does not have access to the encrypted folder
+that the raw dataset is saved there.
+* Confidential should be encrypted by the project team when backed up
+unless it is either on a hard drive locked into a safe,
+or if your IT department has set up a secure sync service
+(see out guidelines for World Bank OneDrive
+[here](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/onedrive-backup-guidelines.md).)
 
 ## Master Data settings
 
