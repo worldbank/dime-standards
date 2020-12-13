@@ -1,4 +1,4 @@
-# DIME Data Map example
+# DIME Data Map Example
 
 This is an example of a Data Map.
 This data mock data but based on a typical impact evaluation project at DIME,
@@ -14,16 +14,21 @@ in a typical research project in Chapter 3 in DIME data handbook
 
 ## Mock example background
 
-This example is based on fictive agriculture impact evaluation project
-that collects data using household surveys and admin data from a government partner,
-but this example applies to other types of projects as well.
+This example is based on fictive agriculture impact evaluation project that we will call ProjectIE.
+In ProjectIE there are two types of data sources.
+Data acquired by household surveys and admin data shared by a government partner,
+There are two units of observation used; community and farmer.
+The intervention in this impact evaluation is a training that is offered to the farmer in the treatment group.
+The random treatment assignment was done clustered at community level,
+so all the farmers in the same community has the same treatment assignment.
 
-## Data Linkage Table
+## Data linkage table
 
 A data linkage table keeps track of the datasets and how they may be linked with each other.
 A template for the table below can be downloaded from this repo both in
 [Excel format](https://github.com/worldbank/dime-standards/blob/data-map/dime-coding-standards/data-map/templates/data-linkage-table-template.xlsx?raw=true)
 or in [.csv format](https://github.com/worldbank/dime-standards/blob/data-map/dime-coding-standards/data-map/templates/data-linkage-table-template.csv?raw=true).
+
 If you version control your data work using git,
 we recommend storing your data linkage table in a csv format as it is suitable for git version control.
 We provide the Excel file as well,
