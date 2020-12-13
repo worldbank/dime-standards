@@ -34,8 +34,8 @@ we recommend storing your data linkage table in a csv format as it is suitable f
 We provide the Excel file as well,
 as that format is more straightforward to download form a GitHub repo.
 To download the csv file,
- you need to copy the content the browser into a file in a text editor
- that you then save as a csv file.
+you need to copy the content the browser into a file in a text editor
+that you then save as a csv file.
 Regardless how you download the file,
 if you use git, then we strongly recommend using the .csv format
 to version control you data linkage table as well.
@@ -71,6 +71,51 @@ or if your IT department has set up a secure sync service
 (see out guidelines for World Bank OneDrive
 [here](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/onedrive-backup-guidelines.md).)
 
-## Master Data settings
+## Master datasets
+
+In ProjectIE there are two unit of observations in the data linkage table
+- community and farmer -
+and we therefore need master datasets for both of them.
+These master datasets should include all observations of these two units
+that the research team ever interact with.
+Note that this is often includes more observations than what are included in your analysis sample.
+Examples of this could in the ProjectIE be farmers listed in the government partner's admin data
+that were selected to be a part of the sample,
+or farmers that are not in your study and but who attended the training
+offered to the treatment group anyways and are included in the monitoring data.
+
+#### Farmer master dataset
+
+| hhid  | comid | first_name | last_name | gender | age | in_sample | attended_training |
+|-------|-------|------------|-----------|--------|-----|-----------|-------------------|
+| 10201 | 102   | Seana      | Sonschein | Female | 43  | 1         | 0                 |
+| 10203 | 102   | Jermayne   | Zarb      | Male   | 38  | 1         | 0                 |
+| 10205 | 102   | Emeline    | Faraker   | Female | 64  | 1         | 1                 |
+| 10401 | 104   | Didi       | Frazer    | Female | 63  | 1         | 0                 |
+| 10402 | 104   | Marchall   | Rives     | Male   | 40  | 0         | 0                 |
+| 10403 | 104   | Lorinda    | Gabits    | Female | 50  | 1         | 1                 |
+| 20701 | 207   | Sid        | Sorrie    | Male   | 43  | 1         | 0                 |
+| 20702 | 207   | Pall       | Denacamp  | Male   | 62  | 1         | 1                 |
+| 20704 | 207   | Mei        | Kezar     | Female | 35  | 0         | 1                 |
+| 21401 | 214   | Cos        | Gronno    | Male   | 40  | 1         | 0                 |
+| 21402 | 214   | Yorgo      | Adin      | Male   | 64  | 1         | 0                 |
+| 21404 | 214   | Annamaria  | Cavozzi   | Female | 59  | 1         | 0                 |
+| …     | …     | …          | …         | …      | …   | …         | …                 |
+
+This is an exert of the master dataset that lists all the farmers the research team for ProjectIE ever interacted with. Most of this farmer is in the sample for this study but not all. Note thate treatment assignment is not included in this master dataset. As described above, treatment in this fictional study was randomly assigned on community level, so treatment status will be included in the community master dataset. To the
+
+#### Community master dataset
+
+| comid | community_name | region   | treatment |
+|-------|----------------|----------|-----------|
+| 102   | Lashite        | Koungin  | 1         |
+| 104   | Ashiavrongo    | Koungin  | 0         |
+| 108   | Wara           | Koungin  | 1         |
+| 110   | Témebancoro    | Koungin  | 0         |
+| 207   | Nibokro        | Sénénéga | 0         |
+| 214   | Sikiali        | Sénénéga | 1         |
+| 215   | Ifekka         | Sénénéga | 1         |
+| 220   | Balenni        | Sénénéga | 0         |
+| …     | …              | …        | …         |
 
 ## Data Flow Chart
