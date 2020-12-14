@@ -1,7 +1,7 @@
 # DIME Data Map Example
 
-This is an example of a Data Map.
-This data mock data but based on a typical impact evaluation project at DIME,
+This is an example of using a data map to organize workflow in a project.
+The mock data in this example is based on a typical impact evaluation project at DIME,
 but this framework should work on any research project
 that use data from more than one source.
 
@@ -14,13 +14,15 @@ in a typical research project in Chapter 3 in DIME data handbook
 
 ## Mock example background
 
-This example is based on fictive agriculture impact evaluation project that we will call ProjectIE.
-In ProjectIE there are two types of data sources.
-Data acquired by household surveys and admin data shared by a government partner,
-There are two units of observation used; community and farmer.
-The intervention in this impact evaluation is a training that is offered to the farmer in the treatment group.
-The random treatment assignment was done clustered at community level,
-so all the farmers in the same community has the same treatment assignment.
+This example is based on a fictional agriculture impact evaluation project,
+that we will call ProjectIE.
+In ProjectIE, there are two types of data sources -
+data acquired by household surveys, and admin data shared by a government partner.
+Further, there are two units of observation - community and farmer.
+The intervention for this impact evaluation is a training
+that is offered to farmers in the treatment group.
+The treatment assignment was done randomly by clustering at the community level,
+so all the farmers in the same community have the same treatment assignment.
 
 ## Data linkage table
 
@@ -56,19 +58,22 @@ to version control you data linkage table as well.
 
 #### Notes on this data link table
 
-* Note that the farmer listing data has two IDs.
-Research projects should have project IDs and a government ID. We need to list both here,
-but a research project should not use an external ID if the data contains confidential data.
-* Only the raw datasets needs to be listed here.
-The code documents how derivative datasets relates to these datasets.
-* If your raw datasets includes confidential inform (such as PII), then it need to be encrypted.
+* In the table above, note that the farmer listing data has two IDs.
+Research projects usually have both project IDs, as well as a government ID.
+In this case, we need to list both these IDs,
+but a research project should not keep an external ID in a de-identified dataset,
+if the dataset contains confidential information.
+* Only list the raw datasets in this table and not derived datasets.
+However, make sure that your code clearly documents how derivative datasets relate to these datasets.
+* If your raw datasets includes confidential information (such as PII),
+then this information must be encrypted.
 A benefit of the data linkage table is that
-it is also documented to people that does not have access to the encrypted folder
-that the raw dataset is saved there.
-* Confidential should be encrypted by the project team when backed up
-unless it is either on a hard drive locked into a safe,
+it is also available to people that do not have access to the encrypted folder.
+* Confidential information should always be encrypted by the project team when backing up project data.
+The only exception to this is if the data is either on an external hard drive
+which is locked up in a safe,
 or if your IT department has set up a secure sync service
-(see out guidelines for World Bank OneDrive
+(see our guidelines for using the World Bank OneDrive
 [here](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/onedrive-backup-guidelines.md)).
 
 ## Master datasets
