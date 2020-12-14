@@ -69,12 +69,12 @@ that the raw dataset is saved there.
 unless it is either on a hard drive locked into a safe,
 or if your IT department has set up a secure sync service
 (see out guidelines for World Bank OneDrive
-[here](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/onedrive-backup-guidelines.md).)
+[here](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/onedrive-backup-guidelines.md)).
 
 ## Master datasets
 
-In ProjectIE there are two unit of observations in the data linkage table
-- community and farmer -
+In ProjectIE there are two unit of observations in the data linkage table -
+community and farmer -
 and we therefore need master datasets for both of them.
 These master datasets should include all observations of these two units
 that the research team ever interact with.
@@ -166,4 +166,26 @@ Once we have done the string match as good as we can,
 we have project ID for both farmer and community for all farmers in the monitor data,
 and we can easily merge this with the community master dataset to get the treatment status.
 
-## Data Flow Chart
+## Data flow chart
+
+While the data linkage table is an objective communication
+on all the ways the datasets may correctly be linked,
+the data flow chart is a normative communication
+on the best way to combine the datasets to answer the research question.
+
+The data flow chart below should be read from left to right.
+Not that every starting point in the flow chart is either
+a dataset in the data linkage table, or a master dataset.
+This is very important, as the data flow chart is not unambiguous unless this is the case.
+
+<img src="https://github.com/worldbank/dime-standards/blob/data-map/dime-standards/dime-coding-standards/data-map/img/data-flow-chart-example.png" width="75%"><!--- Image is read from master branch or use full URL-->
+
+Creating a flow chart like this is a great tool for the project team to,
+early on, make sure that they have a plan
+for how to acquire all dataset they need to create the analysis data set.
+Once this is agreed on then this is the best tool a PI can have
+to communicate to the field team and the research assistants
+what their vision for the data work is.
+This is also a great tool to communicate across time what the plan is so that
+project members that join in the middle of project can easily know
+what has been decided on in meetings before they joined the team.
