@@ -189,3 +189,5 @@ what their vision for the data work is.
 This is also a great tool to communicate across time what the plan is so that
 project members that join in the middle of project can easily know
 what has been decided on in meetings before they joined the team.
+
+The flow chart above was made in the free online flow chart tool: https://app.diagrams.net/
