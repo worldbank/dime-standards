@@ -178,7 +178,7 @@ Not that every starting point in the flow chart is either
 a dataset in the data linkage table, or a master dataset.
 This is very important, as the data flow chart is not unambiguous unless this is the case.
 
-<img src="https://github.com/worldbank/dime-standards/blob/data-map/dime-standards/dime-coding-standards/data-map/img/data-flow-chart-example.png" width="75%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-standards/blob/data-map/dime-coding-standards/data-map/img/data-flow-chart-example.png" width="75%"><!--- Image is read from master branch or use full URL-->
 
 Creating a flow chart like this is a great tool for the project team to,
 early on, make sure that they have a plan
