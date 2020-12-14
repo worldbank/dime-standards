@@ -147,18 +147,21 @@ And let's say we also wanted to merge treatment status to the monitor data
 to see if anyone in the control group had attended the trainings.
 We would then first have to merge the monitor data with the farmer master dataset
 using a string match.
-All ambiguous matches would have to resolved manually to make sure that
+
+All ambiguous string matches would have to resolved manually to make sure that
 no inexact matches were done incorrectly.
 We want to do this string match towards all farmers in the farmer master dataset,
 not just the farmers we expected to have attended,
 i.e. farmers in the treatment group.
 Including all farmers gives us the most information to use
 when resolving any unambiguous matches.
+
 If we find any farmers that we do not have in our farmer master dataset,
 then we should add them to the master dataset and assign them a project ID.
 See farmer _20751_ in the farmer master dataset.
 That could have been such a farmer,
 since they are not in the sample but attended the training.
+
 Once we have done the string match as good as we can,
 we have project ID for both farmer and community for all farmers in the monitor data,
 and we can easily merge this with the community master dataset to get the treatment status.
