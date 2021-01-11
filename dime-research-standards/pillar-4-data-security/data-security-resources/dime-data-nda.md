@@ -1,5 +1,5 @@
 # DIME STC/STT Non-Disclosure Agreement
-<br>
+<br><br>
 
 I, ________________________________ [print name of STC/STT], have agreed to maintain full confidentiality when contributing to research projects at DIME. 	
 
@@ -45,10 +45,10 @@ I also confirm that it is my responsibility to follow up with DIME Analytics (di
 
 ## PART 4
 
-#### STC/STT Signature
+#### STC/STT Signature<br>
 
-Signature of STC/STT: _________________________________________
+Signature of STC/STT: ______________________________
 
-Printed name of STC/STT: _________________________________________
+Printed name of STC/STT: ______________________________
 
 Date: _________________
