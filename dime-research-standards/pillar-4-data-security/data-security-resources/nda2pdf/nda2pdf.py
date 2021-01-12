@@ -1,9 +1,14 @@
 import pypandoc
 
-print("Starting conversions - this tends to be slower than what you would expect")
+print("Starting conversion - this tends to be slower than what you would expect")
 
-output = pypandoc.convert_file('../dime-data-nda.md', 'pdf', outputfile='../dime-data-nda.pdf',
-                                extra_args=['-V', 'geometry:margin=3cm'])
+pdoc_args = ['-V','geometry:margin=3cm','-V','linkcolor:blue']
+
+output = pypandoc.convert_file('../dime-data-nda.md',
+                               'pdf',
+                               outputfile='../dime-data-nda.pdf',
+                               extra_args=pdoc_args
+                               )
 assert output == ""
 
 print("Conversion successfull")

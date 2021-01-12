@@ -45,7 +45,7 @@ I also confirm that it is my responsibility to follow up with DIME Analytics (di
 
 ## PART 4
 
-#### STC/STT Signature<br>
+### STC/STT Signature
 
 Signature of STC/STT: ______________________________
 
