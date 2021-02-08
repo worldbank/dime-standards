@@ -13,7 +13,8 @@ software that can be used in the greatest number of contexts
 so that skill-building in that tool is valuable and transferable. 
 Software that does not meet this criteria may still be a valid choice for a given project,
 but we do not have the resources to provide general support for most such cases.
-Instead, we offer cross-support for teams who require specialized tools.
+DIME Analytics will always do its best to help DIME teams with any software tool,
+but we will not be able to provide the same support as with tools that we endorse.
 VeraCrypt is the encryption tool of choice for DIME over competitors as Boxcryptor. 
 VeraCrypt is more secure, more versatile, is ITS-approved, and will always be free to use
 (which can prevent other problems, especially within Bank bureaucracy).
@@ -33,11 +34,13 @@ Boxcryptor decrypts everything you've encrypted once you've entered your decrypt
 That means that if your computer is compromised, 
 then the intruder gets access to all your encrypted information when using Boxcryptor. 
 In VeraCrypt, only the exact folder or folders that you actively decrypted
-during a security breach such as a hack or malware could have been leaked.
+while you had a security breach such as a hack or malware attack could have been leaked.
 * Proprietary tools like Boxcryptor have functionality limits at free tiers 
-and, as with most cloud-based services, cannot easily be extended or paid for within Bank rules
-in case additional functionality is needed, requiring a costly retool and potential loss of information
-not under the control of the team. 
+and cannot easily be extended or paid for within Bank rules.
+In case additional functionality not covered in the free tier is needed,
+then a project might have to retool in the middle of a project
+which could be costly in terms of extra work 
+and potentially be a risk of loss of information.
 VeraCrypt is open source and will never have cost implications for the team,
 nor will functionality ever be limited or cancelled.
  
