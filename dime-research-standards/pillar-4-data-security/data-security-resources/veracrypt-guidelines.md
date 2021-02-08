@@ -2,41 +2,49 @@
 
 [VeraCrypt](https://www.veracrypt.fr/) is a software used to implement [symmetric encryption](https://dimewiki.worldbank.org/wiki/Encryption#Symmetric_Encryption) in a way where you are in full control of who has access to the decryption key.
 
-VeraCrypt is an open source software that is free of charge. While untested open source software may be risky to use, VeraCrypt is well-established open source software that has been reviewed by a large numbers of cybersecurity experts who use it themselves. It is widely accepted as your safest option.
+VeraCrypt is an open source software that is free of charge. While untested open-source software can be risky to use, VeraCrypt is well-established software that has been reviewed by cybersecurity experts. It is widely accepted as a secure file encryption method.
 
-## Why VeraCrypt and not alternatives like BoxCryptor
+## Why VeraCrypt and not alternatives like Boxcryptor?
  
-DIME Analytics cannot support all software. 
-We select the software that we think is best and 
-can be used in the greatest number of contexts 
-so as few software as possible needs to be learned by the project teams. 
-This does not mean that the software we do not select are all terrible. 
-We selected VeraCrypt over competitors as BoxCryptor as we think VeraCrypt is 
-more secure, can be used in more context and will always be free to use.
+DIME Analytics cannot support all possible software solutions for a given purpose,
+so we focus on tools that are the easiest to adapt to a large number of use cases. 
+We only provide direct support for software that has broad applicability for DIME:
+software that can be used in the greatest number of contexts 
+so that skill-building in that tool is valuable and transferable. 
+Software that does not meet this criteria may still be a valid choice for a given project,
+but we do not have the resources to provide general support for most such cases.
+Instead, we offer cross-support for teams who require specialized tools.
+VeraCrypt is the encryption tool of choice for DIME over competitors as Boxcryptor. 
+VeraCrypt is more secure, more versatile, is ITS-approved, and will always be free to use
+(which can prevent other problems, especially within Bank bureaucracy).
 
-Here are the reasons for why we think VeraCrypt is the better alternative:
+We endorse and support VeraCrypt for all encryption use cases because:
  
-* BoxCryptor can only be used when securing content in a synced folder in for example DropBox. 
-VeraCrypt can also be used for that in addition to other use cases, 
+* Integrated tools such as Boxcryptor can only be used when securing content in a supported sync service such as Dropbox. 
+VeraCrypt accomplishes this and additionally supports use cases that do not involve sync services, 
 such as encrypting files to be sent over email or encrypting files stored on an external hard drive. 
-If you learn VeraCrypt you do not need to learn other encryptions software
-for any other use case common in a typical research project. 
-* VeraCrypt is open source and thousands of independent security experts 
-have scrutinized the implementation instead of only a handful who are paid by BoxCryptor.
+* VeraCrypt is open-source has been verified by independent security experts, 
+rather than being a proprietary and closed software.
+Such tools have had serious security flaws in the past and cannot be independently verified.
 * VeraCrypt allows a more granular decrypting, 
 where you decide exactly what folders are decrypted at each given time. 
-At the time of our research, 
-BoxCryptor decrypts everything you've encrypted once you've entered your decryption key. 
+At the time of this writing, 
+Boxcryptor decrypts everything you've encrypted once you've entered your decryption key. 
 That means that if your computer is compromised, 
-then the intruder gets access to all your encrypted information when using BoxCryptor. 
-In VeraCrypt only the exact folder or folders you decrypted 
-while you were hacked, exposed to malware, etc., could have been leaked.
-* Our understanding is that BoxCryptor has some limits on the free tier 
-and we would have no way of paying for premium tiers if team runs into restrictions. 
-VeraCrypt is open source and will never have cost implications for the team.
+then the intruder gets access to all your encrypted information when using Boxcryptor. 
+In VeraCrypt, only the exact folder or folders that you actively decrypted
+during a security breach such as a hack or malware could have been leaked.
+* Proprietary tools like Boxcryptor have functionality limits at free tiers 
+and, as with most cloud-based services, cannot easily be extended or paid for within Bank rules
+in case additional functionality is needed, requiring a costly retool and potential loss of information
+not under the control of the team. 
+VeraCrypt is open source and will never have cost implications for the team,
+nor will functionality ever be limited or cancelled.
  
-These reasons do not make BoxCryptor a terrible alternative, 
-and it is far superior to using no encryption. 
+These reasons do not rule out the use of Boxcryptor, 
+and it is far superior to using no encryption,
+especially if it is a standard tool for an external partner
+or there are other compelling reasons to use such software. 
 What is most important is that your project has a data security protocol 
 that includes proper encryption and that all team members follow it. 
 
