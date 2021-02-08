@@ -4,7 +4,43 @@
 
 VeraCrypt is an open source software that is free of charge. While untested open source software may be risky to use, VeraCrypt is well-established open source software that has been reviewed by a large numbers of cybersecurity experts who use it themselves. It is widely accepted as your safest option.
 
-## Guidelines for each part of a VeraCrypt workflow
+## Why VeraCrypt and not alternatives like BoxCryptor
+ 
+DIME Analytics cannot support all software. 
+We select the software that we think is best and 
+can be used in the greatest number of contexts 
+so as few software as possible needs to be learned by the project teams. 
+This does not mean that the software we do not select are all terrible. 
+We selected VeraCrypt over competitors as BoxCryptor as we think VeraCrypt is 
+more secure, can be used in more context and will always be free to use.
+
+Here are the reasons for why we think VeraCrypt is the better alternative:
+ 
+* BoxCryptor can only be used when securing content in a synced folder in for example DropBox. 
+VeraCrypt can also be used for that in addition to other use cases, 
+such as encrypting files to be sent over email or encrypting files stored on an external hard drive. 
+If you learn VeraCrypt you do not need to learn other encryptions software
+for any other use case common in a typical research project. 
+* VeraCrypt is open source and thousands of independent security experts 
+have scrutinized the implementation instead of only a handful who are paid by BoxCryptor.
+* VeraCrypt allows a more granular decrypting, 
+where you decide exactly what folders are decrypted at each given time. 
+At the time of our research, 
+BoxCryptor decrypts everything you've encrypted once you've entered your decryption key. 
+That means that if your computer is compromised, 
+then the intruder gets access to all your encrypted information when using BoxCryptor. 
+In VeraCrypt only the exact folder or folders you decrypted 
+while you were hacked, exposed to malware, etc., could have been leaked.
+* Our understanding is that BoxCryptor has some limits on the free tier 
+and we would have no way of paying for premium tiers if team runs into restrictions. 
+VeraCrypt is open source and will never have cost implications for the team.
+ 
+These reasons do not make BoxCryptor a terrible alternative, 
+and it is far superior to using no encryption. 
+What is most important is that your project has a data security protocol 
+that includes proper encryption and that all team members follow it. 
+
+## Getting started guidelines for each part of a VeraCrypt workflow
 
 These guidelines cover the following steps:
 
