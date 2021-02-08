@@ -2,9 +2,56 @@
 
 [VeraCrypt](https://www.veracrypt.fr/) is a software used to implement [symmetric encryption](https://dimewiki.worldbank.org/wiki/Encryption#Symmetric_Encryption) in a way where you are in full control of who has access to the decryption key.
 
-VeraCrypt is an open source software that is free of charge. While untested open source software may be risky to use, VeraCrypt is well-established open source software that has been reviewed by a large numbers of cybersecurity experts who use it themselves. It is widely accepted as your safest option.
+VeraCrypt is an open source software that is free of charge. While untested open-source software can be risky to use, VeraCrypt is well-established software that has been reviewed by cybersecurity experts. It is widely accepted as a secure file encryption method.
 
-## Guidelines for each part of a VeraCrypt workflow
+## Why VeraCrypt and not alternatives like Boxcryptor?
+ 
+DIME Analytics cannot support all possible software solutions for a given purpose,
+so we focus on tools that are the easiest to adapt to a large number of use cases. 
+We only provide direct support for software that has broad applicability for DIME:
+software that can be used in the greatest number of contexts 
+so that skill-building in that tool is valuable and transferable. 
+Software that does not meet this criteria may still be a valid choice for a given project,
+but we do not have the resources to provide general support for most such cases.
+DIME Analytics will always do its best to help DIME teams with any software tool,
+but we will not be able to provide the same support as with tools that we endorse.
+VeraCrypt is the encryption tool of choice for DIME over competitors as Boxcryptor. 
+VeraCrypt is more secure, more versatile, is ITS-approved, and will always be free to use
+(which can prevent other problems, especially within Bank bureaucracy).
+
+We endorse and support VeraCrypt for all encryption use cases because:
+ 
+* Integrated tools such as Boxcryptor can only be used when securing content in a supported sync service such as Dropbox. 
+VeraCrypt accomplishes this and additionally supports use cases that do not involve sync services, 
+such as encrypting files to be sent over email or encrypting files stored on an external hard drive. 
+* VeraCrypt is open-source has been verified by independent security experts, 
+rather than being a proprietary and closed software.
+Such tools have had serious security flaws in the past and cannot be independently verified.
+* VeraCrypt allows a more granular decrypting, 
+where you decide exactly what folders are decrypted at each given time. 
+At the time of this writing, 
+Boxcryptor decrypts everything you've encrypted once you've entered your decryption key. 
+That means that if your computer is compromised, 
+then the intruder gets access to all your encrypted information when using Boxcryptor. 
+In VeraCrypt, only the exact folder or folders that you actively decrypted
+while you had a security breach such as a hack or malware attack could have been leaked.
+* Proprietary tools like Boxcryptor have functionality limits at free tiers 
+and cannot easily be extended or paid for within Bank rules.
+In case additional functionality not covered in the free tier is needed,
+then a project might have to retool in the middle of a project
+which could be costly in terms of extra work 
+and potentially be a risk of loss of information.
+VeraCrypt is open source and will never have cost implications for the team,
+nor will functionality ever be limited or cancelled.
+ 
+These reasons do not rule out the use of Boxcryptor, 
+and it is far superior to using no encryption,
+especially if it is a standard tool for an external partner
+or there are other compelling reasons to use such software. 
+What is most important is that your project has a data security protocol 
+that includes proper encryption and that all team members follow it. 
+
+## Getting started guidelines for each part of a VeraCrypt workflow
 
 These guidelines cover the following steps:
 
