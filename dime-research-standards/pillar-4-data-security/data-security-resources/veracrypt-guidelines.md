@@ -202,7 +202,7 @@ on encrypted folders over DropBox impossible.
 **This is how you solve this.**
 To change this default setting, open VeraCrypt,
 in the top menu go to `Settings` -> `Preferences` and
-then untick the option
+then **_untick_** the option
 "_Preserve modification timestamp on file containers_".
 You need to restart VeraCrypt for the change to take effect.
 See image below:
