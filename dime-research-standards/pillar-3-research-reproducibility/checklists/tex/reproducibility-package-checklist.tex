@@ -13,17 +13,6 @@
 
 	The reproducibility package must be shared as a .zip file, GitHub link or shared folder containing the items listed below.
 	
-	
-	\subsection{Information about last time code was run:}
-	
-	\quad\dimeTextField{software}{11cm}{Software used:}
-	
-	\dimeTextField{version}{11cm}{Software version:}
-	
-	\dimeTextField{os}{11cm}{Operating system:}
-	
-	\dimeTextField{ram}{11cm}{RAM:}
-	
 	\subsection{1. \, Files}
 	
 	\begin{itemize}
@@ -37,6 +26,8 @@
 
 	\begin{itemize}
 		\setlength\itemsep{-0.1em}
+		\item[] \dimeTextField{software}{8cm}{Software used (including version):}
+		\item[] \dimeTextField{os}{8cm}{Operating system used:}
 		\item[] \dimeCheckBox{All scripts needed to reproduce the analysis is included in the reproducibility package.}
 		\item[] \dimeCheckBox{The reproducibility package includes a \textbf{master script}.}
 		\item[] \dimeTextField{master}{11cm}{Master script path and name:}
@@ -49,7 +40,7 @@
 		\setlength\itemsep{-0.1em}
 		
 		\item[] \dimeTextField{time}{2.5cm}{\textbf{Approximate time} it takes to recreate all results from the the master script: }
-		\item[] \dimeCheckBox{The master script runs from start to end if the reviewer changes only directory path(s) in one location of the master script. \dimeTextField{dir}{2cm}{Directory path(s) \textbf{line number:} }}
+		\item[] \dimeTextField{ram}{2.5cm}{RAM size of computer used to calculate time:}
 
 		\item[] \dimeCheckBox{The master script re-creates all raw outputs (e.g. tables and figures) when executed.}
 
