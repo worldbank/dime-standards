@@ -50,6 +50,11 @@ and the purpose of the disclosure.]**
 
 **[If activities are to be audio- or videotaped, specific consent for this must be obtained.]** We will record audio in some parts of the survey for ensuring data quality. Do you consent to having audio recorded during some sections of the survey ?
 
+When the research is completed, we may save the information for use in future research done by this research team.
+We will retain these records for up to **[NUMBER OF YEARS]** years after the study is over.
+The same measures described above will be taken to protect confidentiality of this study data.
+
+
 ### Questions
 If you have any questions about this research, you can ask us now or later at the details below.
 
