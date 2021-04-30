@@ -29,6 +29,7 @@ We ask you to be as honest and open as possible.
  and proration schedule should the subject decide to withdraw or is withdrawn by the investigator.]**
 
  ## Privacy and confidentiality
+
  Your study data will be handled as confidentially as possible. If results of this study are published or presented, individual names, and other personally identifiable information will not be used and no identifying information will be shared with any third party. Your responses will be numbered, and the code linking your name with your responses will also be stored in encrypted files on
  password-protected computers.
 
@@ -37,6 +38,11 @@ We ask you to be as honest and open as possible.
  and the purpose of the disclosure.]**
 
  **[If activities are to be audio- or videotaped, specific consent for this must be obtained.]** We will record audio in some parts of the survey for ensuring data quality. Do you consent to having audio recorded during some sections of the survey ?
+ 
+When the research is completed, we may save the information for use in future research done by this research team.
+We will retain these records for up to **[NUMBER OF YEARS]** years after the study is over.
+The same measures described above will be taken to protect confidentiality of this study data.
+
 
  ### Questions
  If you have any questions about this research, you can ask us now or later at the details below.
