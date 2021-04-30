@@ -75,6 +75,9 @@ and the purpose of the disclosure.]**
 Also describe the subject's right to review/edit the tapes, who will have access to them,
 if they will be used for educational purpose, and when they will be erased.]** We will record audio in some parts of the survey for ensuring data quality. Do you consent to having audio recorded during some sections of the survey ?
 
+When the research is completed, we may save the information for use in future research done by this research team.
+We will retain these records for up to **[NUMBER OF YEARS]** years after the study is over.
+The same measures described above will be taken to protect confidentiality of this study data.
 
 ## Identification of investigators
 
