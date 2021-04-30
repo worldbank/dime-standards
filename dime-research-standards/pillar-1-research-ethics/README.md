@@ -4,7 +4,7 @@
 
 **Researchers must identify and secure ethics approval**, from an institutional review board (IRB) and the appropriate local authority, for studies directly involving **human subjects** or the use of **personally-identifying information**.
 - As the World Bank does not have an IRB, we recommend seeking approval from IRBs of partnered institutions, such as the universities with which external PIs are affiliated.
-- If none of the research team members has an institutional IRB affiliation, the research team should use an accredited IRB for independent researchers, such as [Western IRB](http://wirb.com/Pages/IRBServices.aspx).
+- If none of the research team members has an institutional IRB affiliation, the research team should use an accredited IRB for independent researchers, such as [Western IRB](http://wirb.com/Pages/IRBServices.aspx) and [Solutions IRB](https://www.solutionsirb.com).
 - IRB approval must be reported through the myIE monitoring system. Funding for the i2i and ieConnect Trust Funds requires documentation of IRB approval annually.
 - Impact evaluations that do not involve human subjects or personally-identifying information, such as evaluations relying purely on de-identified secondary data, may be exempted from this requirement.
 - The table below summarizes the international IRB and local ethics approvals required for each case
