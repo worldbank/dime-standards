@@ -48,6 +48,9 @@ If the subject will receive payment, describe remuneration amount, when payment 
 and proration schedule should the subject decide to withdraw or is withdrawn by the investigator.]**
 
 ## Privacy and confidentiality
+When the research is completed, we may save the information for use in future research done by this research team.
+We will retain these records for up to **[NUMBER OF YEARS]** years after the study is over.
+The same measures described above will be taken to protect confidentiality of this study data.
 
 Any information obtained in connection with this study and that can be identified with you will remain confidential and will
 be disclosed only with your permission or as required by law.
