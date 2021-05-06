@@ -12,10 +12,8 @@ a project must follow all applicable items listed in the
 All Research Assistants and Field Coordinators at DIME must sign the
 DIME Data Non-Disclosure Agreement (NDA)
 as a condition of employment.
-The NDA can be accessed [here](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/dime-data-nda.pdf)
-but link will only work if you work at DIME.
-You can email dimeanalytics@worldbank.org
-if you want a copy of the NDA.
+The NDA can be accessed [here](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/dime-data-nda.pdf), but you may only submit this to dimeanalytics@worldbank.org 
+once you have passed the data security assessment.
 
 ## DIME Data Security Resources
 
