@@ -1,6 +1,6 @@
 # Read first
 
-These are boiler plate templates for written consent that can be used while interviewing a respondent.
+These are boiler plate templates for informed consent that can be used while interviewing a respondent.
 Many surveys require additional/different components in the consent based on the type of respondent (for example, minors as respondent)
 or if the survey includes certain components (such as audio-taping).
 
@@ -37,7 +37,7 @@ It is essential to follow the guidelines set in the IRB.
 
 ### Consent Contents
 
-The Data Privacy Policy at the World Bank requires an informed consent to include
+As deliniated by the Data Privacy Policy at the World Bank, an informed consent is required to include
 (1) the type of Personal Data to be Processed; 
 (2) the identity of the WBG Institution Processing the Personal Data; 
 (3) whether the Personal Data is to be shared with Third Parties and the names or types of such Third Parties; 
@@ -58,9 +58,13 @@ The higher the risk, the more extensive the informed consent procedures must be,
 
 
 ## Surveying minors
-When surveying minors (aged 8 to 17), an assent needs to be obtained from a parent or guardian unless an exemption is provided by the IRB. This [template](https://couhes.mit.edu/sites/default/files/documents/Assent-Form-2019-01-22.doc) can be used to develop an assent form. 
+When surveying minors (aged 8 to 17), an assent needs to be obtained from a parent or guardian unless an exemption is provided by the IRB. This [template](https://couhes.mit.edu/sites/default/files/documents/Assent-Form-2019-01-22.doc) can be used to develop an assent form. As detailed in the World Bank Data Privacy policy guidelines "minors under 18 or individuals under legal guardianship should be given the opportunity to assent to the use of their data whenever they are capable of doing so. The assent process should use language and processes suitable to the age and understanding of the respondent."
+
+In case a World Bank project defines that there is a case made to not obtain assent from a parent or guardian, an approval will be required from the Data Privacy Office (DPO).
+
 
 ## Resources
+The World Bank Data Privacy Office provides a simple [template](https://worldbankgroup.sharepoint.com/sites/wbsites/WBDP/Sitepages/Detail.aspx/Documents/mode=view?_Id=45&SiteURL=/sites/wbsites/wbdp) (_*accesible only via World Bank intranet_)
 IPA provides a comprehensive [checklist](https://www.poverty-action.org/sites/default/files/Consent_Form_Checklist_and_Template.docx)
 of all the items that can be included in a consent form.
 The University California, Berkeley provides an informed consent
