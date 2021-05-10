@@ -35,9 +35,16 @@ we recommend reading out the oral consent to respondents and giving them a print
 Note that the exact practice can vary based on the what has been agreed upon in the approved IRB protocol.
 It is essential to follow the guidelines set in the IRB.
 
-### Consent contents
-Informed consent must include, at a minimum, information about the authority for conducting the project,
-intended uses of the information, and whether participation is mandatory or voluntary.
+### Consent Contents
+
+The Data Privacy Policy at the World Bank requires an informed consent to include
+(1) the type of Personal Data to be Processed; 
+(2) the identity of the WBG Institution Processing the Personal Data; 
+(3) whether the Personal Data is to be shared with Third Parties and the names or types of such Third Parties; 
+(4) the specific purpose(s) for which the Personal Data is Processed; 
+(5) the types of Processing activities that may be performed on the Personal Data; and 
+(6) how long the Personal Data is retained.
+
 Projects with applicable risk points must employ two or more of the items listed below.
 The higher the risk, the more extensive the informed consent procedures must be, such as the following: 
 
@@ -48,6 +55,7 @@ The higher the risk, the more extensive the informed consent procedures must be,
 - Written materials that can be kept 
 - Signed consent form 
 - Consent specific to the recording medium (e.g., videotape)
+
 
 ## Surveying minors
 When surveying minors (aged 8 to 17), an assent needs to be obtained from a parent or guardian unless an exemption is provided by the IRB. This [template](https://couhes.mit.edu/sites/default/files/documents/Assent-Form-2019-01-22.doc) can be used to develop an assent form. 
