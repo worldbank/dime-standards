@@ -32,7 +32,7 @@ retained by the research team.
 
 In cases that the written consent is too long to read out,
 we recommend reading out the oral consent to respondents and giving them a printed copy of the written consent.
-Note that the exact practice can vary based on the what has been agreed upon in the IRB approvals.
+Note that the exact practice can vary based on the what has been agreed upon in the approved IRB protocol.
 It is essential to follow the guidelines set in the IRB.
 
 ### Consent contents
