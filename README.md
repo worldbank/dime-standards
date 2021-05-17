@@ -16,7 +16,7 @@ There are two components to this repository:
 ## DIME Research Standards
 
 ### Pillar 1 - Research Ethics
-- DIME Researchers must secure ethics approval from an institutional review board (IRB) and the appropriate authority in the study location, for studies directly involving human subjects or using personally-identifying information.
+- DIME Researchers must secure ethics approval from an institutional review board (IRB) and, if applicable, any relevant authority in the study location, for studies directly involving human subjects or using personally-identifying information.
 - All DIME team members that handle personally-identifiable information must have up-to-date Human Subjects Research Certification.
 - DIME staff must ensure confidentiality, privacy, and anonymity of study participants;
 study participants must have the opportunity to provide [informed consent](https://github.com/worldbank/dime-standards/tree/master/dime-research-standards/pillar-1-research-ethics/research-ethics-resources/informed-consent-templates), and revoke that consent at any time.
