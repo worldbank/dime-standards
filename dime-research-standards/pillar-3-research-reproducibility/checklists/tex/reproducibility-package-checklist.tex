@@ -6,7 +6,7 @@
 
 \titleBox{
 	\textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Reproducibility Package Checklist}} \\
-	\Large\textbf{{v1.3}}}
+	\Large\textbf{{v1.4}}}
 }
 
 	\section*{Required Content and Practices}
@@ -84,6 +84,22 @@
 		\item[] \dimeCheckBox{Cleaned data with constructed variables}
 	\end{itemize}
 
+	\noindent Indicate if the data used in this project or reproducibility package has been published:
+	\begin{itemize}
+		\setlength\itemsep{-0.1em}
+		\item[] \dimeCheckBox{Yes, it has been published}
+		\item[] \dimeCheckBox{No, it has not been published}
+	\end{itemize}
+
+	\noindent If it has been published, please indicate the URL or DOI of the data publication:
+	\begin{itemize}
+		\setlength\itemsep{-0.1em}
+		\item[] \dimeTextField{data_url1}{13cm}{URL / DOI 1:}
+		\item[] \dimeTextField{data_url2}{13cm}{URL / DOI 2:}
+		\item[] \dimeTextField{data_url3}{13cm}{URL / DOI 3:}
+	\end{itemize}
+
+
 
 	\subsection{4. \, Outputs}
 
@@ -108,10 +124,6 @@
 
 		\begin{itemize}
 			\setlength\itemsep{0.2em}
-			\item[] \textbf{Data citation}
-			\item[] \dimeTextField{data}{10cm}{URL:} \hspace{.3cm} \dimeCheckBox{Data is public}
-			\item[] \dimeTextField{doi}{10cm}{DOI:}
-			\vspace{0.2em}
 			\item[] \textbf{Code repository}
 			\item[] \dimeTextField{code}{10cm}{URL:} \hspace{.3cm} \dimeCheckBox{Code repository is public}
 			\vspace{0.2em}
