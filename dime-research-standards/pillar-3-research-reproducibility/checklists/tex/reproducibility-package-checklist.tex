@@ -6,7 +6,7 @@
 
 \titleBox{
 	\textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Reproducibility Package Checklist}} \\
-	\Large\textbf{{v1.2}}}
+	\Large\textbf{{v1.3}}}
 }
 
 	\section*{Required Content and Practices}
@@ -26,6 +26,8 @@
 
 	\begin{itemize}
 		\setlength\itemsep{-0.1em}
+		\item[] \dimeTextField{software}{8cm}{Software used (including version):}
+		\item[] \dimeTextField{os}{8cm}{Operating system used:}
 		\item[] \dimeCheckBox{All scripts needed to reproduce the analysis is included in the reproducibility package.}
 		\item[] \dimeCheckBox{The reproducibility package includes a \textbf{master script}.}
 		\item[] \dimeTextField{master}{11cm}{Master script path and name:}
@@ -36,8 +38,9 @@
 
 	\begin{itemize}
 		\setlength\itemsep{-0.1em}
+		
 		\item[] \dimeTextField{time}{2.5cm}{\textbf{Approximate time} it takes to recreate all results from the the master script: }
-		\item[] \dimeCheckBox{The master script runs from start to end if the reviewer changes only directory path(s) in one location of the master script. \dimeTextField{dir}{2cm}{Directory path(s) \textbf{line number:} }}
+		\item[] \dimeTextField{ram}{2.5cm}{RAM size of computer used to calculate time:}
 
 		\item[] \dimeCheckBox{The master script re-creates all raw outputs (e.g. tables and figures) when executed.}
 
