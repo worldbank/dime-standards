@@ -66,9 +66,12 @@
 # png files in img folders
 !/**/img/**/*.png
 
+# cvs files in templates folders
+!/**/templates/**/*.csv
+!/**/templates/**/*.xlsx
+
 *Unignore the DIME NDA pdf
 !**/data-security-resources/dime-data-nda.pdf
-
 
 #######################
 # Include all the files with passwords or tokens here. All files named
