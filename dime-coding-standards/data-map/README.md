@@ -78,16 +78,18 @@ or if your IT department has set up a secure sync service
 
 ## Master datasets
 
-In ProjectIE there are two unit of observations in the data linkage table -
-community and farmer -
-and we therefore need master datasets for both of them.
-These master datasets should include all observations of these two units
-that the research team ever interact with.
-Note that this is often includes more observations than what are included in your analysis sample.
-Examples of this could in the ProjectIE be farmers listed in the government partner's admin data
-that were selected to be a part of the sample,
-or farmers that are not in your study and but who attended the training
-offered to the treatment group anyways and are included in the monitoring data.
+In ProjectIE, there are two units of observation in the data linkage table -
+community and farmer.
+Therefore, we need master datasets for each of these,
+and each master dataset should include all observations
+that the research team has ever interacted with.
+Note that due to this definition,
+the master datasets will often include more observations than are included in your analysis sample.
+For example, in ProjectIE,
+these additional observations could include farmers listed in the government partner's admin data
+that were not selected to be a part of the sample.
+Similarly, there could be farmers who were not included in your study sample,
+but who treatment group training programs, and were therefore included in the monitoring data.
 
 #### Farmer master dataset
 
@@ -107,15 +109,17 @@ offered to the treatment group anyways and are included in the monitoring data.
 | 21404 | 214   | Annamaria  | Cavozzi   | 1      | 59  | 1         | 0                 |
 | …     | …     | …          | …         | …      | …   | …         | …                 |
 
-This is an exert of the master dataset that lists all the farmers that
-the research team for ProjectIE ever interacted with.
-Most of this farmer is in the sample for this study but not all.
-Note that treatment status is not included in this master dataset.
-As described above,
-treatment in this fictional study was randomly assigned on community level,
-so treatment status will be included in the community master dataset.
-But the sampling for this project was done on farmer level,
-so sampling status are included in this master dataset.
+The above table is an excerpt of a master dataset that lists all farmers with
+whom the research team for ProjectIE has ever interacted.
+Typically most of these farmers are included in the sample for this study,
+but not all of them have to be in the sample
+as all observations this project interacts with should be listed here.
+Note that we have not included treatment status in this master dataset.
+As mentioned earlier,
+treatment status in this fictional study was randomly assigned at the community level,
+so treatment status will be included in the community master dataset (excerpt below).
+However, since sampling for this project was done at the farmer level,
+therefore sampling status has been included in this master dataset.
 
 #### Community master dataset
 
@@ -131,45 +135,47 @@ so sampling status are included in this master dataset.
 | 220   | Balenni        | Sénénéga | 0         |
 | …     | …              | …        | …         |
 
-This is an exert of all the communities relevant to ProjectIE.
-Since treatment was randomly assigned on community level,
-this is  the authoritative source of treatment status,
-even though it will be mostly used in regressions with farmers as unit of analysis.
+The above table is an excerpt of all the communities
+that are relevant for our example, that is, ProjectIE.
+Since treatment was randomly assigned at the community level,
+this master dataset is the authoritative source of information on treatment status,
+even though farmers will be the unit of analysis for regressions in this study.
 
 #### Notes on these master data sets
 
-* It is common to put the project ID as the leftmost columns,
-but it is  not the master dataset that governs what the project ID is,
+* It is common parctice to put the project ID as the leftmost columns,
+but note that the master dataset does not govern what the project ID is -
 that is governed by the data linkage table
 
 #### Use master datasets to identify datasets without the project ID
 
-Any dataset that the research team receives without the project ID
-must first be merged with the master dataset of its unit of observation.
-So let's say our monitor data was attendance sheets from the training sessions
-but with no other identifier but full names and the community where they live.
-And let's say we also wanted to merge treatment status to the monitor data
+If the research team receives a dataset without the project ID,
+then they must merge these datasets with the master dataset for the relevant unit of observation.
+For instance, suppose that our monitoring data was attendance sheets from the training sessions,
+but it does not have any other identifier except full names and the community where they live.
+Further, suppose that that we also want to merge treatment status with the monitoring data
 to see if anyone in the control group had attended the trainings.
-We would then first have to merge the monitor data with the farmer master dataset
-using a string match.
+In this case, we would first have to merge the monitoring data with
+the farmer master dataset using a string match.
 
-All ambiguous string matches would have to resolved manually to make sure that
-no inexact matches were done incorrectly.
-We want to do this string match towards all farmers in the farmer master dataset,
-not just the farmers we expected to have attended,
-i.e. farmers in the treatment group.
-Including all farmers gives us the most information to use
-when resolving any unambiguous matches.
+Please note that we have to resolve all ambiguous string matches manually
+to make sure that matches that are not exact are resolved correctly.
+Note that we will do this string match for all farmers in the farmer master dataset,
+and not just for the farmers we think might have attended
+(that is, farmers in the treatment group).
+In this case, including all farmers gives us the maximum amount of information
+for resolving any unambiguous matches.
 
 If we find any farmers that we do not have in our farmer master dataset,
 then we should add them to the master dataset and assign them a project ID.
-See farmer _20751_ in the farmer master dataset.
-That could have been such a farmer,
-since they are not in the sample but attended the training.
+For example, see farmer with ID 20751 in the farmer master dataset.
+This could be an example of a farmer who attended the training,
+but was not in the sample.
 
-Once we have done the string match as good as we can,
-we have project ID for both farmer and community for all farmers in the monitor data,
-and we can easily merge this with the community master dataset to get the treatment status.
+Once we have performed the string match as accurately as possible,
+we will have project IDs for both, farmers as well as the communities in the monitoring data.
+Then we can easily merge this with the community master dataset to
+get information on the treatment status.
 
 ## Data flow chart
 
