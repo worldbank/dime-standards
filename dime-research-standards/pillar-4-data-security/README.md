@@ -12,10 +12,8 @@ a project must follow all applicable items listed in the
 All Research Assistants and Field Coordinators at DIME must sign the
 DIME Data Non-Disclosure Agreement (NDA)
 as a condition of employment.
-The NDA can be accessed [here](https://worldbankgroup-my.sharepoint.com/:w:/r/personal/alegovini_worldbank_org/Documents/DIME-Resources/DIME-Analytics/onboarding/DIME-Data-NDA.docx?d=wb9236fa6536c4198a5f85794eca25fd7&csf=1&web=1&e=NhhqX0)
-but link will only work if you work at DIME.
-You can email dimeanalytics@worldbank.org
-if you want a copy of the NDA.
+The NDA can be accessed [here](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/dime-data-nda.pdf), but you may only submit this to dimeanalytics@worldbank.org 
+once you have passed the data security assessment.
 
 ## DIME Data Security Resources
 
@@ -100,9 +98,14 @@ Remember to save a backup copy of the original identified data in a non-shared, 
 
 #### Password management
 
-The only safe way to share keys and passwords is to use password managers.
-and password managers are great at making it easy to follow password best practices.
-You only need to come up with and memorize one very strong password – your _master password_, used to log in to the password manager account.
+The only safe way to share encryption keys and passwords is to use password managers.
+While this is the only way you may share encrytpion keys and passwords 
+used to protected confidential data in DIME projects,
+we recommend using password managers for all your passwords.
+When using a password managers it is easy to follow password best practices,
+such as having different passwords for each account and only use long random strings.
+The only password you then need to memorize is your _master password_ 
+used to log in to the password manager account.
 To make sure that you have a very secure master password, see the
 [DIME Analytics Guide to Secure, Memorizable, and Long Passwords](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/memorizable-strong-password-guidelines.md).
 Once you have a memorizable and sufficiently long password,

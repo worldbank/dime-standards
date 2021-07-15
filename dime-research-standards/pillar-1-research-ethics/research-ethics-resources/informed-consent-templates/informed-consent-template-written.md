@@ -64,6 +64,14 @@ and the purpose of the disclosure.]**
 Also describe the subject's right to review/edit the tapes, who will have access to them,
 if they will be used for educational purpose, and when they will be erased.]** We will record audio in some parts of the survey for ensuring data quality. Do you consent to having audio recorded during some sections of the survey ?
 
+When the research is completed, we may save the information for use in future research done by this research team.
+
+**[In case of definite  retention of data]** We will retain these records for up to **[NUMBER OF YEARS]** years after the study is over.
+
+**[In case of indefinite retention of data]** Please note that any identifying personal data in this questionnaire will be kept until the research is completed, but safely stored and encrypted by DIME, part of the World Bank research group, so that it cannot be accessed by any third parties.
+
+The same measures described above will be taken to protect confidentiality of this study data.
+
 
 ## Identification of investigators
 
