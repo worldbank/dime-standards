@@ -93,21 +93,21 @@ but who treatment group training programs, and were therefore included in the mo
 
 #### Farmer master dataset
 
-| hhid  | comid | first_name | last_name | female | age | in_sample | attended_training |
-|-------|-------|------------|-----------|--------|-----|-----------|-------------------|
-| 10201 | 102   | Seana      | Sonschein | 1      | 43  | 1         | 1                 |
-| 10203 | 102   | Jermayne   | Zarb      | 0      | 38  | 1         | 0                 |
-| 10205 | 102   | Emeline    | Faraker   | 1      | 64  | 1         | 1                 |
-| 10401 | 104   | Didi       | Frazer    | 1      | 63  | 1         | 0                 |
-| 10402 | 104   | Marchall   | Rives     | 0      | 40  | 0         | 0                 |
-| 10403 | 104   | Lorinda    | Gabits    | 1      | 50  | 1         | 1                 |
-| 20701 | 207   | Sid        | Sorrie    | 0      | 43  | 1         | 0                 |
-| 20702 | 207   | Pall       | Denacamp  | 0      | 62  | 1         | 0                 |
-| 20751 | 207   | Mei        | Kezar     | 1      | 35  | 0         | 1                 |
-| 21401 | 214   | Cos        | Gronno    | 0      | 40  | 1         | 1                 |
-| 21402 | 214   | Yorgo      | Adin      | 0      | 64  | 1         | 1                 |
-| 21404 | 214   | Annamaria  | Cavozzi   | 1      | 59  | 1         | 0                 |
-| …     | …     | …          | …         | …      | …   | …         | …                 |
+| hhid  | comid | first_name | last_name | age | in_sample | treated | attended_training |
+|-------|-------|------------|-----------|-----|-----------|---------|-------------------|
+| 10201 | 102   | Seana      | Sonschein | 43  | 1         | 1       | 1                 |
+| 10203 | 102   | Jermayne   | Zarb      | 38  | 1         | 0       | 0                 |
+| 10205 | 102   | Sid        | Frazer    | 64  | 1         | 0       | 1                 |
+| 10401 | 104   | Didi       | Frazer    | 63  | 0         | 1       | 0                 |
+| 10402 | 104   | Marchall   | Rives     | 40  | 0         | 0       | 0                 |
+| 10403 | 104   | Lorinda    | Gabits    | 50  | 1         | 1       | 1                 |
+| 20701 | 207   | Sid        | Sorrie    | 43  | 1         | 0       | 0                 |
+| 20702 | 207   | Pall       | Denacamp  | 62  | 1         | 0       | 0                 |
+| 20751 | 207   | Mei        | Kezar     | 35  | 0         | 1       | 1                 |
+| 21401 | 214   | Cos        | Gronno    | 40  | 1         | 1       | 1                 |
+| 21402 | 214   | Yorgo      | Adin      | 64  | 1         | 1       | 1                 |
+| 21404 | 214   | Annamaria  | Cavozzi   | 59  | 1         | 0       | 0                 |
+| …     | …     | …          | …         | …   | …         | …       |                   |
 
 The above table is an excerpt of a master dataset that lists all farmers with
 whom the research team for ProjectIE has ever interacted.
