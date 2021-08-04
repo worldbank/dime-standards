@@ -23,10 +23,13 @@ that may be revealed while performing the research tasks;
 (e.g., drives, tapes, transcripts),
 unless specifically requested to do so by the Principal Investigator;
 
-4. Keep all data that contains identifying information in any form or format
-(e.g., files, drives, tapes, transcripts)
-secure while it is in my possession.
-This includes:
+4. Keep all _personal data_ stored in any form or format (e.g., files, drives, tapes, transcripts) secure
+both when transferred to me and while it is in my possession.
+Examples of personal data includes both straightforwardly identifying data,
+such as name, address, and personal identification number,
+as well as less straightforward identifying data,
+such as location data, online identification data such as an internet protocol (IP) address and cookie identifiers, and physical characteristics.
+Measures required to keep data secure depends on context, but as a minimum always includes (when applicable):
     - keeping all digitized data in securely encrypted files;
     - password-protecting my computer and any other digital devices I use;
     - never transferring identifying information over e-mail;
