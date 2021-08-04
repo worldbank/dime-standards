@@ -30,7 +30,9 @@ such as name, address, and personal identification number,
 as well as less straightforward identifying data,
 such as location data, online identification data such as an internet protocol (IP) address and cookie identifiers, and physical characteristics.
 Measures required to keep data secure depends on context, but as a minimum always includes (when applicable):
-    - keeping all digitized data in securely encrypted files;
+    - make sure that no data is transferred to me in an insecure method
+      (this applies to data collection, receiving data from research partners or other members of the research team);
+    - keeping all digitized personal data in securely encrypted files;
     - password-protecting my computer and any other digital devices I use;
     - never transferring identifying information over e-mail;
     - signing out from or locking the computer containing identifying information
