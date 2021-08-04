@@ -12,7 +12,7 @@ By signing this document, I acknowledge my responsibilities to:
 1. Keep all research information shared with me confidential.
 Therefore, I have committed to not discussing or sharing any information in any form or format
 (e.g., files, drives, transcripts, photos)
-with anyone outside the research team (as defined by the Principal investigator),
+with anyone outside the research team (as defined by the Principal Investigator),
 and to only share information outside the research team if
 specifically requested to do so in writing by the Principal Investigator;
 
@@ -43,10 +43,10 @@ Measures required to keep data secure depends on context, but as a minimum alway
 regardless if I am still working on any research tasks or not.
 This does not apply to anonymized data.
 
-5. Return all data (personal or not) stored in any physical format (e.g., drives, transcripts, photos)
+6. Return all data (personal or not) stored in any physical format (e.g., drives, transcripts, photos)
 to the Principal Investigator when I have completed the research tasks, or at the end of my contract;
 
-6. Destroy all research information (personal or not) stored in any form not returnable to the Principal Investigator
+7. Destroy all research information (personal or not) stored in any form not returnable to the Principal Investigator
 (e.g., information stored on my computer hard drive)
 upon completion of the research tasks, or at the end of my contract,
 after I have made sure that the Principal Investigator have copies of all the data that I have local copies of.
