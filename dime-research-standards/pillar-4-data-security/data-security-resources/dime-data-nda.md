@@ -33,7 +33,7 @@ such as name, address, and personal identification number,
 as well as, less straightforwardly identifying data,
 such as location data, online identification data such as an internet protocol (IP) address and cookie identifiers, and physical characteristics.
 Measures required to keep data secure depend on context, but as a minimum always include (when applicable):
-    - making sure that no data is transferred to me in an insecure method
+    - making sure that no data is transferred to me in an insecure method;
       (this applies to data collection, receiving data from research partners or other members of the research team);
     - keeping all digitized personal data in securely encrypted files;
     - password-protecting my computer and any other digital devices I use;
@@ -44,7 +44,7 @@ Measures required to keep data secure depend on context, but as a minimum always
 
 5. Destroy all personal data when the data retention period stated in the IRB has elapsed,
 regardless of whether I am still working on any research tasks or not.
-This does not apply to anonymized data.
+This does not apply to anonymized data;
 
 6. Return all data (personal or not) stored in any physical format (e.g., drives, transcripts, photos)
 to the Principal Investigator when I have completed the research tasks, or at the end of my contract;
