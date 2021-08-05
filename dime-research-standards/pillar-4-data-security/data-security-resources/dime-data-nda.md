@@ -27,10 +27,10 @@ unless specifically requested to do so by the Principal Investigator;
 both when transferred to me and while it is in my possession.
 Examples of personal data includes both straightforwardly identifying data,
 such as name, address, and personal identification number,
-as well as less straightforward identifying data,
+as well as less straightforwardly identifying data,
 such as location data, online identification data such as an internet protocol (IP) address and cookie identifiers, and physical characteristics.
 Measures required to keep data secure depends on context, but as a minimum always includes (when applicable):
-    - make sure that no data is transferred to me in an insecure method
+    - making sure that no data is transferred to me in an insecure method
       (this applies to data collection, receiving data from research partners or other members of the research team);
     - keeping all digitized personal data in securely encrypted files;
     - password-protecting my computer and any other digital devices I use;
