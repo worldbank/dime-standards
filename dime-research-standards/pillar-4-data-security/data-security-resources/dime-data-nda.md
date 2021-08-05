@@ -1,5 +1,8 @@
 # DIME STC/STT Non-Disclosure Agreement
-<br><br>
+
+Version: August 5, 2021
+
+##
 
 I, ________________________________ [print name of STC/STT], have agreed to maintain full confidentiality when contributing to research projects at DIME. 	
 
@@ -92,5 +95,3 @@ Signature of STC/STT: ______________________________
 Printed name of STC/STT: ______________________________
 
 Date: _________________
-
-### DIME NDA Version: August 5, 2021
