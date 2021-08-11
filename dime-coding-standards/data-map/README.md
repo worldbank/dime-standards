@@ -28,8 +28,8 @@ so all the farmers in the same community have the same treatment assignment.
 
 A data linkage table keeps track of the datasets and how they may be linked with each other.
 A template for the table below can be downloaded from this repo both in
-[Excel format](https://github.com/worldbank/dime-standards/blob/data-map/dime-coding-standards/data-map/templates/data-linkage-table-template.xlsx?raw=true)
-or in [.csv format](https://github.com/worldbank/dime-standards/blob/data-map/dime-coding-standards/data-map/templates/data-linkage-table-template.csv?raw=true).
+[Excel format](https://github.com/worldbank/dime-standards/raw/master/dime-coding-standards/data-map/templates/data-linkage-table-template.xlsx)
+or in [.csv format](https://github.com/worldbank/dime-standards/blob/master/dime-coding-standards/data-map/templates/data-linkage-table-template.csv).
 
 If you version control your data work using git,
 we recommend storing your data linkage table in a csv format as it is suitable for git version control.
