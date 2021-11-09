@@ -72,7 +72,7 @@ when it travels on the internet not mentioned here,
 but it will never be as safe as the password not traveling
 on the internet in the first place.
 
-<img src="https://github.com/worldbank/dime-standards/blob/remove-free-lp-premium/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-master-pw-security.png" width="100%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-master-pw-security.png" width="100%"><!--- Image is read from master branch or use full URL-->
 
 ### The two password managers we recommend
 
@@ -115,7 +115,7 @@ It never matters if the account the item is shared with is free or premium,
 it only matters if the account that owns the item is free or premium.
 See _Case B_ in the image below.
 
-<img src="https://github.com/worldbank/dime-standards/blob/remove-free-lp-premium/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-premium-share.png" width="50%"><!--- Image is read from master branch or use full URL-->
+<img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-premium-share.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
 This guide therefore recommends that a senior person in the team pays for a premium account,
 or if the team has a team email uses that email to create a premium account.
