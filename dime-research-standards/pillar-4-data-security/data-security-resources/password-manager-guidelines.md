@@ -1,13 +1,40 @@
 # DIME Analytics - Data Security Guides - Password managers
 
-**Weak passwords** is one of the two main causes of data breaches.
-(The other one being outdated software, so always update your software when prompted to)
+## Why password managers?
 
-**Strong passwords** should be very long and different from other passwords you use.
-Password that protects confidential data should be at least 15 characters long
-(preferably more than 30 if allowed) and consist of completely random numbers, letters and symbols.
-For example, `mPFaAse&9x^R9vxg2*8ZA2BFik#KyXuj`. No one can memorize such passwords by heart,
-but password managers make it easy to create, securely store and work with such passwords.
+All your work passwords and encryption keys that protect personally identifiable (PII) data at DIME must fulfill these three principles:
+
+**1. Secure storage.** All passwords or encryption keys that
+protect personally identifiable (PII) data in a project at DIME
+**must** be stored in a password manager.
+You may not store those passwords or encryption keys anywhere else.
+
+**2. Unique passwords and keys.** You may not use the exact same
+password or encryption key in multiple places. This means that you may not
+use the same password for a service that handles PII data at DIME
+as the password you use, for example, at Facebook, your email etc.
+Multiple encrypted folders in the same project can be considered "one place",
+meaning that you may use the same encryption key for those folders.
+However, encrypted folders in different projects should never be considered "one place",
+so you may not use the same encryption key across projects.
+
+**3. Super-strong passwords.** Weak passwords is a common causes for data breaches,
+so all passwords that protects PII data must be strong.
+The most important factor that makes a password strong is its length.
+Password that protects PII data should be at least 15 characters long
+and preferably more than 30 if allowed.
+Strong passwords should consists of upper and lower case letters,
+numbers and special characters. It should also not consists of any words.
+If a password has all of these characteristics is it _super-strong_.
+An example of a super-strong password is: `mPFaAse&9x^R9vxg2*8ZA2BFik#KyXuj`.
+
+No human can live up to principle 2. and 3. unless using some tool.
+Luckily there is such a tool and that is the same tool that
+principle 1. says that we need to use: _Password Managers_.
+
+While you must use password managers for work passwords and keys, we strongly recommend that you do it for all your personal password and sensitive information as well. This is often the top recommendation cyber experts list when asked for an easy protection that all people should use. See examples [here](https://www.howtogeek.com/141500/why-you-should-use-a-password-manager-and-how-to-get-started),
+[here](https://www.theverge.com/2017/7/24/15921282/best-password-manager-1password-lastpass-dashlane-how-to) or
+[here](https://www.pcmag.com/article/325635/get-organized-why-arent-you-using-a-password-manager-yet).
 
 ## Password managers make it easy to use super-strong passwords
 
