@@ -78,41 +78,71 @@ on the internet in the first place.
 
 This guide recommends two password managers, [LastPass](https://www.lastpass.com)
 and [Bitwarden](https://bitwarden.com). LastPass is a closed-source
-but widely used password managers that anyone with a worldbank.org email can get a 1 year premium trial access.
-LastPass's browser extension is also approved for World Bank devices.
+but widely used password manager that is approved for World Bank usage.
+This means that LastPass's browser extension is approved for World Bank devices,
+and that it is easy to process payments for premium accounts
+through the procurement team at the World Bank.
+More on why premium accounts are used for in next section.
+
 Since LastPass is a closed-source software
 (meaning that no one from the outside can confirm that it is properly implemented)
 we also want to recommend the open-source alternative Bitwarden
 (recommended for example [here](https://www.privacytools.io/software/passwords)).
 Bitwarden has been scrutinized by hundreds of independent cyber security experts that have no profit incentive to not disclose weaknesses.
-Bitwarden can still be used on World Bank devices, but its browsers extension cannot be installed.
+Bitwarden can still be used on World Bank devices,
+but its browsers extension cannot be installed and we cannot pay for premium features.
 
-### The most secure types of password managers
+There are other types of password managers that are not synced to the cloud.
+Those are considered even more secure, but they are not great for
+collaboration and sharing passwords and encryption keys,
+so they are not considered in this guide.
 
-This guide recommends [LastPass](https://www.lastpass.com) and [Bitwarden](https://bitwarden.com)
-which are both cloud based password managers,
-but the most secure type of password managers does not store your password vault in the cloud.
-However, password managers that do not store the password vault in the cloud are much less user-friendly,
-as you need to manually sync password across devices, and if you do not carry your device with you,
-then you have no way to access any of your passwords.
-Cloud based password managers are still extremely secure as long as they are implemented correctly,
-but for the sake of completeness, we want to mention that there are doubly-extremely secure non-cloud password managers like [KeePassXC](https://keepassxc.org).
+### When premium features are needed
 
-## Creating you master password
+Most password managers have a freemium model.
+That means that there are free accounts with most features and
+paid accounts with premium features.
+The premium feature relevant for the use-cases password managers are used
+in DIME is how many people one _secure item_ can be shared with.
+_Secure item_ is what a password, encryption key, secure note etc.
+stored in a password manager is referred to by a single term.
 
-Your master password should be the only password you should have to remember by heart,
-in addition to your computer log-on.
-You will not be able to use your password manager before you are logged in to your computer,
-which is why you also need to memorize your computer log-on password.
+In LastPass all secure items are owned by an account.
+If this account is a free account then this item may be shared with one other account. See _Case A_ in the image below.
+An item owned by a premium account can be shared with
+an unlimited number of other accounts.
+It never matters if the account the item is shared with is free or premium,
+it only matters if the account that owns the item is free or premium.
+See _Case B_ in the image below.
 
-Since these passwords authorize access to so much else, they also need to be very secure.
-They will never be as secure as `mPFaAse&9x^R9vxg2*8ZA2BFik#KyXuj`, but
-[DIME Analytics guide to memorizable secure passwords](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/memorizable-strong-password-guidelines.md)
-helps you create as secure as possible "memorize-able" passwords.
+<img src="https://github.com/worldbank/dime-standards/blob/remove-free-lp-premium/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-premium-share.png" width="25%"><!--- Image is read from master branch or use full URL-->
 
-# LastPass - Guidelines
+This guide therefore recommends that a senior person in the team pays for a premium account,
+or if the team has a team email uses that email to create a premium account.
+Then all other team members can have free accounts and
+have the secure item shared with them.
+This means that each time a new password or encryption key is created,
+then the owner of the premium account
+(or someone with access to the team premium account)
+needs to store it in the account and share it with everyone that needs access to it.
 
-If you work for the World Bank you can get a 1 year free LastPass premium trial.
+If a team account is set up, we strongly recommends that everyone in the team
+still creates their own free account that each item is shared with.
+This has several reasons.
+The main reason is that the fewer people that has access to the account
+that owns the secure items the lower the risk is that someone
+accidentally deletes or overwrites them.
+When an owner shares an item with another user,
+then there is nothing that other user can do to
+delete or overwrite the item on the owner's account.
+Another reason is that it is much easier to revoke access to an item
+for a single person when they leave the team if
+the only way they have access to the item is through their own personal account.
+To revoke someone's access to a share account,
+then the master password to that account needs to be updated
+and the new password is not shared with the person who's access is to be revoked.
+
+# Getting started with LastPass
 The only aspect in which a premium account differs from a free account
 that is relevant to a typical researcher
 is how many people each secure item (password, key-file etc.) can be shared with.
