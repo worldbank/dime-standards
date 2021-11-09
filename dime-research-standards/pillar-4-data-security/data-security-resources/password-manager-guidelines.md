@@ -40,16 +40,39 @@ While you must use password managers for work passwords and keys, we strongly re
 
 With password managers you only need to remember one password, called the _master password_.
 The master password is used to unlock the password vault in your password manager.
-All other passwords should be long random strings and your password manager will store
-and give you access to them through the password vault.
+All other passwords should be randomly generated super-strong password
+that you store in the password vault.
 
-A properly implemented password manager does not treat your _master password_ like regular websites treat a password.
-Passwords on sites like facebook.com, dropbox.com etc. are sent to their web servers
-when you access your profile in their data bases to verify that you are you.
-In a properly implemented password manager however,
-the password vault is sent encrypted to your browser,
-where your master password then is used to decrypt it.
-This way your master password never travels on the internet, which is much more secure.
+You might ask yourself "What happens if the master password is stolen?".
+That is a great question, and it would indeed be a terrible thing if it happened.
+However, password managers are implemented in a way where the master password never travels on the internet.
+It never leaves your browser, the app on your phone or wherever you use your password manager,
+which makes it infinitely more difficult to steal,
+and if an hacker has the type of access to your computer or phone needed
+to steal the master password,
+then the hacker have hacked you so much that they do not need anymore
+to get access to all your information anyways.
+Skip the rest of this section if you are not interested in how this is done.
+
+A password manager does this by sending all information in your password vault
+to your computer each time you access it.
+Anyone who knows your username can do this,
+but the information is encrypted with your master password
+so without the master password it is impossible to read the content of your vault.
+This is possible as the vault only stores short text snippets and the size of the vault is rarely over 100kb.
+
+This is different from a service like Facebook that stores gigabytes of data for each user.
+Their service would be too slow if you would have to download
+all those gigabytes each time you logged in to Facebook.
+So in the case of most services you send your password to a password database,
+which gives you a short lived token if you provided the correct password
+that is used to get your data that is decrypted before sending it back to you.
+See the image below. There are ways to protect a regular password
+when it travels on the internet not mentioned here,
+but it will never be as safe as the password not traveling
+on the internet in the first place.
+
+<img src="https://github.com/worldbank/dime-standards/blob/remove-free-lp-premium/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-master-pw-security.png" width="25%"><!--- Image is read from master branch or use full URL-->
 
 ### The two password managers we recommend
 
