@@ -143,44 +143,33 @@ then the master password to that account needs to be updated
 and the new password is not shared with the person who's access is to be revoked.
 
 # Getting started with LastPass
-The only aspect in which a premium account differs from a free account
-that is relevant to a typical researcher
-is how many people each secure item (password, key-file etc.) can be shared with.
-When you create a password on LastPass, you are the owner of that item.
-An owner using the free LastPass account can only share that item with one person,
-but someone using LastPass premium can share it with any number of people.
-See a complete list of the differences between free, premium, family, and business
- accounts [here](https://www.lastpass.com/plans).
 
 ## Create LastPass account
 
 Before you set up your LastPass account, use the
 [DIME Analytics guide to memorizable secure passwords](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/memorizable-strong-password-guidelines.md)
-to create a very secure memorizable master password regardless of which instruction on how to sign up you are using below.
-
-_World Bank:_ If you have a worldbank.org email address and want access to the 1-year free trial of LastPass premium you should follow
-[these instructions](https://worldbankgroup.sharepoint.com/sites/ITS/cybersecurity-blog/Pages/Last-Pass-03062019-161721.aspx?deliveryName=DM10667&deliveryName=DM44419)
-(only available if you have access to the WB's intranet).
-This document also covers how to install the browser extension in your browser.
-
-If you have a worldbank.org email address, but you already have a LastPass using another email address,
-then you can upgrade your current account using the same instructions as above.
-
-_Non-World Bank:_ Create a free LastPass account [here](https://lastpass.com/create-account.php) here.
-If you already know that you want to pay for a premium account,
-you should still start with creating a free account and then upgrade it.
+to create a very secure but still memorizable master password.
+When you have a master password you are happy with, then create a free LastPass account
+[here](https://lastpass.com/create-account.php).
+Some DIME people have created their account using a personal email and some using the work email.
+While we prefers that people use their work email for anything related to protection of PII data,
+we understand that people want to use their personal email for a password manager
+if they intend to store personal passwords there as well.
+There is nothing that makes it less secure by using a person email,
+but when sharing a secure item,
+the owner of the item must share the item with the email used when setting up the account.
 
 ### Install LastPass' browser extension
 
 All popular password managers offers browser extensions that make it easy to copy passwords
 from your password vault to a field in the browser where you need them.
-You do not need to install the browser extension
-(you are giving LastPass a lot of access to your data by doing so), but most people do.
+You do not need to install the browser extension, but most people do.
 If you do not install your browser extension,
 you will have to go to lastpass.com each time you need any password from your password vault.
 
 Regardless of using a World Bank device or not,
-navigate [here](https://lastpass.com/misc_download2.php), click the `Quick install` button at top of the page,
+navigate [here](https://lastpass.com/misc_download2.php),
+click the `Quick install` button at top of the page,
 and follow all the instructions.
 
 ## Edit LastPass' insecure default settings
@@ -202,7 +191,7 @@ It is perfectly fine to tick the box `Remember Email` but **never ever** tick th
 The fact that LastPass even offer that option should make you cringe.
 
 Similarly, you should **never ever** let your browser save your LastPass master password.
-You really need to meorize it and type it each time you need access to your vault. This is the only secure way.
+You really need to memorize it and type it each time you need access to your vault. This is the only secure way.
 
 <img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-ext-login.png" width="25%"><!--- Image is read from master branch or use full URL-->
 
