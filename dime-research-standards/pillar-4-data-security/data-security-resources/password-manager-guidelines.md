@@ -1,106 +1,175 @@
 # DIME Analytics - Data Security Guides - Password managers
 
-**Weak passwords** is one of the two main causes of data breaches.
-(The other one being outdated software, so always update your software when prompted to)
+## Why password managers?
 
-**Strong passwords** should be very long and different from other passwords you use.
-Password that protects confidential data should be at least 15 characters long
-(preferably more than 30 if allowed) and consist of completely random numbers, letters and symbols.
-For example, `mPFaAse&9x^R9vxg2*8ZA2BFik#KyXuj`. No one can memorize such passwords by heart,
-but password managers make it easy to create, securely store and work with such passwords.
+All your work passwords and encryption keys that protect personally identifiable (PII) data at DIME must fulfill these three principles:
+
+**1. Secure storage.** All passwords or encryption keys that
+protect personally identifiable (PII) data in a project at DIME
+**must** be stored in a password manager.
+You may not store those passwords or encryption keys anywhere else.
+
+**2. Unique passwords and keys.** You may not use the exact same
+password or encryption key in multiple places. This means that you may not
+use the same password for a service that handles PII data at DIME
+as the password you use, for example, at Facebook, your email etc.
+Multiple encrypted folders in the same project can be considered "one place",
+meaning that you may use the same encryption key for those folders.
+However, encrypted folders in different projects should never be considered "one place",
+so you may not use the same encryption key across projects.
+
+**3. Super-strong passwords.** Weak passwords is a common causes for data breaches,
+so all passwords that protects PII data must be strong.
+The most important factor that makes a password strong is its length.
+Password that protects PII data should be at least 15 characters long
+and preferably more than 30 if allowed.
+Strong passwords should consists of upper and lower case letters,
+numbers and special characters. It should also not consists of any words.
+If a password has all of these characteristics is it _super-strong_.
+An example of a super-strong password is: `mPFaAse&9x^R9vxg2*8ZA2BFik#KyXuj`.
+
+No human can live up to principle 2. and 3. unless using some tool.
+Luckily there is such a tool and that is the same tool that
+principle 1. says that we need to use: _Password Managers_.
+
+While you must use password managers for work passwords and keys, we strongly recommend that you do it for all your personal password and sensitive information as well. This is often the top recommendation cyber experts list when asked for an easy protection that all people should use. See examples [here](https://www.howtogeek.com/141500/why-you-should-use-a-password-manager-and-how-to-get-started),
+[here](https://www.theverge.com/2017/7/24/15921282/best-password-manager-1password-lastpass-dashlane-how-to) or
+[here](https://www.pcmag.com/article/325635/get-organized-why-arent-you-using-a-password-manager-yet).
 
 ## Password managers make it easy to use super-strong passwords
 
 With password managers you only need to remember one password, called the _master password_.
 The master password is used to unlock the password vault in your password manager.
-All other passwords should be long random strings and your password manager will store
-and give you access to them through the password vault.
+All other passwords should be randomly generated super-strong password
+that you store in the password vault.
 
-A properly implemented password manager does not treat your _master password_ like regular websites treat a password.
-Passwords on sites like facebook.com, dropbox.com etc. are sent to their web servers
-when you access your profile in their data bases to verify that you are you.
-In a properly implemented password manager however,
-the password vault is sent encrypted to your browser,
-where your master password then is used to decrypt it.
-This way your master password never travels on the internet, which is much more secure.
+You might ask yourself "What happens if the master password is stolen?".
+That is a great question, and it would indeed be a terrible thing if it happened.
+However, password managers are implemented in a way where the master password never travels on the internet.
+It never leaves your browser, the app on your phone or wherever you use your password manager,
+which makes it infinitely more difficult to steal,
+and if an hacker has the type of access to your computer or phone needed
+to steal the master password,
+then the hacker have hacked you so much that they do not need anymore
+to get access to all your information anyways.
+Skip the rest of this section if you are not interested in how this is done.
+
+A password manager does this by sending all information in your password vault
+to your computer each time you access it.
+Anyone who knows your username can do this,
+but the information is encrypted with your master password
+so without the master password it is impossible to read the content of your vault.
+This is possible as the vault only stores short text snippets and the size of the vault is rarely over 100kb.
+
+This is different from a service like Facebook that stores gigabytes of data for each user.
+Their service would be too slow if you would have to download
+all those gigabytes each time you logged in to Facebook.
+So in the case of most services you send your password to a password database,
+which gives you a short lived token if you provided the correct password
+that is used to get your data that is decrypted before sending it back to you.
+See the image below. There are ways to protect a regular password
+when it travels on the internet not mentioned here,
+but it will never be as safe as the password not traveling
+on the internet in the first place.
+
+<img src="https://github.com/worldbank/dime-standards/blob/remove-free-lp-premium/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-master-pw-security.png" width="100%"><!--- Image is read from master branch or use full URL-->
 
 ### The two password managers we recommend
 
 This guide recommends two password managers, [LastPass](https://www.lastpass.com)
 and [Bitwarden](https://bitwarden.com). LastPass is a closed-source
-but widely used password managers that anyone with a worldbank.org email can get a 1 year premium trial access.
-LastPass's browser extension is also approved for World Bank devices.
+but widely used password manager that is approved for World Bank usage.
+This means that LastPass's browser extension is approved for World Bank devices,
+and that it is easy to process payments for premium accounts
+through the procurement team at the World Bank.
+More on why premium accounts are used for in next section.
+
 Since LastPass is a closed-source software
 (meaning that no one from the outside can confirm that it is properly implemented)
 we also want to recommend the open-source alternative Bitwarden
 (recommended for example [here](https://www.privacytools.io/software/passwords)).
 Bitwarden has been scrutinized by hundreds of independent cyber security experts that have no profit incentive to not disclose weaknesses.
-Bitwarden can still be used on World Bank devices, but its browsers extension cannot be installed.
+Bitwarden can still be used on World Bank devices,
+but its browsers extension cannot be installed and we cannot pay for premium features.
 
-### The most secure types of password managers
+There are other types of password managers that are not synced to the cloud.
+Those are considered even more secure, but they are not great for
+collaboration and sharing passwords and encryption keys,
+so they are not considered in this guide.
 
-This guide recommends [LastPass](https://www.lastpass.com) and [Bitwarden](https://bitwarden.com)
-which are both cloud based password managers,
-but the most secure type of password managers does not store your password vault in the cloud.
-However, password managers that do not store the password vault in the cloud are much less user-friendly,
-as you need to manually sync password across devices, and if you do not carry your device with you,
-then you have no way to access any of your passwords.
-Cloud based password managers are still extremely secure as long as they are implemented correctly,
-but for the sake of completeness, we want to mention that there are doubly-extremely secure non-cloud password managers like [KeePassXC](https://keepassxc.org).
+### When premium features are needed
 
-## Creating you master password
+Most password managers have a freemium model.
+That means that there are free accounts with most features and
+paid accounts with premium features.
+The premium feature relevant for the use-cases password managers are used
+in DIME is how many people one _secure item_ can be shared with.
+_Secure item_ is what a password, encryption key, secure note etc.
+stored in a password manager is referred to by a single term.
 
-Your master password should be the only password you should have to remember by heart,
-in addition to your computer log-on.
-You will not be able to use your password manager before you are logged in to your computer,
-which is why you also need to memorize your computer log-on password.
+In LastPass all secure items are owned by an account.
+If this account is a free account then this item may be shared with one other account. See _Case A_ in the image below.
+An item owned by a premium account can be shared with
+an unlimited number of other accounts.
+It never matters if the account the item is shared with is free or premium,
+it only matters if the account that owns the item is free or premium.
+See _Case B_ in the image below.
 
-Since these passwords authorize access to so much else, they also need to be very secure.
-They will never be as secure as `mPFaAse&9x^R9vxg2*8ZA2BFik#KyXuj`, but
-[DIME Analytics guide to memorizable secure passwords](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/memorizable-strong-password-guidelines.md)
-helps you create as secure as possible "memorize-able" passwords.
+<img src="https://github.com/worldbank/dime-standards/blob/remove-free-lp-premium/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-premium-share.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
-# LastPass - Guidelines
+This guide therefore recommends that a senior person in the team pays for a premium account,
+or if the team has a team email uses that email to create a premium account.
+Then all other team members can have free accounts and
+have the secure item shared with them.
+This means that each time a new password or encryption key is created,
+then the owner of the premium account
+(or someone with access to the team premium account)
+needs to store it in the account and share it with everyone that needs access to it.
 
-If you work for the World Bank you can get a 1 year free LastPass premium trial.
-The only aspect in which a premium account differs from a free account
-that is relevant to a typical researcher
-is how many people each secure item (password, key-file etc.) can be shared with.
-When you create a password on LastPass, you are the owner of that item.
-An owner using the free LastPass account can only share that item with one person,
-but someone using LastPass premium can share it with any number of people.
-See a complete list of the differences between free, premium, family, and business
- accounts [here](https://www.lastpass.com/plans).
+If a team account is set up, we strongly recommends that everyone in the team
+still creates their own free account that each item is shared with.
+This has several reasons.
+The main reason is that the fewer people that has access to the account
+that owns the secure items the lower the risk is that someone
+accidentally deletes or overwrites them.
+When an owner shares an item with another user,
+then there is nothing that other user can do to
+delete or overwrite the item on the owner's account.
+Another reason is that it is much easier to revoke access to an item
+for a single person when they leave the team if
+the only way they have access to the item is through their own personal account.
+To revoke someone's access to a share account,
+then the master password to that account needs to be updated
+and the new password is not shared with the person who's access is to be revoked.
+
+# Getting started with LastPass
 
 ## Create LastPass account
 
 Before you set up your LastPass account, use the
 [DIME Analytics guide to memorizable secure passwords](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/memorizable-strong-password-guidelines.md)
-to create a very secure memorizable master password regardless of which instruction on how to sign up you are using below.
-
-_World Bank:_ If you have a worldbank.org email address and want access to the 1-year free trial of LastPass premium you should follow
-[these instructions](https://worldbankgroup.sharepoint.com/sites/ITS/cybersecurity-blog/Pages/Last-Pass-03062019-161721.aspx?deliveryName=DM10667&deliveryName=DM44419)
-(only available if you have access to the WB's intranet).
-This document also covers how to install the browser extension in your browser.
-
-If you have a worldbank.org email address, but you already have a LastPass using another email address,
-then you can upgrade your current account using the same instructions as above.
-
-_Non-World Bank:_ Create a free LastPass account [here](https://lastpass.com/create-account.php) here.
-If you already know that you want to pay for a premium account,
-you should still start with creating a free account and then upgrade it.
+to create a very secure but still memorizable master password.
+When you have a master password you are happy with, then create a free LastPass account
+[here](https://lastpass.com/create-account.php).
+Some DIME people have created their account using a personal email and some using the work email.
+While we prefers that people use their work email for anything related to protection of PII data,
+we understand that people want to use their personal email for a password manager
+if they intend to store personal passwords there as well.
+There is nothing that makes it less secure by using a person email,
+but when sharing a secure item,
+the owner of the item must share the item with the email used when setting up the account.
 
 ### Install LastPass' browser extension
 
 All popular password managers offers browser extensions that make it easy to copy passwords
 from your password vault to a field in the browser where you need them.
-You do not need to install the browser extension
-(you are giving LastPass a lot of access to your data by doing so), but most people do.
+You do not need to install the browser extension, but most people do.
 If you do not install your browser extension,
 you will have to go to lastpass.com each time you need any password from your password vault.
 
 Regardless of using a World Bank device or not,
-navigate [here](https://lastpass.com/misc_download2.php), click the `Quick install` button at top of the page,
+navigate [here](https://lastpass.com/misc_download2.php),
+click the `Quick install` button at top of the page,
 and follow all the instructions.
 
 ## Edit LastPass' insecure default settings
@@ -122,7 +191,7 @@ It is perfectly fine to tick the box `Remember Email` but **never ever** tick th
 The fact that LastPass even offer that option should make you cringe.
 
 Similarly, you should **never ever** let your browser save your LastPass master password.
-You really need to meorize it and type it each time you need access to your vault. This is the only secure way.
+You really need to memorize it and type it each time you need access to your vault. This is the only secure way.
 
 <img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/pw-lp-ext-login.png" width="25%"><!--- Image is read from master branch or use full URL-->
 
