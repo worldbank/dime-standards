@@ -108,7 +108,7 @@ Before you can encrypt any files on your computer you must use VeraCrypt to crea
 
     <img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/vc_install_7.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
-1. In the next step, you need to create a secure password that you do not use for any other purpose. Secure passwords must only be shared using password managers, and password managers can also create strong unique passwords for you. Read VeraCrypt's instructions for what is a good password. After you have chosen your password and saved it to your password manager, copy it from your password manager to the first input field and then copy it to the second input field, and then click `Next`.
+1. In the next step, you need to create a secure password that you do not use for any other purpose. Secure passwords must only be shared using password managers, and password managers can also create strong unique passwords for you. Read VeraCrypt's instructions for what is a good password. Read [these instructions](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/password-manager-guidelines.md) if you do not yet have a password manager. After you have chosen your password and saved it to your password manager, copy it from your password manager to the first input field and then copy it to the second input field, and then click `Next`.
 
     <img src="https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/img/vc_install_8.png" width="50%"><!--- Image is read from master branch or use full URL-->
 
@@ -215,7 +215,7 @@ This practice exercise can be done alone, but is better done with a second perso
 
 1. Create a Dropbox/Box/OneDrive folder that you share with the other person
 
-1. Create one secure folder _each_ in this shared folder. Do not share the password with the person you paired up with yet. If both you and the person you paired up with have the same password manager, you should create long and strong password using that password manager and save the passwords there. If you do not have the same password manager, it is ok in this exercise to use a simple password. You should always use a password manager when you later securely share real data with your project team.
+1. Create one secure folder _each_ in this shared folder. Do not share the password with the person you paired up with yet. If both you and the person you paired up with have the same password manager, you should create long and strong password using that password manager and save the passwords there. If you do not have the same password manager, it is ok in this exercise to use a simple password. You should always use a password manager when you later securely share real data with your project team. Read [these instructions](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/password-manager-guidelines.md) if you do not yet have a password manager.
 
 1. Look at your own and each other's file on the shared drive. *Important:* two separate people should not make changes to the contents of the same volume at the same time if it is stored on a sync service like Dropbox. So do not try to mount the other persons file until later in this exercise.
 
