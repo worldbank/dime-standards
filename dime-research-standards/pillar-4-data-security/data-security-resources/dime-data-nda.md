@@ -42,14 +42,17 @@ Measures required to keep data secure depend on context, but as a minimum always
     when away from the computer, no matter how temporarily;
     - using headphones or a private setting if transcribing recordings;
 
-5. Destroy all personal data when the data retention period stated in the IRB has elapsed,
+5. Never share personal data with anyone that is neither listed on the IRB
+nor explicitly approved by the principal investigator to have access to personal data;
+
+6. Destroy all personal data when the data retention period stated in the IRB has elapsed,
 regardless of whether I am still working on any research tasks or not.
 This does not apply to anonymized data;
 
-6. Return all data (personal or not) stored in any physical format (e.g., drives, transcripts, photos)
+7. Return all data (personal or not) stored in any physical format (e.g., drives, transcripts, photos)
 to the Principal Investigator when I have completed the research tasks, or at the end of my contract;
 
-7. Destroy all research information (personal or not) stored in any form not returnable to the Principal Investigator
+8. Destroy all research information (personal or not) stored in any form not returnable to the Principal Investigator
 (e.g., information stored on my computer hard drive)
 upon completion of the research tasks, or at the end of my contract,
 after I have made sure that the Principal Investigator has copies of all the data that I have local copies of.
