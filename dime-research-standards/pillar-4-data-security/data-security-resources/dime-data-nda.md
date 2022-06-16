@@ -1,6 +1,6 @@
 # DIME STC/STT Non-Disclosure Agreement
 
-Version: August 5, 2021
+Version: June 16, 2022
 
 ##
 
