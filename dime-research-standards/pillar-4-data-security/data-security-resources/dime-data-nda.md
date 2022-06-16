@@ -26,12 +26,10 @@ that may be revealed while performing the research tasks;
 (e.g., drives, tapes, transcripts),
 unless specifically requested to do so by the Principal Investigator;
 
-4. Keep all _personal data_ stored in any form or format (e.g., files, drives, tapes, transcripts) secure
-both when transferred to me, and while it is in my possession.
-Examples of personal data includes both straightforwardly identifying data,
-such as name, address, and personal identification number,
-as well as, less straightforwardly identifying data,
-such as location data, online identification data such as an internet protocol (IP) address and cookie identifiers, and physical characteristics.
+4. Keep all _personal data_ (as defined by the [World Bank Personal Data Directive](https://ppfonline.worldbank.org/search/9228ae8f-f14a-40a0-a8af-ec7c7d1d7885?ver=current))
+stored in any form or format (e.g., files, drives, tapes, transcripts) secure
+both when transferred to me, while in my possession,
+and when shared with team members allowed to have access to personal data.
 Measures required to keep data secure depend on context, but as a minimum always include (when applicable):
     - making sure that no data is transferred to me in an insecure method;
       (this applies to data collection, receiving data from research partners or other members of the research team);
@@ -82,14 +80,24 @@ and that I have passed the
 [DIME Data Security Assessment](https://survey.wb.surveycto.com/collect/DataSecAssess)
 (do not submit this NDA before you have passed the assessment).
 I agree that I will follow those Guidelines in all my research tasks at DIME.
-I also understand that it is my responsibility to stay updated on the DIME Analytics Data Security Guidelines,
-and that I am personally responsible for any data breaches resulting from failure to follow those guidelines;
+I also understand that I am personally responsible for any data breaches
+resulting from failure to follow those guidelines;
 and that I must report any violation of those guidelines immediately to the primary investigator.
 
-I also confirm that it is my responsibility to follow up with DIME Analytics (dimeanalytics@worldbank.org)
-if there is any part of this agreement that I do not fully understand.
-
 ## PART 4
+
+By signing this document, I acknowledge my responsibility to stay updated on the
+following documents and guidelines:
+* [World Bank Personal Data Privacy Policy](https://ppfonline.worldbank.org/search/ca36fdc4-5191-4d89-a49d-6189a98bad86?ver=current)
+* [World Bank Personal Data Privacy Directive](https://ppfonline.worldbank.org/search/9228ae8f-f14a-40a0-a8af-ec7c7d1d7885?ver=current)
+* If collecting primary personal data: [DEC Guidelines for Conducting Surveys](https://microdatalib.worldbank.org/files/dec-privacy-guidelines.pdf)
+* [DIME Analytics Data Security Guidelines](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/dime-data-security-guidelines.md)
+
+## PART 5
+
+By signing this document, I also confirm that it is my responsibility to
+follow up with DIME Analytics (dimeanalytics@worldbank.org)
+if there is any part of this agreement that I do not fully understand.
 
 ### STC/STT Signature
 
