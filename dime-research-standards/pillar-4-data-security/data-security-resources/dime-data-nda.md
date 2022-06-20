@@ -26,10 +26,21 @@ that may be revealed while performing the research tasks;
 (e.g., drives, tapes, transcripts),
 unless specifically requested to do so by the Principal Investigator;
 
-4. Keep all _personal data_ (as defined by the [World Bank Personal Data Directive](https://ppfonline.worldbank.org/search/9228ae8f-f14a-40a0-a8af-ec7c7d1d7885?ver=current))
-stored in any form or format (e.g., files, drives, tapes, transcripts) secure
+4. Keep all _personal data_ stored in any form or format
+(e.g., files, drives, tapes, transcripts) secure
 both when transferred to me, while in my possession,
 and when shared with team members allowed to have access to personal data.
+Personal data is (as defined by the
+[World Bank Personal Data Directive](https://ppfonline.worldbank.org/search/9228ae8f-f14a-40a0-a8af-ec7c7d1d7885?ver=current))
+_any information relating to an identified or identifiable individual.
+An identifiable individual is one who can be identified by reasonable means,
+directly or indirectly, by reference to an attribute or combination of attributes within the data,
+or combination of the data with other available information.
+Attributes that can be used to identify an identifiable individual include,
+but are not limited to,
+name, identification number, location data, online identifier, metadata and
+factors specific to the physical, physiological, genetic, mental, economic,
+cultural or social identity of an individual._
 Measures required to keep data secure depend on context, but as a minimum always include (when applicable):
     - making sure that no data is transferred to me in an insecure method;
       (this applies to data collection, receiving data from research partners or other members of the research team);
