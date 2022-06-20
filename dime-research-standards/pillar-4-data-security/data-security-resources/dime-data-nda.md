@@ -31,7 +31,7 @@ unless specifically requested to do so by the Principal Investigator;
 both when transferred to me, while in my possession,
 and when shared with team members allowed to have access to personal data.
 Personal data is (as defined by the
-[World Bank Personal Data Directive](https://ppfonline.worldbank.org/search/9228ae8f-f14a-40a0-a8af-ec7c7d1d7885?ver=current))
+[World Bank Personal Data Directive](https://ppfonline.worldbank.org/search/9228ae8f-f14a-40a0-a8af-ec7c7d1d7885?ver=current) - WB intranet only)
 _any information relating to an identified or identifiable individual.
 An identifiable individual is one who can be identified by reasonable means,
 directly or indirectly, by reference to an attribute or combination of attributes within the data,
@@ -99,10 +99,11 @@ and that I must report any violation of those guidelines immediately to the prim
 
 By signing this document, I acknowledge my responsibility to stay updated on the
 following documents and guidelines:
-* [World Bank Personal Data Privacy Policy](https://ppfonline.worldbank.org/search/ca36fdc4-5191-4d89-a49d-6189a98bad86?ver=current) (WB intranet only)
-* [World Bank Personal Data Privacy Directive](https://ppfonline.worldbank.org/search/9228ae8f-f14a-40a0-a8af-ec7c7d1d7885?ver=current) (WB intranet only)
-* If collecting primary personal data: [DEC Guidelines for Conducting Surveys](https://microdatalib.worldbank.org/files/dec-privacy-guidelines.pdf)
-* [DIME Analytics Data Security Guidelines](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/dime-data-security-guidelines.md)
+
+- [World Bank Personal Data Privacy Policy](https://ppfonline.worldbank.org/search/ca36fdc4-5191-4d89-a49d-6189a98bad86?ver=current) (WB intranet only)
+- [World Bank Personal Data Privacy Directive](https://ppfonline.worldbank.org/search/9228ae8f-f14a-40a0-a8af-ec7c7d1d7885?ver=current) (WB intranet only)
+- If collecting primary personal data: [DEC Guidelines for Conducting Surveys](https://microdatalib.worldbank.org/files/dec-privacy-guidelines.pdf)
+- [DIME Analytics Data Security Guidelines](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/dime-data-security-guidelines.md)
 
 ## PART 5
 
