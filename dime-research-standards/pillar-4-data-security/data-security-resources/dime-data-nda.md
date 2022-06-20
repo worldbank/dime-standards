@@ -1,6 +1,6 @@
 # DIME STC/STT Non-Disclosure Agreement
 
-Version: August 5, 2021
+Version: June 20, 2022
 
 ##
 
@@ -26,12 +26,21 @@ that may be revealed while performing the research tasks;
 (e.g., drives, tapes, transcripts),
 unless specifically requested to do so by the Principal Investigator;
 
-4. Keep all _personal data_ stored in any form or format (e.g., files, drives, tapes, transcripts) secure
-both when transferred to me, and while it is in my possession.
-Examples of personal data includes both straightforwardly identifying data,
-such as name, address, and personal identification number,
-as well as, less straightforwardly identifying data,
-such as location data, online identification data such as an internet protocol (IP) address and cookie identifiers, and physical characteristics.
+4. Keep all _personal data_ stored in any form or format
+(e.g., files, drives, tapes, transcripts) secure
+both when transferred to me, while in my possession,
+and when shared with team members allowed to have access to personal data.
+Personal data is (as defined by the
+[World Bank Personal Data Directive](https://ppfonline.worldbank.org/search/9228ae8f-f14a-40a0-a8af-ec7c7d1d7885?ver=current) - WB intranet only)
+_any information relating to an identified or identifiable individual.
+An identifiable individual is one who can be identified by reasonable means,
+directly or indirectly, by reference to an attribute or combination of attributes within the data,
+or combination of the data with other available information.
+Attributes that can be used to identify an identifiable individual include,
+but are not limited to,
+name, identification number, location data, online identifier, metadata and
+factors specific to the physical, physiological, genetic, mental, economic,
+cultural or social identity of an individual._
 Measures required to keep data secure depend on context, but as a minimum always include (when applicable):
     - making sure that no data is transferred to me in an insecure method;
       (this applies to data collection, receiving data from research partners or other members of the research team);
@@ -42,14 +51,17 @@ Measures required to keep data secure depend on context, but as a minimum always
     when away from the computer, no matter how temporarily;
     - using headphones or a private setting if transcribing recordings;
 
-5. Destroy all personal data when the data retention period stated in the IRB has elapsed,
+5. Never share personal data with anyone that is neither listed on the IRB
+nor explicitly approved by the principal investigator to have access to personal data;
+
+6. Destroy all personal data when the data retention period stated in the informed consent protocol or the data license agreement has elapsed
 regardless of whether I am still working on any research tasks or not.
 This does not apply to anonymized data;
 
-6. Return all data (personal or not) stored in any physical format (e.g., drives, transcripts, photos)
+7. Return all data (personal or not) stored in any physical format (e.g., drives, transcripts, photos)
 to the Principal Investigator when I have completed the research tasks, or at the end of my contract;
 
-7. Destroy all research information (personal or not) stored in any form not returnable to the Principal Investigator
+8. Destroy all research information (personal or not) stored in any form not returnable to the Principal Investigator
 (e.g., information stored on my computer hard drive)
 upon completion of the research tasks, or at the end of my contract,
 after I have made sure that the Principal Investigator has copies of all the data that I have local copies of.
@@ -79,14 +91,25 @@ and that I have passed the
 [DIME Data Security Assessment](https://survey.wb.surveycto.com/collect/DataSecAssess)
 (do not submit this NDA before you have passed the assessment).
 I agree that I will follow those Guidelines in all my research tasks at DIME.
-I also understand that it is my responsibility to stay updated on the DIME Analytics Data Security Guidelines,
-and that I am personally responsible for any data breaches resulting from failure to follow those guidelines;
+I also understand that I am personally responsible for any data breaches
+resulting from failure to follow those guidelines;
 and that I must report any violation of those guidelines immediately to the primary investigator.
 
-I also confirm that it is my responsibility to follow up with DIME Analytics (dimeanalytics@worldbank.org)
-if there is any part of this agreement that I do not fully understand.
-
 ## PART 4
+
+By signing this document, I acknowledge my responsibility to stay updated on the
+following documents and guidelines:
+
+- [World Bank Personal Data Privacy Policy](https://ppfonline.worldbank.org/search/ca36fdc4-5191-4d89-a49d-6189a98bad86?ver=current) (WB intranet only)
+- [World Bank Personal Data Privacy Directive](https://ppfonline.worldbank.org/search/9228ae8f-f14a-40a0-a8af-ec7c7d1d7885?ver=current) (WB intranet only)
+- If collecting primary personal data: [DEC Guidelines for Conducting Surveys](https://microdatalib.worldbank.org/files/dec-privacy-guidelines.pdf)
+- [DIME Analytics Data Security Guidelines](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/dime-data-security-guidelines.md)
+
+## PART 5
+
+By signing this document, I also confirm that it is my responsibility to
+follow up with DIME Analytics (dimeanalytics@worldbank.org)
+if there is any part of this agreement that I do not fully understand.
 
 ### STC/STT Signature
 
