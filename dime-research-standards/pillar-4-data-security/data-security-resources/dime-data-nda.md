@@ -43,7 +43,7 @@ Measures required to keep data secure depend on context, but as a minimum always
 5. Never share personal data with anyone that is neither listed on the IRB
 nor explicitly approved by the principal investigator to have access to personal data;
 
-6. Destroy all personal data when the data retention period stated in the IRB has elapsed,
+6. Destroy all personal data when the data retention period stated in the informed consent protocol or the data license agreement has elapsed
 regardless of whether I am still working on any research tasks or not.
 This does not apply to anonymized data;
 
