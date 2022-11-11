@@ -71,61 +71,65 @@
 				\Large\textbf{{v2.0}}}
 		}
 		
-		\section*{Required Content and Practices}
+		
 		
 		The code review package must be shared as a .zip file, GitHub link or shared folder containing the items listed below.
 		All file paths in the code \textbf{must} use only forward slashes, i.e. \texttt{C:/users/...}
 		
-		\subsection{1. \, Package components}
+		\section*{Package Requirements}
 		
 		\begin{itemize}
 			\setlength\itemsep{-0.1em}
 			\item[] \dimeCheckBox{All scripts to be reviewed.}
+              \item[] \dimeCheckBox{A \textbf{master script} that the reviewer can use to run all code after changing only the top-level directory.}
 			\item[] \dimeCheckBox{All de-identified data necessary to run the code, if you are able to share the data}
 			\item[] \dimeCheckBox{A README. file that contains the following information:}
                         \begin{itemize}
                             \item[] \dimeCheckBox{Purpose of each folder}
+                            \item[] \dimeCheckBox{High-level objective of the code (e.g., this code performs regression analysis and outputs result tables)}
                             \item[] \dimeCheckBox{Purpose of each script (if more than one script is used)}
-                            \item[] \dimeCheckBox{Is all confidential data de-identified? (if provided in the review)} 
                              \item[] \dimeCheckBox{Outputs produced (if part of the review)}
                              \item[] \dimeCheckBox{Which script creates which output}
+                             \item[] \dimeCheckBox{Any specific requests / guidance as to what the reviewer should focus on}
                              
                             
                         \end{itemize}
 			\item[] \dimeTextField{master}{11cm}{README. file path and name:}
-			\item[] \dimeCheckBox{A \textbf{master script} that the reviewer can used to run all code after changing only the top-level directory.}
+			
 		\end{itemize}
 		
 		\vspace{.6em}
-		
-		\subsection{2. \, Master script requirements}	
+
+        \section*{Component-specific Requirements}
+        Before submitting the package, please make sure you keep the following in mind with respect to individual components.
+		\subsection{1. \, Master script requirements}	
 		\begin{itemize}
 			\setlength\itemsep{-0.1em}
 			\item[] \dimeCheckBox{ Master script clearly indicates which line needs to be changed to run in a different computer}
 			\item[] \dimeCheckBox{ The master script runs from start to end if the reviewer changes only directory path(s) in one location of the master script}
 			\item[] \dimeCheckBox{ The master script installs any commands required (e.g. from SSC in Stata, CRAN in R, etc.)}
-			\item[] \dimeCheckBox{ In Stata, the master do file sets critical configurations such as version, matsize, and varabbrev (either sets directly or through a wrapper command such as ieboilstart from ietoolkit}
+			\item[] \dimeCheckBox{ In Stata, the master do file sets critical configurations such as version, matsize, and varabbrev (either directly, or through a wrapper command such as the ieboilstart command included in ietoolkit)}
 			\item[] \dimeCheckBox{ In R, all necessary packages to run the code are loaded in the master script}
 			\item[] \dimeTextField{time}{2.5cm}{\textbf{Approximate time} it takes to run all code from the the master script: }
 		\end{itemize}
 		
-		\subsection{2. \, Data}
+		\subsection{2. \, Data requirements}
 		
-		The package includes:
 		\begin{itemize}
 			\setlength\itemsep{-0.1em}
-			\item[] \dimeCheckBox{Fully de-identified data. \textbf{Any exception where sensitive data is strictly needed to conduct the review will require additional ethics and security measures, and will be handled on a case-by-case basis.}}
-			\item[] \dimeCheckBox{All data necessary to run the code to be reviewed is included}
+			\item[] \dimeCheckBox{Are you able to share the data for the purpose of the review?}
+			\item[] \dimeCheckBox{If yes, is the data de-identified?}
+                \item[] \dimeCheckBox{Are all datasets necessary to run the code included in the package?}
 		\end{itemize}
 		
 		
-		\subsection{3. \, Outputs}
+		\subsection{3. \, Output requirements}
 		
 		\begin{itemize}
 			\setlength\itemsep{-0.1em}
-			\item[] \dimeCheckBox{ All outputs created by the code to be review are included}
-			\item[] \dimeCheckBox{ All raw outputs to be reviewed are created in the same folder structure as those originally submitted.}
-			\item[] \dimeCheckBox{ It is easy to identify which code creates which output (\textbf{(either in master script or README. file)}}
+			\item[] \dimeCheckBox{All outputs created by the code to be reviewed are included}
+			\item[] \dimeCheckBox{The outputs created are saved and stored in the correct folders, e.g. final outputs are in the \texttt{\textbf{Outputs/Final}} folder}
+			
 		\end{itemize}
 		
 		
