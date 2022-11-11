@@ -68,7 +68,7 @@
 		
 		\titleBox{
 			\textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Code Review Package Checklist}} \\
-				\Large\textbf{{v1.0}}}
+				\Large\textbf{{v2.0}}}
 		}
 		
 		\section*{Required Content and Practices}
@@ -82,7 +82,16 @@
 			\setlength\itemsep{-0.1em}
 			\item[] \dimeCheckBox{All scripts to be reviewed.}
 			\item[] \dimeCheckBox{All data necessary to run the code to be reviewed - in deidentified form.}
-			\item[] \dimeCheckBox{A README. file that contains all the information about the project and the tasks being performed in the code that may be necessary for the reviewer to understand the code and are not included in the scripts.}
+			\item[] \dimeCheckBox{A README. file that contains the following information:}
+                        \begin{itemize}
+                            \item[] \dimeCheckBox{Purpose of each folder}
+                            \item[] \dimeCheckBox{Purpose of each script (if more than one script is used)}
+                            \item[] \dimeCheckBox{Is all confidential data de-identified? (if provided in the review)} 
+                             \item[] \dimeCheckBox{Outputs produced (if part of the review)}
+                             \item[] \dimeCheckBox{Which script creates which output}
+                             
+                            
+                        \end{itemize}
 			\item[] \dimeTextField{master}{11cm}{README. file path and name:}
 			\item[] \dimeCheckBox{A \textbf{master script} that runs all the necessary code and allows the reviewer to adjust file paths only once.}
 		\end{itemize}
@@ -106,7 +115,7 @@
 		\begin{itemize}
 			\setlength\itemsep{-0.1em}
 			\item[] \dimeCheckBox{Fully de-identified data. \textbf{Any exception where sensitive data is strictly needed to conduct the review will require additional ethics and security measures, and will be handled on a case-by-case basis.}}
-			\item[] \dimeCheckBox{ All data necessary to run the code to be reviewed is included}
+			\item[] \dimeCheckBox{All data necessary to run the code to be reviewed is included}
 		\end{itemize}
 		
 		
@@ -116,19 +125,9 @@
 			\setlength\itemsep{-0.1em}
 			\item[] \dimeCheckBox{ All outputs created by the code to be review are included}
 			\item[] \dimeCheckBox{ All raw outputs to be reviewed are created in the same folder structure as those originally submitted.}
-			\item[] \dimeCheckBox{ It is easy to identify which code creates which output}
+			\item[] \dimeCheckBox{ It is easy to identify which code creates which output (\textbf{(either in master script or README. file)}}
 		\end{itemize}
 		
-		\subsection{4. Recommended Practices}
 		
-		\begin{itemize}
-			\setlength\itemsep{-0.1em}		
-			
-			\item[] \dimeCheckBox{ Scripts for data cleaning, variable creation, and analysis are separate; and analysis scripts do not include any data processing, unless necessary for the creation of a table or graphic}
-			\item[] \dimeCheckBox{ Variable construction scripts include detailed comments about each variable created}
-			\item[] \dimeCheckBox{ Analysis scripts do not depend on having the results of other scripts in memory, except for the Master script}
-			\item[] \dimeCheckBox{ All scripts are well-commented and formatted, such that one can easily identify functional chunks of code and evaluate whether they correctly implement the econometric or statistical process described}
-			\item[] \dimeCheckBox{ Tables are output as .csv or .tex files or other raw text files when possible}
-		\end{itemize}
 	\end{fullwidth}
 \end{document}
