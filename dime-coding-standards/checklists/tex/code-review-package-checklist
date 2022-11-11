@@ -81,7 +81,7 @@
 		\begin{itemize}
 			\setlength\itemsep{-0.1em}
 			\item[] \dimeCheckBox{All scripts to be reviewed.}
-			\item[] \dimeCheckBox{All data necessary to run the code to be reviewed - in deidentified form.}
+			\item[] \dimeCheckBox{All de-identified data necessary to run the code, if you are able to share the data}
 			\item[] \dimeCheckBox{A README. file that contains the following information:}
                         \begin{itemize}
                             \item[] \dimeCheckBox{Purpose of each folder}
