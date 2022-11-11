@@ -1,0 +1,134 @@
+\documentclass{tufte-handout}
+
+\usepackage{librecaslon}
+
+
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{tcolorbox} % needed for the text boxes
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{graphics}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=cyan,
+}
+% Set header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/i2i}}
+\cfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/wb}}
+\rfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/analytics}}
+
+% Put checkbox to the left of the text
+\def\LayoutCheckField#1#2{% label, field
+	#2 #1%
+}
+
+% Line spacing
+\onehalfspacing
+
+% Define DIME Analytics visual identity colors
+\definecolor{fontcolor}{HTML}{7A0569}
+
+\titleformat{\section}%
+{\Large\rmfamily\bf\color{fontcolor}}% format applied to label+text
+{\llap{\colorbox{fontcolor}{\parbox{1.5cm}{\hfill\huge\color{fontcolor}\thesection}}}}% label
+{2pt}% horizontal separation between label and title body
+{}% before the title body
+[]% after the title body
+
+\titleformat{\subsection}%
+{\large\rmfamily\color{fontcolor}}% format applied to label+text
+{}% label
+{1.5pt}% horizontal separation between label and title body
+{}% before the title body
+[]% after the title body
+
+\newcommand{\dimeCheckBox}[1]{\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{#1}}
+\newcommand{\dimeTextField}[3]{\TextField[name=#1, height=0.3cm, width=#2, bordercolor=gray]{#3}}
+
+
+\newcommand{\titleBox}[1]{
+	\begin{tcolorbox}
+		[colframe = fontcolor,
+		colback = fontcolor,
+		sharp corners,
+		halign = flush center,
+		valign = center,
+		height = 0.3\textwidth,
+		after skip = 1cm]
+		#1
+	\end{tcolorbox}
+}
+
+\begin{document}
+	\begin{fullwidth}
+		
+		\titleBox{
+			\textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Code Review Package Checklist}} \\
+				\Large\textbf{{v1.0}}}
+		}
+		
+		\section*{Required Content and Practices}
+		
+		The code review package must be shared as a .zip file, GitHub link or shared folder containing the items listed below.
+		All file paths in the code \textbf{must} use only forward slashes, i.e. \texttt{C:/users/...}
+		
+		\subsection{1. \, Package components}
+		
+		\begin{itemize}
+			\setlength\itemsep{-0.1em}
+			\item[] \dimeCheckBox{All scripts to be reviewed.}
+			\item[] \dimeCheckBox{All data necessary to run the code to be reviewed - in deidentified form.}
+			\item[] \dimeCheckBox{A README. file that contains all the information about the project and the tasks being performed in the code that may be necessary for the reviewer to understand the code and are not included in the scripts.}
+			\item[] \dimeTextField{master}{11cm}{README. file path and name:}
+			\item[] \dimeCheckBox{A \textbf{master script} that runs all the necessary code and allows the reviewer to adjust file paths only once.}
+		\end{itemize}
+		
+		\vspace{.6em}
+		
+		\subsection{2. \, Master script requirements}	
+		\begin{itemize}
+			\setlength\itemsep{-0.1em}
+			\item[] \dimeCheckBox{ Master script clearly indicates which line needs to be changed to run in a different computer}
+			\item[] \dimeCheckBox{ The master script runs from start to end if the reviewer changes only directory path(s) in one location of the master script}
+			\item[] \dimeCheckBox{ The master script installs any commands required (e.g. from SSC in Stata, CRAN in R, etc.)}
+			\item[] \dimeCheckBox{ In Stata, the master do file sets critical configurations such as version, matsize, and varabbrev (either sets directly or through a wrapper command such as ieboilstart from ietoolkit}
+			\item[] \dimeCheckBox{ In R, all necessary packages to run the code are loaded in the master script}
+			\item[] \dimeTextField{time}{2.5cm}{\textbf{Approximate time} it takes to run all code from the the master script: }
+		\end{itemize}
+		
+		\subsection{2. \, Data}
+		
+		The package includes:
+		\begin{itemize}
+			\setlength\itemsep{-0.1em}
+			\item[] \dimeCheckBox{Fully de-identified data. \textbf{Any exception where sensitive data is strictly needed to conduct the review will require additional ethics and security measures, and will be handled on a case-by-case basis.}}
+			\item[] \dimeCheckBox{ All data necessary to run the code to be reviewed is included}
+		\end{itemize}
+		
+		
+		\subsection{3. \, Outputs}
+		
+		\begin{itemize}
+			\setlength\itemsep{-0.1em}
+			\item[] \dimeCheckBox{ All outputs created by the code to be review are included}
+			\item[] \dimeCheckBox{ All raw outputs to be reviewed are created in the same folder structure as those originally submitted.}
+			\item[] \dimeCheckBox{ It is easy to identify which code creates which output}
+		\end{itemize}
+		
+		\subsection{4. Recommended Practices}
+		
+		\begin{itemize}
+			\setlength\itemsep{-0.1em}		
+			
+			\item[] \dimeCheckBox{ Scripts for data cleaning, variable creation, and analysis are separate; and analysis scripts do not include any data processing, unless necessary for the creation of a table or graphic}
+			\item[] \dimeCheckBox{ Variable construction scripts include detailed comments about each variable created}
+			\item[] \dimeCheckBox{ Analysis scripts do not depend on having the results of other scripts in memory, except for the Master script}
+			\item[] \dimeCheckBox{ All scripts are well-commented and formatted, such that one can easily identify functional chunks of code and evaluate whether they correctly implement the econometric or statistical process described}
+			\item[] \dimeCheckBox{ Tables are output as .csv or .tex files or other raw text files when possible}
+		\end{itemize}
+	\end{fullwidth}
+\end{document}
