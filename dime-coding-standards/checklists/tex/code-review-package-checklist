@@ -93,7 +93,7 @@
                             
                         \end{itemize}
 			\item[] \dimeTextField{master}{11cm}{README. file path and name:}
-			\item[] \dimeCheckBox{A \textbf{master script} that runs all the necessary code and allows the reviewer to adjust file paths only once.}
+			\item[] \dimeCheckBox{A \textbf{master script} that the reviewer can used to run all code after changing only the top-level directory.}
 		\end{itemize}
 		
 		\vspace{.6em}
