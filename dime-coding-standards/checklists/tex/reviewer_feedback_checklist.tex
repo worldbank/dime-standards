@@ -1,0 +1,179 @@
+\documentclass{tufte-handout}
+
+\usepackage{librecaslon}
+
+
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{tcolorbox} % needed for the text boxes
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{graphics}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=cyan,
+}
+% Set header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/i2i}}
+\cfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/wb}}
+\rfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/analytics}}
+
+% Put checkbox to the left of the text
+\def\LayoutCheckField#1#2{% label, field
+	#2 #1%
+}
+
+% Line spacing
+\onehalfspacing
+
+% Define DIME Analytics visual identity colors
+\definecolor{fontcolor}{HTML}{7A0569}
+
+\titleformat{\section}%
+{\Large\rmfamily\bf\color{fontcolor}}% format applied to label+text
+{\llap{\colorbox{fontcolor}{\parbox{1.5cm}{\hfill\huge\color{fontcolor}\thesection}}}}% label
+{2pt}% horizontal separation between label and title body
+{}% before the title body
+[]% after the title body
+
+\titleformat{\subsection}%
+{\large\rmfamily\color{fontcolor}}% format applied to label+text
+{}% label
+{1.5pt}% horizontal separation between label and title body
+{}% before the title body
+[]% after the title body
+
+\newcommand{\dimeCheckBox}[1]{\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{#1}}
+\newcommand{\dimeTextField}[3]{\TextField[name=#1, height=0.3cm, width=#2, bordercolor=gray]{#3}}
+
+
+\newcommand{\titleBox}[1]{
+	\begin{tcolorbox}
+		[colframe = fontcolor,
+		colback = fontcolor,
+		sharp corners,
+		halign = flush center,
+		valign = center,
+		height = 0.3\textwidth,
+		after skip = 1cm]
+		#1
+	\end{tcolorbox}
+}
+
+\begin{document}
+	\begin{fullwidth}
+		
+		\titleBox{
+			\textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Peer Code Review - Reviewer Feedback Checklist}} \\
+				\Large\textbf{{v1.0}}}
+		}
+
+        \dimeTextField{time}{2.5 cm}{Reviewer:} 
+
+        \dimeTextField{time}{2.5 cm} {Coder:}
+        
+        
+        This checklist lists important factors to consider while reviewing your code review partner's code package. Please fill this checklist, and submit it as an attachment when you submit \href{https://survey.wb.surveycto.com/collect/code_review_summary?caseid=}{this detailed form.}
+        
+		\section*{Overview - First Impression}
+
+        Once you have received a package from your code review partner, please check for the following general recommended practices:
+        \begin{itemize}
+			\setlength\itemsep{-0.1em}		
+			
+			\item[] \dimeCheckBox{Data cleaning, variable creation, and analysis are all done in separate scripts}
+                \item[] \dimeCheckBox{Analysis scripts do not include any data processing, unless necessary for the creation of a table or graphic}
+			\item[] \dimeCheckBox{Each script is fully modular - that is to say that the scripts can be run independently from the master script, and do not depend on having the results of other scripts in memory.}
+			\item[] \dimeCheckBox{All scripts are well-commented}
+                \item[] \dimeCheckBox{All scripts are well-organized and formatted, such that one can easily identify functional chunks of code and evaluate whether they correctly implement the econometric or statistical process described}
+			\item[] \dimeCheckBox{Tables are output as .csv or .tex files or other raw text files \textbf{ONLY}}
+		\end{itemize}
+	
+		\vspace{.6em}
+
+        \section*{Reproducibility (applicable only if data was shared with you)}
+
+        \textit{\textbf{Next step:}} If you received data as part of the peer review package, attempt to run the code files. Ideally you will be able to do so by changing only the top-level directory in the master script. Take note of any reproducibility issues you observe as you will need to record them in \href{https://survey.wb.surveycto.com/collect/code_review_summary?caseid=}{this review summary form.}
+
+        \begin{itemize}
+			\setlength\itemsep{-0.1em}
+			\item[] \dimeCheckBox{I was able to run all code files provided in the review package}
+                \item[] \dimeCheckBox{Code did not run initially, but I was able to identify the reason}
+			\item[] \dimeCheckBox{Outputs shared (if any) reproduced exactly}
+            \item[] \dimeCheckBox{Outputs did not reproduce but I was able to determine the reason}
+	
+			
+		\end{itemize}
+		
+        \vspace{.6em}
+
+       \section*{Ease of Use and Understanding}
+
+       \textit{\textbf{Now}}, assess how easy it is to understand the code you are reviewing. Consider whether the documentation provided is sufficient, and whether the code is organized in such a way that it would be easy for someone else to work on it. Make note of what additional documentation is needed as you will be asked to share detailed feedback in \href{https://survey.wb.surveycto.com/collect/code_review_summary?caseid=}{this review summary form.}
+
+       
+        \begin{itemize}
+			\setlength\itemsep{-0.1em}
+			\item[] \dimeCheckBox{I understood the code from original documentation and README file}
+                \item[] \dimeCheckBox{The code is organized such that if I had to change a core task I could do it by making changes in only one place}
+
+                \item[] \dimeCheckBox{A new RA joining the project would be able to understand and contribute to the code}
+                
+                \dimeTextField{time}{1 cm}{How many days are needed to understand the code well enough to contribute? \textit{\textbf{(0-3 days)}}}
+               
+			
+		\end{itemize}
+
+        \vspace{.6em}
+
+        \section*{Coding Practices}
+        \textit{\textbf{Next}}, select the box next to each practice if the mentioned coding practice was used in some form in the code package. Also make note of whether it was implemented perfectly, or if there is room for improvement. You will need to provide this information in \href{https://survey.wb.surveycto.com/collect/code_review_summary?caseid=}{this detailed review summary form.}
+
+        \begin{itemize}
+        \item[] \dimeCheckBox{Master script}
+        \item[] \dimeCheckBox{Use of comments}
+        \item[] \dimeCheckBox{Documentation}
+        \item[] \dimeCheckBox{Folder organisation}
+        \item[] \dimeCheckBox{Naming practices}
+        \item[] \dimeCheckBox{Code organization - sections, tracking inputs and outputs for each script}
+        \item[] \dimeCheckBox{Use of white spaces}
+        \item[] \dimeCheckBox{Use of loops}
+        \item[] \dimeCheckBox{Abstraction - using functions to do commonly repeated tasks}
+        
+        
+        \end{itemize}
+        \vspace{.6em}
+
+        \section*{Final Comments}
+        \textit{\textbf{Finally,}}  make note of the main strengths of the code, suggestions on how the coder can improve, and any additional feedback from your side. You will need to provide this information in \href{https://survey.wb.surveycto.com/collect/code_review_summary?caseid=}{this detailed review summary form.)}
+
+          
+          {\textbf{1.) Three main strengths of the code reviewed:}
+          
+          \dimeTextField{strength1}{14 cm}{}
+          
+          \dimeTextField{strength2}{14 cm}{}
+          
+          \dimeTextField{strength3}{14 cm}{}
+          
+         {\textbf{2.) Suggestions on how the coder can improve:}
+
+          \dimeTextField{strength1}{14 cm}{}
+          
+          \dimeTextField{strength2}{14 cm}{}
+          
+          \dimeTextField{strength3}{14 cm}{}
+          
+          {\textbf{3.) Any additional feedback for the coder:}
+		 
+         \dimeTextField{strength1}{14 cm}{}
+          
+          \dimeTextField{strength2}{14 cm}{}
+          
+          \dimeTextField{strength3}{14 cm}{}
+		
+	\end{fullwidth}
+\end{document}
