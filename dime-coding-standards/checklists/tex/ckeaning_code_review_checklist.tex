@@ -1,0 +1,122 @@
+\documentclass{tufte-handout}
+
+\usepackage{librecaslon}
+
+
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{tcolorbox} % needed for the text boxes
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{graphics}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=cyan,
+}
+% Set header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/i2i}}
+\cfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/wb}}
+\rfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/analytics}}
+
+% Put checkbox to the left of the text
+\def\LayoutCheckField#1#2{% label, field
+	#2 #1%
+}
+
+% Line spacing
+\onehalfspacing
+
+% Define DIME Analytics visual identity colors
+\definecolor{fontcolor}{HTML}{7A0569}
+
+\titleformat{\section}%
+{\Large\rmfamily\bf\color{fontcolor}}% format applied to label+text
+{\llap{\colorbox{fontcolor}{\parbox{1.5cm}{\hfill\huge\color{fontcolor}\thesection}}}}% label
+{2pt}% horizontal separation between label and title body
+{}% before the title body
+[]% after the title body
+
+\titleformat{\subsection}%
+{\large\rmfamily\color{fontcolor}}% format applied to label+text
+{}% label
+{1.5pt}% horizontal separation between label and title body
+{}% before the title body
+[]% after the title body
+
+\newcommand{\dimeCheckBox}[1]{\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{#1}}
+\newcommand{\dimeTextField}[3]{\TextField[name=#1, height=0.3cm, width=#2, bordercolor=gray]{#3}}
+
+
+\newcommand{\titleBox}[1]{
+	\begin{tcolorbox}
+		[colframe = fontcolor,
+		colback = fontcolor,
+		sharp corners,
+		halign = flush center,
+		valign = center,
+		height = 0.3\textwidth,
+		after skip = 1cm]
+		#1
+	\end{tcolorbox}
+}
+
+\begin{document}
+	\begin{fullwidth}
+		
+		\titleBox{
+			\textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Peer Code Review - Cleaning Checklist}} \\
+				\Large\textbf{{v1.0}}}
+		}
+
+  \dimeTextField{time}{2.5 cm}{Reviewer:} 
+
+        \dimeTextField{time}{2.5 cm} {Coder:}
+		
+		\textbf{NOTE:} Make sure that fill out this checklist \textbf{ONLY IF} your partner's submission includes    \textbf{cleaning} tasks. 
+		
+		\section*{Data cleaning tasks}
+  This checklist lists important factors to consider while reviewing your code review partner's \textbf{cleaning} scripts/code. Please fill this checklist, and submit it as an attachment when you submit \href{https://survey.wb.surveycto.com/collect/code_review_summary?caseid=}{this detailed form.}
+		
+		\begin{itemize}
+			\setlength\itemsep{-0.1em}
+			\item[] \dimeCheckBox{Are new variables being created in the cleaning do-files?}
+              \item[] \dimeCheckBox{Are any changes being made to observations values in the cleaning do-files?}
+              \item[]\dimeCheckBox{\textbf{Check duplicates:}} 
+            
+            \begin{itemize}
+                \item[] \dimeCheckBox{Does the code check for duplicates in ID variables and other important variables?}
+                \item[] \dimeCheckBox{If so, are the duplicates fixed?}
+                \item[] \dimeCheckBox{In cases where duplicates are not resolved, is there a comment explaining next steps?}
+            \end{itemize}
+			\item[] \dimeCheckBox{\textbf{Check merges:}} 
+            
+            \begin{itemize}
+                \item[] \dimeCheckBox{Are any observations dropped?}
+                \item[] \dimeCheckBox{If so, is there a clear justification for that?}
+                \item[] \dimeCheckBox{If any observations didn't match, is that explained in the comments?}
+            \end{itemize}
+            \item[] \dimeCheckBox{\textbf{Check labels:}} 
+            
+            \begin{itemize}
+                \item[] \dimeCheckBox{Are all variables correctly labelled?}
+                \item[] \dimeCheckBox{If so, are the labels consistent?}
+            \end{itemize}
+
+            \dimeCheckBox{\textbf{Check missing values:}} 
+            \begin{itemize}
+			\item[] \dimeCheckBox{Are missing values coded consistently?}
+                \item[] \dimeCheckBox{Are extended missing values used? (e.g. \texttt{.d} for \textbf{Do not know}, \texttt{.r} for \textbf{Refuse to answer}, etc.}
+            \end{itemize}
+                       
+			
+		\end{itemize}
+		
+		\vspace{.6em}
+
+       
+		
+	\end{fullwidth}
+\end{document}
