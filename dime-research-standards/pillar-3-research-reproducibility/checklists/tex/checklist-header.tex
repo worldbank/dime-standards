@@ -7,7 +7,7 @@
 \usepackage{xcolor}
 \usepackage{setspace}
 \usepackage{graphics}
-\usepackage{./tuftefoot}
+\usepackage{tuftefoot}
 
 % Set header and footer
 \pagestyle{fancy}
@@ -57,3 +57,25 @@
 		#1
 	\end{tcolorbox}
 }
+
+\makeatletter %footnote full width <<<<<<<<<<<<<<<<<<<<<<
+  \def\TFfootnotefw{\@ifnextchar[\TF@xfootnote{\stepcounter\TF@mpfn
+        \protected@xdef\@thefnmark{\TFthempfn}%
+        \TF@footnotemark\TF@footnotetextfw}}
+    \long\def\TF@footnotetextfw#1{\insert\footins{%
+            \reset@font\footnotesize
+            \interlinepenalty\interfootnotelinepenalty
+            \splittopskip\TFfootnotesep
+            \splitmaxdepth \dp\strutbox \floatingpenalty \@MM
+            \hsize\columnwidth \@parboxrestore
+            \protected@edef\@currentlabel{%
+                \csname p@footnote\endcsname\@thefnmark
+            }%
+            \color@begingroup
+            \@makefntext{%
+                \rule\z@\TFfootnotesep%
+                \parbox[t]{\textwidth+\marginparsep+\marginparwidth}{#1} %
+                \rule\z@\TFfootnotesep%
+                \@finalstrut\strutbox}%
+            \color@endgroup}}%
+\makeatother
