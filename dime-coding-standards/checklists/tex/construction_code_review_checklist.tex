@@ -84,50 +84,46 @@
 		
 		\begin{itemize}
 			\setlength\itemsep{-0.1em}
-			\item[] \dimeCheckBox{Do you understand how and why each variable is constructed?}
-            \dimeTextField{comment1}{10cm}{If not, indicate to the author where more comments are needed:}
+			\item[] \dimeCheckBox{I understand how and why each variable is constructed.}
+            \dimeTextField{comment1}{10cm}{In some cases, it was not clear - need more comments in the following lines of code:}
 
             \dimeCheckBox{\textbf{Check merges:}} 
             
             \begin{itemize}
-                \item[] \dimeCheckBox{Are any observations dropped?}
-                \item[] \dimeCheckBox{If so, is there a clear justification for that?}
-                \item[] \dimeCheckBox{Does the number of observations increase?}
-                \item[] \dimeCheckBox{If so, is there a clear justification for that?}
-                \item[] \dimeCheckBox{If any observations didn't match, is that explained in the comments?}
+                \item[] \dimeCheckBox{If any observations are dropped, there is a clear justification in the code}
+                \item[] \dimeCheckBox{If the number of observations increase/decrease, there is a clear justification in the code}
             \end{itemize}
 
             \dimeCheckBox{\textbf{Check collapses, reshapes, and group-wise calculations (e.g. \texttt{bysort} and \texttt{egen}):}} 
             
             \begin{itemize}
-                \item[] \dimeCheckBox{How are missing values treated in these operations?}
-                \item[] \dimeCheckBox{Does the sort order of the data matter?}
-                \item[] \dimeCheckBox{Or, is the result uniquely determined?}
+                \item[] \dimeCheckBox{The code clearly explains how missing values are treated in these operations}
+                \item[] \dimeCheckBox{If the sort order of data matters, stable sorts are used (e.g. using \textbf{\texttt{set seed})}}
             \end{itemize}
 
             \dimeCheckBox{\textbf{Check winsorization and other techniques for handling outliers}} 
             
             \begin{itemize}
-                \item[] \dimeCheckBox{Is the reason for the chosen technique/method explained?}
-                \item[] \dimeCheckBox{Is there documentation explaining how parameters such as cutoff percentiles were chosen and why one or both tails were altered?}
+                \item[] \dimeCheckBox{The reason for the chosen technique/method is clearly explained}
+                \item[] \dimeCheckBox{There is documentation explaining how parameters such as cutoff percentiles were chosen and why one or both tails were altered \textbf{(if applicable)}}
             \end{itemize}
 
              \dimeCheckBox{\textbf{Check creation of new variables:}} 
             
             \begin{itemize}
-                \item[] \dimeCheckBox{Does the code match the variable definition in the documentation (such as a codebook of all variables)?}
-                \item[] \dimeCheckBox{Is the correct function being used?}
+                \item[] \dimeCheckBox{The code matches the variable definition in the documentation (such as a codebook of all variables)?}
+                \item[] \dimeCheckBox{The correct function is used and clearly explained}
               
             \end{itemize}
 
     \subsection*{Constructed dataset}     
         \begin{itemize}
-                \item[] \dimeCheckBox{Is the constructed dataset tidy (that is, \textbf{each row is an observation}, AND\textbf{ each variable is a column}?}
-                \item[] \dimeCheckBox{Are variable names informative?}
-                \item[] \dimeCheckBox{Are variable labels informative?}
-                \item[] \dimeCheckBox{Are value labels informative?}
-                \item[] \dimeCheckBox{Are all labels grammatically correct and free of special characters?}
-                \item[] \dimeCheckBox{Is there clear documentation (variable dictionary, variable labels, value labels, notes, comments) about variable definition? (e.g. codebook constructed using \texttt{iecodebook})}
+                \item[] \dimeCheckBox{The constructed dataset is tidy (that is, \textbf{each row is an observation}, AND\textbf{ each variable is a column}}
+                \item[] \dimeCheckBox{\textbf{Variable names} are informative}
+                \item[] \dimeCheckBox{\textbf{Variable labels} are informative}
+                \item[] \dimeCheckBox{\textbf{Value labels} are informative}
+                \item[] \dimeCheckBox{All labels are grammatically correct and free of special characters}
+                \item[] \dimeCheckBox{There is clear documentation (variable dictionary, variable labels, value labels, notes, comments) about variable definition? (e.g. codebook constructed using \textbf{\texttt{iecodebook}})}
                  
                 
             \end{itemize}
