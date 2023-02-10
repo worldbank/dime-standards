@@ -1,0 +1,282 @@
+\documentclass{tufte-handout}
+
+\usepackage{librecaslon}
+
+
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{tcolorbox} % needed for the text boxes
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{graphics}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=cyan,
+}
+% Set header and footer
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/i2i}}
+\cfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/wb}}
+\rfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/analytics}}
+
+% Put checkbox to the left of the text
+\def\LayoutCheckField#1#2{% label, field
+	#2 #1%
+}
+
+% Line spacing
+\onehalfspacing
+
+% Define DIME Analytics visual identity colors
+\definecolor{fontcolor}{HTML}{7A0569}
+
+\titleformat{\section}%
+{\Large\rmfamily\bf\color{fontcolor}}% format applied to label+text
+{\llap{\colorbox{fontcolor}{\parbox{1.5cm}{\hfill\huge\color{fontcolor}\thesection}}}}% label
+{2pt}% horizontal separation between label and title body
+{}% before the title body
+[]% after the title body
+
+\titleformat{\subsection}%
+{\large\rmfamily\color{fontcolor}}% format applied to label+text
+{}% label
+{1.5pt}% horizontal separation between label and title body
+{}% before the title body
+[]% after the title body
+
+\newcommand{\dimeCheckBox}[1]{\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{#1}}
+\newcommand{\dimeTextField}[3]{\TextField[name=#1, height=0.3cm, width=#2, bordercolor=gray]{#3}}
+
+
+\newcommand{\titleBox}[1]{
+	\begin{tcolorbox}
+		[colframe = fontcolor,
+		colback = fontcolor,
+		sharp corners,
+		halign = flush center,
+		valign = center,
+		height = 0.3\textwidth,
+		after skip = 1cm]
+		#1
+	\end{tcolorbox}
+}
+
+\begin{document}
+	\begin{fullwidth}
+		
+		\titleBox{
+			\textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Peer Code Review - High-Frequency Checks Checklist}} \\
+				\Large\textbf{{v1.0}}}
+		}
+
+  \dimeTextField{time}{2.5 cm}{Reviewer:} 
+
+        \dimeTextField{time}{2.5 cm} {Coder:}
+		
+		\textbf{NOTE:} Make sure that fill out this checklist \textbf{ONLY IF} your partner's submission includes request to review \textbf{high-frequency checks}. 
+		
+		\section*{High-frequency checks}
+  This checklist lists important factors to consider while reviewing your code review partner's \textbf{high-frequency checks}. Please fill this checklist, and submit it as an attachment when you submit \href{https://survey.wb.surveycto.com/collect/code_review_summary?caseid=}{this detailed form.}
+
+  \hfill \break 
+  \textbf{Note:} We are piloting this checklist as part of improving the code review process. The questions in this list are therefore \textbf{not required}, and we welcome your feedback on the points listed below.
+
+  \subsection*{General}
+		
+		\begin{itemize}
+			\setlength\itemsep{-0.1em}
+			\item[] \dimeCheckBox{The data shared does not contain any personally-identifying information (PII).}
+
+                \item[] \dimeCheckBox{The code creates a tracking sheet (or dashboard) to track progress of the survey.}
+        \end{itemize}
+
+ \hfill \break 
+The following sections cover various aspects of the \textbf{contents of the high-frequency checks} included in the package, but not all may apply to the high-frequency checks you are reviewing.
+
+\subsection*{Survey progress}
+Tracking \textbf{survey progress} involves checks for the following:
+            \begin{itemize}
+
+            \item[]\dimeCheckBox{\textbf{Response rates -}} 
+            The high-frequency checks contain/export:
+            
+            \begin{itemize}
+            
+                \item[] \dimeCheckBox{Table on number/share of surveys attempted, completed, and declined.}
+                
+                \item[] \dimeCheckBox{Bar graphs for surveys attempted, completed, and declined - for each day}
+                
+                \item[] \dimeCheckBox{Graph for total surveys attempted, completed, and declined - on aggregate, and/or over last \textbf{X} days}
+                
+                \item[] \dimeCheckBox{Bar graph for reasons for declining (categorical)}
+                
+            \end{itemize}
+
+
+            \item[]\dimeCheckBox{\textbf{Duration -}} 
+            The high-frequency checks contain/export:
+            
+            \begin{itemize}
+            
+                \item[] \dimeCheckBox{Bar graph of average duration for each day}
+                
+                \item[] \dimeCheckBox{Distribution of duration (either as k-desnity curves, or as box-plots by modules/sections}
+                
+            \end{itemize}
+
+            \end{itemize}
+            
+
+\subsection*{Survey quality}
+Tracking \textbf{survey quality} involves checks for the following:
+            \begin{itemize}
+            
+            \item[]\dimeCheckBox{\textbf{Duplicates -}} 
+            The high-frequency checks contain/export:
+            
+            \begin{itemize}
+            
+                \item[] \dimeCheckBox{Spreadsheet listing duplicate entries in ID and non-ID variables to share with the field team for corrections}
+                
+                
+            \end{itemize}
+            
+            \dimeCheckBox{\textbf{Distribution of key variables:}} 
+            The high-frequency checks contain/export:
+            
+            \begin{itemize}
+            
+                \item[]\dimeCheckBox{Table with summary stats for all key variables, highlighting missing values and outliers} 
+                
+                \item[]\dimeCheckBox{Spreadsheet listing the errors in the data that need to be shared with the field team for corrections}
+                
+                \item[]\dimeCheckBox{Bar graphs/k-density curves for \textbf{continuous variables}}
+                
+                \item[]\dimeCheckBox{Graph for number of missing and extended missing responses (like \texttt{Do not know}, \texttt{Refuse to answer}) by question type }
+                
+                \item[]\dimeCheckBox{Graph for number of outliers by question type}
+                
+            \end{itemize}
+
+            \dimeCheckBox{\textbf{Inconsistency in responses -}} 
+            The high-frequency checks contain/export:
+            \begin{itemize}
+            
+                \item[]\dimeCheckBox{Spreadsheets listing inconsistent responses with questions and their values that needs to be shared with the field team for corrections. For example, inconsistencies across variables for the same respondent, or for the same variables across different time periods.}
+                
+            \end{itemize}
+
+            \dimeCheckBox{\textbf{Form version used -}} 
+            The high-frequency checks contain/export:
+            \begin{itemize}
+            
+                \item[]\dimeCheckBox{Table listing number of responses by form-version and date}
+                
+            \end{itemize}
+
+            \end{itemize}
+
+\subsection*{Enumerator productivity}
+Tracking \textbf{enumerator productivity} involves checks for the following:
+
+            \begin{itemize}
+
+            \item[]\dimeCheckBox{\textbf{Response rates -}} 
+            The high-frequency checks contain/export:
+            
+            \begin{itemize}
+            
+                \item[] \dimeCheckBox{Table on number/share of surveys attempted, completed, and declined - for each enumerator}
+                
+                \item[] \dimeCheckBox{Table on number of attempts made to contact each interviewee - for each enumerator}
+                
+                \item[] \dimeCheckBox{Graph for total surveys attempted, completed, and declined - for each enumerator}
+                
+            \end{itemize}
+
+
+            \item[]\dimeCheckBox{\textbf{Duration -}} 
+            The high-frequency checks contain/export:
+            
+            \begin{itemize}
+            
+                \item[] \dimeCheckBox{Bar graph of average duration over each enumerator}
+                
+                \item[] \dimeCheckBox{Box plots of duration for each module over each enumerator}
+                
+            \end{itemize}
+
+            \end{itemize}
+            
+\subsection*{Enumerator performance}
+Tracking \textbf{enumerator performance} involves checks for the following:
+
+            \begin{itemize}
+
+            \item[]\dimeCheckBox{\textbf{Duration of consent section -}} 
+            The high-frequency checks contain/export:
+            
+            \begin{itemize}
+            
+                \item[] \dimeCheckBox{Table on average duration per day for each enumerator}
+                
+                \item[] \dimeCheckBox{Box plots of average duration for each enumerator}
+                
+            \end{itemize}
+
+
+            \item[]\dimeCheckBox{\textbf{Missing data -}} 
+            The high-frequency checks contain/export:
+            
+            \begin{itemize}
+            
+                \item[] \dimeCheckBox{Table of overall missing rate by question type, for each enumerator}
+                
+                \item[] \dimeCheckBox{Bar graph on average missing rate for key variables (that might result in skipping an entire section) by each enumerator}
+                
+            \end{itemize}
+
+            \item[]\dimeCheckBox{\textbf{Distribution/outliers -}} 
+            The high-frequency checks contain/export:
+            
+            \begin{itemize}
+            
+                \item[] \dimeCheckBox{Box-plots of key variables by each enumerators with acceptable ranges marked in the graphs}
+                
+                \item[] \dimeCheckBox{Graphs on average number of outliers by each enumerator}
+                
+            \end{itemize}
+
+            \item[]\dimeCheckBox{\textbf{Inconsistency in responses -}} 
+            The high-frequency checks contain/export:
+            
+            \begin{itemize}
+            
+                \item[] \dimeCheckBox{Tables with inconsistent values and variables for each enumerator}
+                
+                \item[] \dimeCheckBox{Table on number of inconsistent responses for each enumerator}
+
+                \item[] \dimeCheckBox{Graph on average number of inconsistent responses by each enumerator}
+                
+            \end{itemize}
+
+            \item[]\dimeCheckBox{\textbf{Total flagged errors -}} 
+            The high-frequency checks contain/export:
+            
+            \begin{itemize}
+            
+                \item[] \dimeCheckBox{Tables with number of total flagged errors, and number of times a certain question/response is flagged by each enumerator }
+
+                \item[] \dimeCheckBox{Graph on total flagged errors by each enumerator (overall and recently)}
+                
+            \end{itemize}
+
+            \end{itemize}
+            
+		\vspace{.6em}
+
+
+	\end{fullwidth}
+\end{document}
