@@ -1,6 +1,12 @@
 # DIME STC/STT Non-Disclosure Agreement
 
-Version: June 20, 2022
+_Version: Apr 27, 2023_
+
+_This NDA is only intended to be used by members of DIME who
+already have an active World Bank contract.
+It is only meant to help clarify what is expected from the DIME member
+regarding data privacy and intellectual property,
+by using examples relevant to the type of work done at DIME._
 
 ##
 
