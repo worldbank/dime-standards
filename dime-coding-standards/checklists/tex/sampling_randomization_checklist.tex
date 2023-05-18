@@ -67,8 +67,8 @@
 	\begin{fullwidth}
 		
 		\titleBox{
-			\textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Peer Code Review - Sampling and Randomization}} \\
-				\Large\textbf{{v1.0}}}
+			\textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Peer Code Review - Sampling and Random Treatment Assignment}} \\
+				\Large\textbf{{v2.0}}}
 		}
 
   \dimeTextField{time}{2.5 cm}{Reviewer:} 
@@ -77,23 +77,24 @@
 		
 		\textbf{NOTE:} Make sure that fill out this checklist \textbf{ONLY IF} your partner's submission includes    \textbf{sampling and/or randomization} tasks. 
 		
-		\section*{Sampling and Randomization tasks}
+		\section*{Sampling and Random treatment assignment tasks}
   This checklist lists important factors to consider while reviewing your code review partner's \textbf{sampling/randomization} code. Please fill this checklist, and submit it as an attachment when you submit \href{https://survey.wb.surveycto.com/collect/code_review_summary?caseid=}{this detailed form.}
   \hfill \break 
   \break
-  \textbf{Note:} We are piloting this checklist as part of improving the code review process. The questions in this list are therefore \textbf{not required}, and we welcome your feedback on the points listed below.
+  \textbf{Note:} We are piloting this checklist as part of improving the code review process. The questions in this checklist are therefore \textbf{not required}, and we welcome your feedback on the points listed below.
 
   
-		\begin{itemize}
-			\setlength\itemsep{-0.1em}
+		
    
-   
-    \item[]\textbf{Sampling:}
-   
+
+    \subsection*{Random sampling}
+
+   If your review partner has requested review for the part of the code that performs \textbf{random sampling}, make sure you check for the following: 
             \begin{itemize}
             
-            \item[]\dimeCheckBox{\textbf{The code clearly identifies the population eligible for sampling}. (This should be in the form of an original dataset that is fixed, unless sampling is continuous or ongoing due to research design; in that case, this should be clearly described)}
-         
+            \item \textbf{The code clearly identifies the population eligible for random sampling}. This should be in the form of an original dataset that is fixed, unless sampling is continuous or ongoing due to research design; in that case, this should be clearly described.
+            \hfill \break 
+            \textbf{This includes ensuring:}
             
             \begin{itemize}
                 \item[]\dimeCheckBox{The population dataset is uniquely identified - and the code tests for it.}
@@ -102,12 +103,12 @@
                 
                 \item[]\dimeCheckBox{\textbf{Advanced check:} Clusters, strata, and individual-level IDs do not contain unmasked information about the identity of the clusters, strata, or individuals.} 
 
-                \item[] \dimeCheckBox{\textbf{Advanced check:} The original dataset should be checks for stability when loaded, using some combination of commands like \texttt{datasignature}, file hashing, \texttt{assert}, and/or \texttt{isid, sort} (or an equivalent in other coding languages.)}
+                \item[] \dimeCheckBox{\textbf{Advanced check:} The original dataset should be checked for stability when loaded, using some combination of commands like \texttt{datasignature}, file hashing, \texttt{assert}, and/or \texttt{isid, sort} (or an equivalent in other coding languages.)}
                 
             \end{itemize}
             
             
-			\item[] \dimeCheckBox{\textbf{The method and rationale for random processes is described in documentation and understandable in code}, including:} 
+			\item \textbf{The method and rationale for random processes is described in documentation and understandable in code}, including:
             
             \begin{itemize}
                 
@@ -121,7 +122,7 @@
                 
             \end{itemize}
             
-            \item[] \dimeCheckBox{\textbf{Random processes-generating samples are implemented in a reproducible script}, including:} 
+            \item \textbf{Random processes-generating samples are implemented in a reproducible script}, including: 
             
             \begin{itemize}
                 \item[] \dimeCheckBox{Version settings are explicitly set according to software requirements (in Stata, the \texttt{version} or \texttt{ieboilstart} commands)}
@@ -129,7 +130,7 @@
                 \item[] \dimeCheckBox{Population dataset is sorted uniquely before each independent random process.}
             \end{itemize}
 
-            \dimeCheckBox{\textbf{The script outputs a resulting dataset of results of the random processes} for each potential sampling group (or treatment arm)} 
+            \item \textbf{The script outputs a resulting dataset of results of the random processes} for each potential sampling group (or treatment arm), including:
             \begin{itemize}
 			\item[] \dimeCheckBox{If the sampling result is intended to be “finalized” for field use, there is a logic switch to ensure that final data cannot be overwritten by new data. For example:}
             \begin{verbatim}         
@@ -143,8 +144,9 @@
 
         \hfill 
         
-        \item[]{\textbf{Random treatment assignment:}}
-
+         \subsection*{Random treatment assignment}
+ If your review partner has requested review for the part of the code that performs \textbf{random treatment assignment}, make sure you check for the following: 
+ 
             \begin{itemize}
             
             \item[]\dimeCheckBox{The project uses a script to randomize treatment assignment.}
@@ -178,7 +180,7 @@
 
         \end{itemize}
         
-  \end{itemize}
+
 
 
 		
@@ -187,4 +189,6 @@
 		
 	\end{fullwidth}
 \end{document}
+
+
 
