@@ -32,8 +32,18 @@ _Add names or links_:
 ## Analysis scripts
 - [ ] No variables are created in analysis scripts unless very specific to a particular output
 - [ ] Code is modular, such that individual outputs can be run in any order
-- [ ] Research decisions are well documented in the code (e.g. sample used, treatment of missing variables)
-- [ ] The code implements the models described in the documentation
+- [ ] Research decisions (e.g. sample used, treatment of missing variables) are well documented and the code implements them as described
+- [ ] The code implements the models as described in the documentation
 - [ ] The functions used are apropriate for the analysis being performed
-- [ ] Categorical variables are used correctly (i.e. labeled integers are not used as continuous variables)
+- [ ] Categorical variables are used correctly (i.e. not used as continuous variables)
 - [ ] Outputs are exported in a reproducible manner, and manual formatting is very limited
+- [ ] Variable definitions are consistent across analyses
+- [ ] Samples are consistent across analyses
+- [ ] Models are consistent across analyses (e.g., outcomes, controls, standard error treatment)
+
+## Analysis outputs
+- [ ] Tables and graphs contain detailed notes explaining the methods, such that exhibits can be read and understood on their own
+- [ ] The methods described in notes correspond to those implemented in the code
+- [ ] Output tables are [easy to interpret](https://dimewiki.worldbank.org/Checklist:_Submit_Table)
+- [ ] Output graphs are [easy to interpret](https://dimewiki.worldbank.org/Checklist:_Reviewing_Graphs)
+
