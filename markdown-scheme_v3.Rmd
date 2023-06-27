@@ -16,7 +16,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Version number: 3
+Version number: 4
 
 # Template: Code repository catalogue
 
@@ -29,10 +29,9 @@ This is information about the creator of the metadata. Sufficient fields
 \begin{enumerate}
   \item Name: Surname only: Smith
   \item Abbreviation: First and Last initials: PS
-  \item Name: Smith
   \item Affiliation: Department, World Bank
   \item Production date: Year-Month-Day
-  \item Version number: Entered as 1,2,3
+  \item Version number of the metadata: Entered as 1,2,3
 \end{enumerate}
 
 # Project description
@@ -48,6 +47,7 @@ Sufficient fields are
                   PP_CountryCodeIso3_Year_PRWP-PRWPno_versionno
                   Example: PP_CRI_2018_PRWP-8524_v01
                 \end{lstlisting}
+              For ISO codes see https://www.iso.org/obp/ui/#search; versionno refers to the version number of the PRWP/PP, Year refers to the year of publication of the published paper.
               \item A corresponding PRWP does not exist: FORMAT
                 \begin{lstlisting}
                   PP_CountryCodeIso3_Year_EXT-EXTno_versionno
@@ -61,7 +61,7 @@ Sufficient fields are
             RR_CRI_2018_PRWP-8525_v01
           \end{lstlisting}
         \end{enumerate}
-  \item Other identifiers: DOI and https://doi.org/number
+  \item Other identifiers: DOI and https://doi.org/number\footnote{Requires a later update.}
   \item Title: Of the following form
     \begin{lstlisting}
       Reproducibility package for TITLE (full title of the paper)
@@ -76,17 +76,13 @@ Sufficient fields are
 ## Authors and contributors
 Sufficient are
 \begin{enumerate}
-    \item Authoring entity: author, affiliation and ORCID number and email when available. For World Bank authors use \textbf{World Bank} and always provide email address (query in staff directory as needed). Example:
-      \begin{verbatim}
-        Christoph Lakner World Bank ORCID 0000, clakner@worldbank.org
-      \end{verbatim}
+    \item Authoring entity: author, affiliation and ORCID number and email when available. For World Bank authors use \textbf{World Bank} and always provide email address (query in staff directory as needed).
     \item Contributors: like RAs (not conference participants). Also coeditors if specifically mentioned. FORMAT
     \begin{lstlisting}
       Coeditor
     \end{lstlisting}
     \item Sponsors: All financial contributions and individual/general grants
-    \item Acknowledgements: Usually empty; Example: Corporate Taxation: special mentioning ministry employees for data assistance (could go to acknowledgment statement)
-    \item Acknowledgement Statement:
+    \item Acknowledgement Statement: All (other) acknowledgments
       \begin{verbatim}
         We are grateful to Benu Bidani, Francisco Ferreira, Luis-Felipe..
       \end{verbatim}
@@ -101,25 +97,20 @@ Sufficient are
     \item Project completion date: FORMAT: YEAR-MONTH
       \begin{itemize}
         \item PP: Date at which the article was published: Year-Month
-        \item WP: \textcolor{red}{Must be supplied, bc it is needed for the front page
-        of cataloge}
-      \end{itemize}
-    \item Version date: FORMAT: YEAR-MONTH-DAY
-      \begin{itemize}
-        \item PP: empty
-        \item WP: data of publication as research paper in WB Year-Month-Day
+        \item WP: Must be supplied for the cataloge: use cover page of PRWP if published, o.w. 
+          month of review
       \end{itemize}
 \end{enumerate}
 
 ## Scope and Coverage
 Sufficient are
 \begin{enumerate}
-    \item Abstract: Abstract of the article; \textcolor{red}{Hyphens are a problem. Check all abstracts. Also carriage returns are a problem, direct copy pasting leads to bad results}
+    \item Abstract: Abstract of the article; Delete any hyphens from the abstract.\footnote{If the abstract has hyphens, copy and pasting the abstract will always copy the hyphen (no matter if Word is used in beteween). The window for the abstract resizes with the browser window, therefore the hyphen will almost surely we in the wrong place. Delete.}
     \item Geographic areas: Format: Name, Code, Type
     \begin{lstlisting}
       Lebanon, LBN, ISO-3166 Alpha-3
     \end{lstlisting}
-    \item Keywords: No keywords if none are given; Yes if given.
+    \item Keywords: No keywords if the paper/journal homepage does not provide keywords; Yes if keywords are provided.
     \item JEL codes:
       \begin{verbatim}
         ID D63
@@ -128,19 +119,14 @@ Sufficient are
         Vocabulary JEL Classifications
         URL https://www.aeaweb.org/econlit/jelCodes.php?view=jel
       \end{verbatim}
+      Note: Some journals provide JEL codes on the homepage for the paper, but not in the paper itself (The Economic Journal is an example)
 \end{enumerate}
 
 ## Processes and Output
-The following fields exist
+Fields Process, Insitutional review board, Approval process, Reviews and comments seem more apt at describing the outcome of a process other then working papers and published papers. These fields are currently not used and therefore not included in the template, except for this remark.
+
+Sufficient fields are
 \begin{enumerate}
-    \item Process: empty for PP, tbd for WP
-    \item Institutional review board: empty
-    \item Approval process: empty
-    \item Reviews and comments:
-      \begin{itemize}
-        \item WP: If available (tbd, 2023-06-22)
-        \item PP: empty
-      \end{itemize}
     \item Output: 
         \begin{itemize}
           \item Type    
@@ -167,12 +153,12 @@ Sufficient are
         \begin{itemize}
           \item If all data is public:
             \begin{itemize}
-            \item Fill in: "All data is public and contained in the (external)         reproducibility package."
+            \item Fill in: "All data is public and contained in the (external) reproducibility package."
             \item Add data availability statement if available from journal package; often separate from the zip, has to be copied over manually.
             \end{itemize}
           \item If some data is confidential: Paste from the readme notes about confidentiality.
         \end{itemize}
-    \item Datasets:\footnote{Description of this field: "This field is used to provide an itemized list of datasets used in the project. The data are not documented here (specific metadata are available for documenting data of different types, like the DDO for microdata, the ISO 19139 for geographic datasets etc)"} Not used for PP, will be used for WP, if they data sets are of proper value and stored in another WB repository (like microdata library). \textcolor{red}{No such case arose so far. TBD}
+    \item Datasets:\footnote{Description of this field: "This field is used to provide an itemized list of datasets used in the project. The data are not documented here (specific metadata are available for documenting data of different types, like the DDO for microdata, the ISO 19139 for geographic datasets etc)"} Used both for PP and WP, if they data sets are of proper value and stored in another WB repository (like microdata library or MDL/DDH).\footnote{Process may differ between PP and WP (involvment in cataloging data) No cases so far, 2023-06-27.}
         \begin{enumerate}
           \item Name
           \item Data set ID: (empty)
@@ -189,36 +175,44 @@ Sufficient are
 \end{enumerate}
 
 ## Methods, software and scripts
-Fields that are not listed can be discarded.
+Sufficient are:
 \begin{enumerate}
-  \item Methods: Econometric methods used. \textcolor{red}{This field will learn from past entries.} Possibly add notes (more details about the context)
-  \item Software: Stata 17.0, R, etc
+  \item Methods: Econometric methods used. \textcolor{red}{This field will learn from past entries.} Possibly add notes (more details about the context) in the field Note. The following link collects past Method entries, http://....
+  \item Software: 
+      \begin{itemize}
+        \item Name: Stata, R, Matlab, Dynare
+        \item Version: 17
+      \end{itemize}
   \item Scripts:
       \begin{enumerate}
-          \item File name (WP+PP): Name of the zip file. Naming convention: PrimaryID\_prg\_v01.zip
-          \item Zip package (WP+PP): Same as file name\footnote{File name and zip package are identical, because we do not list files separately, for which the field file name is there.}
+          \item File name: Name of the zip file. Naming convention: PrimaryID\_prg\_v01.zip
+          \item Zip package: Same as file name\footnote{File name and zip package are identical, because we do not list files separately, for which the field file name is meant.}
           \item Title: 
             \begin{lstlisting}[breaklines]
               Reproducibility package (data and code) for Title
             \end{lstlisting}
             Title may be shortened if adequate.
-          \item Authors: WP+PP: empty\footnote{According to descr: A list of authors and coauthors of the script} \textcolor{red}{If authors of the paper and the code differ and authors want to indicate this, add here list of authors for the code!}
-          \item Date: Year-Month (usually the completion/version date)
+          \item Authors: empty\footnote{According to descr: A list of authors and coauthors of the script} If authors of the paper and the code differ and authors want to indicate this, add here list of authors for the code.
+          \item Date: Year-Month (usually the completion/version date of the paper)
           \item Software: Stata
-          \item Description: empty
-          \item Methods: \textcolor{red}{This is methods used in the script}. Usually empty
+          \item Description: Simple description like a tree of what is in the zip file
+          \item Methods: This are specific methods on the script level (and not econometric methods)
           \item Dependencies: Here enter all packages necessary:\footnote{It may be preferable to enter this in Software, libraries: \textcolor{red}{Error: Must be an array}. Does not accept more than one entry, and also not a string. Behavior of the editor his random here}
             \begin{lstlisting}
               coefplot, distinct, lincomeest, lprobust.ado
             \end{lstlisting}
           \item Instructions: Write: "See readme in reproducibility package"
-          \item Repository: ICPSR, Harvard Dataverse, Journal webpage etc. For ICPSR
-                the correct description is
+          \item Repository: ICPSR, Harvard Dataverse, Journal webpage etc. For convenicnes, for ICPSR
+                use
                 \begin{lstlisting}
                   AEA Data and Code Repository (ICPSR)
                   Reproducible Research Repository (World Bank)
                 \end{lstlisting}
-          \item Notes: \textcolor{red}{Here who verified the package}. 
+              For Harvard Dataverse use
+                \begin{lstlisting}
+                  TBC
+                \end{lstlisting}
+          \item Notes: Here who verified the package:
             \begin{lstlisting}[breaklines]
             Checked for reproducibility externally at the journal.
             Checked for reproducibility at Development Impact Evaluation (DIME), World Bank
@@ -229,11 +223,15 @@ Fields that are not listed can be discarded.
               \begin{itemize}
                 \item ICPSR:
                   \begin{lstlisting}[breaklines]
-                  Creative Commons Attribution 4.0 International (CC BY 4.0) License
-                  https://creativecommons.org/licenses/by/4.0/
+                  Name: Creative Commons Attribution 4.0 International (CC BY 4.0) License
+                  URL: https://creativecommons.org/licenses/by/4.0/
                   \end{lstlisting}
               \end{itemize}
-              \item WP: Modified BSD3
+              \item WP: 
+                \begin{lstlisting}[breaklines]
+                  Name: Modified BSD3 
+                  URL: https://opensource.org/license/bsd-3-clause/
+                \end{lstlisting}
             \end{itemize}
       \end{enumerate}
   \item Repository: Harvard, ICPSR- Type empty - URL, Journal webpage
@@ -243,7 +241,11 @@ Fields that are not listed can be discarded.
     \end{lstlisting}
   \item Reproducibility:
       \begin{enumerate}
-            \item Technology environment: empty
+            \item Technology environment: 
+                \begin{itemize}
+                  \item WP + verified by Dime: Enironment in which the Rep check was conducted
+                  \item PP: usually empty (bc not available)
+                \end{itemize}
             \item Technology Requirements: Standard, Cluster...; include runtime if available
             \item Reproduction instructions: No details:
                 \begin{lstlisting}[breaklines]
@@ -257,13 +259,9 @@ Fields that are not listed can be discarded.
 \end{enumerate}
 
 ## Access and Rights
+The following are sufficient:
 \begin{enumerate}
-    \item Disclaimer: \textcolor{red}{Perhaps not necessary}
-      \begin{lstlisting}[breaklines]
-        The views expressed here are the authors, and do not necessarily reflect the official views of the World Bank, its Executive Directors, or the countries they represent.
-      \end{lstlisting}
     \item Confidentiality: YES or NO, or PARTIAL. \textcolor{red}{Do not add description}
-    \item Citation requirement: (empty)
     \item License: as in scripts
         \begin{itemize}
               \item PP
@@ -280,7 +278,6 @@ Fields that are not listed can be discarded.
                 https://opensource.org/license/bsd-3-clause/
               \end{lstlisting}
             \end{itemize}
-    \item Copyright: (empty)
 \end{enumerate}
 
 ## Contacts
