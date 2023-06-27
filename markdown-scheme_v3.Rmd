@@ -64,7 +64,7 @@ Sufficient fields are
   \item Other identifiers: DOI and https://doi.org/number
   \item Title: Of the following form
     \begin{lstlisting}
-      Reproducibility package for TITEL(paper)
+      Reproducibility package for TITLE (full title of the paper)
     \end{lstlisting}
   \item Subtitle:
     \begin{itemize}
