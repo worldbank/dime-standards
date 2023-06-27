@@ -55,7 +55,7 @@ Sufficient fields are
                 \end{lstlisting}
                     EXTno is a unique running number assigned by Dime.
             \end{enumerate}
-        \item Working Paper: FORMAT
+        \item Policy Research Working Paper: FORMAT
           \begin{lstlisting}
             RR_CountryCodeIso3_Year_PRWP-PRWPno_versionno
             RR_CRI_2018_PRWP-8525_v01
