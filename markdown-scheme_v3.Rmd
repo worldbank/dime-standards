@@ -329,7 +329,6 @@ The following are sufficient:
     \end{itemize}
   \end{enumerate}
   \item For packages checked by DIME, attach the reproducibility verification statement. Title: Reproducibility verification certificate. 
-  \item All else emtpy.
 \end{enumerate}
 
 # Open Issues and Remarks
