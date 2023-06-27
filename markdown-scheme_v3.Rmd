@@ -76,7 +76,7 @@ Sufficient fields are
 ## Authors and contributors
 Sufficient are
 \begin{enumerate}
-    \item Authoring entity: author, affiliation and ORCID number and email when available; For world bank authors use \textbf{World Bank}. Example:
+    \item Authoring entity: author, affiliation and ORCID number and email when available. For World Bank authors use \textbf{World Bank} and always provide email address (query in staff directory as needed). Example:
       \begin{verbatim}
         Christoph Lakner World Bank ORCID 0000, clakner@worldbank.org
       \end{verbatim}
