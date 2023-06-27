@@ -53,7 +53,7 @@ Sufficient fields are
                   PP_CountryCodeIso3_Year_EXT-EXTno_versionno
                   Example: PP_CRI_2018_EXT-1_v01
                 \end{lstlisting}
-                    EXTno is a unique running number assigned by Dime.
+                    EXTno is a unique running number assigned by the metadata producer.
             \end{enumerate}
         \item Policy Research Working Paper: FORMAT
           \begin{lstlisting}
