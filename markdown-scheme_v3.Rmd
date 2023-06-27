@@ -47,7 +47,12 @@ Sufficient fields are
                   PP_CountryCodeIso3_Year_PRWP-PRWPno_versionno
                   Example: PP_CRI_2018_PRWP-8524_v01
                 \end{lstlisting}
-              For ISO codes see https://www.iso.org/obp/ui/#search; versionno refers to the version number of the PRWP/PP, Year refers to the year of publication of the published paper.
+                    with
+                    \begin{itemize}
+                      \item For ISO codes see \begin{verbatim}https://www.iso.org/obp/ui/#search\end{verbatim}
+                      \item versionno refers to the version number of the PRWP/PP
+                      \item Year refers to the year of publication of the published paper.
+                    \end{itemize}
               \item A corresponding PRWP does not exist: FORMAT
                 \begin{lstlisting}
                   PP_CountryCodeIso3_Year_EXT-EXTno_versionno
