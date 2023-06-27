@@ -21,7 +21,7 @@ Version number: 3
 # Template: Code repository catalogue
 
 1. Create new project: Type script
-2. Screenshot of the \emph{complete} first page
+2. Screenshot of the \emph{complete} title page
 3. For a published paper, prepare the link to the repository. For a WP prepare a zip that contains all data and code; For \textbf{DIME verified} packages also the reproducibility verification statement
 
 # Information on metadata
