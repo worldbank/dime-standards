@@ -27,7 +27,7 @@ Version number: 3
 # Information on metadata
 This is information about the creator of the metadata. Sufficient fields
 \begin{enumerate}
-  \item Name: Second name only: Smith
+  \item Name: Surname only: Smith
   \item Abbreviation: PS
   \item Name: Smith
   \item Affiliation: World Bank
