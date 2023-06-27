@@ -48,7 +48,7 @@ Sufficient fields are
                   PP_CountryCodeIso3_Year_PRWP-PRWPno_versionno
                   Example: PP_CRI_2018_PRWP-8524_v01
                 \end{lstlisting}
-              \item A corresponding PRWP does not exit: FORMAT
+              \item A corresponding PRWP does not exist: FORMAT
                 \begin{lstlisting}
                   PP_CountryCodeIso3_Year_EXT-EXTno_versionno
                   Example: PP_CRI_2018_EXT-1_v01
