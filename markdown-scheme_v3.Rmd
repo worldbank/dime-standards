@@ -22,7 +22,7 @@ Version number: 3
 
 1. Create new project: Type script
 2. Screenshot of the \emph{complete} title page
-3. For a published paper, prepare the link to the repository. For a WP prepare a zip that contains all data and code; For \textbf{DIME verified} packages also the reproducibility verification statement
+3. For a published paper, prepare the link to the repository. For a WP prepare a zip that contains: readme, code files, all public data files, data statement (if nto included in readme) and license. For \textbf{DIME verified} packages also the reproducibility verification statement
 
 # Information on metadata
 This is information about the creator of the metadata. Sufficient fields
