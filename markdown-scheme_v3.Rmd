@@ -30,7 +30,7 @@ This is information about the creator of the metadata. Sufficient fields
   \item Name: Surname only: Smith
   \item Abbreviation: First and Last initials: PS
   \item Name: Smith
-  \item Affiliation: World Bank
+  \item Affiliation: Department, World Bank
   \item Production date: Year-Month-Day
   \item Version number: Entered as 1,2,3
 \end{enumerate}
