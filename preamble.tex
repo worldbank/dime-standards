@@ -1,0 +1,37 @@
+%\usepackage{fontspec}
+%\DeclareUnicodeCharacter{00A0}{ }
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage{makeidx}
+\usepackage{listings,lstautogobble}
+\theoremstyle{plain}
+\newtheorem{thm}{\protect\theoremname}
+\theoremstyle{plain}
+\newtheorem{prop}[thm]{\protect\propositionname}
+\theoremstyle{plain}
+\newtheorem{task}[thm]{\protect\taskname}
+
+
+\makeatother
+\makeindex
+
+\providecommand{\propositionname}{Proposition}
+\providecommand{\taskname}{Task}
+\providecommand{\theoremname}{Theorem}
+
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\exn}{\mathbb{E}}
+
+\lstset{% general command to set parameter(s)
+		basicstyle=\small, % print whole listing small
+		keywordstyle=\color{black}\bfseries\underbar,
+		identifierstyle=,
+		commentstyle=\color{white},
+		stringstyle=\ttfamily,
+		showstringspaces=false,
+		breaklines=true,
+    	frameround=ffff,
+    	frame=single,
+    	rulecolor=\color{black},
+    	autogobble=true
+		}

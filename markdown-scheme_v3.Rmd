@@ -1,0 +1,393 @@
+---
+title: "Metadata Template"
+author: "Christian Krestel"
+date: "2023-06-27"
+output:
+  pdf_document:
+    includes:
+      in_header: "preamble.tex"
+    toc: true
+    toc_depth: 3
+    latex_engine: xelatex
+---
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Version number: 3
+
+# Template: Code repository catalogue
+
+1. Create new project: Type script
+2. Screenshot of the \emph{complete} first page
+3. For a published paper, prepare the link to the repository. For a WP prepare a zip that contains all data and code; For \textbf{DIME verified} packages also the reproducibility verification statement
+
+# Information on metadata
+This is information about the creator of the metadata. Sufficient fields
+\begin{enumerate}
+  \item Name: Second name only: Smith
+  \item Abbreviation: PS
+  \item Name: Smith
+  \item Affiliation: World Bank
+  \item Production date: Year-Month-Day
+  \item Version number: Entered as 1,2,3
+\end{enumerate}
+
+# Project description
+## Title statement
+Sufficient fields are
+\begin{enumerate}
+  \item Primary ID: Ideally a DOI or an organization consistent scheme;
+      \begin{enumerate}
+        \item Published Paper: 
+            \begin{enumerate}
+              \item A corresponding PRWP exists: FORMAT
+                \begin{lstlisting}
+                  PP_CountryCodeIso3_Year_PRWP-PRWPno_versionno
+                  Example: PP_CRI_2018_PRWP-8524_v01
+                \end{lstlisting}
+              \item A corresponding PRWP does not exit: FORMAT
+                \begin{lstlisting}
+                  PP_CountryCodeIso3_Year_EXT-EXTno_versionno
+                  Example: PP_CRI_2018_EXT-1_v01
+                \end{lstlisting}
+                    EXTno is a unique running number assigned by Dime.
+            \end{enumerate}
+        \item Working Paper: FORMAT
+          \begin{lstlisting}
+            RR_CountryCodeIso3_Year_PRWP-PRWPno_versionno
+            RR_CRI_2018_PRWP-8525_v01
+          \end{lstlisting}
+        \end{enumerate}
+  \item Other identifiers: DOI and https://doi.org/number
+  \item Title: Of the following form
+    \begin{lstlisting}
+      Reproducibility package for TITEL(paper)
+    \end{lstlisting}
+  \item Subtitle:
+    \begin{itemize}
+      \item WP: World Bank Policy Research Working Paper (PRWP) number
+      \item PP: DOI number (no https)
+    \end{itemize}
+\end{enumerate}
+
+## Authors and contributors
+Sufficient are
+\begin{enumerate}
+    \item Authoring entity: author, affiliation and ORCID number and email when available; For world bank authors use \textbf{World Bank}. Example:
+      \begin{verbatim}
+        Christoph Lakner World Bank ORCID 0000, clakner@worldbank.org
+      \end{verbatim}
+    \item Contributors: like RAs (not conference participants). Also coeditors if specifically mentioned. FORMAT
+    \begin{lstlisting}
+      Coeditor
+    \end{lstlisting}
+    \item Sponsors: All financial contributions and individual/general grants
+    \item Acknowledgements: Usually empty; Example: Corporate Taxation: special mentioning ministry employees for data assistance (could go to acknowledgment statement)
+    \item Acknowledgement Statement:
+      \begin{verbatim}
+        We are grateful to Benu Bidani, Francisco Ferreira, Luis-Felipe..
+      \end{verbatim}
+      \begin{verbatim}
+        .. and seminar participants at the World Bank’s Poverty ...
+      \end{verbatim}
+  \end{enumerate}
+
+## Version statement
+Sufficient are
+\begin{enumerate}
+    \item Project completion date: FORMAT: YEAR-MONTH
+      \begin{itemize}
+        \item PP: Date at which the article was published: Year-Month
+        \item WP: \textcolor{red}{Must be supplied, bc it is needed for the front page
+        of cataloge}
+      \end{itemize}
+    \item Version date: FORMAT: YEAR-MONTH-DAY
+      \begin{itemize}
+        \item PP: empty
+        \item WP: data of publication as research paper in WB Year-Month-Day
+      \end{itemize}
+\end{enumerate}
+
+## Scope and Coverage
+Sufficient are
+\begin{enumerate}
+    \item Abstract: Abstract of the article; \textcolor{red}{Hyphens are a problem. Check all abstracts. Also carriage returns are a problem, direct copy pasting leads to bad results}
+    \item Geographic areas: Format: Name, Code, Type
+    \begin{lstlisting}
+      Lebanon, LBN, ISO-3166 Alpha-3
+    \end{lstlisting}
+    \item Keywords: No keywords if none are given; Yes if given.
+    \item JEL codes:
+      \begin{verbatim}
+        ID D63
+        Name Equity, Justice, Inequality
+        Parent ID (empty)
+        Vocabulary JEL Classifications
+        URL https://www.aeaweb.org/econlit/jelCodes.php?view=jel
+      \end{verbatim}
+\end{enumerate}
+
+## Processes and Output
+The following fields exist
+\begin{enumerate}
+    \item Process: empty for PP, tbd for WP
+    \item Institutional review board: empty
+    \item Approval process: empty
+    \item Reviews and comments:
+      \begin{itemize}
+        \item WP: If available (tbd, 2023-06-22)
+        \item PP: empty
+      \end{itemize}
+    \item Output: 
+        \begin{itemize}
+          \item Type    
+            \begin{itemize}
+              \item WP: Working Paper
+              \item PP: Published Paper (not paper, not article, not Article)
+            \end{itemize}
+          \item Title: Title of the paper
+          \item Authors: Authors: all comma separated; first name, last name. Patty Smith, Patty Smith, Petty Smith
+          \item Description: \textcolor{red}{Add kind and No of external working paper if applicable}
+            \begin{lstlisting}[breaklines]
+                Toulouse School of Economics Working Papers No 1391
+            \end{lstlisting}
+          \item DOI: YES (if it exists)
+          \item URL: YES (Editor displays an error at https, but it is accepted)
+        \end{itemize}
+    \item Language: English, EN
+\end{enumerate}
+
+## Data
+Sufficient are
+\begin{enumerate}
+    \item Data statement:\footnote{ Description: An overall statement on the data used in the project. A spearate field is provided to list and document the origin and key characteristics of the datasets}. For external packages, the following rule:
+        \begin{itemize}
+          \item If all data is public:
+            \begin{itemize}
+            \item Fill in: "All data is public and contained in the (external)         reproducibility package."
+            \item Add data availability statement if available from journal package; often separate from the zip, has to be copied over manually.
+            \end{itemize}
+          \item If some data is confidential: Paste from the readme notes about confidentiality.
+        \end{itemize}
+    \item Datasets:\footnote{Description of this field: "This field is used to provide an itemized list of datasets used in the project. The data are not documented here (specific metadata are available for documenting data of different types, like the DDO for microdata, the ISO 19139 for geographic datasets etc)"} Not used for PP, will be used for WP, if they data sets are of proper value and stored in another WB repository (like microdata library). \textcolor{red}{No such case arose so far. TBD}
+        \begin{enumerate}
+          \item Name
+          \item Data set ID: (empty)
+          \item Note: (empty)
+          \item Access policy:
+            \begin{itemize}
+              \item Published elsewhere: Note access/license
+              \item Published with package: Authors must confirm there is no confidentiality.
+            \end{itemize}
+          \item License (empty)
+          \item License URL (empty)
+          \item Data URL
+        \end{enumerate}
+\end{enumerate}
+
+## Methods, software and scripts
+Fields that are not listed can be discarded.
+\begin{enumerate}
+  \item Methods: Econometric methods used. \textcolor{red}{This field will learn from past entries.} Possibly add notes (more details about the context)
+  \item Software: Stata 17.0, R, etc
+  \item Scripts:
+      \begin{enumerate}
+          \item File name (WP+PP): Name of the zip file. Naming convention: PrimaryID\_prg\_v01.zip
+          \item Zip package (WP+PP): Same as file name\footnote{File name and zip package are identical, because we do not list files separately, for which the field file name is there.}
+          \item Title: 
+            \begin{lstlisting}[breaklines]
+              Reproducibility package (data and code) for Title
+            \end{lstlisting}
+            Title may be shortened if adequate.
+          \item Authors: WP+PP: empty\footnote{According to descr: A list of authors and coauthors of the script} \textcolor{red}{If authors of the paper and the code differ and authors want to indicate this, add here list of authors for the code!}
+          \item Date: Year-Month (usually the completion/version date)
+          \item Software: Stata
+          \item Description: empty
+          \item Methods: \textcolor{red}{This is methods used in the script}. Usually empty
+          \item Dependencies: Here enter all packages necessary:\footnote{It may be preferable to enter this in Software, libraries: \textcolor{red}{Error: Must be an array}. Does not accept more than one entry, and also not a string. Behavior of the editor his random here}
+            \begin{lstlisting}
+              coefplot, distinct, lincomeest, lprobust.ado
+            \end{lstlisting}
+          \item Instructions: Write: "See readme in reproducibility package"
+          \item Repository: ICPSR, Harvard Dataverse, Journal webpage etc. For ICPSR
+                the correct description is
+                \begin{lstlisting}
+                  AEA Data and Code Repository (ICPSR)
+                  Reproducible Research Repository (World Bank)
+                \end{lstlisting}
+          \item Notes: \textcolor{red}{Here who verified the package}. 
+            \begin{lstlisting}[breaklines]
+            Checked for reproducibility externally at the journal.
+            Checked for reproducibility at Development Impact Evaluation (DIME), World Bank
+            \end{lstlisting}
+          \item License:
+            \begin{itemize}
+              \item PP
+              \begin{itemize}
+                \item ICPSR:
+                  \begin{lstlisting}[breaklines]
+                  Creative Commons Attribution 4.0 International (CC BY 4.0) License
+                  https://creativecommons.org/licenses/by/4.0/
+                  \end{lstlisting}
+              \end{itemize}
+              \item WP: Modified BSD3
+            \end{itemize}
+      \end{enumerate}
+  \item Repository: Harvard, ICPSR- Type empty - URL, Journal webpage
+    \begin{lstlisting}[breaklines]
+        AEA Data and Code Repository
+        https://www.openicpsr.org/openicpsr/aea
+    \end{lstlisting}
+  \item Reproducibility:
+      \begin{enumerate}
+            \item Technology environment: empty
+            \item Technology Requirements: Standard, Cluster...; include runtime if available
+            \item Reproduction instructions: No details:
+                \begin{lstlisting}[breaklines]
+                 A readme file with detailed instructions is part of the (external) reproducibility package.
+                \end{lstlisting}
+                 Short details:
+                  \begin{lstlisting}
+                    A readme file and a single do file, AP_final_AEJ. do are provided. 
+                  \end{lstlisting}
+        \end{enumerate}
+\end{enumerate}
+
+## Access and Rights
+\begin{enumerate}
+    \item Disclaimer: \textcolor{red}{Perhaps not necessary}
+      \begin{lstlisting}[breaklines]
+        The views expressed here are the authors, and do not necessarily reflect the official views of the World Bank, its Executive Directors, or the countries they represent.
+      \end{lstlisting}
+    \item Confidentiality: YES or NO, or PARTIAL. \textcolor{red}{Do not add description}
+    \item Citation requirement: (empty)
+    \item License: as in scripts
+        \begin{itemize}
+              \item PP
+              \begin{itemize}
+                \item ICPSR:
+                  \begin{lstlisting}[breaklines]
+                  Creative Commons Attribution 4.0 International (CC BY 4.0) License
+                  https://creativecommons.org/licenses/by/4.0/
+                  \end{lstlisting}
+              \end{itemize}
+              \item WP: 
+              \begin{lstlisting}
+                Modified BSD3
+                https://opensource.org/license/bsd-3-clause/
+              \end{lstlisting}
+            \end{itemize}
+    \item Copyright: (empty)
+\end{enumerate}
+
+## Contacts
+\begin{enumerate}
+    \item WB author or corresponding author: Fill fields Name, email, affiliation, role Author
+      \begin{lstlisting}
+      Patty Smith
+      Author
+      psmith@worldbank.org
+      World Bank
+      \end{lstlisting}
+    \item Reproducibility group contact
+      \begin{lstlisting}
+        Reproducibility WBG
+        reproducibility@worldbank.org
+        reproducibility.worldbank.org
+      \end{lstlisting}
+\end{enumerate}
+
+# Tags
+\begin{enumerate}
+  \item Tag: Partially Reproducible, Fully Reproducible, Not Reproducible, Tag group Reproducible
+  \item Type: PRWP, Published Paper
+\end{enumerate}
+
+# External Resources
+\begin{enumerate}
+  \item Zip file/link for PP and WP
+  \begin{enumerate}
+    \item File type: prg
+    \item Title
+      \begin{lstlisting}
+        Reproducibility package (data and code) for TITLE (of paper), PID PrimaryID
+      \end{lstlisting}
+      Title of paper may be shortened\footnote{It is not possible to put the PID into the subtitle as we do with the title at the beginning, because the subtitle is not displayed. Putting the PID into the subtitle means dropping the PID}
+    \item Date: equal to version date/completion date: FORMAT Year-Month
+    \item Description: 
+    \begin{itemize}
+      \item WP: empty
+      \item PP:
+        \begin{lstlisting}
+          Externally available on ICPSR
+        \end{lstlisting}
+    \end{itemize}
+    \item Resource attachment: 
+    \begin{itemize}
+      \item WP: Filename in the format PID\_prg\_v01.zip (as the zipname in scripts)
+      \item PP: Link to the repository/article
+    \end{itemize}
+  \end{enumerate}
+  \item For packages checked by DIME, attach the reproducibility verification statement. Title: Reproducibility verification certificate. 
+  \item All else emtpy.
+\end{enumerate}
+
+# Open Issues and Remarks
+\begin{enumerate}
+    \item \textcolor{green}{Resolved}\textcolor{lightgray}{Tags: We use tag group Reproducible, YES, NO, PARTIAL, shown is then only the value and not the tag group. Do we have to tag like: reproducible, partially reproducible, not reproducible?}
+    \item \textcolor{orange}{Partially Resolved: UPI?}Information on Metadata:
+      \begin{enumerate}
+        \item Abbreviation: Fine. But also use an identifier. Perhaps UPI is problematic if this is public.Use a new
+              identifier?
+      \end{enumerate}
+    \item Project description
+      \begin{enumerate}
+        \item \textcolor{green}{Resolved}\textcolor{lightgray}{Creating a primary ID: Use country ISO 3 code or not? Use RR for working papers, PP for published papers (see         naming convention in Proj\_descr, Title statement above)}
+        \item Authors and contributors
+          \begin{enumerate}
+            \item Contributors: Should RAs only be named if they contributed to the code?
+            \item Acknowledgment: To include or not? (Little work, little value?)
+          \end{enumerate}
+        \item Processes and Output
+          \begin{enumerate}
+            \item \textcolor{green}{Resolved}\textcolor{gray}{Kept, bc maybe useful for WP}
+            \item Unused fields for PP: Should we use these for WP? An alternative is not to use these (in particular Process) and add working paper and published version separately.
+              \begin{itemize}
+                \item Process: Description:
+                 \begin{lstlisting}[breaklines]
+                    This element is used to document the life cycle of the research project, from its design and inception to its conclusion. This can include phases of fundraising, approval by a review board, concept note review, data acquisition, analysis, publishing of a working paper, peer review, publishing in journal, presentation to conferences, publishing, evaluation, reporting to sponsors, etc. It is recommended to provide these steps in a chronological order.
+                 \end{lstlisting}
+                 \item Approval process:
+                 \begin{lstlisting}[breaklines]
+                    The "Approval process" is a group of six elements used to describe the formal approval process(es) (if any) that the project had to go through. This may for example include an approval by an Ethics Board to collect new data, followed by an internal review process to endorse the results.
+                 \end{lstlisting}
+              \end{itemize}
+          \end{enumerate}
+        \item Methods, software and scripts:
+          \begin{enumerate}
+            \item Remark: Field Methods: There are two method field: one stand-alone, one with Scripts. Current usage: Stand-alone for econometric/statistical techniques (e.g. OLS, random forests...). This field will learn and suggest keywords.
+          \end{enumerate}
+      \end{enumerate}
+\end{enumerate}
+
+# Errors and Issues
+\begin{enumerate}
+\item \begin{verbatim}proj_descr_script.[0].title\end{verbatim} is missing: this is caused by: in methods, software, scripts a file name was given, but a title is missing. \textbf{Title is obligatory, conditional on file name entered}
+\item \textcolor{green}{Resolved: Works now.}\textcolor{lightgray}{In Processes and output, in URL, the protocol https is not accepted. The editor sometimes shows an error, but this has no consequence}
+\item in \begin{verbatim} External Resource, File type\end{verbatim} there is no option package (only prg,...). Perhaps one would want to have this option, because we refer to whole packages, if the source is external
+\item There is no real field \begin{verbatim} Journal \end{verbatim}. For published articles, one cannot indicate in which journal it was published.
+\item In Scope, Topic it would be nice to have all JEL descriptions available once on enters the code
+\item In Software, libraries: sometimes the following error is raised: Must be an array. One cannot enter more than one package
+\item (On the external instance) In Scripts, License, License is not displayed, although a value is supplied
+\item One has to supply completion date for the cataloge page to show the year (WLD xxxx). Working papers have no completion date if seen as project. Just a version date.
+\end{enumerate}
+
+
+# Licenses (Which to use?)
+\begin{lstlisting}[breaklines]
+Economic Studies
+This article is published and distributed under the terms of the Oxford University Press, Standard Journals Publication Model (https://academic.oup.com/journals/pages/open_access/funder_policies/chorus/standard_publication_model)
+\end{lstlisting}
