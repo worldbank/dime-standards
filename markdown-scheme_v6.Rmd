@@ -1,0 +1,432 @@
+---
+title: "Metadata Template"
+author: "Christian Krestel"
+date: "2023-07-06"
+output:
+  pdf_document:
+    includes:
+      in_header: "preamble.tex"
+    toc: true
+    toc_depth: 3
+    latex_engine: xelatex
+---
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Version number: 6
+
+# Meetings
+
+## Protocol Meeting 2023-06-28
+
+\begin{enumerate}
+  \item Confidentiality: Cannot only be Yes, No or partial. Has to involve more information or empty
+  \item Technology requirement: Do not put Standard. Put only if something more is needed: Cluster etc
+  \item No DOI in the subtitle, no Working paper number in the subtitle. 
+  \item DOI is not for the paper, it is for the package.
+  \item Geographic region in scope: to be used with the codes provided by the editor (WB codes) 
+  \item Keep separating donors from the 
+  \item Delete the field contributors. Go into Acknowledgement. 
+  \item Keep English EN (and fill it it), but it will not be displayed 
+  \item Disclaimer is for the package (and not from the paper) to be drafted by legal
+  \item Get rid of the tags
+  \item Get rid of the project website
+  \item There is a field for repository, there one puts potential Github repositories
+  \item Corresponding author is not a role. The corresponding author is the author that shows in Contacts OK
+  \item Type in country to be used only if it is not a country, ocean, city, province etc. New codes are provided OK (use world bank ones)
+\end{enumerate}
+
+## Changes
+### Implemented changes on qa and adpted protocol following the the meeting on 2023-06-28
+\begin{enumerate}
+\item Remove confidentiality if public: OK
+\item Leave Technology environment empty (instead of Standard): OK
+\item DOI of paper deleted: OK
+\item All subtitles deleted
+\item Disclaimer: deleted, waiting for new one OK
+\item Project website OK (aarts github is now in repository)
+\item Geographic region: changed the type to cty; use WB codes now
+\item Coeditors in field contributor deleted
+\item Added to template that the field Language will not be displayed
+\item Tags have been changed, but are still there. Naming is now more meaningful: Fully Reproducible, Partially Reproducible, Not Reproducible
+\item Excel file for document number and methods has been created and linked to the metadata scheme
+\end{enumerate}
+
+### Open changes
+\begin{enumerate}
+\item Contributors: RAs are still in place; must adjust ACK if to be deleted
+\item Sponsors: still in place; must adjust ACK if to be deleted
+\item Tags are still there; labeling is now more meaningful; perhaps we can add them to the meta data but hide them
+\end{enumerate}
+
+# Template: Code repository catalogue
+
+## Create a package
+
+1. Create new project: Type script
+2. Screenshot of the \emph{complete} title page
+3. For a published paper, prepare the link to the repository. For a WP prepare a zip that contains: readme, code files, all public data files, data statement (if nto included in readme) and license. For \textbf{DIME verified} packages also the reproducibility verification statement
+
+## Information on metadata
+This is information about the creator of the metadata. Sufficient fields
+\begin{enumerate}
+  \item Name: Surname only: Smith
+  \item Abbreviation: First and Last initials: PS
+  \item Affiliation: Department, World Bank
+  \item Production date: Year-Month-Day
+  \item Version number of the metadata: Entered as 1,2,3
+\end{enumerate}
+
+## Project description
+### Title statement
+Sufficient fields are
+\begin{enumerate}
+  \item Primary ID: Ideally a DOI or an organization consistent scheme;
+      \begin{enumerate}
+        \item Published Paper: 
+            \begin{enumerate}
+              \item A corresponding PRWP exists: FORMAT
+                \begin{lstlisting}
+                  PP_CountryCodeIso3_Year_PRWP-PRWPno_versionno
+                  Example: PP_CRI_2018_PRWP-8524_v01
+                \end{lstlisting}
+                    with
+                    \begin{itemize}
+                      \item For ISO codes see \href{https://www.iso.org/obp/ui/#search}{\underline{\textcolor{blue}{Iso Codes}}}
+                      \item versionno refers to the version number of the PRWP/PP
+                      \item Year refers to the year of publication of the published paper.
+                    \end{itemize}
+              \item A corresponding PRWP does not exist: FORMAT
+                \begin{lstlisting}
+                  PP_CountryCodeIso3_Year_EXT-EXTno_versionno
+                  Example: PP_CRI_2018_EXT-1_v01
+                \end{lstlisting}
+                    EXTno is a unique running number assigned by the metadata producer. Please see  \href{https://worldbankgroup-my.sharepoint.com/:x:/r/personal/ckrestel_worldbank_org/Documents/qa_rep.xlsx?d=w0a6ba76797e5416c9a6bc9739d76bcf0&csf=1&web=1&e=3HRcd9}{\underline{\textcolor{blue}{Qa Excel}}}
+                    for the current number.
+            \end{enumerate}
+        \item Policy Research Working Paper: FORMAT
+          \begin{lstlisting}
+            RR_CountryCodeIso3_Year_PRWP-PRWPno_versionno
+            RR_CRI_2018_PRWP-8525_v01
+          \end{lstlisting}
+        \end{enumerate}
+  \item Other identifiers: DOI of the package and https://doi.org/number\footnote{Requires a later update.}
+  \item Title: Of the following form
+    \begin{lstlisting}
+      Reproducibility package for TITLE (full title of the paper)
+    \end{lstlisting}
+\end{enumerate}
+
+### Authors and contributors
+Sufficient are
+\begin{enumerate}
+    \item Authoring entity: author, affiliation and ORCID number and email when available. For World Bank authors use \textbf{World Bank} and always provide email address (query in staff directory as needed).
+    \item Sponsors: All financial contributions and individual/general grants
+    \item Acknowledgement Statement: All acknowledgments except financial support
+      \begin{verbatim}
+        We are grateful to Benu Bidani, Francisco Ferreira, Luis-Felipe..
+      \end{verbatim}
+      \begin{verbatim}
+        .. and seminar participants at the World Bank’s Poverty ...
+      \end{verbatim}
+  \end{enumerate}
+
+### Version statement
+Sufficient are
+\begin{enumerate}
+    \item Project completion date: FORMAT: YEAR-MONTH
+      \begin{itemize}
+        \item PP: Date at which the article was published: Year-Month
+        \item WP: Must be supplied for the cataloge: use cover page of PRWP if published, o.w. 
+          month of review
+      \end{itemize}
+\end{enumerate}
+
+### Scope and Coverage
+Sufficient are
+\begin{enumerate}
+    \item Abstract: Abstract of the article; Delete any hyphens from the abstract.\footnote{If the abstract has hyphens, copy and pasting the abstract will always copy the hyphen (no matter if Word is used in beteween). The window for the abstract resizes with the browser window, therefore the hyphen will almost surely we in the wrong place. Delete.}
+    \item Geographic areas: Format: Name, type (cty...country, reg...region (WLD))
+    \begin{lstlisting}
+      Lebanon, LBN, cty
+    \end{lstlisting}
+    World Bank codes. The editor provides a list for these.
+    \item Keywords: No keywords if the paper/journal homepage does not provide keywords; Yes if keywords are provided.
+    \item JEL codes:
+      \begin{verbatim}
+        ID D63
+        Name Equity, Justice, Inequality
+        Parent ID (empty)
+        Vocabulary JEL Classifications
+        URL https://www.aeaweb.org/econlit/jelCodes.php?view=jel
+      \end{verbatim}
+      Note: Some journals provide JEL codes on the homepage for the paper, but not in the paper itself (The Economic Journal is an example)
+\end{enumerate}
+
+### Processes and Output
+Fields Process, Insitutional review board, Approval process, Reviews and comments seem more apt at describing the outcome of a process other then working papers and published papers. These fields are currently not used and therefore not included in the template, except for this remark.
+
+Sufficient fields are
+\begin{enumerate}
+    \item Output: 
+        \begin{itemize}
+          \item Type    
+            \begin{itemize}
+              \item WP: Working Paper
+              \item PP: Published Paper (not paper, not article, not Article)
+            \end{itemize}
+          \item Title: Title of the paper
+          \item Authors: Authors: all comma separated; first name, last name. Patty Smith, Patty Smith, Patty Smith
+          \item Description: PRWP + PRWP number, external Working paper series etc
+            \begin{lstlisting}[breaklines]
+                Toulouse School of Economics Working Papers No 1391
+            \end{lstlisting}
+          \item DOI: YES (if it exists)
+          \item URL: YES (Editor displays an error at https, but it is accepted)
+        \end{itemize}
+    \item Language: English, EN; enter, it will not be displayed
+\end{enumerate}
+
+### Data
+Sufficient are
+\begin{enumerate}
+    \item Data statement:\footnote{ Description: An overall statement on the data used in the project. A spearate field is provided to list and document the origin and key characteristics of the datasets}. For external packages, the following rule:
+        \begin{itemize}
+          \item If all data is public:
+            \begin{itemize}
+            \item Fill in: "All data is public and contained in the (external) reproducibility package."
+            \item Add data availability statement if available from journal package; often separate from the zip, has to be copied over manually.
+            \end{itemize}
+          \item If some data is confidential: Paste from the readme notes about confidentiality.
+        \end{itemize}
+    \item Datasets:\footnote{Description of this field: "This field is used to provide an itemized list of datasets used in the project. The data are not documented here (specific metadata are available for documenting data of different types, like the DDO for microdata, the ISO 19139 for geographic datasets etc)"} Used both for PP and WP, if they data sets are of proper value and stored in another WB repository (like microdata library or MDL/DDH).\footnote{Process may differ between PP and WP (involvment in cataloging data) No cases so far, 2023-06-27.}
+        \begin{enumerate}
+          \item Name
+          \item Data set ID: (empty)
+          \item Note: (empty)
+          \item Access policy:
+            \begin{itemize}
+              \item Published elsewhere: Note access/license
+              \item Published with package: Authors must confirm there is no confidentiality.
+            \end{itemize}
+          \item License (empty)
+          \item License URL (empty)
+          \item Data URL
+        \end{enumerate}
+\end{enumerate}
+
+### Methods, software and scripts
+Sufficient are:
+\begin{enumerate}
+  \item Methods: Econometric methods used. This field will learn from past entries. Possibly add notes (more details about the context) in the field Note. The following link collects past Method entries, \href{https://worldbankgroup-my.sharepoint.com/:x:/r/personal/ckrestel_worldbank_org/Documents/qa_rep.xlsx?d=w0a6ba76797e5416c9a6bc9739d76bcf0&csf=1&web=1&e=3HRcd9}{\underline{\textcolor{blue}{Qa Excel}}}
+  \item Software: 
+      \begin{itemize}
+        \item Name: Stata, R, Matlab, Dynare
+        \item Version: 17
+      \end{itemize}
+  \item Scripts:
+      \begin{enumerate}
+          \item File name: Name of the zip file. Naming convention: PrimaryID\_prg\_v01.zip
+          \item Zip package: Same as file name\footnote{File name and zip package are identical, because we do not list files separately, for which the field file name is meant.}
+          \item Title: 
+            \begin{lstlisting}[breaklines]
+              Reproducibility package (data and code) for Title
+            \end{lstlisting}
+            Title may be shortened if adequate.
+          \item Authors: empty\footnote{According to descr: A list of authors and coauthors of the script} If authors of the paper and the code differ and authors want to indicate this, add here list of authors for the code.
+          \item Date: Year-Month (usually the completion/version date of the paper)
+          \item Software: Stata
+          \item Description: Simple description like a tree of what is in the zip file
+          \item Methods: This are specific methods on the script level (and not econometric methods)
+          \item Dependencies: Here enter all packages necessary:\footnote{It may be preferable to enter this in Software, libraries: \textcolor{red}{Error: Must be an array}. Does not accept more than one entry, and also not a string. Behavior of the editor his random here}
+            \begin{lstlisting}
+              coefplot, distinct, lincomeest, lprobust.ado
+            \end{lstlisting}
+          \item Instructions: Write: "See readme in reproducibility package"
+          \item Repository: ICPSR, Harvard Dataverse, Journal webpage etc. For convenicnes, for ICPSR; Also github repositories for the project go here
+                use
+                \begin{lstlisting}
+                  AEA Data and Code Repository (ICPSR)
+                  Reproducible Research Repository (World Bank)
+                \end{lstlisting}
+              For Harvard Dataverse use
+                \begin{lstlisting}
+                  TBC
+                \end{lstlisting}
+              For github
+                \begin{lstlisting}
+                  TBC
+                \end{lstlisting}
+          \item Notes: Here who verified the package:
+            \begin{lstlisting}[breaklines]
+            Checked for reproducibility externally at the journal.
+            Checked for reproducibility at Development Impact Evaluation (DIME), World Bank
+            \end{lstlisting}
+          \item License:
+            \begin{itemize}
+              \item PP
+              \begin{itemize}
+                \item ICPSR:
+                  \begin{lstlisting}[breaklines]
+                  Name: Creative Commons Attribution 4.0 International (CC BY 4.0) License
+                  URL: https://creativecommons.org/licenses/by/4.0/
+                  \end{lstlisting}
+              \end{itemize}
+              \item WP: 
+                \begin{lstlisting}[breaklines]
+                  Name: Modified BSD3 
+                  URL: https://opensource.org/license/bsd-3-clause/
+                \end{lstlisting}
+            \end{itemize}
+      \end{enumerate}
+  \item Repository: Harvard, ICPSR- Type empty - URL, Journal webpage
+    \begin{lstlisting}[breaklines]
+        AEA Data and Code Repository
+        https://www.openicpsr.org/openicpsr/aea
+    \end{lstlisting}
+  \item Reproducibility:
+      \begin{enumerate}
+            \item Technology environment: 
+                \begin{itemize}
+                  \item WP + verified by Dime: Environment in which the Rep check was conducted
+                  \item PP: usually empty (bc not available)
+                \end{itemize}
+            \item Technology Requirements: empty; except for sth unusual: Cluster, large run time etc
+            \item Reproduction instructions: No details:
+                \begin{lstlisting}[breaklines]
+                 A readme file with detailed instructions is part of the (external) reproducibility package.
+                \end{lstlisting}
+                 Short details:
+                  \begin{lstlisting}
+                    A readme file and a single do file, AP_final_AEJ. do are provided. 
+                  \end{lstlisting}
+                No readme file exists:
+                \begin{lstlisting}[breaklines]
+                    Please run the do-file to replicate the tables in the data. The package does not include a readme file. 
+                  \end{lstlisting}
+        \end{enumerate}
+\end{enumerate}
+
+### Access and Rights
+The following are sufficient:
+\begin{enumerate}
+    \item Disclaimer: To be formulated by legal
+    \item Confidentiality: Empty if not confidential. Otherwise
+    \begin{itemize}
+      \item If data is confidential: Yes, please refer to the data statement and the readme file.
+      \item If code is confidential: Yes, part of the code is confidential and cannot be published. Please refer to the readme file.
+    \end{itemize}
+    \item License: as in scripts
+        \begin{itemize}
+              \item PP
+              \begin{itemize}
+                \item ICPSR:
+                  \begin{lstlisting}[breaklines]
+                  Creative Commons Attribution 4.0 International (CC BY 4.0) License
+                  https://creativecommons.org/licenses/by/4.0/
+                  \end{lstlisting}
+              \end{itemize}
+              \item WP: 
+              \begin{lstlisting}
+                Modified BSD3
+                https://opensource.org/license/bsd-3-clause/
+              \end{lstlisting}
+            \end{itemize}
+\end{enumerate}
+
+### Contacts
+\begin{enumerate}
+    \item WB author or corresponding author: Fill fields Name, email, affiliation, role Author
+      \begin{lstlisting}
+      Patty Smith
+      Author
+      psmith@worldbank.org
+      World Bank
+      \end{lstlisting}
+    \item Reproducibility group contact
+      \begin{lstlisting}
+        Reproducibility WBG
+        reproducibility@worldbank.org
+        reproducibility.worldbank.org
+      \end{lstlisting}
+\end{enumerate}
+
+## Tags (To be discarded)
+\begin{enumerate}
+  \item Tag: Partially Reproducible, Fully Reproducible, Not Reproducible, Tag group Reproducible
+  \item Type: PRWP, Published Paper
+\end{enumerate}
+
+## External Resources
+\begin{enumerate}
+  \item Zip file/link for PP and WP
+  \begin{enumerate}
+    \item File type: prg
+    \item Title
+      \begin{lstlisting}
+        Reproducibility package (data and code) for TITLE (of paper), PID PrimaryID
+      \end{lstlisting}
+      Title of paper may be shortened\footnote{It is not possible to put the PID into the subtitle as we do with the title at the beginning, because the subtitle is not displayed. Putting the PID into the subtitle means dropping the PID}
+    \item Date: equal to version date/completion date: FORMAT Year-Month
+    \item Description: 
+    \begin{itemize}
+      \item PP:
+        \begin{lstlisting}
+          Externally available on ICPSR
+        \end{lstlisting}
+    \end{itemize}
+    \item Resource attachment: 
+    \begin{itemize}
+      \item WP: Filename in the format PID\_prg\_v01.zip (as the zipname in scripts)
+      \item PP: Link to the repository/article
+    \end{itemize}
+  \end{enumerate}
+  \item For packages checked by DIME, attach the reproducibility verification statement. Title: Reproducibility verification certificate. 
+  \item Readme file.  For all packages include the readme file (changing the name to readme if needed)
+  \begin{enumerate}
+    \item: Title: README file for the reproducibility package Health Care Rationing in Public Insurance Programs.
+    \item Date: equal to version date/completion date: FORMAT Year-Month
+    \item Filename: README.pdf
+  \end{enumerate}
+\end{enumerate}
+
+# Open Issues and Remarks
+\begin{enumerate}
+    \item \textcolor{green}{Resolved}\textcolor{lightgray}{Tags: We use tag group Reproducible, YES, NO, PARTIAL, shown is then only the value and not the tag group. Do we have to tag like: reproducible, partially reproducible, not reproducible?}
+    \item \textcolor{orange}{Partially Resolved: UPI?}Information on Metadata:
+      \begin{enumerate}
+        \item Abbreviation: Fine. But also use an identifier. Perhaps UPI is problematic if this is public.Use a new
+              identifier?
+      \end{enumerate}
+    \item Project description
+      \begin{enumerate}
+        \item \textcolor{green}{Resolved}\textcolor{lightgray}{Creating a primary ID: Use country ISO 3 code or not? Use RR for working papers, PP for published papers (see         naming convention in Proj\_descr, Title statement above)}
+        \item Authors and contributors
+          \begin{enumerate}
+            \item Contributors: Should RAs only be named if they contributed to the code?
+            \item Acknowledgment: To include or not? (Little work, little value?)
+          \end{enumerate}
+        \item Processes and Output: \textcolor{green}{Resolved}\textcolor{lightgray}{Fields Process, Institutional Review board, approval process, reviews and comments will not be used}
+        \item Methods, software and scripts:
+          \begin{enumerate}
+            \item \textcolor{green}{Resolved}\textcolor{lightgray}{Remark: Field Methods: There are two method field: one stand-alone, one with Scripts. Current usage: Stand-alone for econometric/statistical techniques (e.g. OLS, random forests...). This field will learn and suggest keywords.}
+          \end{enumerate}
+      \end{enumerate}
+\end{enumerate}
+
+# Errors and Issues
+\begin{enumerate}
+\item \begin{verbatim}proj_descr_script.[0].title\end{verbatim} is missing: this is caused by: in methods, software, scripts a file name was given, but a title is missing. \textbf{Title is obligatory, conditional on file name entered}
+\item \textcolor{green}{Resolved: Works now.}\textcolor{lightgray}{In Processes and output, in URL, the protocol https is not accepted. The editor sometimes shows an error, but this has no consequence}
+\item in \begin{verbatim} External Resource, File type\end{verbatim} there is no option package (only prg,...). Perhaps one would want to have this option, because we refer to whole packages, if the source is external
+\item There is no real field \begin{verbatim} Journal \end{verbatim}. For published articles, one cannot indicate in which journal it was published.
+\item In Scope, Topic it would be nice to have all JEL descriptions available once on enters the code
+\item In Software, libraries: sometimes the following error is raised: Must be an array. One cannot enter more than one package
+\item (On the external instance of the editor) In Scripts, License, License is not displayed, although a value is supplied
+\item One has to supply completion date for the cataloge page to show the year (WLD xxxx). Working papers have no completion date if seen as project. Just a version date.
+\end{enumerate}
+
+
