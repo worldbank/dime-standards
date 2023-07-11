@@ -1,0 +1,78 @@
+% Custom package to create footnotes at the bottom of a Tufte document
+% Copied from https://tex.stackexchange.com/questions/417540/place-footnote-in-footer-in-tufte-book-class
+
+\NeedsTeXFormat{LaTeX2e}[1994/12/01]
+\ProvidesPackage{tuftefoot}[2018/02/27 v0.1 Footnotes for tufte-book class]
+\newinsert\footins
+\skip\footins=\bigskipamount % space added when footnote is present
+\count\footins=1000 % footnote magnification factor (1 to 1)
+\dimen\footins=8in % maximum footnotes per page
+\def\TFfootnoterule{\kern-3\p@
+  \hrule \@width 2in \kern 2.6\p@} % the \hrule is .4pt high
+\@definecounter{footnote}
+\def\TFthefootnote{\@arabic\c@footnote}
+\@definecounter{mpfootnote}
+\def\TFthempfootnote{{\itshape\@alph\c@mpfootnote}}
+\def\TF@makefnmark{\hbox{\TF@textsuperscript{\normalfont\@thefnmark}}}
+\DeclareRobustCommand*\textsuperscript[1]{%
+  \TF@textsuperscript{\selectfont#1}}
+\def\TF@textsuperscript#1{%
+  {\m@th\ensuremath{^{\mbox{\fontsize\sf@size\z@#1}}}}}
+\DeclareRobustCommand*\textsubscript[1]{%
+  \TF@textsubscript{\selectfont#1}}%
+\def\TF@textsubscript#1{%
+  {\m@th\ensuremath{_{\mbox{\fontsize\sf@size\z@#1}}}}}%
+\def\TF@textsubscript#1{%
+  {\m@th\ensuremath{_{\mbox{\fontsize\sf@size\z@#1}}}}}
+\newdimen\TFfootnotesep
+\def\TFfootnote{\@ifnextchar[\TF@xfootnote{\stepcounter\TF@mpfn
+     \protected@xdef\@thefnmark{\TFthempfn}%
+     \TF@footnotemark\TF@footnotetext}}
+\def\TF@xfootnote[#1]{%
+   \begingroup
+     \csname c@\TF@mpfn\endcsname #1\relax
+     \unrestored@protected@xdef\@thefnmark{\TFthempfn}%
+   \endgroup
+   \TF@footnotemark\TF@footnotetext}
+\long\def\TF@footnotetext#1{\insert\footins{%
+    \reset@font\footnotesize
+    \interlinepenalty\interfootnotelinepenalty
+    \splittopskip\TFfootnotesep
+    \splitmaxdepth \dp\strutbox \floatingpenalty \@MM
+    \hsize\columnwidth \@parboxrestore
+    \protected@edef\@currentlabel{%
+       \csname p@footnote\endcsname\@thefnmark
+    }%
+    \color@begingroup
+      \@makefntext{%
+        \rule\z@\TFfootnotesep\ignorespaces#1\@finalstrut\strutbox}%
+    \color@endgroup}}%
+\def\TFfootnotemark{%
+   \@ifnextchar[\TF@xfootnotemark
+     {\stepcounter{footnote}%
+      \protected@xdef\@thefnmark{\TFthefootnote}%
+      \TF@footnotemark}}
+\def\TF@xfootnotemark[#1]{%
+   \begingroup
+      \c@footnote #1\relax
+      \unrestored@protected@xdef\@thefnmark{\TFthefootnote}%
+   \endgroup
+   \TF@footnotemark}
+\def\TF@footnotemark{%
+  \leavevmode
+  \ifhmode\edef\@x@sf{\the\spacefactor}\nobreak\fi
+  \TF@makefnmark
+  \ifhmode\spacefactor\@x@sf\fi
+  \relax}
+\def\TFfootnotetext{%
+     \@ifnextchar [\TF@xfootnotenext
+       {\protected@xdef\@thefnmark{\TFthempfn}%
+    \TF@footnotetext}}
+\def\TF@xfootnotenext[#1]{%
+  \begingroup
+     \csname c@\TF@mpfn\endcsname #1\relax
+     \unrestored@protected@xdef\@thefnmark{\TFthempfn}%
+  \endgroup
+  \TF@footnotetext}
+\def\TF@mpfn{footnote}
+\def\TFthempfn{\TFthefootnote}
