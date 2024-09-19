@@ -68,15 +68,14 @@
 		
 		\titleBox{
 			\textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Peer Code Review - Reviewer Feedback Checklist}} \\
-				\Large\textbf{{v1.0}}}
+				\Large\textbf{{v2.0}}}
 		}
-
-        \dimeTextField{time}{2.5 cm}{Reviewer:} 
-
-        \dimeTextField{time}{2.5 cm} {Coder:}
         
         
-        This checklist lists important factors to consider while reviewing your code review partner's code package. Please fill this checklist, and submit it as an attachment when you submit \href{https://survey.wb.surveycto.com/collect/code_review_summary?caseid=}{this detailed form.}
+        This checklist lists important factors to consider while reviewing your code review partner's code package. Please use this checklist while reviewing the code package. 
+        \hfill \break
+        
+        \textbf{NOTE:} Your deliverable from this exercise will be  \href{https://survey.wb.surveycto.com/collect/code_review_summary?caseid=}{this detailed form} which replicates the checklist below.
         
 		\section*{Overview - First Impression}
 
@@ -94,9 +93,9 @@
 	
 		\vspace{.6em}
 
-        \section*{Reproducibility (applicable only if data was shared with you)}
+        \section*{Computational Reproducibility (applicable only if de-identified data was shared with you)}
 
-        \textit{\textbf{Next step:}} If you received data as part of the peer review package, attempt to run the code files. Ideally you will be able to do so by changing only the top-level directory in the master script. Take note of any reproducibility issues you observe as you will need to record them in \href{https://survey.wb.surveycto.com/collect/code_review_summary?caseid=}{this review summary form.}
+        \textit{\textbf{Next step:}} If you received data as part of the peer review package, attempt to run the code files. Ideally, you will be able to do so by changing only the top-level directory in the main script. Take note of any issues in reproducing code outputs (constructed indicators, cleaned data, graphs, and tables) as you will need to record them in \href{https://survey.wb.surveycto.com/collect/code_review_summary?caseid=}{this review summary form.}
 
         \begin{itemize}
 			\setlength\itemsep{-0.1em}
@@ -104,8 +103,7 @@
                 \item[] \dimeCheckBox{Code did not run initially, but I was able to identify the reason}
 			\item[] \dimeCheckBox{Outputs shared (if any) reproduced exactly}
             \item[] \dimeCheckBox{Outputs did not reproduce but I was able to determine the reason}
-	
-			
+          		
 		\end{itemize}
 		
         \vspace{.6em}
@@ -140,7 +138,7 @@
         \item[] \dimeCheckBox{Naming practices}
         \item[] \dimeCheckBox{Code organization - sections, tracking inputs and outputs for each script}
         \item[] \dimeCheckBox{Use of white spaces}
-        \item[] \dimeCheckBox{Use of loops}
+        \item[] \dimeCheckBox{Use of loops, or functions, to handle repetitive tasks in R \textbf{(map, apply, sapply)}}
         \item[] \dimeCheckBox{Abstraction - using functions to do commonly repeated tasks}
         
         
@@ -151,7 +149,9 @@
         \textit{\textbf{Finally,}}  make note of the main strengths of the code, suggestions on how the coder can improve, and any additional feedback from your side. You will need to provide this information in \href{https://survey.wb.surveycto.com/collect/code_review_summary?caseid=}{this detailed review summary form.)}
 
           
-          {\textbf{1.) Three main strengths of the code reviewed:}
+          {\textbf{1.) Three main strengths of the code reviewed:} 
+          \hfill \break
+          (For example, use of new functions, efficient scripts with proper use of loops, modular scripts that run directly through a main script)
           
           \dimeTextField{strength1}{14 cm}{}
           
@@ -160,6 +160,8 @@
           \dimeTextField{strength3}{14 cm}{}
           
          {\textbf{2.) Suggestions on how the coder can improve:}
+         \hfill \break
+          (For example, suggestions on using loops in specific places to make the code more efficient, suggestions on functions that could simplify certain tasks, using commands like \texttt{ieboilstart} to specify software version)
 
           \dimeTextField{strength1}{14 cm}{}
           
@@ -168,7 +170,9 @@
           \dimeTextField{strength3}{14 cm}{}
           
           {\textbf{3.) Any additional feedback for the coder:}
-		 
+          \hfill \break
+          (For example, implementing folder structures using \texttt{iefolder}, additional recommendations for creating reproducible outputs, or fixing specific issues highlighted in the previous section)
+   
          \dimeTextField{strength1}{14 cm}{}
           
           \dimeTextField{strength2}{14 cm}{}
