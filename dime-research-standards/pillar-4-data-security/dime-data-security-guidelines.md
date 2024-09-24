@@ -68,7 +68,7 @@ and needs to be encrypted as it is saved to the local computer.
 
 ## Storing confidential data
 
-The head reasearhcers, or PIs, should save a copy of the unaltered raw data in a [WB OneDrive folder as backup](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/onedrive-backup-guidelines.md).
+The head researchers, or PIs, should save a copy of the unaltered raw data in a [WB OneDrive folder as backup](https://github.com/worldbank/dime-standards/blob/master/dime-research-standards/pillar-4-data-security/data-security-resources/onedrive-backup-guidelines.md).
 
 * The backup folder should not be synced to any computer, and it should not be shared with anyone, so it remains completely under individual control.
 * The backup folder should not be used for day-to-day access. It should only be accessed if you for some reason needs to restore the copy you use day-to-day.
