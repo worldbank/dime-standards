@@ -20,7 +20,7 @@ The time commitment for each quarter is **8-10 hours**, including two dedicated 
 
 ## How it works
 1. Teams [sign up](https://survey.wb.surveycto.com/collect/code_review_sign_up?caseid=) to participate in the code review each quarter. All DIME Research Assistants
-working on code are expected to participate, and any Bank staff or consultant who would like to
+working on code are expected to participate regularly, and any Bank staff or consultant who would like to
 get feedback on their code is welcome to participate.
 2. Participants are paired for the review based on preferred statistical software and length of code.
 3. All participants prepare a code package to share with assigned code review partners, following [these guidelines](https://github.com/worldbank/dime-standards/blob/master/dime-coding-standards/checklists/Peer%20Code%20Review%20Submission%20Checklist.pdf). Submitted code should ideally be **no longer than 1000 lines** excluding the [main script.](https://github.com/worldbank/wb-reproducible-research-repository/blob/main/resources/main.do)
