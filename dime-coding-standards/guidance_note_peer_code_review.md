@@ -31,6 +31,7 @@ get feedback on their code is welcome to participate.
 4. The actual peer code review activity takes place over the course of one week, which includes:
    - A hybrid **kickoff session** to outline the process, and assign code review partners. Attendance for this session is **OPTIONAL** for those who have previously participated in the peer code review.
    - A hybrid **group review session** with technical support from DIME Analytics. Pairs work together, and answer questions to allow each other to review their submitted code. Attendance for this session is **MANDATORY** - Analytics will facilitate a separate meeting for participants and their reviewers in case the scheduled time does not work.
+   - Please note that this activity is most effective when teams can work together, **in-person**, on the review, in order to answer questions in real-time.
 
 5. Reviewers review the code using the following resources:
    - **All packages:** [Main Feedback Checklist](https://github.com/worldbank/dime-standards/blob/master/dime-coding-standards/checklists/Reviewer%20Feedback%20Checklist.pdf)
