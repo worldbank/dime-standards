@@ -26,7 +26,7 @@ get feedback on their code is welcome to participate.
 3. All participants prepare a code package to share with assigned code review partners, following [these guidelines](https://github.com/worldbank/dime-standards/blob/master/dime-coding-standards/checklists/Peer%20Code%20Review%20Submission%20Checklist.pdf). Submitted code should ideally be **no longer than 1000 lines** excluding the [main script.](https://github.com/worldbank/wb-reproducible-research-repository/blob/main/resources/main.do)
     - As part of this step, teams should identify and indicate which tasks they want reviewed. Examples include data cleaning, indicator construction, analysis, sampling and randomization, high-frequency checks, etc.
     - Teams should also specify if they want the reviewer to assess **computational reproducibility**.
-    - Verifying computational reproducibility consists of ensuring that the reviewer can reproduce exactly the outputs (statistical tables and/or data visualizations) in the submitted package by running only the code shared with the reviewer.
+    - Verifying computational reproducibility consists of ensuring that the reviewer can reproduce exactly the outputs (statistical tables and/or data visualizations) in the submitted package by running the exact package of code and data shared with the reviewer.
     - Further, in order to assess reproducibility, the submission package must include a **de-identified** version of the dataset - otherwise the code will not be eligible for verification of computational reproducibility.
 4. The actual peer code review activity takes place over the course of one week, which includes:
    - A hybrid **kickoff session** to outline the process, and assign code review partners
