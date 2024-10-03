@@ -73,25 +73,29 @@
 		
 		
 		
-		The code review package must be shared as a .zip file, GitHub link or shared folder containing the items listed below.
-		All file paths in the code \textbf{must} use only forward slashes, i.e. \texttt{C:/users/...}
+\begin{flushleft}  
+		
+The submission package for peer code review should include all components in the checklist below. Code review participants can provide either a link to the complete package (\textbf{OneDrive} or \textbf{GitHub}), or a zipped folder - along with information on programming language(s) involved, and approximate run time. Questions should be directed to \href{mailto:dimeanalytics@worldbank.org}{DIME Analytics}.
 		
 		\section*{Package Requirements}
 		
 		\begin{itemize}
 			\setlength\itemsep{-0.1em}
 			\item[] \dimeCheckBox{All scripts to be reviewed.}
-              \item[] \dimeCheckBox{A \textbf{master script} that the reviewer can use to run all code after changing only the top-level directory.}
-			\item[] \dimeCheckBox{All de-identified data necessary to run the code, if you are able to share the data}
-			\item[] \dimeCheckBox{A README. file that contains the following information:}
+              \item[] \dimeCheckBox{A \textbf{main script} that the reviewer can use to run all code after changing only the top-level directory. \href{https://github.com/worldbank/wb-reproducible-research-repository/blob/main/resources/main.do}{See here} for a sample main script.}
+			\item[] \dimeCheckBox{All de-identified data necessary to run the code, if you need the reviewer to verify computational reproducibility.}
+			\item[] \dimeCheckBox{A \href{https://github.com/worldbank/wb-reproducible-research-repository/blob/main/resources/README_Template.md}{ReadME file} that contains the following information:}
                         \begin{itemize}
+                             \item[] \dimeCheckBox{Software and version}
+                             \item[] \dimeCheckBox{Approximate run time of code}
+                             \item[] \dimeCheckBox{Software and version}
                             \item[] \dimeCheckBox{Purpose of each folder}
                             \item[] \dimeCheckBox{High-level objective of the code (e.g., this code performs regression analysis and outputs result tables)}
+                            \item[] \dimeCheckBox{Line of code in \textbf{main script} that should be changed to run the code in a different machine}
                             \item[] \dimeCheckBox{Purpose of each script (if more than one script is used)}
                              \item[] \dimeCheckBox{Outputs produced (if part of the review)}
                              \item[] \dimeCheckBox{Which script creates which output}
                              \item[] \dimeCheckBox{Any specific requests / guidance as to what the reviewer should focus on}
-                             
                             
                         \end{itemize}
 			\item[] \dimeTextField{master}{11cm}{README. file path and name:}
@@ -102,15 +106,15 @@
 
         \section*{Component-specific Requirements}
         Before submitting the package, please make sure you keep the following in mind with respect to individual components.
-		\subsection{1. \, Master script requirements}	
+		\subsection{1. \, Main script requirements}	
+        You can refer to \href{https://github.com/worldbank/wb-reproducible-research-repository/blob/main/resources/main.do}{this template main do-file} for more details.
 		\begin{itemize}
 			\setlength\itemsep{-0.1em}
-			\item[] \dimeCheckBox{ Master script clearly indicates which line needs to be changed to run in a different computer}
-			\item[] \dimeCheckBox{ The master script runs from start to end if the reviewer changes only directory path(s) in one location of the master script}
-			\item[] \dimeCheckBox{ The master script installs any commands required (e.g. from SSC in Stata, CRAN in R, etc.)}
-			\item[] \dimeCheckBox{ In Stata, the master do file sets critical configurations such as version, matsize, and varabbrev (either directly, or through a wrapper command such as the ieboilstart command included in ietoolkit)}
-			\item[] \dimeCheckBox{ In R, all necessary packages to run the code are loaded in the master script}
-			\item[] \dimeTextField{time}{2.5cm}{\textbf{Approximate time} it takes to run all code from the the master script: }
+			\item[] \dimeCheckBox{ The main script runs from start to end if the reviewer changes only directory path(s) in one location of the main script. This should be laid out clearly in the ReadME file as well.}
+			\item[] \dimeCheckBox{ The main script installs any commands required (e.g. from SSC in Stata, CRAN in R, etc.), or provides the means to do so. \textit{(Refer to this session on \href{https://osf.io/q7rjt}{Building Reproducible Environments} for more information.})}
+			\item[] \dimeCheckBox{ In Stata, the main do file sets critical configurations such as version, matsize, and varabbrev (either directly, or through a wrapper command such as the ieboilstart command included in ietoolkit)}
+			\item[] \dimeCheckBox{ In R, all necessary packages to run the code are loaded in the main script}
+			\item[] \dimeTextField{time}{2.5cm}{\textbf{Approximate time} it takes to run all code from the the main script: }
 		\end{itemize}
 		
 		\subsection{2. \, Data requirements}
@@ -124,6 +128,7 @@
 		
 		
 		\subsection{3. \, Output requirements}
+        Refer to this session on \href{https://osf.io/ezmsb}{Creating Reproducible Outputs} for more details.
 		
 		\begin{itemize}
 			\setlength\itemsep{-0.1em}
