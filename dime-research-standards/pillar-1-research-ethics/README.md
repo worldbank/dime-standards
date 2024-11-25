@@ -4,7 +4,7 @@
 
 **Researchers must identify and secure ethics approval**, from an institutional review board (IRB) and, if applicable, any relevant authority in the study location, for studies directly involving **human subjects** or the use of **personally-identifying information**.
 - As the World Bank does not have an IRB, we recommend seeking approval from IRBs of partnered institutions, such as the universities with which external PIs are affiliated.
-- If none of the research team members has an institutional IRB affiliation, the research team should use an accredited IRB for independent researchers, such as [Western IRB](http://wirb.com/Pages/IRBServices.aspx) and [Solutions IRB](https://www.solutionsirb.com).
+- If none of the research team members has an institutional IRB affiliation, the research team should use an accredited IRB for independent researchers, such as [Solutions IRB](https://www.solutionsirb.com), [HML IRB](https://www.healthmedialabirb.com/) or [IPA IRB](https://www.poverty-action.org/researchers/working-with-ipa/irb).
 - IRB approval must be reported through the myIE monitoring system. Funding for the i2i and ieConnect Trust Funds requires documentation of IRB approval annually.
 - Impact evaluations that do not involve human subjects or personally-identifying information, such as evaluations relying purely on de-identified secondary data, may be exempted from this requirement.
 - The table below summarizes the international IRB and local ethics approvals required for each case
@@ -20,7 +20,7 @@
 
 ## Human Subjects Research Certification
 **All research team members that handle personally identifiable information must have up to date Human Subjects Research Certification.**
-- DIME-affiliated research team members may obtain the certification through DIME's [PHRP](https://phrptraining.com/) subscription. To do so, please email DIME Analytics.
+- DIME-affiliated research team members may obtain the certification through DIME's [CITI](https://duckduckgo.com/?t=ffab&q=citi+human+subjects+training&ia=web) subscription. To do so, please email DIME Analytics.
 
 ## Confidentiality
 Researchers must ensure confidentiality, privacy, and anonymity of study participants. Research team members are personally liable for any disclosure of confidential data that may occur due to their actions.
