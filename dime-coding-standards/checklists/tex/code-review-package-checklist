@@ -1,35 +1,37 @@
 \documentclass{tufte-handout}
 
 \usepackage{librecaslon}
-
-
 \usepackage{fancyhdr}
 \usepackage{hyperref}
-\usepackage{tcolorbox} % needed for the text boxes
+\usepackage{tcolorbox}
 \usepackage{xcolor}
 \usepackage{setspace}
 \usepackage{graphics}
+
 \hypersetup{
-	colorlinks=true,
-	linkcolor=blue,
-	urlcolor=cyan,
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=cyan,
 }
+
+
 % Set header and footer
 \pagestyle{fancy}
 \fancyhf{}
-\lfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/i2i}}
-\cfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/wb}}
+\lfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/wb}}
 \rfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/analytics}}
 
-% Put checkbox to the left of the text
+% Checkbox layout
 \def\LayoutCheckField#1#2{% label, field
-	#2 #1%
+    #2 #1%
 }
+
+\setlength{\footskip}{2cm}
 
 % Line spacing
 \onehalfspacing
 
-% Define DIME Analytics visual identity colors
+% Define DIME Analytics brand colors
 \definecolor{fontcolor}{HTML}{7A0569}
 
 \titleformat{\section}%
@@ -46,97 +48,92 @@
 {}% before the title body
 []% after the title body
 
+% Custom commands for checkboxes and text fields
 \newcommand{\dimeCheckBox}[1]{\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{#1}}
 \newcommand{\dimeTextField}[3]{\TextField[name=#1, height=0.3cm, width=#2, bordercolor=gray]{#3}}
 
-
+% Custom title box
 \newcommand{\titleBox}[1]{
-	\begin{tcolorbox}
-		[colframe = fontcolor,
-		colback = fontcolor,
-		sharp corners,
-		halign = flush center,
-		valign = center,
-		height = 0.3\textwidth,
-		after skip = 1cm]
-		#1
-	\end{tcolorbox}
+    \begin{tcolorbox}
+        [colframe = fontcolor,
+        colback = fontcolor,
+        sharp corners,
+        halign = flush center,
+        valign = center,
+        height = 0.3\textwidth,
+        after skip = 1cm]
+        #1
+    \end{tcolorbox}
 }
 
 \begin{document}
-	\begin{fullwidth}
-		
-		\titleBox{
-			\textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Code Review Package Checklist}} \\
-				\Large\textbf{{v2.0}}}
-		}
-		
-		
-		
-\begin{flushleft}  
-		
-The submission package for peer code review should include all components in the checklist below. Code review participants can provide either a link to the complete package (\textbf{OneDrive} or \textbf{GitHub}), or a zipped folder - along with information on programming language(s) involved, and approximate run time. Questions should be directed to \href{mailto:dimeanalytics@worldbank.org}{DIME Analytics}.
-		
-		\section*{Package Requirements}
-		
-		\begin{itemize}
-			\setlength\itemsep{-0.1em}
-			\item[] \dimeCheckBox{All scripts to be reviewed.}
-              \item[] \dimeCheckBox{A \textbf{main script} that the reviewer can use to run all code after changing only the top-level directory. \href{https://github.com/worldbank/wb-reproducible-research-repository/blob/main/resources/main.do}{See here} for a sample main script.}
-			\item[] \dimeCheckBox{All de-identified data necessary to run the code, if you need the reviewer to verify computational reproducibility.}
-			\item[] \dimeCheckBox{A \href{https://github.com/worldbank/wb-reproducible-research-repository/blob/main/resources/README_Template.md}{ReadME file} that contains the following information:}
-                        \begin{itemize}
-                             \item[] \dimeCheckBox{Software and version}
-                             \item[] \dimeCheckBox{Approximate run time of code}
-                             \item[] \dimeCheckBox{Software and version}
-                            \item[] \dimeCheckBox{Purpose of each folder}
-                            \item[] \dimeCheckBox{High-level objective of the code (e.g., this code performs regression analysis and outputs result tables)}
-                            \item[] \dimeCheckBox{Line of code in \textbf{main script} that should be changed to run the code in a different machine}
-                            \item[] \dimeCheckBox{Purpose of each script (if more than one script is used)}
-                             \item[] \dimeCheckBox{Outputs produced (if part of the review)}
-                             \item[] \dimeCheckBox{Which script creates which output}
-                             \item[] \dimeCheckBox{Any specific requests / guidance as to what the reviewer should focus on}
-                            
-                        \end{itemize}
-			\item[] \dimeTextField{master}{11cm}{README. file path and name:}
-			
-		\end{itemize}
-		
-		\vspace{.6em}
+    \begin{fullwidth}
 
-        \section*{Component-specific Requirements}
-        Before submitting the package, please make sure you keep the following in mind with respect to individual components.
-		\subsection{1. \, Main script requirements}	
-        You can refer to \href{https://github.com/worldbank/wb-reproducible-research-repository/blob/main/resources/main.do}{this template main do-file} for more details.
-		\begin{itemize}
-			\setlength\itemsep{-0.1em}
-			\item[] \dimeCheckBox{ The main script runs from start to end if the reviewer changes only directory path(s) in one location of the main script. This should be laid out clearly in the ReadME file as well.}
-			\item[] \dimeCheckBox{ The main script installs any commands required (e.g. from SSC in Stata, CRAN in R, etc.), or provides the means to do so. \textit{(Refer to this session on \href{https://osf.io/q7rjt}{Building Reproducible Environments} for more information.})}
-			\item[] \dimeCheckBox{ In Stata, the main do file sets critical configurations such as version, matsize, and varabbrev (either directly, or through a wrapper command such as the ieboilstart command included in ietoolkit)}
-			\item[] \dimeCheckBox{ In R, all necessary packages to run the code are loaded in the main script}
-			\item[] \dimeTextField{time}{2.5cm}{\textbf{Approximate time} it takes to run all code from the the main script: }
-		\end{itemize}
-		
-		\subsection{2. \, Data requirements}
-		
-		\begin{itemize}
-			\setlength\itemsep{-0.1em}
-			\item[] \dimeCheckBox{Are you able to share the data for the purpose of the review?}
-			\item[] \dimeCheckBox{If yes, is the data de-identified?}
-                \item[] \dimeCheckBox{Are all datasets necessary to run the code included in the package?}
-		\end{itemize}
-		
-		
-		\subsection{3. \, Output requirements}
-        Refer to this session on \href{https://osf.io/ezmsb}{Creating Reproducible Outputs} for more details.
-		
-		\begin{itemize}
-			\setlength\itemsep{-0.1em}
-			\item[] \dimeCheckBox{All outputs created by the code to be reviewed are included}
-			\item[] \dimeCheckBox{The outputs created are saved and stored in the correct folders, e.g. final outputs are in the \texttt{\textbf{Outputs/Final}} folder}
-			
-		\end{itemize}
-		
-		
-	\end{fullwidth}
+        \titleBox{
+            \textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Code Review Package Checklist}}}
+        }
+
+        \section*{Overview}
+The submission package for peer code review should include all components in the checklist below. Code review participants can provide either a link to the complete package (\textbf{OneDrive} or \textbf{GitHub}), or a zipped folder - along with information on programming language(s) involved, and approximate run time. Questions should be directed to \href{mailto:dimeanalytics@worldbank.org}{DIME Analytics}.
+
+        \section*{Package Requirements}
+        \begin{enumerate}
+        \item \textbf{Code:}
+        \begin{itemize}
+            \item[] \dimeCheckBox{All scripts to be reviewed.}
+            \item[] \dimeCheckBox{A \textbf{main script} that allows the reviewer to run all code after changing only the top-level directory.   }        \end{itemize}
+          
+          \item \textbf{Data:}  
+          \begin{itemize}
+            \item[] \dimeCheckBox{All de-identified data necessary to run the code.}
+           \end{itemize}
+           
+           \item \textbf{README:}
+           \begin{itemize}
+            \item[] \dimeCheckBox{A \href{https://github.com/worldbank/wb-reproducible-research-repository/blob/main/resources/README_Template.md}{README file} containing:}
+                \begin{itemize}
+                    \item[] \dimeCheckBox{Software and version used.}
+                    \item[] \dimeCheckBox{Approximate run time of the code.}
+                    \item[] \dimeCheckBox{Purpose of each folder.}
+                    \item[] \dimeCheckBox{High-level objective of the code (e.g., regression analysis, data visualization).}
+                    \item[] \dimeCheckBox{Line(s) in the \textbf{main script} that should be changed to run the code on a different machine.}
+                    \item[] \dimeCheckBox{Purpose of each script (if multiple scripts are used).}
+                    \item[] \dimeCheckBox{Outputs produced (if part of the review).}
+                    \item[] \dimeCheckBox{Mapping of outputs to scripts responsible for generating them.}
+                    \item[] \dimeCheckBox{Any specific requests or guidance for the reviewer.}
+                \end{itemize}
+            \item[] \dimeTextField{master}{11cm}{README file path and name:}
+        \end{itemize}
+
+        \section*{Component-Specific Requirements}
+        Before submitting your package, ensure the following requirements are met.
+
+        \subsection{1. \, Main Script Requirements}
+        The main script should be structured to ensure smooth execution. See templates for \href{https://github.com/worldbank/wb-reproducible-research-repository/blob/main/resources/main.do}{Stata} and \href{https://github.com/worldbank/wb-reproducible-research-repository/blob/main/resources/main.R}{R} main scripts. 
+
+        
+        \begin{itemize}
+            \item[] \dimeCheckBox{The main script runs from start to end after changing only directory paths in one location. This should be clearly specified in the README.}
+            \item[] \dimeCheckBox{The main script installs any required packages or provides instructions to do so (e.g., SSC for Stata, CRAN for R).  Refer to this session on \href{https://osf.io/q7rjt}{Building Reproducible Environments} for more information.}
+            \item[] \dimeCheckBox{For Stata, the main do-file sets critical configurations such as \texttt{version}, \texttt{matsize}, and \texttt{varabbrev}, either directly or via a wrapper command (e.g., \texttt{ieboilstart} from \texttt{ietoolkit}).}
+            \item[] \dimeCheckBox{For R, all necessary packages are loaded within the main script.}
+            \item[] \dimeTextField{time}{2.5cm}{\textbf{Approximate run time} of the main script:}
+        \end{itemize}
+
+        \subsection{2. \, Data Requirements}
+        \begin{itemize}
+            \item[] \dimeCheckBox{The data can be shared for the review.}
+            \item[] \dimeCheckBox{The data is de-identified.}
+            \item[] \dimeCheckBox{All necessary datasets are included in the package.}
+        \end{itemize}
+
+        \subsection{3. \, Output Requirements}
+        \href{https://osf.io/ezmsb}{Refer to this session on Creating Reproducible Outputs for details.}
+
+        \begin{itemize}
+            \item[] \dimeCheckBox{All outputs generated by the code are included in the package.}
+            \item[] \dimeCheckBox{Outputs are saved and stored in the appropriate folders (e.g., final outputs in \texttt{\textbf{Outputs/Final}}).}
+        \end{itemize}
+
+    \end{fullwidth}
 \end{document}

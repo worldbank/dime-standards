@@ -1,31 +1,31 @@
 \documentclass{tufte-handout}
 
 \usepackage{librecaslon}
-
-
 \usepackage{fancyhdr}
 \usepackage{hyperref}
-\usepackage{tcolorbox} % needed for the text boxes
+\usepackage{tcolorbox} 
 \usepackage{xcolor}
 \usepackage{setspace}
 \usepackage{graphics}
+
 \hypersetup{
-	colorlinks=true,
-	linkcolor=blue,
-	urlcolor=cyan,
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=cyan,
 }
+
 % Set header and footer
 \pagestyle{fancy}
 \fancyhf{}
-\lfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/i2i}}
-\cfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/wb}}
+\lfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/wb}}
 \rfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/analytics}}
 
 % Put checkbox to the left of the text
 \def\LayoutCheckField#1#2{% label, field
-	#2 #1%
+    #2 #1%
 }
-
+% Adjust footer spacing
+\setlength{\footskip}{2cm}
 % Line spacing
 \onehalfspacing
 
@@ -49,88 +49,83 @@
 \newcommand{\dimeCheckBox}[1]{\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{#1}}
 \newcommand{\dimeTextField}[3]{\TextField[name=#1, height=0.3cm, width=#2, bordercolor=gray]{#3}}
 
-
 \newcommand{\titleBox}[1]{
-	\begin{tcolorbox}
-		[colframe = fontcolor,
-		colback = fontcolor,
-		sharp corners,
-		halign = flush center,
-		valign = center,
-		height = 0.3\textwidth,
-		after skip = 1cm]
-		#1
-	\end{tcolorbox}
+    \begin{tcolorbox}
+        [colframe = fontcolor,
+        colback = fontcolor,
+        sharp corners,
+        halign = flush center,
+        valign = center,
+        height = 0.3\textwidth,
+        after skip = 1cm]
+        #1
+    \end{tcolorbox}
 }
 
 \begin{document}
-	\begin{fullwidth}
-		
-		\titleBox{
-			\textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Peer Code Review - Construction Checklist}} \\
-				\Large\textbf{{v1.0}}}
-		}
+    \begin{fullwidth}
+        
+        \titleBox{
+            \textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Peer Code Review - Construction Checklist}}}
+        }
 
-  \dimeTextField{time}{2.5 cm}{Reviewer:} 
+        \section*{Reviewer Details}
+        \dimeTextField{reviewer}{6cm}{Reviewer Name:}  
+        \dimeTextField{coder}{6cm}{ Coder Name:}  
 
-        \dimeTextField{time}{2.5 cm} {Coder:}
-		
-		\textbf{NOTE:} Make sure that fill out this checklist \textbf{ONLY IF} your partner's submission includes    \textbf{construction} tasks. 
-		
-		\section*{Indicator construction tasks}
-  This checklist lists important factors to consider while reviewing your code review partner's \textbf{construction} scripts/code. Please fill this checklist, and submit it as an attachment when you submit \href{https://survey.wb.surveycto.com/collect/code_review_summary?caseid=}{this detailed form.}
+        \vspace{0.5cm}
 
-  \subsection*{Construction script}
-		
-		\begin{itemize}
-			\setlength\itemsep{-0.1em}
-			\item[] \dimeCheckBox{I understand how and why each variable is constructed.}
-            \dimeTextField{comment1}{10cm}{In some cases, it was not clear - need more comments in the following lines of code:}
+        \textbf{NOTE:} Please complete this checklist \textbf{only if} your partner's submission includes \textbf{indicator construction} tasks.  
 
-            \dimeCheckBox{\textbf{Check merges:}} 
-            
-            \begin{itemize}
-                \item[] \dimeCheckBox{If any observations are dropped, there is a clear justification in the code}
-                \item[] \dimeCheckBox{If the number of observations increase/decrease, there is a clear justification in the code}
-            \end{itemize}
-
-            \dimeCheckBox{\textbf{Check collapses, reshapes, and group-wise calculations (e.g. \texttt{bysort} and \texttt{egen}):}} 
-            
-            \begin{itemize}
-                \item[] \dimeCheckBox{The code clearly explains how missing values are treated in these operations}
-                \item[] \dimeCheckBox{If the sort order of data matters, stable sorts are used (e.g. using \textbf{\texttt{set seed})}}
-            \end{itemize}
-
-            \dimeCheckBox{\textbf{Check winsorization and other techniques for handling outliers}} 
-            
-            \begin{itemize}
-                \item[] \dimeCheckBox{The reason for the chosen technique/method is clearly explained}
-                \item[] \dimeCheckBox{There is documentation explaining how parameters such as cutoff percentiles were chosen and why one or both tails were altered \textbf{(if applicable)}}
-            \end{itemize}
-
-             \dimeCheckBox{\textbf{Check creation of new variables:}} 
-            
-            \begin{itemize}
-                \item[] \dimeCheckBox{The code matches the variable definition in the documentation (such as a codebook of all variables)?}
-                \item[] \dimeCheckBox{The correct function is used and clearly explained}
-              
-            \end{itemize}
-
-    \subsection*{Constructed dataset}     
+        \section*{Indicator Construction Tasks}
+        This checklist highlights key aspects to review in your partner's \textbf{construction scripts/code}.  
+        Once completed, please submit it as an attachment along with \href{https://survey.wb.surveycto.com/collect/code_review_summary?caseid=}{this form}.
+      
+\subsection*{Variable Construction Checks}
+       \begin{itemize}
+    \item[] \dimeCheckBox{Each variable's purpose and construction logic aligns with its documented definition (e.g., codebook, project documentation).}
+    \item[] \dimeCheckBox{Correct functions are used and properly explained (e.g., transformations, normalizations).}
+    \item[] \dimeCheckBox{Categorical variables are properly encoded (e.g., labeled factors in Stata/R).}
+ 
+      \end{itemize}         
+      
+        \subsection*{Merge Checks}
         \begin{itemize}
-                \item[] \dimeCheckBox{The constructed dataset is tidy (that is, \textbf{each row is an observation}, AND\textbf{ each variable is a column}}
-                \item[] \dimeCheckBox{\textbf{Variable names} are informative}
-                \item[] \dimeCheckBox{\textbf{Variable labels} are informative}
-                \item[] \dimeCheckBox{\textbf{Value labels} are informative}
-                \item[] \dimeCheckBox{All labels are grammatically correct and free of special characters}
-                \item[] \dimeCheckBox{There is clear documentation (variable dictionary, variable labels, value labels, notes, comments) about variable definition? (e.g. codebook constructed using \textbf{\texttt{iecodebook}})}
-                 
-                
+            \setlength\itemsep{0.3em}
+            \item[] \dimeCheckBox{If any observations are dropped, a clear justification is provided in the code.}
+            \item[] \dimeCheckBox{Any mismatches between datasets are explicitly explained in the code.}
+             \item[] \dimeCheckBox{m:m merge is NOT perfomed}
+        \end{itemize}      
+        
+         \subsection*{Collapse and group-wise calculations Checks}
+        \begin{itemize}
+            \setlength\itemsep{0.3em}
+            \item[] \dimeCheckBox{Missing values are handled appropriately and documented.}
+            \item[] \dimeCheckBox{If sorting affects results, the data is being sorted on a unique or a combination of unique IDs.}
+            \item[] \dimeCheckBox{Aggregation functions (sum, mean, etc.) are correctly applied and documented.}
+        \end{itemize}      
+
+	
+          \subsection*{Winzorization and Outlier handling}
+            \begin{itemize}
+                \item[] \dimeCheckBox{The choice of winsorization or other outlier-handling techniques is clearly justified.}
+                \item[] \dimeCheckBox{Documentation explains how cutoff percentiles were chosen and why one/both tails were modified.}
             \end{itemize}
 
-            
-		\vspace{.6em}
 
+        \subsection*{Constructed Dataset Checks}     
+        \begin{itemize}
+            \item[] \dimeCheckBox{The dataset follows a \textbf{tidy} structure: each row represents an observation, and each variable is a column.}
+            \item[] \dimeCheckBox{Variable names are informative and follow a consistent naming convention.}
+            \item[] \dimeCheckBox{Variable labels provide clear descriptions of their contents.}
+           \item[] \dimeCheckBox{Value labels are informative and consistent (e.g., avoiding cases where varA: 1 = yes, 0 = no, but varB: 1 = yes, 2 = no).}
+            \item[] \dimeCheckBox{All labels are grammatically correct and do not contain special characters.}
+            \item[] \dimeCheckBox{Documentation (variable dictionary, variable labels, value labels, comments) is complete and consistent  (e.g. codebook constructed using iecodebook).}
+            \item[] \dimeCheckBox{Each row has a unique ID (or valid combination of unique keys).}
+            \item[] \dimeCheckBox{The constructed dataset is saved only once throughout the script and is not overwritten multiple times.}
+        \end{itemize}
 
-	\end{fullwidth}
+        \vspace{0.6em}
+
+    \end{fullwidth}
 \end{document}
