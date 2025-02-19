@@ -74,6 +74,9 @@
 *Unignore the DIME NDA pdf
 !**/data-security-resources/dime-data-nda.pdf
 
+*Unignore the DIME guideance pdf
+!**/dime-coding-standards/Peer Code Review - Guidance Note.pdf
+
 #######################
 # Include all the files with passwords or tokens here. All files named
 # password or passwords are with this template ignored no matter which
