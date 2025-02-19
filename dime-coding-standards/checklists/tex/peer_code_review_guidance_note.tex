@@ -1,131 +1,78 @@
+
 \documentclass{tufte-handout}
-
-\usepackage{librecaslon}
-
-
-\usepackage{fancyhdr}
-\usepackage{hyperref}
-\usepackage{tcolorbox} % needed for the text boxes
-\usepackage{xcolor}
-\usepackage{setspace}
-\usepackage{graphics}
-\hypersetup{
-	colorlinks=true,
-	linkcolor=blue,
-	urlcolor=cyan,
-}
-% Set header and footer
-\pagestyle{fancy}
-\fancyhf{}
-\lfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/i2i}}
-\cfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/wb}}
-\rfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/analytics}}
-
-% Put checkbox to the left of the text
-\def\LayoutCheckField#1#2{% label, field
-	#2 #1%
-}
-
-% Line spacing
-\onehalfspacing
-
-% Define DIME Analytics visual identity colors
-\definecolor{fontcolor}{HTML}{7A0569}
-
-\titleformat{\section}%
-{\Large\rmfamily\bf\color{fontcolor}}% format applied to label+text
-{\llap{\colorbox{fontcolor}{\parbox{1.5cm}{\hfill\huge\color{fontcolor}\thesection}}}}% label
-{2pt}% horizontal separation between label and title body
-{}% before the title body
-[]% after the title body
-
-\titleformat{\subsection}%
-{\large\rmfamily\color{fontcolor}}% format applied to label+text
-{}% label
-{1.5pt}% horizontal separation between label and title body
-{}% before the title body
-[]% after the title body
-
-\newcommand{\dimeCheckBox}[1]{\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{#1}}
-\newcommand{\dimeTextField}[3]{\TextField[name=#1, height=0.3cm, width=#2, bordercolor=gray]{#3}}
-
-
-\newcommand{\titleBox}[1]{
-	\begin{tcolorbox}
-		[colframe = fontcolor,
-		colback = fontcolor,
-		sharp corners,
-		halign = flush center,
-		valign = center,
-		height = 0.3\textwidth,
-		after skip = 1cm]
-		#1
-	\end{tcolorbox}
-}
-
+\input{checklist-header}
 
 
 \begin{document}
+\thispagestyle{firstpage}
 	\begin{fullwidth}
 
 \titleBox{
-	\textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Quarterly Peer Code Review Guidance Note}} \\
-	\Large\textbf{{v1.0 - Last updated December 5, 2022}}}
+	\textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Peer Code Review Guidance Note}} \\
+	}
 }
 
-	\section*{Overview}
- Every quarter, DIME Analytics organizes the \textbf{Peer Code Review}, which is a real-time code and data-quality assurance process. This is a structured opportunity for participants to exchange, run, and provide feedback on each other’s code. Apart from increasing reproducibility, transparency and adherence to best practices, it is a great learning opportunity - code writers get to look at their work from a different perspective, and reviewers are exposed to different styles and practices. 
-\hfill \break
-\begin{flushleft} The peer code review is designed for scripts that are modular enough to be understood on their own (a reviewer can understand the script without having to refer to other project code files) and are short enough for a reviewer to read through in approximately half a day (depending on complexity). We recommend submitting recently-completed tasks, to allow corrections to be made in real time.
+\section*{Overview}
+DIME Analytics organizes the \textbf{Peer Code Review} as a real-time code and data-quality assurance process, providing a structured opportunity for participants to exchange, run, and provide feedback on each other's code. Beyond improving reproducibility, transparency, and adherence to best practices, it is also a valuable learning experience—code writers gain fresh perspectives on their work, while reviewers are exposed to different coding styles and practices.
 
-\section*{How it works}
+\vspace{5mm}
+\noindent The Peer Code Review is especially beneficial for \textbf{new Research Assistants}, as it helps them understand expectations and learn from others' code.
 
-	\begin{enumerate}
-	    
-	  
-		\setlength\itemsep{-0.1em}
-		\item Teams \href{https://survey.wb.surveycto.com/collect/code_review_sign_up?caseid=}{sign-up} to participate in the code review each quarter. All DIME Research Assistants working on code are expected to participate, and any Bank staff or consultant who would like to get feedback on their code is welcome to participate.
-    
+\vspace{5mm}
+\noindent The review is designed for scripts that are modular enough to be understood on their own (i.e., a reviewer can follow the script without referring to other project files) and short enough to be reviewed \textbf{within one day} (depending on complexity). If participants wish to submit longer scripts, they will be paired with others submitting similarly long code to ensure a balanced review process. We recommend submitting recently completed tasks to allow for timely corrections and improvements.
 
-		\item All participants prepare a code package to submit to review, following \href{https://github.com/worldbank/dime-standards/blob/master/dime-coding-standards/checklists/Peer%20Code%20Review%20Submission%20Checklist.pdf}{these guidelines}. Submitted code should be \textbf{no longer than 1000 lines}. 
-        
+\vspace{5mm}
+\noindent The time commitment for each round is \textbf{8-10 hours}, including two dedicated sessions that participants are expected to attend.
+
+\section*{How It Works}
+
+\begin{enumerate}
+    \item Teams \href{https://survey.wb.surveycto.com/collect/code_review_sign_up?caseid=}{sign up} to participate in the code review.
+    \begin{itemize}
+        \item All DIME Research Assistants working on code are expected to participate regularly.
+        \item Any Bank staff or consultant seeking feedback on their code is welcome to join.
+    \end{itemize}
+    \item Participants are paired for the review based on their preferred statistical software and the length of their code.
+    \item All participants prepare a code package to share with their assigned code review partners, following \href{https://github.com/worldbank/dime-standards/blob/master/dime-coding-standards/checklists/Peer%20Code%20Review%20Submission%20Checklist.pdf}{this checklist}.
+    \begin{itemize}
+        \item Submitted code should ideally be \textbf{around 1,000 lines}, excluding the main scripts (\href{https://github.com/worldbank/wb-reproducible-research-repository/blob/main/resources/main.do}{Stata}, \href{https://github.com/worldbank/wb-reproducible-research-repository/blob/main/resources/main.R}{R}).
+        \item This is a recommendation rather than a strict limit—longer submissions are allowed but may require more time to review.
+        \item Teams should specify which aspects of their code they would like reviewed, such as: Data cleaning, Indicator construction, Analysis, Sampling and randomization, High-frequency checks, etc.
+        \item Teams should also indicate whether they want the reviewer to assess \textbf{computational reproducibility}.
+        \item To enable reproducibility checks, the submission package \textbf{must} include a \textbf{de-identified dataset}.
+    \end{itemize}
+    \item The \textbf{peer code review} takes place over the course of one week and includes:
+    \begin{itemize}
+        \item A \textbf{hybrid kickoff session} outlining the process and assigning code review partners. Attendance is \textbf{optional} for those who have participated before.
+        \item A \textbf{hybrid group review session} with technical support from DIME Analytics.
         \begin{itemize}
-            \item As part of this step, teams will identify what tasks they want reviewed (data cleaning, construction, or analysis) and whether they want the reviewer to assess  \textbf{computational reproducibility}. 
-            \item \textbf{Note} In order for the reviewer to assess reproducibility, the peer review submission package must include a \textbf{de-identified} version of the dataset.
+            \item Pairs work together, reviewing each other's code and addressing questions.
+            \item Attendance is \textbf{mandatory}—if the scheduled session is not feasible, Analytics will facilitate an alternative meeting.
         \end{itemize}
-
-        \item Participants are paired for review based on preferred statistical software and length of code.
-
-        \item The actual peer code review activity takes place over the course of one week, which includes:
-         \begin{itemize}
-            \item A \textbf{kickoff session} with an overview of the process, and pair assignments. 
-            \item A \textbf{group work session} with technical support from DIME Analytics. Pairs work together, and answer questions to allow each other to review their submitted code.
-        \end{itemize}
-
-       \item Reviewers review the code using structured checklists:
+        \item This activity is most effective when teams can collaborate \textbf{in person}, allowing for real-time discussions and clarifications.
+    \end{itemize}
+    \item Reviewers assess the code using the following resources:
+    \begin{itemize}
+        \item \textbf{General:} \href{https://github.com/worldbank/dime-standards/blob/master/dime-coding-standards/checklists/Reviewer%20Feedback%20Checklist.pdf}{Main Feedback Checklist}
+        \item \textbf{Task-Specific Checklists:}
         \begin{itemize}
-            \item \textbf{Mandatory}: \href{https://github.com/worldbank/dime-standards/blob/master/dime-coding-standards/checklists/Reviewer%20Feedback%20Checklist.pdf}{Reviewer Feedback Checklist}
-            \item \textbf{Depending on tasks in submitted code:} 
-            \begin{itemize}
-                \item \href{https://github.com/worldbank/dime-standards/blob/master/dime-coding-standards/checklists/Cleaning%20Code%20Review%20Checklist.pdf}{Cleaning Checklist}
-                \item \href{https://github.com/worldbank/dime-standards/blob/master/dime-coding-standards/checklists/Construction%20Code%20Review%20Checklist.pdf}{Construction Checklist}
-                \item \href{https://github.com/worldbank/dime-standards/blob/master/dime-coding-standards/checklists/Analysis%20Code%20Review%20Checklist.pdf}{Analysis Checklist}
-            \end{itemize}
+            \item \href{https://github.com/worldbank/dime-standards/blob/d9111654531319fe96095d4bf0acf7fa0b66bacd/dime-coding-standards/checklists/Cleaning%20Code%20Review%20Checklist.pdf}{Cleaning Code Review Checklist}
+            \item \href{https://github.com/worldbank/dime-standards/blob/d9111654531319fe96095d4bf0acf7fa0b66bacd/dime-coding-standards/checklists/Construction%20Code%20Review%20Checklist.pdf}{Indicator Construction Checklist}
+            \item \href{https://github.com/worldbank/dime-standards/blob/d9111654531319fe96095d4bf0acf7fa0b66bacd/dime-coding-standards/checklists/Analysis%20Code%20Review%20Checklist.pdf}{Analysis Code Review Checklist}
+            \item \href{https://github.com/worldbank/dime-standards/blob/d9111654531319fe96095d4bf0acf7fa0b66bacd/dime-coding-standards/checklists/Sampling%20and%20Random%20Treatment%20Assignment%20Checklist.pdf}{Sampling \& Randomization Checklist}
+            \item \href{https://github.com/worldbank/dime-standards/blob/d9111654531319fe96095d4bf0acf7fa0b66bacd/dime-coding-standards/checklists/HFCs%20Checklist.pdf}{High-Frequency Checks Checklist}
         \end{itemize}
-        
-         \item At the end of the week, reviewers submit \href{https://survey.wb.surveycto.com/collect/code_review_summary?caseid=}{a structured feedback form} and upload their completed checklists.
+    \end{itemize}
+    \item Reviewers have one week to submit feedback using \href{https://survey.wb.surveycto.com/collect/code_review_summary?caseid=}{this form} and upload their completed task-specific checklists.
+\end{enumerate}
 
-         \item \textbf{DIME Analytics} conducts a \textbf{code review summary session} \textbf{(within 3 weeks)} with participants, to discuss summary statistics and general lessons from the recently concluded round of peer code review. TTLs are invited to attend.
+\section*{What Teams Receive}
+\begin{itemize}
+    \item \textbf{Within 10 days}, TTLs and research assistants receive a \href{https://github.com/worldbank/dime-standards/blob/d9111654531319fe96095d4bf0acf7fa0b66bacd/dime-coding-standards/checklists/samples/Sample%20TTL%20Report.pdf}{standardized report} indicating adherence to best practices and areas for improvement.
+    \item Research assistants also receive detailed feedback through the task-specific checklists submitted by the reviewers.
+    \item All participating TTLs and DIME Managers receive a \href{https://github.com/worldbank/dime-standards/blob/d9111654531319fe96095d4bf0acf7fa0b66bacd/dime-coding-standards/checklists/samples/Peer%20Code%20Review%20Summary%20-%20FY24%20Q3.pdf}{summary report} highlighting common strengths and weaknesses.
+\end{itemize}
 
-        \end{enumerate}
-	
-	\section{What teams receive}
-        \begin{itemize}
- 
-        \item \textbf{TTLs} receive \href{https://github.com/worldbank/dime-standards/blob/peer-code-review/dime-coding-standards/checklists/Sample%20TTL%20Report.pdf}{a standardized report} for their project indicating adherence to best practices and areas for improvement \textbf{within 2 weeks}.
-        \item \textbf{Research assistants} receive detailed feedback though the \href{https://github.com/worldbank/dime-standards/blob/master/dime-coding-standards/checklists/Reviewer%20Feedback%20Checklist.pdf}{Reviewer Feedback Checklist} submitted by their review partner \textbf{within 2 weeks}.
-        \item All participating \textbf{TTLs and DIME Managers} receive a \href{https://github.com/worldbank/dime-standards/blob/peer-code-review/dime-coding-standards/checklists/Sample%20Overall%20Summary%20Report%20.pdf}{summary report} highlighting common strengths and weaknesses \textbf{within 3 weeks}. This is also discussed during the concluding \textbf{code review summary session}.
-		\end{itemize}
 
 	\end{fullwidth}
 \end{document}

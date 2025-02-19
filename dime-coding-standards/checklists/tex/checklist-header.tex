@@ -1,4 +1,4 @@
-\documentclass{tufte-handout}
+
 
 \usepackage{librecaslon}
 
@@ -14,17 +14,26 @@
 	linkcolor=blue,
 	urlcolor=cyan,
 }
-% Set header and footer
-\pagestyle{fancy}
-\fancyhf{}
-\lfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/i2i}}
-\cfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/wb}}
-\rfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/analytics}}
+
+% Set header and footer using fancyhdr
+\renewcommand{\headrulewidth}{0pt}
+
+\fancypagestyle{firstpage}{
+    \fancyhf{} % Clear existing headers/footers
+    \fancyhead[L]{\includegraphics[height=1cm,keepaspectratio]{../../img/wb}} 
+    \fancyhead[R]{\includegraphics[height=1cm,keepaspectratio]{../../img/analytics}} 
+}
+
+\pagestyle{plain} % Use plain style for all other pages
+
+
+
 
 % Put checkbox to the left of the text
 \def\LayoutCheckField#1#2{% label, field
 	#2 #1%
 }
+
 
 % Line spacing
 \onehalfspacing
@@ -60,5 +69,4 @@
 		height = 0.3\textwidth,
 		after skip = 1cm]
 		#1
-	\end{tcolorbox}
-}
+	\end{tcolorbox}}

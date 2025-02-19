@@ -1,68 +1,10 @@
+
 \documentclass{tufte-handout}
+\input{checklist-header}
 
-\usepackage{librecaslon}
-\usepackage{fancyhdr}
-\usepackage{hyperref}
-\usepackage{tcolorbox} 
-\usepackage{xcolor}
-\usepackage{setspace}
-\usepackage{graphics}
-
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    urlcolor=cyan,
-}
-
-% Set header and footer
-\pagestyle{fancy}
-\fancyhf{}
-\lfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/wb}}
-\rfoot{\includegraphics[height=1cm,keepaspectratio]{../../img/analytics}}
-
-% Put checkbox to the left of the text
-\def\LayoutCheckField#1#2{% label, field
-    #2 #1%
-}
-% Adjust footer spacing
-\setlength{\footskip}{2cm}
-% Line spacing
-\onehalfspacing
-
-% Define DIME Analytics visual identity colors
-\definecolor{fontcolor}{HTML}{7A0569}
-
-\titleformat{\section}%
-{\Large\rmfamily\bf\color{fontcolor}}% format applied to label+text
-{\llap{\colorbox{fontcolor}{\parbox{1.5cm}{\hfill\huge\color{fontcolor}\thesection}}}}% label
-{2pt}% horizontal separation between label and title body
-{}% before the title body
-[]% after the title body
-
-\titleformat{\subsection}%
-{\large\rmfamily\color{fontcolor}}% format applied to label+text
-{}% label
-{1.5pt}% horizontal separation between label and title body
-{}% before the title body
-[]% after the title body
-
-\newcommand{\dimeCheckBox}[1]{\CheckBox[height=0.01cm, width=0.4cm, bordercolor=gray]{#1}}
-\newcommand{\dimeTextField}[3]{\TextField[name=#1, height=0.3cm, width=#2, bordercolor=gray]{#3}}
-
-\newcommand{\titleBox}[1]{
-    \begin{tcolorbox}
-        [colframe = fontcolor,
-        colback = fontcolor,
-        sharp corners,
-        halign = flush center,
-        valign = center,
-        height = 0.3\textwidth,
-        after skip = 1cm]
-        #1
-    \end{tcolorbox}
-}
 
 \begin{document}
+\thispagestyle{firstpage}
     \begin{fullwidth}
         
         \titleBox{
