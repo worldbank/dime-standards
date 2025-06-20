@@ -28,7 +28,7 @@ both as a working paper and at any journal which later accepts the work.
 At a minimum, this means that code must be submitted to
 a **computational reproducibility check** organized by DIME Analytics
 before publication as a working paper or submission to a journal.
-This reproducibility check is initiated by filling out [this form](https://forms.microsoft.com/pages/responsepage.aspx?id=wP6iMWsmZ0y1bieW2PWcNrmJ5E3rTOJFhD9z9QXtUf1UMVFIQUYyNEVLQ0FRWFBEOU5SRFI5MVpKMi4u).
+This reproducibility check is initiated by filling out [this form](https://survey.wb.surveycto.com/collect/prwp_reproducibility?caseid=).
 The team will review the submitted materials and provide results in a timely fashion.
 
 In addition to these formal requirements for reproducibility review,
