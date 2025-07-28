@@ -6,14 +6,14 @@ Use this checklist to improve your own Stata coding practice or to guide your pe
 
 ## Main Do-file Setup
     
-- [ ] Includes `clear all` and `set more off` at the start.
+- [ ] Includes `clear all` at the start.
 - [ ] Sets core configurations (`version`, `matsize`, `varabbrev`) directly or via a wrapper (e.g., `ieboilstart`)
 - [ ] Script runs from start to end after changing directory paths in one place only.
 - [ ] Uses only **relative paths** (no `C:/...`) 
 - [ ] Uses forward slashes in file path for OS compatibility
 - [ ] Installs required packages or includes an `ado` folder with dependencies.
 - [ ] Sets a **random seed** for reproducibility.
-- [ ] Uses `run` or `do` to call modular scripts for cleaning, construction, etc.
+- [ ] The main do-file runs all code files (using `run` or `do` to files) without any need to manually run files in a certain order.
 
 
 
