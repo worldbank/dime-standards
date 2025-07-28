@@ -1,0 +1,135 @@
+
+\documentclass{tufte-handout}
+\input{checklist-header}
+
+
+\begin{document}
+\thispagestyle{firstpage}
+    \begin{fullwidth}
+    
+
+
+        \titleBox{
+            \textcolor{white}{\LARGE{\textbf{DIME Analytics \\ Peer Code Review Checklist: Stata}} \\[5pt]}
+        }
+% Restore default margins after the first page
+
+
+        \section*{Reviewer Details}
+        \dimeTextField{reviewer}{6cm}{Reviewer Name:}  
+        \dimeTextField{coder}{6cm}{ Coder Name:}  
+
+        \vspace{0.5cm}
+
+The following checklist outlines best practices for writing and reviewing Stata code. Items/Sections marked with an asterisk \texttt{*} are strongly recommended to ensure reproducibility.
+
+
+\subsection*{Main Do-file Setup*}
+\begin{itemize}
+    \setlength\itemsep{-0.1em}
+	\item[] \dimeCheckBox{Sets core configurations (\texttt{version}, \texttt{matsize}, \texttt{varabbrev}) directly or via a wrapper (e.g., \texttt{ieboilstart}).}
+	\item[] \dimeCheckBox{Script runs from start to end after changing directory paths in one place only.}
+	\item[] \dimeCheckBox{Uses only \textbf{relative paths} (no \texttt{C:/...}).}
+	\item[] \dimeCheckBox{Uses forward slashes in file paths for OS compatibility.}
+	\item[] \dimeCheckBox{Installs required packages or includes an \texttt{ado} folder with dependencies.}
+	\item[] \dimeCheckBox{Sets a \textbf{random seed} for reproducibility.}
+	\item[] \dimeCheckBox{The main do-file runs all code files (using \texttt{run} or \texttt{do} to files) without any need to manually run files in a certain order.}
+\end{itemize}
+
+
+\subsection*{Data Management}
+\begin{itemize}
+    \setlength\itemsep{-0.1em}
+    	\item[] \dimeCheckBox{Dataset includes a \textbf{unique ID} and is sorted.}
+	\item[] \dimeCheckBox{The same unique ID is used consistently across datasets that share the same unit of observation.}
+	\item[] \dimeCheckBox{\textbf{*}Duplicate resolution is stable (does not use \texttt{duplicates drop, force}).}
+	\item[] \dimeCheckBox{Does not include PII or sensitive information.}
+	\item[] \dimeCheckBox{All variables are clearly labeled.}
+	\item[] \dimeCheckBox{Value labels are consistent (e.g., avoiding cases where \texttt{varA: 1 = yes, 0 = no} but \texttt{varB: 1 = yes, 2 = no}).}
+	\item[] \dimeCheckBox{Extended missing values are used where applicable (e.g., \texttt{.d} for Do not know, \texttt{.r} for Refuse to answer, etc.).}
+	\item[] \dimeCheckBox{\textbf{*}Sorting is consistently and uniquely enforced using \texttt{sort} or \texttt{gsort} before commands that depend on it.}
+	\item[] \dimeCheckBox{Avoids saving intermediate datasets unless needed for later use (uses \texttt{tempfile} when appropriate).}
+	\item[] \dimeCheckBox{\textbf{*}Saves final dataset only once, avoids repeated overwriting.}
+	\item[] \dimeCheckBox{Follows tidy data principles: one row per observation, one column per variable, and one unit of observation per \texttt{.dta} file (e.g., avoid wide-format household member data in a household-level file).}
+	\item[] \dimeCheckBox{Avoids interactive commands (\texttt{edit}, \texttt{browse}).}
+\end{itemize}
+
+\subsection*{Data Types \& Variables}
+\begin{itemize}
+    \setlength\itemsep{-0.1em}
+	\item[] \dimeCheckBox{String variables are only used when necessary (e.g., proper nouns or alphanumeric IDs).}
+	\item[] \dimeCheckBox{Converts categorical strings into labeled numeric variables (e.g., using \texttt{encode}).}
+	\item[] \dimeCheckBox{Date variables are stored in proper date formats (e.g., \texttt{\%td}, \texttt{\%tm}).}
+\end{itemize}
+    
+\subsection*{Merge Checks}
+\begin{itemize}
+    \setlength\itemsep{-0.1em}
+    	\item[] \dimeCheckBox{\textbf{*}No \texttt{m:m} merges used.}
+	\item[] \dimeCheckBox{Mismatches or dropped observations are explained using \texttt{tab \_merge} and \texttt{assert} checks.}
+	\item[] \dimeCheckBox{If any observations are dropped, a clear justification is provided in the code.}
+\end{itemize}    
+
+\subsection*{Append Checks}
+\begin{itemize}
+    \setlength\itemsep{-0.1em}
+    	\item[] \dimeCheckBox{Variables being appended are of the same type and structure.}
+	\item[] \dimeCheckBox{Avoids \texttt{append, force}.}
+	\item[] \dimeCheckBox{Any new variables introduced in appended datasets are properly handled.}
+	\item[] \dimeCheckBox{Ensures that the resulting dataset remains uniquely identifiable, either with the original ID or a new combination of variables after the append.}
+\end{itemize}    
+
+\subsection*{Code Readability \& Style}
+\begin{itemize}
+    \setlength\itemsep{-0.1em}
+    	\item[] \dimeCheckBox{Uses proper indentation inside loops or programs.}
+	\item[] \dimeCheckBox{Uses white space and line breaks (\texttt{///}) for long lines.}
+	\item[] \dimeCheckBox{Uses descriptive index names in loops/globals.}
+	\item[] \dimeCheckBox{Uses \texttt{\$\{\}} syntax for global macros.}
+	\item[] \dimeCheckBox{Comments clearly explain steps and analysis decisions.}
+	\item[] \dimeCheckBox{Each section is clearly marked (e.g., \texttt{*** SECTION: Construct Outcomes}).}
+	\item[] \dimeCheckBox{Avoids hardcoding values (uses macros).}
+	\item[] \dimeCheckBox{Avoids copy-pasting blocks; uses loops or programs where repetitive code appears.}
+\end{itemize}    
+            
+\subsection*{Variable Construction}
+\begin{itemize}
+    \setlength\itemsep{-0.1em}
+    	\item[] \dimeCheckBox{Each variable’s logic aligns with the codebook or documentation.}
+	\item[] \dimeCheckBox{Transformations (log, winsorize, unit-standardization, etc.) are justified and explained.}
+	\item[] \dimeCheckBox{Categorical variables are properly labeled and encoded.}
+	\item[] \dimeCheckBox{Data transformations are verified with \texttt{assert} or summary checks.}	
+\end{itemize}    
+
+\subsection*{Collapse / Group-wise Calculations}
+\begin{itemize}
+    \setlength\itemsep{-0.1em}
+    	\item[] \dimeCheckBox{\textbf{*}Data is sorted uniquely before using \texttt{by: egen} or \texttt{by: gen}.}
+	\item[] \dimeCheckBox{Aggregations (e.g., using \texttt{collapse}, \texttt{egen}, or group-level calculations) are correct and clearly documented.}
+	\item[] \dimeCheckBox{Missing values are handled appropriately during \texttt{collapse} and \texttt{egen}.}
+\end{itemize}    
+
+\subsection*{Output \& Logging}
+\begin{itemize}
+    \setlength\itemsep{-0.1em}
+    	\item[] \dimeCheckBox{\textbf{*}Outputs are not copied manually to external files. Instead, they are exported using commands like \texttt{esttab}, \texttt{outreg}, \texttt{asdoc}, \texttt{graph export}, among others.}
+	\item[] \dimeCheckBox{Output files are clearly named and saved in dedicated folders.}
+	\item[] \dimeCheckBox{Log files are started with \texttt{log using} and closed with \texttt{log close}.}
+	\item[] \dimeCheckBox{\textbf{*}Tables are saved in plain text formats (e.g., \texttt{.csv}, \texttt{.txt}, \texttt{.tex}) to ensure compatibility with Git and facilitate version control.}
+	\item[] \dimeCheckBox{\textbf{*}Export commands include the \texttt{replace} option to prevent errors if output files already exist.}
+\end{itemize}    
+
+\subsection*{Reproducibility \& Documentation*}
+\begin{itemize}
+    \setlength\itemsep{-0.1em}
+	\item[] \dimeCheckBox{Code runs reproducibly from a fresh Stata session.}
+	\item[] \dimeCheckBox{README documents required Stata version and packages.}
+	\item[] \dimeCheckBox{\texttt{ieboilstart} or equivalent ensures version stability.}
+	\item[] \dimeCheckBox{Folder and file structure is documented.}
+	\item[] \dimeCheckBox{README specifies the main do-file and highlights which line(s) to update to run the code.}
+\end{itemize}                
+		\vspace{.6em}
+
+
+	\end{fullwidth}
+\end{document}
