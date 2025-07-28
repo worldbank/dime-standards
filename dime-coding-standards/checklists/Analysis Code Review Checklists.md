@@ -7,12 +7,10 @@
 
 > *Note: Please complete this checklist only if the submission includes analysis tasks.*
 
----
 
 ### **Analysis Tasks**  
 This checklist highlights key aspects to review in your partner’s analysis scripts/code. Once completed, please submit it as an attachment along with [this form](https://survey.wb.surveycto.com/collect/code_review_summary?caseid=).
 
----
 
 ###  **General Code Structure**
 - [ ] Analysis scripts do not create new variables, except when necessary for specific outputs (e.g., temporary transformations).
@@ -21,7 +19,6 @@ This checklist highlights key aspects to review in your partner’s analysis scr
 - [ ] The functions and statistical methods used are appropriate for the analysis being performed.
 - [ ] Categorical variables are used correctly (e.g., labeled integers are not mistakenly treated as continuous variables).
 
----
 
 ###  **Output Checks**
 - [ ] The code generates outputs as expected without errors or missing components.
