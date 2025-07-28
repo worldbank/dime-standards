@@ -7,7 +7,7 @@
 
 > *Note: Please complete this checklist only if the submission includes sampling and/or randomization tasks.*
 
----
+
 
 ## Sampling and Randomization Tasks
 
@@ -47,7 +47,7 @@ file hashing, `assert`, and/or `isid, sort`.
 - [ ] If the sample is finalized for field use, a logic switch prevents accidental overwriting.
 - [ ] Outputs include codebooks, value labels, and documentation.
 
----
+
 
 ##  Randomization Checklist
 
