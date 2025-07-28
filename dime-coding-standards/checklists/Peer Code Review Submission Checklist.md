@@ -1,6 +1,6 @@
 ## Code Review Package Checklist
 
----
+
 
 ### **Overview**
 
@@ -8,7 +8,7 @@ The submission package for peer code review should include all components in the
 
  Questions should be directed to [DIME Analytics](mailto:dimeanalytics@worldbank.org).
 
----
+
 
 ### **Package Requirements**
 
@@ -34,7 +34,7 @@ A [README](https://github.com/worldbank/wb-reproducible-research-repository/blob
 - [ ] README file path and name:
 
 
----
+
 
 ### **Component-Specific Requirements**
 
@@ -49,14 +49,14 @@ A [README](https://github.com/worldbank/wb-reproducible-research-repository/blob
 - [ ] For R, all necessary packages are loaded within the main script.  
 - [ ] **Approximate run time** of the main script is provided.
 
----
+
 
 #### 2. **Data Requirements**
 - [ ] The data can be shared for the review.  
 - [ ] The data  is de-identified.  
 - [ ] All necessary datasets are included in the package.
 
----
+
 
 #### 3. **Output Requirements**
 - [ ] [ Refer to this session on Creating Reproducible Outputs for details.](https://osf.io/ezmsb)
