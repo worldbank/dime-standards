@@ -5,7 +5,7 @@ This checklist lists important factors to consider while reviewing your code rev
 
 Your deliverable from this exercise will be [this online survey form](https://survey.wb.surveycto.com/collect/code_review_summary?caseid=) which replicates the checklist below.
 
----
+
 
 ## Overview – First Impression
 Once you have received a package from your code review partner, please check for the following general recommended practices:
@@ -17,7 +17,7 @@ Once you have received a package from your code review partner, please check for
 - [ ] All scripts are well-organized and formatted, such that one can easily identify functional chunks of code and evaluate whether they correctly implement the econometric or statistical process described
 - [ ] Tables and charts are exported (preferably as **raw text files**)
 
----
+
 
 ##  Computational Reproducibility  
 *(Applicable only if de-identified data was shared)*
@@ -32,7 +32,7 @@ tables) as you will need to record them in this review summary form.
 - [ ] Outputs (if any) reproduced exactly  
 - [ ] Outputs did not reproduce, but I determined the reason
 
----
+
 
 ## Ease of Use and Understanding
 **Now**, assess how easy it is to understand the code you are reviewing. Consider whether the documentation
@@ -44,7 +44,7 @@ easy for someone else to work on it.
 - [ ] The code is well structured, making it easy to update key tasks or parameters by modifying a single section rather than multiple parts of the codebase. 
 - [ ] Estimated number of days needed to understand the code: `__`
 
----
+
 
 ##  Coding Practices  
 *Check all that apply and note whether implementation was complete or needs improvement*
@@ -59,7 +59,7 @@ easy for someone else to work on it.
 - [ ] Use of loops/functions (e.g., `map`, `apply`, `sapply`)  
 - [ ] Abstraction - using functions to do commonly repeated tasks
 
----
+
 
 ## ️ Final Comments
 Finally, make note of the main strengths of the code, suggestions on how the coder can improve,
