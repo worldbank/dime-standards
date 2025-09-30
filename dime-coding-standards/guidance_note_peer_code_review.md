@@ -8,14 +8,14 @@ The Peer Code Review is especially beneficial for **new Research Assistants**, a
 
 The review is designed for scripts that are modular enough to be understood on their own (i.e., a reviewer can follow the script without referring to other project files) and short enough to be reviewed **within one day** (depending on complexity). If participants wish to submit longer scripts, they will be paired with others submitting similarly long code to ensure a balanced review process. We recommend submitting recently completed tasks to allow for timely corrections and improvements.
 
-Participants may choose to **only review**, **only submit**, or **do both**. Pairing will be based on availability, with **priority given to those who choose to both review and submit**. 
+Participants may choose to **only review** or **submit and review**. Pairing will be based on availability, with **priority given to those who choose to both review and submit**. 
 
 The time commitment for each round is **8-10 hours**, including two dedicated sessions that participants are expected to attend.
 
 ## How It Works
 
 1. Teams [sign up](https://survey.wb.surveycto.com/collect/code_review_sign_up?caseid=) to participate in the code review.  
-   - You can choose to **only review**, **only submit**, or **do both**.
+   - You can choose to **only review**, **only submit**,or **submit and review**.
    - Pairing is based on availability, with **priority given to those who opt to both review and submit**.
    - All DIME Research Assistants working on code are expected to participate regularly.  
    - Any Bank staff or consultant seeking feedback on their code is welcome to join.  
