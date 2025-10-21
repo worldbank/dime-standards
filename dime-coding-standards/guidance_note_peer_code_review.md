@@ -15,7 +15,7 @@ The time commitment for each round is **8-10 hours**, including two dedicated se
 ## How It Works
 
 1. Teams [sign up](https://survey.wb.surveycto.com/collect/code_review_sign_up?caseid=) to participate in the code review.  
-   - You can choose to **only review**, **only submit**,or **submit and review**.
+   - You can choose to **only review**,or **submit and review**.
    - Pairing is based on availability, with **priority given to those who opt to both review and submit**.
    - All DIME Research Assistants working on code are expected to participate regularly.  
    - Any Bank staff or consultant seeking feedback on their code is welcome to join.  
