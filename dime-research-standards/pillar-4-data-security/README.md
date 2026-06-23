@@ -93,7 +93,7 @@ at the earliest possible opportunity.
 The resulting de-identified datasets do not need to be encrypted
 and therefore can be used on a day-to-day basis
 without the need to manually encrypt and decrypt the data.
-Read [DIME Analytics Guide to De-identification](https://dimewiki.worldbank.org/wiki/De-identification) for more details.
+Read [DIME Analytics Guide to De-identification](https://dimewiki.worldbank.org/De-identification) for more details.
 Remember to save a backup copy of the original identified data in a non-shared, non-synced OneDrive folder.
 
 #### Password management
